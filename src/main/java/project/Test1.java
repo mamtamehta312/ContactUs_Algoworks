@@ -16,7 +16,7 @@ public class Test1 extends Capabilities {
 
 	Logger log = Logger.getLogger(Test1.class);
 
-	@Test(enabled =false, priority = 1, description = "perform login functionality of 1st user to send request to jeebo")
+	@Test(enabled =true, priority = 1, description = "perform login functionality of 1st user to send request to jeebo")
 	public void signUp1stUser() throws Exception {
 		logger1 = extent.createTest("Login1stUser");
 
