@@ -2,7 +2,6 @@ package project;
 
 import java.util.concurrent.TimeUnit;
 
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,7 +15,7 @@ public class Test1 extends Capabilities {
 
 	Logger log = Logger.getLogger(Test1.class);
 
-	@Test(enabled =true, priority = 1, description = "perform login functionality of 1st user to send request to jeebo")
+	@Test(enabled =false, priority = 1, description = "perform login functionality of 1st user to send request to jeebo")
 	public void signUp1stUser() throws Exception {
 		logger1 = extent.createTest("Login1stUser");
 
@@ -142,7 +141,7 @@ public class Test1 extends Capabilities {
 
 	}
 
-	@Test(enabled = true, priority = 2, description = "perform login functionality")
+	@Test(enabled = false, priority = 2, description = "perform login functionality")
 	public void LoginScreen() throws Exception {
 
 		logger1 = extent.createTest("Login_Test");
@@ -157,28 +156,28 @@ public class Test1 extends Capabilities {
 			// log.info("==========found xpath===========");
 			// log.debug("=====found xpath=====");
 
-			logger1.info("'continue' clicked");
-			click("Continue_ID");
-
-			Thread.sleep(1000);
-			logger1.info("'login' clicked");
-			click("Login1_ID");
+//			logger1.info("'continue' clicked");
+//			click("Continue_ID");
+//
+//			Thread.sleep(1000);
+//			logger1.info("'login' clicked");
+//			click("Login1_ID");
 
 			logger1.info("email id 'producttesting111@gmail.com' typed");
-			type("Email_ID", "producttesting111@gmail.com");
+			type("Email_Xpath", "producttesting111@gmail.com");
 
 			logger1.info("password '123456' typed");
-			type("Password_ID", "123457");
+			type("Password_Xpath", "123457");
 
-			logger1.info("back pressed");
-			back();
+			logger1.info("done clicked");
+			click("Done_Xpath");
 
 			Thread.sleep(1000);
 			logger1.info("'login' clicked");
-			click("Login2_ID");
+			click("Login2_Xpath");
 
-			logger1.info("click on allow for access location");
-			click("LocationAcess_ID");
+//			logger1.info("click on allow for access location");
+//			click("LocationAcess_Xpath");
 
 			logger1.pass("Pass");
 		} catch (Exception e) {
@@ -247,24 +246,37 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 4, description = "updating profile by taking image from gallery")
+	@Test(enabled = true, priority = 4, description = "updating profile by taking image from gallery")
 	public void edit_profile_gallery() throws Exception {
 
 		logger1 = extent.createTest("edit_profile_gallery");
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+			
+			logger1.info("'profile' clicked");
+			click("Profile_Xpath");
+
+			Thread.sleep(3000);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.findElement(By.xpath("//XCUIElementTypeImage[@name=\'ellipse3\'][1]")).click();
+			logger1.info("'my profile' clicked");
+			click("MyProfile_Xpath");
+			Thread.sleep(3000);
+			logger1.info("'edit profile' clicked");
+			click("EditProfile_Xpath");
+
 			logger1.info("'edit' option clicked");
-			click("Image_ID");
+			click("Image_Xpath");
 
 			logger1.info("'remove' clicked");
-			click("Remove_ID");
+			click("Remove_Xpath");
 
 			logger1.info("'edit' clicked");
-			click("Image_ID");
+			click("Image_Xpath");
 
 			logger1.info("'gallery' clicked");
-			click("Gallery_ID");
+			click("Gallery_Xpath");
 
 			logger1.info("'gallery profile' clicked");
 			click("GalleryProfile_Xpath");
@@ -949,7 +961,7 @@ public class Test1 extends Capabilities {
 
 	}
 
-	@Test(enabled = true, priority = 20, description = "Go to restaurants category and search and add products")
+	@Test(enabled = false, priority = 20, description = "Go to restaurants category and search and add products")
 	public void RestaurantsCategory() throws Exception {
 
 		logger1 = extent.createTest("Indian category functionality in Restaurants");

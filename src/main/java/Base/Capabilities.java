@@ -31,12 +31,13 @@ import org.testng.annotations.BeforeTest;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.jeebo.home.CommonFunctions;
+//import com.jeebo.home.CommonFunctions;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 
 /**
  * @author chanchal
@@ -58,26 +59,35 @@ public class Capabilities {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-		capabilities.setCapability("deviceName", "4d00b5844e003125");
-
-		// capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
-
-		capabilities.setCapability(CapabilityType.VERSION, "7.0");
-
-		capabilities.setCapability("platformName", "Android");
-
-		capabilities.setCapability("appPackage", "com.app.jeebo");
-
-		capabilities.setCapability("appActivity", "com.app.jeebo.activity.SplashActivity");
-
-		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//		capabilities.setCapability("deviceName", "4d00b5844e003125");
+//
+//		// capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
+//
+//		capabilities.setCapability(CapabilityType.VERSION, "7.0");
+//
+//		capabilities.setCapability("platformName", "Android");
+//
+//		capabilities.setCapability("appPackage", "com.app.jeebo");
+//
+//		capabilities.setCapability("appActivity", "com.app.jeebo.activity.SplashActivity");
+//
+//		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+//
+//		capabilities.setCapability("no-reset", " false");
+//
+//		capabilities.setCapability("permission", "true");
+//
+//		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		
+        capabilities.setCapability("deviceName", "iPhone 7");
+		capabilities.setCapability("udid", "5B9FF0E0-1442-40DC-9A2D-B492944918D3");
+		capabilities.setCapability("platformName", "ios");
+        capabilities.setCapability("bundleId", "com.algoworks.Jeebo");
+		capabilities.setCapability("automationName", "XCUITest");
+		driver=new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-
-		capabilities.setCapability("no-reset", " false");
-
-		capabilities.setCapability("permission", "true");
-
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		
 
 	}
 
@@ -88,7 +98,7 @@ public class Capabilities {
 		FileInputStream fis;
 		try {
 			fis = new FileInputStream(
-					System.getProperty("user.dir") + "//src//main//resources//Properties//Android_OR.properties");
+					System.getProperty("user.dir") + "//src//main//resources//Properties//IOS_OR.properties");
 			properties.load(fis);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -206,20 +216,20 @@ public class Capabilities {
 					List<MobileElement> showcase = driver
 							.findElements(By.xpath("//android.widget.TextView[@text='Showcase']"));
 					if ((!collectAndDelivery.isEmpty()) && collectAndDelivery.get(0).isDisplayed()) {
-
-						CommonFunctions r = new CommonFunctions(driver);
-						r.RecommendViewSocialProfile(logger1);
-
-						CommonFunctions c = new CommonFunctions(driver);
-						c.clickAndCollectDelivery(logger1);
+//
+//						CommonFunctions r = new CommonFunctions(driver);
+//						r.RecommendViewSocialProfile(logger1);
+//
+//						CommonFunctions c = new CommonFunctions(driver);
+//						c.clickAndCollectDelivery(logger1);
 
 					} else if ((!showcase.isEmpty()) && showcase.get(0).isDisplayed()) {
 
-						CommonFunctions r = new CommonFunctions(driver);
-						r.RecommendViewSocialProfile(logger1);
-
-						CommonFunctions s = new CommonFunctions(driver);
-						s.Showcase(logger1);
+//						CommonFunctions r = new CommonFunctions(driver);
+//						r.RecommendViewSocialProfile(logger1);
+//
+//						CommonFunctions s = new CommonFunctions(driver);
+//						s.Showcase(logger1);
 
 					}
 
@@ -253,7 +263,7 @@ public class Capabilities {
 
 	@BeforeTest
 	public void createReport() {
-		reporter = new ExtentHtmlReporter("/home/chanchal/Android/JeeboTestCases.html");
+		reporter = new ExtentHtmlReporter("/Users/varun/Downloads/ChanchalProject/IOS/JeeboTestCases.html");
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
 	}
