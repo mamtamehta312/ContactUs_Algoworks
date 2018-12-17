@@ -1,15 +1,19 @@
 package project;
 
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
 import Base.Capabilities;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+
 
 public class Test1 extends Capabilities {
 
@@ -227,6 +231,7 @@ public class Test1 extends Capabilities {
 			Thread.sleep(1000);
 			logger1.info("tap on 'capture'");
 			new TouchAction(driver).tap(538, 1774).perform();
+		
 
 			logger1.info("'ok' clicked");
 			Thread.sleep(2000);
@@ -257,14 +262,35 @@ public class Test1 extends Capabilities {
 			logger1.info("'profile' clicked");
 			click("Profile_Xpath");
 
-			Thread.sleep(3000);
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			driver.findElement(By.xpath("//XCUIElementTypeImage[@name=\'ellipse3\'][1]")).click();
+			Thread.sleep(10000);
 			logger1.info("'my profile' clicked");
-			click("MyProfile_Xpath");
-			Thread.sleep(3000);
+			//if(!driver.findElements(By.id("(//XCUIElementTypeImage[@name=\\\"ellipse3\\\"])[1]")).isEmpty()) {
+			MobileElement element = driver.findElement(By.xpath("//XCUIElementTypeImage[@name='profileBlue']"));
+			
+			
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+		    HashMap<String, Integer> tapObject = new HashMap<String, Integer>();
+		    tapObject.put("x", 55);
+		    tapObject.put("y", 147);
+		   // tapObject.put("duration", 1);
+		    //tapObject.put("touchCount", 1);
+		    //tapObject.put("tapCount", 1);
+		    js.executeScript("mobile: tap", tapObject);
+			
+			
+			System.out.println(((MobileElement) element).getCenter().getX() + ", " + ((MobileElement) element).getCenter().getY());
+			System.out.println("not Clicked"+element.isDisplayed());
+			//element.click();
+			
+			System.out.println("Clicked"+element.isEnabled());
+			//driver.findElement(By.xpath("//XCUIElementTypeOther[@name='ellipse3']")).click();
+			//}
+			//click("MyProfile_Xpath");   
+			
+			Thread.sleep(1000);
 			logger1.info("'edit profile' clicked");
-			click("EditProfile_Xpath");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Edit Profile\"]")).click();
+			//click("EditProfile_Xpath");
 
 			logger1.info("'edit' option clicked");
 			click("Image_Xpath");
