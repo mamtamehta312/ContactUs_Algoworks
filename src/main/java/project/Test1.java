@@ -14,12 +14,11 @@ import Base.Capabilities;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 
-
 public class Test1 extends Capabilities {
 
 	Logger log = Logger.getLogger(Test1.class);
 
-	@Test(enabled =false, priority = 1, description = "perform login functionality of 1st user to send request to jeebo")
+	@Test(enabled = false, priority = 1, description = "perform login functionality of 1st user to send request to jeebo")
 	public void signUp1stUser() throws Exception {
 		logger1 = extent.createTest("Login1stUser");
 
@@ -45,13 +44,9 @@ public class Test1 extends Capabilities {
 			Thread.sleep(2000);
 			logger1.info("'login' clicked");
 			click("Login2_ID");
-		
-
-
 
 			/*
-			 * Thread.sleep(1000);
-			 * logger1.info("click on allow for access location");
+			 * Thread.sleep(1000); logger1.info("click on allow for access location");
 			 * click("LocationAcess_ID");
 			 */
 
@@ -133,8 +128,7 @@ public class Test1 extends Capabilities {
 			 * 
 			 * SwipeUpWindow();
 			 * 
-			 * logger1.info("'Logout' clicked"); getObject("Logout_ID");
-			 * click("Logout_ID");
+			 * logger1.info("'Logout' clicked"); getObject("Logout_ID"); click("Logout_ID");
 			 */
 
 			logger1.pass("Pass");
@@ -145,28 +139,15 @@ public class Test1 extends Capabilities {
 
 	}
 
-	@Test(enabled = false, priority = 2, description = "perform login functionality")
+	
+	@Test(enabled = true, priority = 1, description = "perform login functionality")
 	public void LoginScreen() throws Exception {
 
 		logger1 = extent.createTest("Login_Test");
-
-		/*
-		 * String name = getObject("Name"); System.out.println(name); String
-		 * xpath =getObject("Continue_xpath"); System.out.println(xpath);
-		 */
-		// driver.findElement(By.xpath(getObject("Skip_Xpath"))).click();
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-			// log.info("==========found xpath===========");
-			// log.debug("=====found xpath=====");
-
-//			logger1.info("'continue' clicked");
-//			click("Continue_ID");
-//
-//			Thread.sleep(1000);
-//			logger1.info("'login' clicked");
-//			click("Login1_ID");
-
+			if(driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField")).isDisplayed()){
+				
 			logger1.info("email id 'producttesting111@gmail.com' typed");
 			type("Email_Xpath", "producttesting111@gmail.com");
 
@@ -174,15 +155,12 @@ public class Test1 extends Capabilities {
 			type("Password_Xpath", "123457");
 
 			logger1.info("done clicked");
-			click("Done_Xpath");
+			done();
 
 			Thread.sleep(1000);
 			logger1.info("'login' clicked");
 			click("Login2_Xpath");
-
-//			logger1.info("click on allow for access location");
-//			click("LocationAcess_Xpath");
-
+			}
 			logger1.pass("Pass");
 		} catch (Exception e) {
 			logger1.fail(e);
@@ -231,7 +209,6 @@ public class Test1 extends Capabilities {
 			Thread.sleep(1000);
 			logger1.info("tap on 'capture'");
 			new TouchAction(driver).tap(538, 1774).perform();
-		
 
 			logger1.info("'ok' clicked");
 			Thread.sleep(2000);
@@ -251,73 +228,50 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = true, priority = 4, description = "updating profile by taking image from gallery")
+	@Test(enabled = true, priority = 2, description = "updating profile by taking image from gallery")
 	public void edit_profile_gallery() throws Exception {
 
 		logger1 = extent.createTest("edit_profile_gallery");
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-			
+
 			logger1.info("'profile' clicked");
 			click("Profile_Xpath");
 
-			Thread.sleep(10000);
+			Thread.sleep(1000);
 			logger1.info("'my profile' clicked");
-			//if(!driver.findElements(By.id("(//XCUIElementTypeImage[@name=\\\"ellipse3\\\"])[1]")).isEmpty()) {
-			MobileElement element = driver.findElement(By.xpath("//XCUIElementTypeImage[@name='profileBlue']"));
-			
-			
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-		    HashMap<String, Integer> tapObject = new HashMap<String, Integer>();
-		    tapObject.put("x", 55);
-		    tapObject.put("y", 147);
-		   // tapObject.put("duration", 1);
-		    //tapObject.put("touchCount", 1);
-		    //tapObject.put("tapCount", 1);
-		    js.executeScript("mobile: tap", tapObject);
-			
-			
-			System.out.println(((MobileElement) element).getCenter().getX() + ", " + ((MobileElement) element).getCenter().getY());
-			System.out.println("not Clicked"+element.isDisplayed());
-			//element.click();
-			
-			System.out.println("Clicked"+element.isEnabled());
-			//driver.findElement(By.xpath("//XCUIElementTypeOther[@name='ellipse3']")).click();
-			//}
-			//click("MyProfile_Xpath");   
-			
+			tapObject("MyProfile_Xpath");
+
 			Thread.sleep(1000);
 			logger1.info("'edit profile' clicked");
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Edit Profile\"]")).click();
-			//click("EditProfile_Xpath");
+			click("EditProfile_Xpath");
 
+			Thread.sleep(1000);
 			logger1.info("'edit' option clicked");
 			click("Image_Xpath");
-
+			
+			Thread.sleep(1000);
 			logger1.info("'remove' clicked");
-			click("Remove_Xpath");
+			tapObject("Remove_Xpath");
 
 			logger1.info("'edit' clicked");
 			click("Image_Xpath");
-
+			
+			Thread.sleep(1000);
 			logger1.info("'gallery' clicked");
-			click("Gallery_Xpath");
+			tapObject("Gallery_Xpath");
 
 			logger1.info("'gallery profile' clicked");
 			click("GalleryProfile_Xpath");
-
+			
+			Thread.sleep(1000);
 			logger1.info("'gallery sub profile' clicked");
 			click("GallerySubProfile_Xpath");
 
-			/*
-			 * logger1.info("'save' option for gallery clicked");
-			 * click("SaveClickCamera_ID");
-			 * 
-			 * logger1.info("'ok' option for gallery clicked");
-			 * click("CommonOK_ID");
-			 */
-
+			logger1.info("'save' option for gallery clicked");
+			click("SaveClickCamera_Xpath");
+		Thread.sleep(1000);
 			logger1.pass("Pass");
 		} catch (Exception e) {
 			logger1.fail(e);
@@ -325,7 +279,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 5, description = "Setup profile information")
+	@Test(enabled = true, priority = 3, description = "Setup profile information")
 	public void SetInfoInProfile() throws Exception {
 
 		logger1 = extent.createTest("Set Info In Profile");
@@ -334,38 +288,37 @@ public class Test1 extends Capabilities {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
 			logger1.info("remove already present text and type 'Jeebo' text");
-			clear("Name_ID");
-			type("Name_ID", "Jeebo");
-			back();
+			clear("Name_Xpath");
+			type("Name_Xpath", "Jeebo");
+			done();
 
 			logger1.info("phone number '123456789' typed");
-			clear("PhoneNumber_ID");
-			type("PhoneNumber_ID", "123456789");
-			back();
-
-			logger1.info("email id 'producttesting111@gmail.com' already given");
-			MobileElement d = driver.findElement(By.id("com.app.jeebo:id/tv_edit_profile_email_id"));
-			System.out.println(d);
-
+			clear("PhoneNumber_Xpath");
+			type("PhoneNumber_Xpath", "123456789");
+			done();
+			Thread.sleep(1000);
 			SwipeUpWindow();
-
+			Thread.sleep(1000);
 			logger1.info("'male' clicked");
-			click("Male_ID");
-
+			click("Male_Xpath");
+			
+            Thread.sleep(1000);
 			logger1.info("'This is Jeebo app' typed in 'About'");
-			clear("About_ID");
-			type("About_ID", "This is Jeebo app");
-			back();
-
+			clear("About_Xpath");
+			type("About_Xpath", "This is Jeebo app");
+			done();
+			
+			Thread.sleep(1000);
 			logger1.info("'save' clicked");
-			click("SaveClickCamera_ID");
+			click("SaveProfile_Xpath");
 
 			logger1.info("'ok' clicked");
 			Thread.sleep(1000);
-			click("CommonOK_ID");
+			click("CommonOK_Xpath");
 
-			back();
+			done();
 
+			Thread.sleep(2000);
 			logger1.pass("Pass");
 		} catch (Exception e) {
 			logger1.fail(e);

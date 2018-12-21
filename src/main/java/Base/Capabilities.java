@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -14,6 +15,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.logging.LogEntry;
@@ -36,6 +38,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 
@@ -46,7 +49,7 @@ import io.appium.java_client.ios.IOSDriver;
 
 public class Capabilities {
 
-	protected AppiumDriver<MobileElement> driver;
+	protected   AppiumDriver<MobileElement> driver;
 
 	private long timeout;
 
@@ -59,35 +62,37 @@ public class Capabilities {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-//		capabilities.setCapability("deviceName", "4d00b5844e003125");
-//
-//		// capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
-//
-//		capabilities.setCapability(CapabilityType.VERSION, "7.0");
-//
-//		capabilities.setCapability("platformName", "Android");
-//
-//		capabilities.setCapability("appPackage", "com.app.jeebo");
-//
-//		capabilities.setCapability("appActivity", "com.app.jeebo.activity.SplashActivity");
-//
-//		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-//		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-//
-//		capabilities.setCapability("no-reset", " false");
-//
-//		capabilities.setCapability("permission", "true");
-//
-//		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		
-        capabilities.setCapability("deviceName", "iPhone 7");
+		// capabilities.setCapability("deviceName", "4d00b5844e003125");
+		//
+		// // capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
+		//
+		// capabilities.setCapability(CapabilityType.VERSION, "7.0");
+		//
+		// capabilities.setCapability("platformName", "Android");
+		//
+		// capabilities.setCapability("appPackage", "com.app.jeebo");
+		//
+		// capabilities.setCapability("appActivity",
+		// "com.app.jeebo.activity.SplashActivity");
+		//
+		// driver = new AndroidDriver<MobileElement>(new
+		// URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		// driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		//
+		// capabilities.setCapability("no-reset", " false");
+		//
+		// capabilities.setCapability("permission", "true");
+		//
+		// driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+
+		capabilities.setCapability("deviceName", "iPhone 7");
 		capabilities.setCapability("udid", "5B9FF0E0-1442-40DC-9A2D-B492944918D3");
 		capabilities.setCapability("platformName", "ios");
-        capabilities.setCapability("bundleId", "com.algoworks.Jeebo");
+		capabilities.setCapability("bundleId", "com.algoworks.Jeebo");
 		capabilities.setCapability("automationName", "XCUITest");
-		driver=new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+		driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		
+		capabilities.setCapability("no-reset", " false");
 
 	}
 
@@ -129,13 +134,42 @@ public class Capabilities {
 
 		} else if (Locator.endsWith("_ID")) {
 			driver.findElement(By.id(properties.getProperty(Locator))).click();
-			// driver.findElementByAccessibilityId(properties.getProperty(Locator)).click();
+			//driver.findElementByAccessibilityId(properties.getProperty(Locator)).click();
 
 		}
 	}
 
+//	JavascriptExecutor js = (JavascriptExecutor) driver;
+//	public HashMap<String, Integer> tapObject = new HashMap<String, Integer>();
+//
+//	public void tapObject(String Locator, int value) {
+//		int x = 0;
+//		int y = 0;
+//	    tapObject.put("x", x);
+//		tapObject.put("y", y);
+//		// tapObject.put("duration", 1);
+//		// tapObject.put("touchCount", 1);
+//		// tapObject.put("tapCount", 1);
+//		js.executeScript("mobile: tap", tapObject);
+//	}
+	
+	public void tapObject(String Locator) {
+		 MobileElement element =  driver.findElement(By.xpath((properties.getProperty(Locator))));
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		HashMap<String, Integer> tapObject1 = new HashMap<String, Integer>();
+	
+		tapObject1.put("x", element.getCenter().getX());
+    	tapObject1.put("y", element.getCenter().getY());
+		js.executeScript("mobile: tap", tapObject1);
+	}
+
 	public void back() {
 		driver.navigate().back();
+	}
+	
+	public void done() {
+		driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Toolbar Done Button\"]")).click();
 	}
 
 	public void clear(String Locator) {
@@ -178,13 +212,13 @@ public class Capabilities {
 		/*
 		 * if (((String) Locator).endsWith("_Xpath")) { By a =
 		 * By.xpath(properties.getProperty(Locator));
-		 * wait.until(ExpectedConditions.visibilityOfElementLocated(a)); element
-		 * = driver.findElement(By.id("com.app.jeebo:id/rl_notification"));
+		 * wait.until(ExpectedConditions.visibilityOfElementLocated(a)); element =
+		 * driver.findElement(By.id("com.app.jeebo:id/rl_notification"));
 		 * 
 		 * } else if (((String) Locator).endsWith("_ID")) { By b =
 		 * By.id(properties.getProperty(Locator));
-		 * wait.until(ExpectedConditions.visibilityOfElementLocated(b)); element
-		 * = driver.findElement(By.id("com.app.jeebo:id/rl_notification"));
+		 * wait.until(ExpectedConditions.visibilityOfElementLocated(b)); element =
+		 * driver.findElement(By.id("com.app.jeebo:id/rl_notification"));
 		 * 
 		 * } new TouchAction(driver).tap(element);
 		 */
@@ -209,27 +243,27 @@ public class Capabilities {
 				Thread.sleep(1000);
 
 				// driver.findElement(By.xpath("//android.widget.TextView[@text='Burgers']")).click();
-				test:{
+				test: {
 
 					List<MobileElement> collectAndDelivery = driver.findElements(
 							By.xpath("//android.widget.TextView[@text='Click & Collect' or @text='Delivery']"));
 					List<MobileElement> showcase = driver
 							.findElements(By.xpath("//android.widget.TextView[@text='Showcase']"));
 					if ((!collectAndDelivery.isEmpty()) && collectAndDelivery.get(0).isDisplayed()) {
-//
-//						CommonFunctions r = new CommonFunctions(driver);
-//						r.RecommendViewSocialProfile(logger1);
-//
-//						CommonFunctions c = new CommonFunctions(driver);
-//						c.clickAndCollectDelivery(logger1);
+						//
+						// CommonFunctions r = new CommonFunctions(driver);
+						// r.RecommendViewSocialProfile(logger1);
+						//
+						// CommonFunctions c = new CommonFunctions(driver);
+						// c.clickAndCollectDelivery(logger1);
 
 					} else if ((!showcase.isEmpty()) && showcase.get(0).isDisplayed()) {
 
-//						CommonFunctions r = new CommonFunctions(driver);
-//						r.RecommendViewSocialProfile(logger1);
-//
-//						CommonFunctions s = new CommonFunctions(driver);
-//						s.Showcase(logger1);
+						// CommonFunctions r = new CommonFunctions(driver);
+						// r.RecommendViewSocialProfile(logger1);
+						//
+						// CommonFunctions s = new CommonFunctions(driver);
+						// s.Showcase(logger1);
 
 					}
 
