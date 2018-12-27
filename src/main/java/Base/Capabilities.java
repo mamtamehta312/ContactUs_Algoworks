@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction;
+
 import org.apache.commons.logging.Log;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -17,6 +19,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.remote.CapabilityType;
@@ -29,10 +32,13 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+import org.w3c.dom.events.Event;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+
 //import com.jeebo.home.CommonFunctions;
 
 import io.appium.java_client.AppiumDriver;
@@ -41,6 +47,8 @@ import io.appium.java_client.TouchAction;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.touch.TapOptions;
+import io.appium.java_client.touch.offset.PointOption;
 
 /**
  * @author chanchal
@@ -84,16 +92,19 @@ public class Capabilities {
 		// capabilities.setCapability("permission", "true");
 		//
 		// driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-
+		capabilities.setCapability("no-reset", " true");
 		capabilities.setCapability("deviceName", "iPhone 7");
 		capabilities.setCapability("udid", "5B9FF0E0-1442-40DC-9A2D-B492944918D3");
 		capabilities.setCapability("platformName", "ios");
+		
 		capabilities.setCapability("bundleId", "com.algoworks.Jeebo");
 		capabilities.setCapability("automationName", "XCUITest");
 		driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		capabilities.setCapability("no-reset", " false");
-
+		//capabilities.setCapability("no-reset", " false");
+		//driver.launchApp();
+        //driver.resetApp();
+        driver.launchApp();
 	}
 
 	static Properties properties;
@@ -127,6 +138,11 @@ public class Capabilities {
 			// driver.findElementByAccessibilityId(properties.getProperty(Locator)).sendKeys(value);
 		}
 	}
+	
+	public void point(int xPoint,int yPoint) {	
+		TouchAction touchAction = new TouchAction(driver);
+		touchAction.tap(PointOption.point(xPoint, yPoint)).perform();
+       }
 
 	public void click(String Locator) {
 		if (Locator.endsWith("_Xpath")) {
@@ -164,8 +180,22 @@ public class Capabilities {
 		js.executeScript("mobile: tap", tapObject1);
 	}
 
+	public void clearFullText(String Locator) {
+		MobileElement element =driver.findElement(By.xpath((properties.getProperty(Locator))));
+		if(element.getText()!=null && "".equals(element.getText())) {
+			element.clear();
+			
+//			if(event.target.value==event.target.defaultValue)
+//				event.targetValue="";
+		}
+	}
+	
+	
+	
+	
 	public void back() {
-		driver.navigate().back();
+		//driver.navigate().back();
+		driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'backIcon\']")).click();
 	}
 	
 	public void done() {
@@ -182,6 +212,18 @@ public class Capabilities {
 
 		}
 	}
+	
+//	el=driver.findElement(By.xpath((properties.getProperty(Locator))));
+//	public void moveCursorToEnd(el) {
+//	if (typeof el.selectionStart == "number") {
+//	        el.selectionStart = el.selectionEnd = el.value.length;
+//	    } else if (typeof el.createTextRange != "undefined") {
+//	        el.focus();
+//	        var range = el.createTextRange();
+//	        range.collapse(false);
+//	        range.select();
+//	    }
+//	}
 
 	public void SwipeUpWindow() throws InterruptedException {
 		Dimension size = driver.manage().window().getSize();

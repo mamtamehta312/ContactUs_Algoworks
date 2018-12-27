@@ -1,82 +1,83 @@
 package project;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.remote.RemoteWebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
 import Base.Capabilities;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 
+import io.appium.java_client.touch.offset.PointOption;
+
 public class Test1 extends Capabilities {
 
 	Logger log = Logger.getLogger(Test1.class);
 
+	@SuppressWarnings("rawtypes")
 	@Test(enabled = false, priority = 1, description = "perform login functionality of 1st user to send request to jeebo")
 	public void signUp1stUser() throws Exception {
 		logger1 = extent.createTest("Login1stUser");
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-
-			logger1.info("'continue' clicked");
-			click("Continue_ID");
-
-			Thread.sleep(1000);
-			logger1.info("'login' clicked");
-			click("Login1_ID");
-
 			logger1.info("'firstrequest@gmail.com' is typed");
-			type("Email_ID", "firstrequest@gmail.com");
+			type("Email_Xpath", "firstrequest@gmail.com");
 
 			logger1.info("password '123456' typed");
-			type("Password_ID", "123456");
+			type("Password_Xpath", "123456");
 
-			logger1.info("back pressed");
-			back();
+			logger1.info("done pressed");
+			done();
 
 			Thread.sleep(2000);
 			logger1.info("'login' clicked");
-			click("Login2_ID");
+			click("Login2_Xpath");
 
-			/*
-			 * Thread.sleep(1000); logger1.info("click on allow for access location");
-			 * click("LocationAcess_ID");
-			 */
-
-			/*
-			 * logger1.info("sign up is clicked"); click("SignUp_ID");
-			 * 
-			 * Thread.sleep(1000);
-			 * logger1.info("phone number '123456' is typed in phone text");
-			 * type("PhoneNumber_ID", "123456789"); back();
-			 * 
-			 * logger1.info("Finish text is clicked"); click("Finish_ID");
-			 */
-
+			Thread.sleep(1000);
 			logger1.info("newsfeed is clicked");
-			click("Newsfeed_ID");
+			click("Newsfeed_Xpath");
 
+			logger1.info("Explore option is clicked");
+			click("Explore_Xpath");
+
+			Thread.sleep(1000);
 			logger1.info("search id is clicked");
-			click("Search_ID");
-
-			logger1.info("search people text is clicked");
-			click("SearchPeople_ID");
+			tapObject("SearchPeople1_Xpath");
 
 			logger1.info("navigated to next searched box and 'jeebo' name is /'typed/'");
-			type("NameSearched_ID", "jeebo");
+			type("SearchPeople2_Xpath", "jeebo");
 
 			logger1.info("click on searched 'jeebo' id");
-			click("AcceptRequest_ID");
-
+			click("AcceptRequest_Xpath");
+			Thread.sleep(2000);
 			logger1.info("click on connect");
-			click("EditProfile_ID");
+			tapObject("Connect_Xpath");
+			Thread.sleep(10000);
+			back();
+			Thread.sleep(10000);
+			back();
+
+			Thread.sleep(1000);
+			logger1.info("click on profile");
+			click("Profile_Xpath");
+			Thread.sleep(2000);
+
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			Map<String, String> scrollObject = new HashMap<String, String>();
+			scrollObject.put("direction", "down");
+			js.executeScript("mobile: scroll", scrollObject);
+
+			Thread.sleep(10000);
+			logger1.info("click on Logout");
+			// tapObject("Logout_Xpath");
+			driver.findElementByAccessibilityId("Logout").click();
 
 			logger1.pass("Pass");
 		} catch (Exception e) {
@@ -85,7 +86,139 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 1, description = "perform signup functionality")
+	@Test(enabled = false, priority = 2, description = "perform login functionality of 2nd user to send request to jeebo")
+	public void signUp2ndUser() throws Exception {
+		logger1 = extent.createTest("Login2ndUser");
+
+		try {
+			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+			logger1.info("'second@gmail.com' is typed");
+			type("Email_Xpath", "second@gmail.com");
+
+			logger1.info("password '123456' typed");
+			type("Password_Xpath", "123456");
+
+			logger1.info("done pressed");
+			done();
+			
+			Thread.sleep(2000);
+			logger1.info("'login' clicked");
+			click("Login2_Xpath");
+
+			Thread.sleep(1000);
+			logger1.info("newsfeed is clicked");
+			click("Newsfeed_Xpath");
+
+			logger1.info("Explore option is clicked");
+			click("Explore_Xpath");
+
+			Thread.sleep(1000);
+			logger1.info("search id is clicked");
+			tapObject("SearchPeople1_Xpath");
+
+			logger1.info("navigated to next searched box and 'jeebo' name is /'typed/'");
+			type("SearchPeople2_Xpath", "jeebo");
+
+			logger1.info("click on searched 'jeebo' id");
+			click("AcceptRequest_Xpath");
+			Thread.sleep(2000);
+			logger1.info("click on connect");
+			tapObject("Connect_Xpath");
+			Thread.sleep(10000);
+			back();
+			Thread.sleep(10000);
+			back();
+
+			Thread.sleep(1000);
+			logger1.info("click on profile");
+			click("Profile_Xpath");
+			Thread.sleep(2000);
+
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			Map<String, String> scrollObject = new HashMap<String, String>();
+			scrollObject.put("direction", "down");
+			js.executeScript("mobile: scroll", scrollObject);
+
+			Thread.sleep(10000);
+			logger1.info("click on Logout");
+			// tapObject("Logout_Xpath");
+			driver.findElementByAccessibilityId("Logout").click();
+			
+
+			logger1.pass("Pass");
+		} catch (Exception e) {
+			logger1.fail(e);
+			throw e;
+		}
+	}
+	
+	@Test(enabled = false, priority = 3, description = "perform login functionality of 3rd user to send request to jeebo")
+	public void signUp3rdUser() throws Exception {
+		logger1 = extent.createTest("Login3rdUser");
+
+		try {
+			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+			logger1.info("'third@gmail.com' is typed");
+			type("Email_Xpath", "third@gmail.com");
+
+			logger1.info("password '123456' typed");
+			type("Password_Xpath", "123456");
+
+			logger1.info("done pressed");
+			done();
+			
+			Thread.sleep(2000);
+			logger1.info("'login' clicked");
+			click("Login2_Xpath");
+
+			Thread.sleep(1000);
+			logger1.info("newsfeed is clicked");
+			click("Newsfeed_Xpath");
+
+			logger1.info("Explore option is clicked");
+			click("Explore_Xpath");
+
+			Thread.sleep(1000);
+			logger1.info("search id is clicked");
+			tapObject("SearchPeople1_Xpath");
+
+			logger1.info("navigated to next searched box and 'jeebo' name is /'typed/'");
+			type("SearchPeople2_Xpath", "jeebo");
+
+			logger1.info("click on searched 'jeebo' id");
+			click("AcceptRequest_Xpath");
+			Thread.sleep(2000);
+			logger1.info("click on connect");
+			tapObject("Connect_Xpath");
+			Thread.sleep(10000);
+			back();
+			Thread.sleep(10000);
+			back();
+
+			Thread.sleep(1000);
+			logger1.info("click on profile");
+			click("Profile_Xpath");
+			Thread.sleep(2000);
+
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			Map<String, String> scrollObject = new HashMap<String, String>();
+			scrollObject.put("direction", "down");
+			js.executeScript("mobile: scroll", scrollObject);
+
+			Thread.sleep(10000);
+			logger1.info("click on Logout");
+			// tapObject("Logout_Xpath");
+			driver.findElementByAccessibilityId("Logout").click();
+			
+
+			logger1.pass("Pass");
+		} catch (Exception e) {
+			logger1.fail(e);
+			throw e;
+		}
+	}
+
+	@Test(enabled = false, priority = 0, description = "perform signup functionality")
 	public void signUp() throws Exception {
 		logger1 = extent.createTest("Sign_Up");
 
@@ -139,27 +272,28 @@ public class Test1 extends Capabilities {
 
 	}
 
-	
-	@Test(enabled = true, priority = 1, description = "perform login functionality")
+	@Test(enabled = false, priority = 4, description = "perform login functionality")
 	public void LoginScreen() throws Exception {
 
 		logger1 = extent.createTest("Login_Test");
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-			if(driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField")).isDisplayed()){
-				
-			logger1.info("email id 'producttesting111@gmail.com' typed");
-			type("Email_Xpath", "producttesting111@gmail.com");
+			if (driver.findElement(By.xpath(
+					"//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField"))
+					.isDisplayed()) {
 
-			logger1.info("password '123456' typed");
-			type("Password_Xpath", "123457");
+				logger1.info("email id 'producttesting111@gmail.com' typed");
+				type("Email_Xpath", "producttesting111@gmail.com");
 
-			logger1.info("done clicked");
-			done();
+				logger1.info("password '123456' typed");
+				type("Password_Xpath", "123457");
 
-			Thread.sleep(1000);
-			logger1.info("'login' clicked");
-			click("Login2_Xpath");
+				logger1.info("done clicked");
+				done();
+
+				Thread.sleep(1000);
+				logger1.info("'login' clicked");
+				click("Login2_Xpath");
 			}
 			logger1.pass("Pass");
 		} catch (Exception e) {
@@ -169,7 +303,7 @@ public class Test1 extends Capabilities {
 
 	}
 
-	@Test(enabled = false, priority = 3, description = "updating profile by capture image from camera")
+	@Test(enabled = false, priority = 0, description = "updating profile by capture image from camera")
 	public void edit_profile_camera() throws Exception {
 
 		logger1 = extent.createTest("edit_profile_camera");
@@ -228,7 +362,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = true, priority = 2, description = "updating profile by taking image from gallery")
+	@Test(enabled = false, priority = 5, description = "updating profile by taking image from gallery")
 	public void edit_profile_gallery() throws Exception {
 
 		logger1 = extent.createTest("edit_profile_gallery");
@@ -250,28 +384,28 @@ public class Test1 extends Capabilities {
 			Thread.sleep(1000);
 			logger1.info("'edit' option clicked");
 			click("Image_Xpath");
-			
+
 			Thread.sleep(1000);
 			logger1.info("'remove' clicked");
 			tapObject("Remove_Xpath");
 
 			logger1.info("'edit' clicked");
 			click("Image_Xpath");
-			
+
 			Thread.sleep(1000);
 			logger1.info("'gallery' clicked");
 			tapObject("Gallery_Xpath");
 
 			logger1.info("'gallery profile' clicked");
 			click("GalleryProfile_Xpath");
-			
+
 			Thread.sleep(1000);
 			logger1.info("'gallery sub profile' clicked");
 			click("GallerySubProfile_Xpath");
 
 			logger1.info("'save' option for gallery clicked");
 			click("SaveClickCamera_Xpath");
-		Thread.sleep(1000);
+			Thread.sleep(1000);
 			logger1.pass("Pass");
 		} catch (Exception e) {
 			logger1.fail(e);
@@ -279,7 +413,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = true, priority = 3, description = "Setup profile information")
+	@Test(enabled = false, priority = 6, description = "Setup profile information")
 	public void SetInfoInProfile() throws Exception {
 
 		logger1 = extent.createTest("Set Info In Profile");
@@ -300,25 +434,25 @@ public class Test1 extends Capabilities {
 			SwipeUpWindow();
 			Thread.sleep(1000);
 			logger1.info("'male' clicked");
-			click("Male_Xpath");
-			
-            Thread.sleep(1000);
+			tapObject("Male_Xpath");
+
+			Thread.sleep(1000);
 			logger1.info("'This is Jeebo app' typed in 'About'");
-			clear("About_Xpath");
+			// driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[5]/XCUIElementTypeTextView")).sendKeys(Keys.CLEAR);
+			clearFullText("About_Xpath");
+
 			type("About_Xpath", "This is Jeebo app");
 			done();
-			
+
 			Thread.sleep(1000);
 			logger1.info("'save' clicked");
 			click("SaveProfile_Xpath");
 
 			logger1.info("'ok' clicked");
 			Thread.sleep(1000);
-			click("CommonOK_Xpath");
+			tapObject("CommonOK_Xpath");
+			back();
 
-			done();
-
-			Thread.sleep(2000);
 			logger1.pass("Pass");
 		} catch (Exception e) {
 			logger1.fail(e);
@@ -326,7 +460,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 6, description = "Manage address")
+	@Test(enabled = false, priority=0, description = "Manage address using CurrentLocation")
 	public void ManageAddress() throws Exception {
 
 		logger1 = extent.createTest("Manage address");
@@ -335,30 +469,14 @@ public class Test1 extends Capabilities {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
 			logger1.info("'manage address' clicked");
-			click("ManageAddress_ID");
+			click("ManageAddress_Xpath");
 
 			logger1.info("'add new address' clicked");
-			click("NewAddress_ID");
+			click("NewAddress_Xpath");
 
 			logger1.info("'use my current location' clicked");
-			click("CurrentLocation_ID");
+			click("CurrentLocation_Xpath");
 			Thread.sleep(1000);
-
-			/*
-			 * logger1.info("'allow access to location' clicked");
-			 * click("LocationAcess_ID");
-			 * 
-			 * Thread.sleep(2000); logger1.info("'201301' zipcode typed");
-			 * type("Zipcode_ID","201301");
-			 * 
-			 * logger1.info("'Noida' city typed"); type("City_ID","Noida");
-			 * 
-			 * back();
-			 * 
-			 * logger1.info( "'U.P' state typed"); type("State_ID","U.P");
-			 * 
-			 * back();
-			 */
 
 			logger1.info("'Jeebo' name typed");
 			type("EditName_ID", "Jeebo");
@@ -381,33 +499,53 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 7, description = "Editting Text")
-	public void EdittingText() throws Exception {
+	@Test(enabled = false, priority = 7, description = "addNewAddress")
+	public void addNewAddress() throws Exception {
 
-		logger1 = extent.createTest("Editting Text");
+		logger1 = extent.createTest("addNewAddress");
 
 		try {
-			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+			logger1.info("'manage address' clicked");
+			tapObject("ManageAddress_Xpath");
 
-			logger1.info("'edit option' clicked");
-			click("EditOption_ID");
+			logger1.info("'new address' clicked");
+			tapObject("NewAddress_Xpath");
 
-			logger1.info("'edit' text clicked");
-			click("EditText_ID");
+			logger1.info("flat address 'A61/B4' typed");
+			Thread.sleep(1000);
+			type("FlatAddress_Xpath", "A61/B4");
 
-			logger1.info("'Changed name' typed in name textbox");
-			// change name
-			clear("EditName_ID");
-			type("EditName_ID", "Changed Name");
+			logger1.info("locality 'First Floor Spring Meadows Business Park' clicked");
+			type("Locality_Xpath", "First Floor Spring Meadows Business Park");
 
-			back();
+			logger1.info("zipcode '201301' typed");
+			type("Zipcode_Xpath", "201301");
+
+			logger1.info("city 'noida' typed");
+			type("City_Xpath", "Noida");
+			done();
+
+			logger1.info("state 'uttar pradesh' typed");
+			type("State_Xpath", "Uttar Pradesh");
+
+			logger1.info("country 'india' typed");
+			type("Country_Xpath", "India");
+			done();
+
+			logger1.info("name 'Jeebo app' typed");
+			type("EditName_Xpath", "Jeebo app");
+			done();
+
+			logger1.info("'other' option clicked");
+			tapObject("OtherOption_Xpath");
 
 			logger1.info("'save' clicked");
-			click("CommonSave_ID");
+			click("SaveProfile_Xpath");
 
-			Thread.sleep(1000);
 			logger1.info("'ok' clicked");
-			click("CommonOK_ID");
+			Thread.sleep(1000);
+			tapObject("OK_Xpath");
 
 			logger1.pass("Pass");
 		} catch (Exception e) {
@@ -416,51 +554,33 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 8, description = "addNewAddress")
-	public void addNewAddress() throws Exception {
+	@Test(enabled = false, priority = 8, description = "Editting Text")
+	public void EdittingText() throws Exception {
 
-		logger1 = extent.createTest("addNewAddress");
+		logger1 = extent.createTest("Editting Text");
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-			logger1.info("'new address' clicked");
-			click("NewAddress_ID");
 
-			logger1.info("flat address 'A61/B4' typed");
-			Thread.sleep(1000);
-			type("FlatAddress_ID", "A61/B4");
+			logger1.info("'edit option' clicked");
+			click("EditOption_Xpath");
 
-			logger1.info("locality 'First Floor Spring Meadows Business Park' clicked");
-			type("Locality_ID", "First Floor Spring Meadows Business Park");
+			logger1.info("'edit' text clicked");
+			new TouchAction(driver).tap(290, 200).perform();
 
-			logger1.info("zipcode '201301' typed");
-			type("Zipcode_ID", "201301");
+			logger1.info("'Changed name' typed in name textbox");
+			clear("EditName_Xpath");
+			type("EditName_Xpath", "Changed Name");
 
-			logger1.info("city 'noida' typed");
-			type("City_ID", "Noida");
-			back();
-
-			logger1.info("state 'uttar pradesh' typed");
-			type("State_ID", "Uttar Pradesh");
-
-			logger1.info("country 'india' typed");
-			type("Country_ID", "India");
-			back();
-
-			logger1.info("name 'Jeebo app' typed");
-			type("EditName_ID", "Jeebo app");
-			back();
-
-			logger1.info("'other' option clicked");
-			click("OtherOption_ID");
+			done();
 
 			logger1.info("'save' clicked");
-			// click on save
-			click("CommonSave_ID");
+			click("SaveProfile_Xpath");
 
-			logger1.info("'ok' clicked");
 			Thread.sleep(1000);
-			click("CommonOK_ID");
+			logger1.info("'ok' clicked");
+			tapObject("OK_Xpath");
+
 			logger1.pass("Pass");
 		} catch (Exception e) {
 			logger1.fail(e);
@@ -476,13 +596,14 @@ public class Test1 extends Capabilities {
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("'options' clicked");
-			click("EditOption_ID");
+			click("EditOption_Xpath");
 
 			logger1.info("'delete' clicked");
-			click("Delete_ID");
+			new TouchAction(driver).tap(289, 230).perform();
 
 			logger1.info("'ok' clicked");
-			click("CommonOK_ID");
+			click("OKAddress_Xpath");
+			click("OKAddress_Xpath");
 			back();
 
 			logger1.pass("Pass");
@@ -500,10 +621,10 @@ public class Test1 extends Capabilities {
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("'Manage Affiliates' clicked");
-			click("Affiliates_ID");
+			tapObject("Affiliates_Xpath");
 
 			logger1.info("'Add new Affiliates' clicked");
-			click("AddNewAffiliates_ID");
+			tapObject("NewAddress_Xpath");
 			Thread.sleep(1000);
 			back();
 			back();
@@ -514,7 +635,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 11, description = "Add New Card")
+	@Test(enabled = true, priority = 11, description = "Add New Card")
 	public void AddNewCard() throws Exception {
 
 		logger1 = extent.createTest("Add New Card");
@@ -522,16 +643,17 @@ public class Test1 extends Capabilities {
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("'saved cards' option clicked");
-			click("SavedCard_ID");
+			Thread.sleep(1000);
+			tapObject("SavedCard_Xpath");
 
 			logger1.info("'add new card' option clicked");
-			click("NewAddress_ID");
+			tapObject("NewAddress_Xpath");
 
 			logger1.info("card holder name 'Jeebo' typed");
-			type("CardHolderName_ID", "Jeebo");
+			type("CardHolderName_Xpath", "Jeebo");
 
 			logger1.info("card number '4111111111111111' typed");
-			type("CardNumber_ID", "4111111111111111");
+			type("CardNumber_Xpath", "4111111111111111");
 
 			Thread.sleep(1000);
 			logger1.info("expiry date of card entered successfully");
@@ -542,22 +664,25 @@ public class Test1 extends Capabilities {
 			 * "ExpiryDate_ID")));
 			 */
 
-			click("ExpiryDate_ID");
+			click("ExpiryDate_Xpath");
 			// driver.findElement(By.id("com.app.jeebo:id/edt_expiry")).click();
-
-			logger1.info("'set' is clicked ");
-			click("SetClick_ID");
+            
+			point(138,519);
+			
+            
+			logger1.info("'done' is clicked");
+			done();
 
 			logger1.info("CVV number '123' typed ");
-			type("CVV_ID", "123");
-			back();
+			type("CVV_Xpath", "123");
+			done();
 
 			logger1.info("'add' option clicked");
-			click("AddClick_ID");
+			click("AddClick_Xpath");
 
 			Thread.sleep(1000);
 			logger1.info("'ok' option clicked");
-			click("CommonOK_ID");
+			click("OKAddress_Xpath");
 			logger1.pass("Pass");
 		} catch (Exception e) {
 			logger1.fail(e);
@@ -565,7 +690,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 12, description = "Delete card")
+	@Test(enabled = true, priority = 12, description = "Delete card")
 	public void DeleteCard() throws Exception {
 		Thread.sleep(1000);
 
@@ -578,14 +703,14 @@ public class Test1 extends Capabilities {
 
 			Thread.sleep(1000);
 			logger1.info("'delete' option clicked");
-			click("DeleteOption_ID");
+			click("DeleteOption_Xpath");
 
 			logger1.info("'ok' option clicked");
-			click("CommonOK_ID");
+			click("OKAddress_Xpath");
 
 			Thread.sleep(1000);
 			logger1.info("'confirm ok' option clicked");
-			click("CommonOK_ID");
+			click("OKAddress_Xpath");
 			back();
 
 			logger1.pass("Pass");
@@ -595,7 +720,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 13, description = "Purchase History")
+	@Test(enabled = true, priority = 13, description = "Purchase History")
 	public void PurchaseHistory() throws Exception {
 
 		logger1 = extent.createTest("Purchase History");
@@ -603,7 +728,7 @@ public class Test1 extends Capabilities {
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("'Purchase History' clicked");
-			click("PurchaseHistory_ID");
+			click("PurchaseHistory_Xpath");
 
 			logger1.info("'My Orders' clicked");
 			click("MyOrders_Xpath");
@@ -628,7 +753,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 14, description = "notification preferences")
+	@Test(enabled = true, priority = 0, description = "notification preferences")
 	public void NotificationPreferences() throws Exception {
 
 		logger1 = extent.createTest("notification preferences");
@@ -684,7 +809,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 15, description = "change password")
+	@Test(enabled = false, priority = 14, description = "change password")
 	public void ChangePassword() throws Exception {
 
 		logger1 = extent.createTest("change password");
