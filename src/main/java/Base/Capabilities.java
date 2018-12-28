@@ -1,9 +1,12 @@
 package Base;
 
+import static Base.Capabilities.properties;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,6 +27,7 @@ import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
@@ -37,7 +41,6 @@ import org.w3c.dom.events.Event;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-
 
 //import com.jeebo.home.CommonFunctions;
 
@@ -57,7 +60,7 @@ import io.appium.java_client.touch.offset.PointOption;
 
 public class Capabilities {
 
-	protected   AppiumDriver<MobileElement> driver;
+	protected AppiumDriver<MobileElement> driver;
 
 	private long timeout;
 
@@ -96,15 +99,15 @@ public class Capabilities {
 		capabilities.setCapability("deviceName", "iPhone 7");
 		capabilities.setCapability("udid", "5B9FF0E0-1442-40DC-9A2D-B492944918D3");
 		capabilities.setCapability("platformName", "ios");
-		
+
 		capabilities.setCapability("bundleId", "com.algoworks.Jeebo");
 		capabilities.setCapability("automationName", "XCUITest");
 		driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		//capabilities.setCapability("no-reset", " false");
-		//driver.launchApp();
-        //driver.resetApp();
-        driver.launchApp();
+		// capabilities.setCapability("no-reset", " false");
+		// driver.launchApp();
+		// driver.resetApp();
+		driver.launchApp();
 	}
 
 	static Properties properties;
@@ -138,11 +141,11 @@ public class Capabilities {
 			// driver.findElementByAccessibilityId(properties.getProperty(Locator)).sendKeys(value);
 		}
 	}
-	
-	public void point(int xPoint,int yPoint) {	
+
+	public void point(int xPoint, int yPoint) {
 		TouchAction touchAction = new TouchAction(driver);
 		touchAction.tap(PointOption.point(xPoint, yPoint)).perform();
-       }
+	}
 
 	public void click(String Locator) {
 		if (Locator.endsWith("_Xpath")) {
@@ -150,54 +153,53 @@ public class Capabilities {
 
 		} else if (Locator.endsWith("_ID")) {
 			driver.findElement(By.id(properties.getProperty(Locator))).click();
-			//driver.findElementByAccessibilityId(properties.getProperty(Locator)).click();
+			// driver.findElementByAccessibilityId(properties.getProperty(Locator)).click();
 
 		}
 	}
 
-//	JavascriptExecutor js = (JavascriptExecutor) driver;
-//	public HashMap<String, Integer> tapObject = new HashMap<String, Integer>();
-//
-//	public void tapObject(String Locator, int value) {
-//		int x = 0;
-//		int y = 0;
-//	    tapObject.put("x", x);
-//		tapObject.put("y", y);
-//		// tapObject.put("duration", 1);
-//		// tapObject.put("touchCount", 1);
-//		// tapObject.put("tapCount", 1);
-//		js.executeScript("mobile: tap", tapObject);
-//	}
-	
 	public void tapObject(String Locator) {
-		 MobileElement element =  driver.findElement(By.xpath((properties.getProperty(Locator))));
-		
+		MobileElement element = driver.findElement(By.xpath((properties.getProperty(Locator))));
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		HashMap<String, Integer> tapObject1 = new HashMap<String, Integer>();
-	
+
 		tapObject1.put("x", element.getCenter().getX());
-    	tapObject1.put("y", element.getCenter().getY());
+		tapObject1.put("y", element.getCenter().getY());
 		js.executeScript("mobile: tap", tapObject1);
 	}
 
+	public void swipeLeft(String Locator) {
+		//MobileElement element = driver.findElement(By.xpath((properties.getProperty(Locator))));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		HashMap<String, Object> swipeObject = new HashMap<String, Object>();
+//		swipeObject.put("fromX", 328);
+//		swipeObject.put("fromY", 185);
+//		swipeObject.put("toX", 48);
+//		swipeObject.put("toY", 179);
+//		swipeObject.put("duration", 1.0);
+//		// swipeObject.put("direction", "left");
+//		// js.executeScript("mobile: swipe", swipeObject);
+//		swipeObject.put("element", ((RemoteWebElement) element).getId());
+//		js.executeScript("mobile: dragFromToForDuration", swipeObject);
+		
+	}
+
 	public void clearFullText(String Locator) {
-		MobileElement element =driver.findElement(By.xpath((properties.getProperty(Locator))));
-		if(element.getText()!=null && "".equals(element.getText())) {
+		MobileElement element = driver.findElement(By.xpath((properties.getProperty(Locator))));
+		if (element.getText() != null && "".equals(element.getText())) {
 			element.clear();
-			
-//			if(event.target.value==event.target.defaultValue)
-//				event.targetValue="";
+
+			// if(event.target.value==event.target.defaultValue)
+			// event.targetValue="";
 		}
 	}
-	
-	
-	
-	
+
 	public void back() {
-		//driver.navigate().back();
+		// driver.navigate().back();
 		driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'backIcon\']")).click();
 	}
-	
+
 	public void done() {
 		driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Toolbar Done Button\"]")).click();
 	}
@@ -212,18 +214,6 @@ public class Capabilities {
 
 		}
 	}
-	
-//	el=driver.findElement(By.xpath((properties.getProperty(Locator))));
-//	public void moveCursorToEnd(el) {
-//	if (typeof el.selectionStart == "number") {
-//	        el.selectionStart = el.selectionEnd = el.value.length;
-//	    } else if (typeof el.createTextRange != "undefined") {
-//	        el.focus();
-//	        var range = el.createTextRange();
-//	        range.collapse(false);
-//	        range.select();
-//	    }
-//	}
 
 	public void SwipeUpWindow() throws InterruptedException {
 		Dimension size = driver.manage().window().getSize();
@@ -243,6 +233,19 @@ public class Capabilities {
 		int endpoint = (int) (size.getWidth() * 0.01);
 		new TouchAction(driver).press(startpoint, height).waitAction().moveTo(endpoint, height).release().perform();
 	}
+
+	// Horizontal Swipe by percentages
+	// public void horizontalSwipeByPercentage(double startPercentage, double
+	// endPercentage, double anchorPercentage) {
+	// Dimension size = driver.manage().window().getSize();
+	// int anchor = (int) (size.height * anchorPercentage);
+	// int startPoint = (int) (size.width * startPercentage);
+	// int endPoint = (int) (size.width * endPercentage);
+	//
+	// new TouchAction(driver).press(point(startPoint,
+	// anchor)).waitAction(waitOptions(ofMillis(1000)))
+	// .moveTo(point(endPoint, anchor)).release().perform();
+	// }
 
 	public void tap(String Locator) {
 		MobileElement element = null;

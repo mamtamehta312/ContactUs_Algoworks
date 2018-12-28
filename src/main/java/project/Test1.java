@@ -8,6 +8,8 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.Test;
 
 import Base.Capabilities;
@@ -635,7 +637,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = true, priority = 11, description = "Add New Card")
+	@Test(enabled = false, priority = 11, description = "Add New Card")
 	public void AddNewCard() throws Exception {
 
 		logger1 = extent.createTest("Add New Card");
@@ -699,8 +701,28 @@ public class Test1 extends Capabilities {
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("swipe left is done successfully");
-			SwipeLeft();
-
+			tapObject("SavedCard_Xpath");
+			
+			//swipeLeft("Swipe_Xpath");
+			 JavascriptExecutor js = (JavascriptExecutor) driver;
+			 HashMap<String, Object> swipeObject = new HashMap<String, Object>();
+			 swipeObject.put("direction", "left"); 
+		     swipeObject.put("startX", "328");
+		     swipeObject.put("startY", "185");
+		     swipeObject.put("endX", "48"); //"90");
+		     swipeObject.put("endY", "185"); //"200");
+		     //swipeObject.put("duration", "2000");
+		     //js.executeScript("mobile: swipe", swipeObject); 
+		     js.executeScript("mobile: scroll", swipeObject);
+		     
+		     
+			 
+			 
+//			 JavascriptExecutor js = (JavascriptExecutor) driver;
+//				Map<String, String> scrollObject = new HashMap<String, String>();
+//				scrollObject.put("direction", "down");
+//				js.executeScript("mobile: scroll", scrollObject);
+			 
 			Thread.sleep(1000);
 			logger1.info("'delete' option clicked");
 			click("DeleteOption_Xpath");
@@ -720,7 +742,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = true, priority = 13, description = "Purchase History")
+	@Test(enabled = false, priority = 13, description = "Purchase History")
 	public void PurchaseHistory() throws Exception {
 
 		logger1 = extent.createTest("Purchase History");
@@ -753,7 +775,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = true, priority = 0, description = "notification preferences")
+	@Test(enabled = false, priority = 0, description = "notification preferences")
 	public void NotificationPreferences() throws Exception {
 
 		logger1 = extent.createTest("notification preferences");
