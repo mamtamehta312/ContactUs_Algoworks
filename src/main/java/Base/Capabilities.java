@@ -225,13 +225,13 @@ public class Capabilities {
 		new TouchAction(driver).press(width, startpoint).waitAction().moveTo(width, endpoint).release().perform();
 	}
 
-	public void SwipeLeft() {
+	public void SwipeLeft(AppiumDriver<MobileElement> driver,double startPercentage,double finalPercentage,int duration) {
 		Dimension size = driver.manage().window().getSize();
 		int height = (int) (size.height / 3);
 
-		int startpoint = (int) (size.getWidth() * 0.80);
-		int endpoint = (int) (size.getWidth() * 0.01);
-		new TouchAction(driver).press(startpoint, height).waitAction().moveTo(endpoint, height).release().perform();
+		int startpoint = (int) (size.getWidth() * startPercentage);
+		int endpoint = (int) (size.getWidth() * finalPercentage);
+		new TouchAction(driver).press(startpoint, height).waitAction(Duration.ofMillis(duration)).moveTo(endpoint,height).release().perform();
 	}
 
 	// Horizontal Swipe by percentages

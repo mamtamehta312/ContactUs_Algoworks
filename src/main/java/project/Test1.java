@@ -692,7 +692,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = true, priority = 12, description = "Delete card")
+	@Test(enabled = false, priority = 12, description = "Delete card")
 	public void DeleteCard() throws Exception {
 		Thread.sleep(1000);
 
@@ -702,26 +702,22 @@ public class Test1 extends Capabilities {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("swipe left is done successfully");
 			tapObject("SavedCard_Xpath");
-			
+
+			Thread.sleep(1000);
+			//SwipeLeft(driver,0.80,0.20,2000);
+			//((JavascriptExecutor)driver).executeScript("scroll(400,0)");
 			//swipeLeft("Swipe_Xpath");
-			 JavascriptExecutor js = (JavascriptExecutor) driver;
-			 HashMap<String, Object> swipeObject = new HashMap<String, Object>();
-			 swipeObject.put("direction", "left"); 
-		     swipeObject.put("startX", "328");
-		     swipeObject.put("startY", "185");
-		     swipeObject.put("endX", "48"); //"90");
-		     swipeObject.put("endY", "185"); //"200");
-		     //swipeObject.put("duration", "2000");
-		     //js.executeScript("mobile: swipe", swipeObject); 
-		     js.executeScript("mobile: scroll", swipeObject);
-		     
-		     
-			 
-			 
 //			 JavascriptExecutor js = (JavascriptExecutor) driver;
-//				Map<String, String> scrollObject = new HashMap<String, String>();
-//				scrollObject.put("direction", "down");
-//				js.executeScript("mobile: scroll", scrollObject);
+//			 HashMap<String, Object> swipeObject = new HashMap<String, Object>();
+//			 swipeObject.put("startX", 343);
+//		     swipeObject.put("startY", 320);
+//		     swipeObject.put("endX", 48); 
+//		     swipeObject.put("endY", 320); 
+//		     swipeObject.put("direction", "left"); 
+//		     //swipeObject.put("duration", "2000");
+//		     js.executeScript("mobile: swipe", swipeObject); 
+//		     // js.executeScript("mobile: scroll", swipeObject);
+		
 			 
 			Thread.sleep(1000);
 			logger1.info("'delete' option clicked");
@@ -783,7 +779,7 @@ public class Test1 extends Capabilities {
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("'notification preferences' clicked");
-			click("NotificationPreferences_ID");
+			click("NotificationPreferences_Id");
 			Thread.sleep(1000);
 
 			logger1.info("turn off notifications clicked");
@@ -838,22 +834,26 @@ public class Test1 extends Capabilities {
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+			logger1.info("'PrivateAccount' clicked");
+			click("PrivateAccount_Xpath");
+			
+			Thread.sleep(1000);
 			logger1.info("'change password' clicked");
-			click("ChangePassword_ID");
-
+			click("ChangePassword_Xpath");
+			
 			logger1.info("current password '123456' typed");
-			type("CurrentPassword_ID", "123456");
-
+			type("CurrentPassword_Xpath", "123456");
+			Thread.sleep(1000);
 			logger1.info("new password '123457' typed");
-			type("NewPassword_ID", "123457");
+			type("NewPassword_Xpath", "123457");
 
 			logger1.info("confirm new password '123457' typed");
-			type("ConfirmNewPassword_ID", "123457");
+			type("ConfirmNewPassword_Xpath", "123457");
 
 			back();
 
 			logger1.info("'change password' button clicked");
-			click("ChangePasswordClicked_ID");
+			click("ChangePasswordClicked_Xpath");
 
 			logger1.pass("Pass");
 		} catch (Exception e) {
@@ -862,7 +862,53 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 16, description = "create shopping list and add participants")
+	@Test(enabled = false, priority = 15, description = "Accept any request in notification screen")
+	public void notification() throws Exception {
+
+		Thread.sleep(1000);
+		logger1 = extent.createTest("Accept any request in notification screen");
+		try {
+			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+
+			logger1.info("'notification' icon clicked");
+			click("NotificationIcon_Xpath");
+			Thread.sleep(1000);
+			logger1.info("accept incoming request 1");
+			click("IncomingRequest_Xpath");
+			Thread.sleep(1000);
+			logger1.info("'ok' clicked");
+			click("CommonOK_Xpath");
+			
+			logger1.info("accept incoming request 2");
+			click("IncomingRequest2_Xpath");
+			
+			logger1.info("'ok' clicked");
+			click("CommonOK_Xpath");
+			
+			logger1.info("accept incoming request 3");
+			click("IncomingRequest2_Xpath");
+			
+			logger1.info("'ok' clicked");
+			click("CommonOK_Xpath");
+			/*
+			 * Thread.sleep(1000); logger1.info("accept incoming request 2");
+			 * click("IncomingRequest2_Xpath");
+			 * 
+			 * logger1.info("'ok' clicked"); click("CommonOK_ID");
+			 * 
+			 * Thread.sleep(1000);
+			 */
+
+			logger1.pass("Pass");
+		} catch (Exception e) {
+			logger1.fail(e);
+			throw e;
+		}
+
+	}
+	
+	
+	@Test(enabled = true, priority = 16, description = "create shopping list and add participants")
 	public void createList() throws Exception {
 
 		logger1 = extent.createTest("Create List");
@@ -870,48 +916,48 @@ public class Test1 extends Capabilities {
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("chat icon clicked");
-			click("ChatIcon_ID");
+			click("ChatIcon_Xpath");
 
 			logger1.info("'shopping list' add symbol clicked");
-			click("ShoppingList_ID");
+			click("ShoppingList_Xpath");
 
 			logger1.info("First shopping title 'Item List 1' is typed");
-			type("ShoppingListTitle_ID", "Item List 1");
-			back();
+			type("ShoppingListTitle_Xpath", "Item List 1");
+			done();
 
 			logger1.info("'create list' clicked");
-			click("CreateList_ID");
+			click("CreateList_Xpath");
 
 			logger1.info("'ok' clicked");
-			click("CommonOK_ID");
+			click("OKAddress_Xpath");
 			Thread.sleep(1000);
 			back();
 
 			logger1.info("'shopping list' add symbol clicked");
-			click("ShoppingList_ID");
+			click("ShoppingList_Xpath");
 
 			logger1.info("Second shopping title 'Item List 2' typed");
-			type("ShoppingListTitle_ID", "Item List 2");
-			back();
+			type("ShoppingListTitle_Xpath", "Item List 2");
+			done();
 
 			logger1.info("'create list' clicked");
-			click("CreateList_ID");
+			click("CreateList_Xpath");
 
 			logger1.info("'ok' clicked");
-			click("CommonOK_ID");
+			click("OKAddress_Xpath");
 			back();
 
 			Thread.sleep(1000);
 
 			logger1.info("'shopping list' add symbol clicked");
-			click("ShoppingList_ID");
+			click("ShoppingList_Xpath");
 
 			logger1.info("Third shopping title 'Item List 3' typed");
-			type("ShoppingListTitle_ID", "Item List 3");
-			back();
+			type("ShoppingListTitle_Xpath", "Item List 3");
+			done();
 
 			logger1.info("'add participant' clicked");
-			click("AddParticipant_ID");
+			click("AddParticipant_Xpath");
 
 			logger1.info("added first participant");
 			click("Participant_ID");
@@ -1054,38 +1100,7 @@ public class Test1 extends Capabilities {
 		}
 	}
 
-	@Test(enabled = false, priority = 19, description = "Accept any request in notification screen")
-	public void notification() throws Exception {
 
-		Thread.sleep(1000);
-		logger1 = extent.createTest("Accept any request in notification screen");
-		try {
-			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-
-			logger1.info("'notification' icon clicked");
-			click("NotificationIcon_ID");
-
-			logger1.info("accept incoming request 1");
-			click("IncomingRequest_Xpath");
-
-			logger1.info("'ok' clicked");
-			click("CommonOK_ID");
-			/*
-			 * Thread.sleep(1000); logger1.info("accept incoming request 2");
-			 * click("IncomingRequest2_Xpath");
-			 * 
-			 * logger1.info("'ok' clicked"); click("CommonOK_ID");
-			 * 
-			 * Thread.sleep(1000);
-			 */
-
-			logger1.pass("Pass");
-		} catch (Exception e) {
-			logger1.fail(e);
-			throw e;
-		}
-
-	}
 
 	@Test(enabled = false, priority = 20, description = "Go to restaurants category and search and add products")
 	public void RestaurantsCategory() throws Exception {
