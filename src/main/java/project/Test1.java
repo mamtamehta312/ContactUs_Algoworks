@@ -667,10 +667,9 @@ public class Test1 extends Capabilities {
 			 */
 
 			click("ExpiryDate_Xpath");
-			// driver.findElement(By.id("com.app.jeebo:id/edt_expiry")).click();
-            
+			Thread.sleep(1000);
 			point(138,519);
-			
+			point(137,594);
             
 			logger1.info("'done' is clicked");
 			done();
@@ -701,11 +700,11 @@ public class Test1 extends Capabilities {
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("swipe left is done successfully");
-			tapObject("SavedCard_Xpath");
+			//tapObject("SavedCard_Xpath");
 
-			Thread.sleep(1000);
-			//SwipeLeft(driver,0.80,0.20,2000);
-			//((JavascriptExecutor)driver).executeScript("scroll(400,0)");
+			Thread.sleep(2000);
+			SwipeLeft(driver,0.90,0.20,2000);
+			//((JavascriptExecutor)driver).executeScript("scroll(800,0)");
 			//swipeLeft("Swipe_Xpath");
 //			 JavascriptExecutor js = (JavascriptExecutor) driver;
 //			 HashMap<String, Object> swipeObject = new HashMap<String, Object>();
@@ -908,7 +907,7 @@ public class Test1 extends Capabilities {
 	}
 	
 	
-	@Test(enabled = true, priority = 16, description = "create shopping list and add participants")
+	@Test(enabled = false, priority = 16, description = "create shopping list and add participants")
 	public void createList() throws Exception {
 
 		logger1 = extent.createTest("Create List");
@@ -954,35 +953,37 @@ public class Test1 extends Capabilities {
 
 			logger1.info("Third shopping title 'Item List 3' typed");
 			type("ShoppingListTitle_Xpath", "Item List 3");
+			
 			done();
 
 			logger1.info("'add participant' clicked");
 			click("AddParticipant_Xpath");
 
 			logger1.info("added first participant");
-			click("Participant_ID");
+			click("Participant_Xpath");
 
 			logger1.info("added second participant");
-			click("Participant_ID");
+			click("Participant_Xpath");
 
 			logger1.info("'search icon' clicked");
-			click("Search_ID");
+			click("Search_Xpath");
 
 			logger1.info("'Ironman' name searched and clicked");
-			type("NameSearched_ID", "Ironman");
+			type("NameSearched_Xpath", "Third");
 
 			Thread.sleep(1000);
 			logger1.info("'add' option clicked");
-			click("Participant_ID");
-
+			point(317,101);
+			logger1.info("'cancel' option clicked");
+			point(327,47);
+			Thread.sleep(1000);
 			logger1.info("'done' option clicked");
-			click("Done_ID");
-
+			click("Done3_Xpath");
 			logger1.info("'create list' clicked");
-			click("CreateList_ID");
+			click("CreateList_Xpath");
 
 			logger1.info("'ok' clicked");
-			click("CommonOK_ID");
+			click("OKAddress_Xpath");
 			back();
 
 			logger1.pass("Pass");
@@ -1001,39 +1002,40 @@ public class Test1 extends Capabilities {
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("top most shopping list clicked");
-			click("TopShoppingList_ID");
+			click("TopShoppingList_Xpath");
 			Thread.sleep(1000);
 
 			logger1.info("'rename' text clicked");
-			clear("RenameList_ID");
+			click("RenameList_Xpath");
 
 			logger1.info("'Renamed Item List' typed");
-			type("EditName_ID", "Renamed Item List");
+			clear("EditRename_Xpath");
+			type("EditRename_Xpath", "Renamed Item List");
 
 			logger1.info("'rename' icon clicked");
-			click("CommonOK_ID");
+			click("Rename_Xpath");
 			Thread.sleep(1000);
 
 			logger1.info("'menu options' id 'com.app.jeebo:id/iv_menu' clicked");
-			click("MenuOptions_ID");
+			click("Options_Xpath");
 
 			logger1.info("'turn on notifications' text clicked");
-			click("Notifications_ID");
+			point(177,563);
 
 			logger1.info("'options' clicked");
-			click("MenuOptions_ID");
+			click("Options_Xpath");
 
 			logger1.info("'turn off notifications' text clicked");
-			click("Notifications_ID");
+			point(177,563);
 
 			logger1.info("'menu options' id 'com.app.jeebo:id/iv_menu' clicked");
-			click("MenuOptions_ID");
+			click("Options_Xpath");
 
 			logger1.info("'quit the list' clicked");
-			click("QuitList_ID");
+			point(184,523);
 
 			logger1.info("'ok' clicked");
-			click("CommonOK_ID");
+			point(253,379);
 
 			Thread.sleep(1000);
 			logger1.pass("Pass");
@@ -1044,7 +1046,7 @@ public class Test1 extends Capabilities {
 
 	}
 
-	@Test(enabled = false, priority = 18, description = "delete the already added shopping list")
+	@Test(enabled = true, priority = 18, description = "delete the already added shopping list")
 	public void deleteList() throws Exception {
 
 		Thread.sleep(1000);
@@ -1053,44 +1055,44 @@ public class Test1 extends Capabilities {
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			logger1.info("'top shopping list' clicked");
-			click("TopShoppingList_ID");
+			click("TopShoppingList_Xpath");
 
 			Thread.sleep(1000);
-
-			logger1.info("'options' clicked");
-			click("MenuOptions_ID");
+            logger1.info("'options' clicked");
+            click("Options_Xpath");
 
 			logger1.info("'cancel' clicked");
-			click("Cancel_ID");
+			click("Cancel_Xpath");
 
 			logger1.info("'options' clicked");
-			click("MenuOptions_ID");
+			click("Options_Xpath");
 
 			logger1.info("'delete list' clicked");
-			click("DeleteList_ID");
-
+			point(185,602);
+			Thread.sleep(1000);
 			logger1.info("'ok' clicked");
-			click("CommonOK_ID");
-
+			point(251,378);
+			
+            Thread.sleep(1000);
 			logger1.info("'ok' clicked");
-			click("CommonOK_ID");
+			point(187,371);
 
 			Thread.sleep(1000);
 			logger1.info("go to messages window");
 			click("MessagesWindow_Xpath");
 
 			logger1.info("'add option' clicked");
-			click("ShoppingList_ID");
+			click("ShoppingList_Xpath");
 
 			logger1.info("first name clicked");
-			click("FirstNameMsg_ID");
+			click("FirstNameMsg_Xpath");
 
 			logger1.info("'Hi' message send to name Anshul");
-			type("ChatMessage_ID", "Hi");
+			type("ChatMessage_Xpath", "Hi");
 
 			logger1.info("'send' clicked");
-			click("Send_ID");
-			back();
+			click("Send_Xpath");
+			done();
 			back();
 
 			logger1.pass("Pass");
