@@ -52,6 +52,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import project.CommonFunctions;
 
 /**
  * @author chanchal
@@ -273,8 +274,8 @@ public class Capabilities {
 	public void Category(String Locator) throws InterruptedException {
 		List<String> textValues = new ArrayList<String>();
 
-		for (int i = 0; i < 4; i++) {
-			List<MobileElement> elements = driver.findElements(By.id(properties.getProperty(Locator)));
+		for (int i = 1; i <= 4; i++) {
+			List<MobileElement> elements = driver.findElements(By.xpath(properties.getProperty(Locator)));
 			for (MobileElement menu : elements) {
 				if (textValues.contains(menu.getText())) {
 					continue;
@@ -283,32 +284,36 @@ public class Capabilities {
 				textValues.add(menu.getText());
 				Thread.sleep(1000);
 				menu.click();
-				System.out.println(menu.getText());
+			//	logger1=extent.createTest(menu.getText());
 
-				Thread.sleep(1000);
+				Thread.sleep(60000);
 
 				// driver.findElement(By.xpath("//android.widget.TextView[@text='Burgers']")).click();
 				test: {
 
 					List<MobileElement> collectAndDelivery = driver.findElements(
-							By.xpath("//android.widget.TextView[@text='Click & Collect' or @text='Delivery']"));
-					List<MobileElement> showcase = driver
-							.findElements(By.xpath("//android.widget.TextView[@text='Showcase']"));
-					if ((!collectAndDelivery.isEmpty()) && collectAndDelivery.get(0).isDisplayed()) {
-						//
-						// CommonFunctions r = new CommonFunctions(driver);
-						// r.RecommendViewSocialProfile(logger1);
-						//
-						// CommonFunctions c = new CommonFunctions(driver);
-						// c.clickAndCollectDelivery(logger1);
+					By.xpath("(//XCUIElementTypeStaticText[@name=\"Click & Collect\"])[1]"));
+					
+					// or @name='Delivery'
+					//(//XCUIElementTypeStaticText[@name="Click & Collect"])[1]
+					List<MobileElement> showcase = driver   
+							.findElements(By.xpath("//XCUIElementTypeStaticText[@name='Showcase']"));
+					
+					if ((!collectAndDelivery.isEmpty()) && collectAndDelivery.get(1).isDisplayed()) {
+						
+						 CommonFunctions r = new CommonFunctions(driver);
+						 r.RecommendViewSocialProfile(logger1);
+						
+//						 CommonFunctions c = new CommonFunctions(driver);
+//						 c.clickAndCollectDelivery(logger1);
 
-					} else if ((!showcase.isEmpty()) && showcase.get(0).isDisplayed()) {
+					} else if ((!showcase.isEmpty()) && showcase.get(1).isDisplayed()) {
 
-						// CommonFunctions r = new CommonFunctions(driver);
-						// r.RecommendViewSocialProfile(logger1);
-						//
-						// CommonFunctions s = new CommonFunctions(driver);
-						// s.Showcase(logger1);
+//						 CommonFunctions r = new CommonFunctions(driver);
+//						 r.RecommendViewSocialProfile(logger1);
+//						
+//						 CommonFunctions s = new CommonFunctions(driver);
+//						 s.Showcase(logger1);
 
 					}
 
@@ -317,15 +322,16 @@ public class Capabilities {
 					}
 
 					Thread.sleep(1000);
-					menu.click();
+					//menu.click();
 
 				}
-
-				Dimension size = driver.manage().window().getSize();
-				new TouchAction(driver).press((int) (size.getWidth() * 0.70), (int) (size.height / 8)).waitAction()
-						.moveTo((int) (size.getWidth() * 0.03), (int) (size.height / 8)).release().perform();
 			}
-		}
+				
+//				Dimension size = driver.manage().window().getSize();
+//				new TouchAction(driver).press((int) (size.getWidth() * 0.70), (int) (size.height / 8)).waitAction()
+//						.moveTo((int) (size.getWidth() * 0.03), (int) (size.height / 8)).release().perform();
+			
+		}SwipeLeft(driver,0.70,0.03,2000);
 		/*
 		 * for (int i = 0; i < 4; i++) { MobileElement menu =
 		 * driver.findElements(By.id(properties.getProperty(Locator))).get(i);

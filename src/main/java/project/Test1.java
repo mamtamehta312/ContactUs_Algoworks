@@ -1024,7 +1024,7 @@ public class Test1 extends Capabilities {
 
 			logger1.info("'options' clicked");
 			click("Options_Xpath");
-
+			Thread.sleep(1000);
 			logger1.info("'turn off notifications' text clicked");
 			point(177,563);
 
@@ -1046,7 +1046,7 @@ public class Test1 extends Capabilities {
 
 	}
 
-	@Test(enabled = true, priority = 18, description = "delete the already added shopping list")
+	@Test(enabled = false, priority = 18, description = "delete the already added shopping list")
 	public void deleteList() throws Exception {
 
 		Thread.sleep(1000);
@@ -1054,16 +1054,18 @@ public class Test1 extends Capabilities {
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+			
+			
 			logger1.info("'top shopping list' clicked");
 			click("TopShoppingList_Xpath");
 
 			Thread.sleep(1000);
             logger1.info("'options' clicked");
             click("Options_Xpath");
-
+            Thread.sleep(1000);
 			logger1.info("'cancel' clicked");
 			click("Cancel_Xpath");
-
+			Thread.sleep(1000);
 			logger1.info("'options' clicked");
 			click("Options_Xpath");
 
@@ -1083,16 +1085,17 @@ public class Test1 extends Capabilities {
 
 			logger1.info("'add option' clicked");
 			click("ShoppingList_Xpath");
-
+            Thread.sleep(1000);
 			logger1.info("first name clicked");
-			click("FirstNameMsg_Xpath");
-
+			tapObject("FirstNameMsg_Xpath");
+			Thread.sleep(1000);
 			logger1.info("'Hi' message send to name Anshul");
 			type("ChatMessage_Xpath", "Hi");
 
 			logger1.info("'send' clicked");
 			click("Send_Xpath");
 			done();
+			Thread.sleep(1000);
 			back();
 
 			logger1.pass("Pass");
@@ -1104,17 +1107,18 @@ public class Test1 extends Capabilities {
 
 
 
-	@Test(enabled = false, priority = 20, description = "Go to restaurants category and search and add products")
+	@Test(enabled = true, priority = 20, description = "Go to restaurants category and search and add products")
 	public void RestaurantsCategory() throws Exception {
 
 		logger1 = extent.createTest("Indian category functionality in Restaurants");
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		click("Home_ID");
+		//click("Home_Xpath");
 		try {
 			logger1.info("'restaurants' category clicked");
-			driver.findElement(By.id("com.app.jeebo:id/iv_category")).click();
-
-			Category("Category_ID");
+			click("Restaurants_Xpath");
+		
+		//	driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Indian\"]")).click();
+			Category("Category_Xpath");
 
 			logger1.pass("Pass");
 		} catch (Exception e) {
