@@ -23,9 +23,9 @@ public class Test1 extends Capabilities {
 	Logger log = Logger.getLogger(Test1.class);
 
 	@SuppressWarnings("rawtypes")
-	@Test(enabled = false, priority = 1, description = "perform login functionality of 1st user to send request to jeebo")
+	@Test(enabled = true, priority = 1, description = "perform login functionality of 1st user to send request to jeebo")
 	public void signUp1stUser() throws Exception {
-		logger1 = extent.createTest("Login1stUser");
+		logger1 = extent.createTest("Login 1st User to send request to jeebo");
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -57,7 +57,9 @@ public class Test1 extends Capabilities {
 			type("SearchPeople2_Xpath", "jeebo");
 
 			logger1.info("click on searched 'jeebo' id");
-			click("AcceptRequest_Xpath");
+			//click("AcceptRequest_Xpath");
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]")).click();
+			
 			Thread.sleep(2000);
 			logger1.info("click on connect");
 			tapObject("Connect_Xpath");
@@ -90,7 +92,7 @@ public class Test1 extends Capabilities {
 
 	@Test(enabled = false, priority = 2, description = "perform login functionality of 2nd user to send request to jeebo")
 	public void signUp2ndUser() throws Exception {
-		logger1 = extent.createTest("Login2ndUser");
+		logger1 = extent.createTest("Login 2nd User to send request to jeebo");
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -122,7 +124,9 @@ public class Test1 extends Capabilities {
 			type("SearchPeople2_Xpath", "jeebo");
 
 			logger1.info("click on searched 'jeebo' id");
-			click("AcceptRequest_Xpath");
+			//click("AcceptRequest_Xpath");
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]")).click();
+			
 			Thread.sleep(2000);
 			logger1.info("click on connect");
 			tapObject("Connect_Xpath");
@@ -156,7 +160,7 @@ public class Test1 extends Capabilities {
 	
 	@Test(enabled = false, priority = 3, description = "perform login functionality of 3rd user to send request to jeebo")
 	public void signUp3rdUser() throws Exception {
-		logger1 = extent.createTest("Login3rdUser");
+		logger1 = extent.createTest("Login 3rd User to send request to jeebo");
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -188,7 +192,9 @@ public class Test1 extends Capabilities {
 			type("SearchPeople2_Xpath", "jeebo");
 
 			logger1.info("click on searched 'jeebo' id");
-			click("AcceptRequest_Xpath");
+			//click("AcceptRequest_Xpath");
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]")).click();
+			
 			Thread.sleep(2000);
 			logger1.info("click on connect");
 			tapObject("Connect_Xpath");
@@ -277,7 +283,7 @@ public class Test1 extends Capabilities {
 	@Test(enabled = false, priority = 4, description = "perform login functionality")
 	public void LoginScreen() throws Exception {
 
-		logger1 = extent.createTest("Login_Test");
+		logger1 = extent.createTest("Login_Test jeebo user");
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			if (driver.findElement(By.xpath(
@@ -288,7 +294,7 @@ public class Test1 extends Capabilities {
 				type("Email_Xpath", "producttesting111@gmail.com");
 
 				logger1.info("password '123456' typed");
-				type("Password_Xpath", "123457");
+				type("Password_Xpath", "123456");
 
 				logger1.info("done clicked");
 				done();
@@ -395,7 +401,7 @@ public class Test1 extends Capabilities {
 			click("Image_Xpath");
 
 			Thread.sleep(1000);
-			logger1.info("'gallery' clicked");
+			logger1.info("'photos' clicked");
 			tapObject("Gallery_Xpath");
 
 			logger1.info("'gallery profile' clicked");
@@ -448,7 +454,8 @@ public class Test1 extends Capabilities {
 
 			Thread.sleep(1000);
 			logger1.info("'save' clicked");
-			click("SaveProfile_Xpath");
+			//click("SaveProfile_Xpath");
+			driver.findElementByAccessibilityId("Save").click();
 
 			logger1.info("'ok' clicked");
 			Thread.sleep(1000);
@@ -504,7 +511,7 @@ public class Test1 extends Capabilities {
 	@Test(enabled = false, priority = 7, description = "addNewAddress")
 	public void addNewAddress() throws Exception {
 
-		logger1 = extent.createTest("addNewAddress");
+		logger1 = extent.createTest("add New Address");
 
 		try {
 			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
@@ -593,7 +600,7 @@ public class Test1 extends Capabilities {
 	@Test(enabled = false, priority = 9, description = "deleteAddress")
 	public void deleteAddress() throws Exception {
 
-		logger1 = extent.createTest("deleteAddress");
+		logger1 = extent.createTest("delete Address");
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -618,7 +625,7 @@ public class Test1 extends Capabilities {
 	@Test(enabled = false, priority = 10, description = "manageAffiliates")
 	public void manageAffiliates() throws Exception {
 
-		logger1 = extent.createTest("manageAffiliates");
+		logger1 = extent.createTest("manage Affiliates");
 
 		try {
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -1107,7 +1114,7 @@ public class Test1 extends Capabilities {
 
 
 
-	@Test(enabled = true, priority = 20, description = "Go to restaurants category and search and add products")
+	@Test(enabled = false, priority =19, description = "Go to restaurants category and search and add products")
 	public void RestaurantsCategory() throws Exception {
 
 		logger1 = extent.createTest("Indian category functionality in Restaurants");
@@ -1116,7 +1123,8 @@ public class Test1 extends Capabilities {
 		try {
 			logger1.info("'restaurants' category clicked");
 			click("Restaurants_Xpath");
-		
+			
+			Thread.sleep(1000);
 		//	driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Indian\"]")).click();
 			Category("Category_Xpath");
 
@@ -1127,4 +1135,25 @@ public class Test1 extends Capabilities {
 		}
 	}
 
+	
+	
+	@Test(enabled = false, priority =20, description = "Go to home category and search and add products")
+	public void HomeCategory() throws Exception {
+
+		logger1 = extent.createTest("Indian category functionality in Restaurants");
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		//click("Home_Xpath");
+		try {
+			logger1.info("'restaurants' category clicked");
+			click("Restaurants_Xpath");
+			
+			Thread.sleep(1000);
+			Category("Category_Xpath");
+
+			logger1.pass("Pass");
+		} catch (Exception e) {
+			logger1.fail(e);
+			throw e;
+		}
+	}
 }

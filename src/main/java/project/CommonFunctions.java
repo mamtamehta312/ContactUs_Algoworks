@@ -12,9 +12,13 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+import Base.Capabilities;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.PerformsTouchActions;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.offset.PointOption;
 
-public class CommonFunctions {
+public class CommonFunctions extends Capabilities {
 	private WebDriver driver;
 
 	public CommonFunctions(WebDriver driver) {
@@ -29,63 +33,76 @@ public class CommonFunctions {
 
 		{
 			logger1.info("'sweet shop' restaurant clicked");
-			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeImage")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell")).click();
+			
 			
 			WebDriverWait wait = new WebDriverWait(driver, 20);
 			MobileElement recommend;
 			recommend = (MobileElement) wait
-					.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.app.jeebo:id/tv_recommend")));
+					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeButton[@name=\"Recommend\"]")));
 			Thread.sleep(4000);
 			logger1.info("'Recommend' option clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_recommend")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Recommend\"]")).click();
 
 			logger1.info("'Anshul' name clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_contact")).click();
-
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[4]")).click();
+			
+			
 			logger1.info("'Dot Options' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/img_chat_header_options")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'options\']")).click();
 
 			logger1.info("'Cancel' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_cancel")).click();
-
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'Cancel\']")).click();
+			
+			
 			logger1.info("'Dot Options' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/img_chat_header_options")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'options\']")).click();
 
 			logger1.info("'Delete Chat' option clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_delete_list")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'Delete chat\']")).click();
 
-			logger1.info("'OK' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_ok")).click();
+//			logger1.info("'OK' clicked");
+//			driver.findElement(By.id("com.app.jeebo:id/tv_ok")).click();
 
 			logger1.info("'Recommend' option clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_recommend")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Recommend\"]")).click();
+			
 
 			logger1.info("'Anshul' name clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_contact")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[4]")).click();
 
 			logger1.info("'ahlblabv' text typed");
-			driver.findElement(By.id("com.app.jeebo:id/edt_chat_message")).sendKeys("ahlblabv");
-
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\'jeebo\']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeTextView")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\'Type a message\']")).sendKeys("ahlblabv");
+			
+			
 			logger1.info("'Send' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_chat_send")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'Send\']")).click();
 
-			driver.navigate().back();
-			driver.navigate().back();
-
+			logger1.info("'done' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Toolbar Done Button\"]")).click();
+			
+			logger1.info("'back' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"backIcon\"]")).click();
+			
 			logger1.info("'view social profile' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_follow")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"View Social Profile\"]")).click();
 
 			logger1.info("'follow' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_follow")).click();
-
+			Thread.sleep(1000);
+//			TouchAction touchAction = new TouchAction((PerformsTouchActions) driver);
+//			touchAction.tap(PointOption.point(295,160)).perform();
+            driver.findElement(By.xpath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeButton[2]")).click();
+            
+            
 			logger1.info("'yes' option clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_yes")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'Yes\']")).click();
 
 			Thread.sleep(2000);
 			//driver.navigate().back();
-			driver.findElement(By.id("com.app.jeebo:id/iv_back")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"backIcon\"]")).click();
 			Thread.sleep(2000);
-			//driver.navigate().back();
 
 		}
 	}
@@ -95,62 +112,89 @@ public class CommonFunctions {
 
 		{
 			logger1.info("'fab menu' option clicked");
-			driver.findElement(By.id("com.app.jeebo:id/iv_fab_menu")).click();
+   			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'eShopMenu\']")).click();
 
-			// https://www.udemy.com/selenium-webdriver-web-based-automation-testing/
-			logger1.info("'test' category clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_main")).click();
+			
+            logger1.info("'any' category clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\'jeebo\']/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]\n")).click();
 
-			logger1.info("'jalebi' heading clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_heading_post")).click();
+			logger1.info("any heading clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]\n")).click();
 
 			Thread.sleep(1000);
 			logger1.info("'bookmark' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/iv_bookmark")).click();
-
+            driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'productActions\']")).click();
+			
+			
+			Thread.sleep(1000);
 			logger1.info("'jeeblove' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_jeebslove")).click();
+			//tapObject("//XCUIElementTypeApplication[@name=\'jeebo\']/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]");
+			TouchAction touchAction = new TouchAction((PerformsTouchActions) driver);
+			touchAction.tap(PointOption.point(234,280)).perform();
+			//point(234,280);
+			System.out.println("abc");
+			
 			Thread.sleep(1000);
-			/*
-			 * //logger1.info("'restaurants' category clicked");
-			 * driver.findElement(By.id("com.app.jeebo:id/iv_category")).click()
-			 * ; Thread.sleep(1000);
-			 */
+			
+			logger1.info("'OK' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"OK\"]")).click();
+			Thread.sleep(1000);
 			logger1.info("'bookmark' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/iv_bookmark")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\'productActions\']")).click();
 
 			Thread.sleep(1000);
 			logger1.info("'private post' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_private_post")).click();
-
-			// driver.switchTo().alert().accept();
+			TouchAction touchAction1 = new TouchAction((PerformsTouchActions) driver);
+			touchAction.tap(PointOption.point(272,329)).perform();
+			
+			
+			Thread.sleep(1000);
+			logger1.info("'OK' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"OK\"]")).click();
+			Thread.sleep(1000);
+		
 
 			logger1.info("'share' option clicked");
-			driver.findElement(By.id("com.app.jeebo:id/ll_share")).click();
-
+			driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\'Share\']")).click();
+			TouchAction touchAction2 = new TouchAction((PerformsTouchActions) driver);
+			touchAction.tap(PointOption.point(36,340)).perform();
+			
 			logger1.info("'Anshul' name clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_contact")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[4]")).click();
 
-			driver.navigate().back();
+			logger1.info("'back' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"backIcon\"]")).click();
 
 			Thread.sleep(1000);
 			logger1.info("'add to shopping list' option clicked");
-			driver.findElement(By.id("com.app.jeebo:id/ll_add_to_shopping_list")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton")).click();
 
 			// /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.RelativeLayout).click();
 			logger1.info("top list selected");
-			driver.findElement(By.id("com.app.jeebo:id/tv_shopping_list")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"jeebo\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther")).click();
 
+
+			logger1.info("'OK' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"OK\"]")).click();
 			Thread.sleep(1000);
-			driver.navigate().back();
-
+			
+			logger1.info("'cross' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"cross\"]")).click();
+			Thread.sleep(1000);
+			
 			Thread.sleep(1000);
 			logger1.info("'add to cart' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_add_to_cart2")).click();
-
-			driver.navigate().back();
-			driver.navigate().back();
-
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Add to Cart\"]")).click();
+			
+			logger1.info("'OK' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"OK\"]")).click();
+			Thread.sleep(1000);
+			
+			logger1.info("'back' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"backIcon\"]")).click();
+			
+			logger1.info("'back' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"backIcon\"]")).click();
 		}
 	}
 
@@ -158,44 +202,55 @@ public class CommonFunctions {
 		Thread.sleep(3000);
 		{
 			logger1.info("'fab menu' option clicked");
-			driver.findElement(By.id("com.app.jeebo:id/iv_fab_menu")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\\\"eShopMenu\\\"]")).click();
 
 			logger1.info("any category clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_main")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeOther[@name=\\\"CHOCOLATE MOMOS \\\"]")).click();
 
 			logger1.info("any product heading clicked");
-			driver.findElement(By.id("com.app.jeebo:id/tv_heading_post")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\\\"jeebo\\\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]")).click();
 
 			Thread.sleep(1000);
 			logger1.info("'bookmark' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/iv_bookmark")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\\\"jeebo\\\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]")).click();
 
 			logger1.info("'jeeblove' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_jeebslove")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\\\"jeebo\\\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]")).click();
 			Thread.sleep(1000);
 
 			logger1.info("'bookmark' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/iv_bookmark")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\\\"jeebo\\\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]")).click();
+
+
+			logger1.info("'OK' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"OK\"]")).click();
+			
+			logger1.info("'bookmark' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\\\"jeebo\\\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[3]")).click();
 
 			Thread.sleep(1000);
 			logger1.info("'private post' clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_private_post")).click();
-
+			TouchAction touchAction = new TouchAction((PerformsTouchActions) driver);
+			touchAction.tap(PointOption.point(272,329)).perform();
+			
+			logger1.info("'OK' clicked");
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"OK\"]")).click();
+			Thread.sleep(1000);
+		
 			Thread.sleep(1000);
 			logger1.info("'share' option clicked");
-			driver.findElement(By.id("com.app.jeebo:id/ll_share")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeImage[@name=\\\"shareBlue\\\"]")).click();
 
 			logger1.info("'Anshul' name clicked");
-			driver.findElement(By.id("com.app.jeebo:id/rl_contact")).click();
+			driver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\\\"jeebo\\\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]")).click();
 
 			Thread.sleep(1000);
-			driver.navigate().back();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"backIcon\"]")).click();
 			Thread.sleep(1000);
-			driver.navigate().back();
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"backIcon\"]")).click();
 			Thread.sleep(1000);
-			driver.navigate().back();
-			//driver.navigate().back();
-
+			driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"backIcon\"]")).click();
+	
 		}
 	}
 

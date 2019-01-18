@@ -97,8 +97,8 @@ public class Capabilities {
 		//
 		// driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		capabilities.setCapability("no-reset", " true");
-		capabilities.setCapability("deviceName", "iPhone 7");
-		capabilities.setCapability("udid", "5B9FF0E0-1442-40DC-9A2D-B492944918D3");
+		capabilities.setCapability("deviceName", "iPhone X");
+		capabilities.setCapability("udid", "08F44F8B-AD72-4789-97AC-BF34A84F2F0A");
 		capabilities.setCapability("platformName", "ios");
 
 		capabilities.setCapability("bundleId", "com.algoworks.Jeebo");
@@ -171,7 +171,8 @@ public class Capabilities {
 	}
 
 	public void swipeLeft(String Locator) {
-		//MobileElement element = driver.findElement(By.xpath((properties.getProperty(Locator))));
+		// MobileElement element =
+		// driver.findElement(By.xpath((properties.getProperty(Locator))));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		HashMap<String, Object> swipeObject = new HashMap<String, Object>();
 //		swipeObject.put("fromX", 328);
@@ -183,7 +184,7 @@ public class Capabilities {
 //		// js.executeScript("mobile: swipe", swipeObject);
 //		swipeObject.put("element", ((RemoteWebElement) element).getId());
 //		js.executeScript("mobile: dragFromToForDuration", swipeObject);
-		
+
 	}
 
 	public void clearFullText(String Locator) {
@@ -226,13 +227,15 @@ public class Capabilities {
 		new TouchAction(driver).press(width, startpoint).waitAction().moveTo(width, endpoint).release().perform();
 	}
 
-	public void SwipeLeft(AppiumDriver<MobileElement> driver,double startPercentage,double finalPercentage,int duration) {
+	public void SwipeLeft(AppiumDriver<MobileElement> driver, double startPercentage, double finalPercentage,
+			int duration) {
 		Dimension size = driver.manage().window().getSize();
 		int height = (int) (size.height / 3);
 
 		int startpoint = (int) (size.getWidth() * startPercentage);
 		int endpoint = (int) (size.getWidth() * finalPercentage);
-		new TouchAction(driver).press(startpoint, height).waitAction(Duration.ofMillis(duration)).moveTo(endpoint,height).release().perform();
+		new TouchAction(driver).press(startpoint, height).waitAction(Duration.ofMillis(duration))
+				.moveTo(endpoint, height).release().perform();
 	}
 
 	// Horizontal Swipe by percentages
@@ -284,54 +287,61 @@ public class Capabilities {
 				textValues.add(menu.getText());
 				Thread.sleep(1000);
 				menu.click();
-			//	logger1=extent.createTest(menu.getText());
+				// logger1=extent.createTest(menu.getText());
 
 				Thread.sleep(60000);
 
-				// driver.findElement(By.xpath("//android.widget.TextView[@text='Burgers']")).click();
+				 driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"Sweets\"]")).click();
+				 System.out.println("fcycgvjuhb");
 				test: {
-
-					List<MobileElement> collectAndDelivery = driver.findElements(
-					By.xpath("(//XCUIElementTypeStaticText[@name=\"Click & Collect\"])[1]"));
-					
-					// or @name='Delivery'
-					//(//XCUIElementTypeStaticText[@name="Click & Collect"])[1]
-					List<MobileElement> showcase = driver   
+					 Thread.sleep(40000);
+					List<MobileElement> collectAndDelivery = driver
+							.findElements(By.xpath("(//XCUIElementTypeStaticText[@name=\'Click & Collect\'])"));
+					System.out.println("fcycgvjuhb");
+					//System.out.println(collectAndDelivery);
+					// "//XCUIElementTypeStaticText[@name='Click & Collect' or @name='Delivery']"
+					List<MobileElement> showcase = driver
 							.findElements(By.xpath("//XCUIElementTypeStaticText[@name='Showcase']"));
-					
-					if ((!collectAndDelivery.isEmpty()) && collectAndDelivery.get(1).isDisplayed()) {
-						
-						 CommonFunctions r = new CommonFunctions(driver);
-						 r.RecommendViewSocialProfile(logger1);
-						
-//						 CommonFunctions c = new CommonFunctions(driver);
-//						 c.clickAndCollectDelivery(logger1);
 
-					} else if ((!showcase.isEmpty()) && showcase.get(1).isDisplayed()) {
+					if ((!collectAndDelivery.isEmpty()) && collectAndDelivery.get(0).isDisplayed()) {
+						 System.out.println("if");
+						CommonFunctions r = new CommonFunctions(driver);
+						r.RecommendViewSocialProfile(logger1);
+						
+						Thread.sleep(3000);
+						
+						CommonFunctions c = new CommonFunctions(driver);
+						c.clickAndCollectDelivery(logger1);
 
-//						 CommonFunctions r = new CommonFunctions(driver);
-//						 r.RecommendViewSocialProfile(logger1);
-//						
-//						 CommonFunctions s = new CommonFunctions(driver);
-//						 s.Showcase(logger1);
+					} else if ((!showcase.isEmpty()) && showcase.get(0).isDisplayed()) {
+						System.out.println("elseif");
+						CommonFunctions r = new CommonFunctions(driver);
+						r.RecommendViewSocialProfile(logger1);
+
+						Thread.sleep(3000);
+						
+						CommonFunctions s = new CommonFunctions(driver);
+						s.Showcase(logger1);
 
 					}
 
 					else {
+						 System.out.println("else");
 						logger1.info("no e-shop is present");
 					}
 
 					Thread.sleep(1000);
-					//menu.click();
+					menu.click();
 
 				}
 			}
-				
-//				Dimension size = driver.manage().window().getSize();
-//				new TouchAction(driver).press((int) (size.getWidth() * 0.70), (int) (size.height / 8)).waitAction()
-//						.moveTo((int) (size.getWidth() * 0.03), (int) (size.height / 8)).release().perform();
-			
-		}SwipeLeft(driver,0.70,0.03,2000);
+
+			Dimension size = driver.manage().window().getSize();
+			new TouchAction(driver).press((int) (size.getWidth() * 0.70), (int) (size.height / 8)).waitAction()
+					.moveTo((int) (size.getWidth() * 0.03), (int) (size.height / 8)).release().perform();
+
+		}
+		// SwipeLeft(driver,0.70,0.03,2000);
 		/*
 		 * for (int i = 0; i < 4; i++) { MobileElement menu =
 		 * driver.findElements(By.id(properties.getProperty(Locator))).get(i);
@@ -348,14 +358,16 @@ public class Capabilities {
 
 	@BeforeTest
 	public void createReport() {
-		reporter = new ExtentHtmlReporter("/Users/varun/Downloads/ChanchalProject/IOS/JeeboTestCases.html");
-		extent = new ExtentReports();
+		reporter = new ExtentHtmlReporter("⁩/Users/⁨chanchal⁩/⁨Downloads⁩/⁨ChanchalProject/IOS/JeeboTestCases.html");
+		//./JeeboTestCases.html  
+		extent = new ExtentReports(); 
 		extent.attachReporter(reporter);
 	}
 
 	@AfterTest
 	public void flush() {
 		extent.flush();
+		System.out.println("true");
 	}
 
 	@AfterClass
