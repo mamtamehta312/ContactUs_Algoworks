@@ -19,7 +19,7 @@ public class addClaim extends Capabilities {
 			Login.validLogin();
 
 			logger1 = extent.createTest("Sumbit Claim");
-
+//hdrbcccccgmjh
 			Thread.sleep(1000);
 			logger1.info("Membership option \"//*[@id=\\\"header-navbar-collapse\\\"]/div[2]/ul/li[3]/a\" is clicked");
 			click("MembershipOption_Xpath");
