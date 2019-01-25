@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import Base.Capabilities;
 
-public class Login extends Capabilities {
+public class Login2 extends Capabilities {
 	
 //	WebDriverWait wait = new WebDriverWait(driver, 10);
 //	WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ID")));

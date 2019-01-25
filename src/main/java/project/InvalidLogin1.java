@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import Base.Capabilities;
 
-public class invalidLogin extends Capabilities {
+public class InvalidLogin1 extends Capabilities {
 	
 	@Test(enabled=false)
 	public void InvalidLogin() throws Exception {

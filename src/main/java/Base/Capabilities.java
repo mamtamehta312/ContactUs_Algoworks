@@ -81,7 +81,14 @@ public class Capabilities {
 
 		}
 	}
+	
+	public static String getPropertyValue(String key) {
+		 
+		return properties.getProperty(key);
+		
+	}
 
+	
 	public static WebElement findElement(String Locator) {
 		WebElement WebElement = null;
 		if (Locator.endsWith("_Xpath")) {

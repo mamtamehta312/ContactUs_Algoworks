@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import Base.Capabilities;
 
-public class verifyMembershipText extends Capabilities {
+public class VerifyMembershipText4 extends Capabilities {
 	
 	
 	
@@ -29,13 +29,13 @@ public class verifyMembershipText extends Capabilities {
 	public void verifyMembershiptext() throws Exception {
 
 		try {
-		     Login.validLogin();
+		   //  Login2.validLogin();
 
 			logger1 = extent.createTest("Text verification in Membership option");
 			logger1.info("Membership option \"//*[@id=\\\"header-navbar-collapse\\\"]/div[2]/ul/li[3]/a\" is clicked");
 			click("MembershipOption_Xpath");
 			
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			logger1.info("Membership option \"//*[@id=\\\"header-navbar-collapse\\\"]/div[2]/ul/li[3]/a\" is clicked");
 			click("MembershipOption_Xpath");
 			
@@ -97,11 +97,11 @@ public class verifyMembershipText extends Capabilities {
 			click("MembershipOption_Xpath");
 			
 			
-			
+			Thread.sleep(1000);
 			logger1.info("Contributions option is clicked");
 			click("Contributions_Xpath");
 			
-		
+			Thread.sleep(1000);
 			WebElement a1 = findElement("ContributionTable_Xpath");
 			logger1.pass("Contributions table content:- " + a1.getText());
 			
@@ -113,7 +113,7 @@ public class verifyMembershipText extends Capabilities {
 			logger1.info("Membership status option is clicked");
 			click("MembershipStatus_Xpath");
 			
-			logger1.info("Membership status table content");
+			Thread.sleep(1000);
 			WebElement a2 = findElement("MembershipTable_Xpath");
 			logger1.pass("Membership status table content:- " + a2.getText());
 			

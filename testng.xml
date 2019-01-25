@@ -1,16 +1,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Sample Test Suite" verbose="1" >
   <test name="Method Test Cases" >
-    <classes>
-       <class name="project.Login" />
-       <class name="project.addClaim">
-        
-        <methods>
-        <!-- <include name="invalidLogin" /> -->
-        <!--  <exclude name="validLogin" /> -->
-      </methods>
-       </class>
-    </classes>
+       <class name="project.Login2" />
+       <class name="project.AddClaim3" />
+       <class name="project.VerifyMembershipText4" />
+        <class name="project.LocateProvider5" >
+ 
+  '
+  
+  <test>
+  <classes>
+	<class>"project.Login2"</class>
+	</classes>  
   </test>
+  
+  <test>
+  <classes>
+	<class>"project.AddClaim3"</class>
+	</classes>  
+  </test>
+  
+  
+  
+ 
 </suite>
 
