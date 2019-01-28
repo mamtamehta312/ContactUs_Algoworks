@@ -1,27 +1,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Sample Test Suite" verbose="1" >
-  <test name="Method Test Cases" >
-       <class name="project.Login2" />
-       <class name="project.AddClaim3" />
-       <class name="project.VerifyMembershipText4" />
-        <class name="project.LocateProvider5" >
- 
-  '
-  
-  <test>
-  <classes>
-	<class>"project.Login2"</class>
-	</classes>  
-  </test>
-  
-  <test>
-  <classes>
-	<class>"project.AddClaim3"</class>
-	</classes>  
-  </test>
-  
-  
-  
- 
-</suite>
+
+<suite name="Suite">
+	<test thread-count="5" name="Testcases">
+		<classes>
+			<class name="project.Login2" />
+			<class name="project.AddClaim3" />
+			<class name="project.VerifyMembershipText4" /> 
+			<class name="project.LocateProvider5" />
+		</classes>
+	</test>
+
+	<!--  <test thread-count="5" name="Apply">
+		<classes>
+			<class name="tests.workflow.ApplyJob" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Selection">
+		<classes>
+			<class name="tests.workflow.CandidateSelection" />
+		</classes>
+	</test>  -->
+	<!-- Test -->
+</suite> <!-- Suite -->
+
 

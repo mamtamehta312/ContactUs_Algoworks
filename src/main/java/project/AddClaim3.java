@@ -14,7 +14,7 @@ import Base.Capabilities;
 
 public class AddClaim3 extends Capabilities {
 	@Test()
-	public void AddClaim() throws Exception {
+	public static void AddClaim() throws Exception {
 
 		try {
 			Login2.validLogin();
@@ -69,7 +69,7 @@ public class AddClaim3 extends Capabilities {
 			
 			
 			
-			
+			//--------------------------------------------------------
 			
 			
 			Thread.sleep(5000);
@@ -111,16 +111,18 @@ public class AddClaim3 extends Capabilities {
 			logger1.info("Sumbit button is clicked");
 			click("SumbitButton_Xpath");
 			
+			Thread.sleep(1000);
 			driver.switchTo().defaultContent();
 
+			Thread.sleep(2000);
 			jse.executeScript("window.scrollBy(0,800)", "down");
 			
 			
 			
+			//--------------------------------------------------------
 			
 			
-			
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 			logger1 = extent.createTest("View Complaints");
 			logger1.info("complaint is viewed after click toggle bar '//*[@id=\"accordion1\"]/div[1]/div[1]/h4/a/i'");
 			click("Claim1_Xpath");
@@ -128,17 +130,23 @@ public class AddClaim3 extends Capabilities {
 //					By.xpath("//table[contains(@class, 'table table-striped table-fluid')]/tbody/tr[1]/td[5]")).click();
 			//*[@id="portalPage"]/div/div[2]/div/div[2]/div/div[2]/table/tbody/tr/td[5]/div/button/span
 			
-			Thread.sleep(1000);
+			//Thread.sleep(1000);
 //			logger1.info("complaint 2 is viewed after click toggle bar '//*[@id=\"accordion1\"]/div[2]/div[1]/h4/a/i'");
 //			click("Claim2_Xpath");
-			driver.findElement(By
-					.xpath("//*[@id=\"portalPage\"]/div/div[2]/div/div[2]/div/div[2]/table/tbody/tr/td[5]/div/ul/li/a"))
-					.click();
-			Thread.sleep(1000);
-			logger1.info("complaint 3 is viewed after click toggle bar '//*[@id=\"accordion1\"]/div[3]/div[1]/h4/a/i'");
-			click("Claim3_Xpath");
+//			driver.findElement(By
+//					.xpath("//*[@id=\"portalPage\"]/div/div[2]/div/div[2]/div/div[2]/table/tbody/tr/td[5]/div/ul/li/a"))
+//					.click();
+//			Thread.sleep(1000);
+//			logger1.info("complaint 3 is viewed after click toggle bar '//*[@id=\"accordion1\"]/div[3]/div[1]/h4/a/i'");
+//			click("Claim3_Xpath");
 			
-			logger1.info("cross option is clicked");
+			Thread.sleep(1000);
+			logger1.info("View Details option is clicked");
+			driver.findElement(
+					By.xpath("//*[@id=\"portalPage\"]/div/div[2]/div/div[2]/div/div[2]/table/tbody/tr/td[5]/div/ul/li/a"))
+					.click();
+			
+			logger1.info("cancel option is clicked");
 			driver.findElement(
 					By.xpath("//*[@id=\"portalPage\"]/div/div[2]/div/div[2]/div/div[10]/div/div/div[1]/button/span[1]"))
 					.click();
@@ -151,6 +159,7 @@ public class AddClaim3 extends Capabilities {
 
 		catch (Exception e) {
 			logger1.fail(e);
+			captureScreenShots("ErrorScreenshot.png");
 			throw e;
 		}
 

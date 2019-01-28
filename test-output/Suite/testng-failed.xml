@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test name="Testcases(failed)">
     <classes>
-      <class name="project.Login">
+      <class name="project.LocateProvider5">
+        <methods>
+          <include name="locateProvider"/>
+        </methods>
+      </class> <!-- project.LocateProvider5 -->
+      <class name="project.VerifyMembershipText4">
+        <methods>
+          <include name="verifyMembershiptext"/>
+        </methods>
+      </class> <!-- project.VerifyMembershipText4 -->
+      <class name="project.Login2">
         <methods>
           <include name="closeApplication"/>
           <include name="flush"/>
-          <include name="menu"/>
-          <include name="createReport"/>
+          <include name="validLogin"/>
           <include name="LaunchBrowser"/>
+          <include name="createReport"/>
         </methods>
-      </class> <!-- project.Login -->
+      </class> <!-- project.Login2 -->
+      <class name="project.AddClaim3">
+        <methods>
+          <include name="AddClaim"/>
+        </methods>
+      </class> <!-- project.AddClaim3 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

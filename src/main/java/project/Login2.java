@@ -18,6 +18,7 @@ public class Login2 extends Capabilities {
 	public static void validLogin() throws Exception {
 		logger1 = extent.createTest("login");
 		try {
+			 
 			logger1.info("username  \"benm449@gmail.com\" is typed in textbox '//*[@id=\"Username\"]' ");
 			type("Username_Xpath", "username");
 			logger1.info("correct password \"Ranger40#\" is typed in textbox '//*[@id=\"Password\"]' ");
@@ -55,10 +56,11 @@ public class Login2 extends Capabilities {
 			}
 
 			logger1.pass("Testcase is Passed");
-		}
+		}                                                                                                                                                     
 
 		catch (Exception e) {
 			logger1.fail(e);
+			captureScreenShots("ErrorScreenshot.png");                                
 			throw e;
 		}
 

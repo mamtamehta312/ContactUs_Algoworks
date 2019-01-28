@@ -1,11 +1,16 @@
 package Base;
 
 import java.awt.Dimension;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,8 +18,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -33,7 +40,7 @@ public class Capabilities {
 	public static ExtentReports extent;
 	public static ExtentTest logger1;
 
-	@BeforeClass
+	@BeforeSuite
 	public static void LaunchBrowser() {
 		
 		driver.get(properties.getProperty("url"));
@@ -118,6 +125,26 @@ public class Capabilities {
 		}
 	}
 
+	
+	public static void captureScreenShots(String file_name) throws IOException {
+		String folder_name;
+		DateFormat df;
+		folder_name = "Screenshot";
+		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		// Date format fot screenshot file name
+		// df = new SimpleDateFormat("dd-MMM-yyyy__hh_mm_ssaa");
+		// create dir with given folder name
+		new File(folder_name).mkdir();
+		// Setting file name
+		// String file1_name=df.format(new Date())+".png";
+		// coppy screenshot file into screenshot folder.
+		FileUtils.copyFile(f, new File(folder_name + "/" + file_name));
+	}
+	
+	
+	
+	
+	
 	@BeforeTest
 	public void createReport() {
 		reporter = new ExtentHtmlReporter("./extent.html");
@@ -133,7 +160,7 @@ public class Capabilities {
 		// logger1.addScreenCaptureFromPath("/home/chanchal/Desktop/Screenshots/logo.jpg");
 	}
 
-	@AfterClass
+	@AfterSuite
 	public void closeApplication() {
 		driver.quit();
 		Reporter.log("===Session End===", true);
