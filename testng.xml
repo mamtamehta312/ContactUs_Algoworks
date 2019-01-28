@@ -1,10 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite">
-	<test thread-count="5" name="Testcases">
+	<test thread-count="5" name="Testcases" verbose="2">
 		<classes>
 			<class name="project.Login2" />
-			<class name="project.AddClaim3" />
+			<class name="project.AddClaim" />
+			<class name="project.SumbitComplaints" />
 			<class name="project.VerifyMembershipText4" /> 
 			<class name="project.LocateProvider5" />
 		</classes>
