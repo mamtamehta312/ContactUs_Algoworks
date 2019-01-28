@@ -5,20 +5,20 @@
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42450" started-at="2019-01-28T07:40:21Z" finished-at="2019-01-28T07:41:03Z">
+  <suite name="Default suite" duration-ms="100523" started-at="2019-01-28T07:47:38Z" finished-at="2019-01-28T07:49:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42450" started-at="2019-01-28T07:40:21Z" finished-at="2019-01-28T07:41:03Z">
+    <test name="Default test" duration-ms="100523" started-at="2019-01-28T07:47:38Z" finished-at="2019-01-28T07:49:18Z">
       <class name="project.AddClaim3">
-        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:project.AddClaim3@6d3a388c]" name="LaunchBrowser" is-config="true" duration-ms="11184" started-at="2019-01-28T13:10:10Z" finished-at="2019-01-28T13:10:21Z">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:project.AddClaim3@6d3a388c]" name="LaunchBrowser" is-config="true" duration-ms="7589" started-at="2019-01-28T13:17:30Z" finished-at="2019-01-28T13:17:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:project.AddClaim3@6d3a388c]" name="createReport" is-config="true" duration-ms="171" started-at="2019-01-28T13:10:21Z" finished-at="2019-01-28T13:10:21Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:project.AddClaim3@6d3a388c]" name="createReport" is-config="true" duration-ms="154" started-at="2019-01-28T13:17:38Z" finished-at="2019-01-28T13:17:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="FAIL" signature="AddClaim()[pri:0, instance:project.AddClaim3@6d3a388c]" name="AddClaim" duration-ms="41823" started-at="2019-01-28T13:10:21Z" finished-at="2019-01-28T13:11:03Z">
+        <test-method status="FAIL" signature="AddClaim()[pri:0, instance:project.AddClaim3@6d3a388c]" name="AddClaim" duration-ms="99916" started-at="2019-01-28T13:17:38Z" finished-at="2019-01-28T13:19:18Z">
           <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
               <![CDATA[invalid selector: Unable to locate an element with the xpath expression //*[@id=\"header-navbar-collapse\"]/div[2]/ul/li[8]/ul/li[2]/a because of the following error:
@@ -30,8 +30,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Chanchals-Mac-mini.local', ip: 'fe80:0:0:0:46c:39c8:1f3:32e9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/j9/gglbxd2s0gj...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55754}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 2125cb422d94f25276455ce96e654db2
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/j9/gglbxd2s0gj...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59333}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 496a9d95d950f1cad5fd5f3c5965503e
 *** Element info: {Using=xpath, value=//*[@id=\"header-navbar-collapse\"]/div[2]/ul/li[8]/ul/li[2]/a}]]>
             </message>
             <full-stacktrace>
@@ -44,8 +44,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Chanchals-Mac-mini.local', ip: 'fe80:0:0:0:46c:39c8:1f3:32e9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/j9/gglbxd2s0gj...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55754}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 2125cb422d94f25276455ce96e654db2
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/j9/gglbxd2s0gj...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59333}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 496a9d95d950f1cad5fd5f3c5965503e
 *** Element info: {Using=xpath, value=//*[@id=\"header-navbar-collapse\"]/div[2]/ul/li[8]/ul/li[2]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -96,11 +96,11 @@ Session ID: 2125cb422d94f25276455ce96e654db2
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddClaim -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:project.AddClaim3@6d3a388c]" name="flush" is-config="true" duration-ms="436" started-at="2019-01-28T13:11:03Z" finished-at="2019-01-28T13:11:03Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:project.AddClaim3@6d3a388c]" name="flush" is-config="true" duration-ms="420" started-at="2019-01-28T13:19:18Z" finished-at="2019-01-28T13:19:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:project.AddClaim3@6d3a388c]" name="closeApplication" is-config="true" duration-ms="167" started-at="2019-01-28T13:11:08Z" finished-at="2019-01-28T13:11:08Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:project.AddClaim3@6d3a388c]" name="closeApplication" is-config="true" duration-ms="152" started-at="2019-01-28T13:19:23Z" finished-at="2019-01-28T13:19:24Z">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>
