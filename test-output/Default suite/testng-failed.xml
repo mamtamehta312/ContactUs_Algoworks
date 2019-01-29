@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="project.VerifyMembershipText4">
+      <class name="project.Login2">
         <methods>
           <include name="closeApplication"/>
           <include name="flush"/>
+          <include name="validLogin"/>
           <include name="LaunchBrowser"/>
           <include name="createReport"/>
-          <include name="verifyMembershiptext"/>
         </methods>
-      </class> <!-- project.VerifyMembershipText4 -->
+      </class> <!-- project.Login2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

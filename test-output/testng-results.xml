@@ -5,20 +5,20 @@
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15588" started-at="2019-01-28T13:14:37Z" finished-at="2019-01-28T13:14:53Z">
+  <suite name="Default suite" duration-ms="6443" started-at="2019-01-29T07:24:00Z" finished-at="2019-01-29T07:24:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15588" started-at="2019-01-28T13:14:37Z" finished-at="2019-01-28T13:14:53Z">
-      <class name="project.VerifyMembershipText4">
-        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:project.VerifyMembershipText4@6d3a388c]" name="LaunchBrowser" is-config="true" duration-ms="40747" started-at="2019-01-28T18:43:56Z" finished-at="2019-01-28T18:44:37Z">
+    <test name="Default test" duration-ms="6443" started-at="2019-01-29T07:24:00Z" finished-at="2019-01-29T07:24:07Z">
+      <class name="project.Login2">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:project.Login2@6d3a388c]" name="LaunchBrowser" is-config="true" duration-ms="11674" started-at="2019-01-29T12:53:49Z" finished-at="2019-01-29T12:54:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:project.VerifyMembershipText4@6d3a388c]" name="createReport" is-config="true" duration-ms="159" started-at="2019-01-28T18:44:37Z" finished-at="2019-01-28T18:44:37Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:project.Login2@6d3a388c]" name="createReport" is-config="true" duration-ms="153" started-at="2019-01-29T12:54:00Z" finished-at="2019-01-29T12:54:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="FAIL" signature="verifyMembershiptext()[pri:0, instance:project.VerifyMembershipText4@6d3a388c]" name="verifyMembershiptext" duration-ms="15078" started-at="2019-01-28T18:44:37Z" finished-at="2019-01-28T18:44:52Z">
+        <test-method status="FAIL" signature="validLogin()[pri:0, instance:project.Login2@6d3a388c]" name="validLogin" duration-ms="5852" started-at="2019-01-29T12:54:01Z" finished-at="2019-01-29T12:54:06Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/section/div/div/div/div/div[1]/div[1]/div[2]/p[1]"}
@@ -29,8 +29,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Chanchals-Mac-mini.local', ip: 'fe80:0:0:0:46c:39c8:1f3:32e9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/j9/gglbxd2s0gj...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51882}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 6ee35230de33f78acbf1920d52ed32d6
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/j9/gglbxd2s0gj...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52112}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 4ac36ba58927a7461ace9807a05b918b
 *** Element info: {Using=xpath, value=/html/body/section/div/div/div/div/div[1]/div[1]/div[2]/p[1]}]]>
             </message>
             <full-stacktrace>
@@ -42,8 +42,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Chanchals-Mac-mini.local', ip: 'fe80:0:0:0:46c:39c8:1f3:32e9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/j9/gglbxd2s0gj...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51882}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 6ee35230de33f78acbf1920d52ed32d6
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/j9/gglbxd2s0gj...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52112}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 4ac36ba58927a7461ace9807a05b918b
 *** Element info: {Using=xpath, value=/html/body/section/div/div/div/div/div[1]/div[1]/div[2]/p[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -63,7 +63,6 @@ Session ID: 6ee35230de33f78acbf1920d52ed32d6
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
 	at Base.Capabilities.findElement(Capabilities.java:102)
 	at project.Login2.validLogin(Login2.java:32)
-	at project.VerifyMembershipText4.verifyMembershiptext(VerifyMembershipText4.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,19 +93,19 @@ Session ID: 6ee35230de33f78acbf1920d52ed32d6
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMembershiptext -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:project.VerifyMembershipText4@6d3a388c]" name="flush" is-config="true" duration-ms="332" started-at="2019-01-28T18:44:52Z" finished-at="2019-01-28T18:44:53Z">
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:project.Login2@6d3a388c]" name="flush" is-config="true" duration-ms="419" started-at="2019-01-29T12:54:07Z" finished-at="2019-01-29T12:54:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:project.VerifyMembershipText4@6d3a388c]" name="closeApplication" is-config="true" duration-ms="117" started-at="2019-01-28T18:44:58Z" finished-at="2019-01-28T18:44:58Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:project.Login2@6d3a388c]" name="closeApplication" is-config="true" duration-ms="170" started-at="2019-01-29T12:54:12Z" finished-at="2019-01-29T12:54:12Z">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- project.VerifyMembershipText4 -->
+      </class> <!-- project.Login2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
