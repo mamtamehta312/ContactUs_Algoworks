@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite">
+	<test thread-count="5" name="Testcases" verbose="2">
+		<classes>
+			<class name="mobileautomation.Login" />
+			<!-- <class name="project.AddClaim" />
+			<class name="project.SumbitComplaints" />
+			<class name="project.VerifyMembershipText4" /> 
+			<class name="project.LocateProvider5" /> -->
+		</classes>
+	</test>
+
+	<!--  <test thread-count="5" name="Apply">
+		<classes>
+			<class name="tests.workflow.ApplyJob" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Selection">
+		<classes>
+			<class name="tests.workflow.CandidateSelection" />
+		</classes>
+	</test>  -->
+	<!-- Test -->
+</suite> <!-- Suite -->
+
+
