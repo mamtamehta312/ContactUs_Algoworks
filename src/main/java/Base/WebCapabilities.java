@@ -33,7 +33,7 @@ import org.openqa.selenium.WebElement;
  *
  */
 
-public class Capabilities {
+public class WebCapabilities {
 	protected static WebDriver driver = new ChromeDriver();
 
 	public static ExtentHtmlReporter reporter;
@@ -55,7 +55,7 @@ public class Capabilities {
 		FileInputStream fis;
 		try {
 			fis = new FileInputStream(
-					System.getProperty("user.dir") + "//src//main//resources//Properties//IOS_OR.properties");
+					System.getProperty("user.dir") + "//src//main//resources//Properties//WEB_OR.properties");
 			properties.load(fis);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -125,6 +125,8 @@ public class Capabilities {
 		}
 	}
 
+	
+	
 	
 	public static void captureScreenShots(String file_name) throws IOException {
 		String folder_name;

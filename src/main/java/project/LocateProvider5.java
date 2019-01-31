@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import Base.Capabilities;
+import Base.WebCapabilities;
 
-public class LocateProvider5 extends Capabilities {
+public class LocateProvider5 extends WebCapabilities {
 
 	@Test()
 	public void locateProvider() throws Exception {

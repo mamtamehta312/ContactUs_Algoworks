@@ -159,6 +159,22 @@ public class AndroidCapabilities {
 		js.executeScript("mobile: tap", tapObject1);
 	}
 
+	public static void swipeup(int xPoint, int yPoint) {
+	JavascriptExecutor jse = (JavascriptExecutor) driver;
+	jse.executeScript("window.scrollBy(xPoint,yPoint)", "up");
+	
+	}
+	
+	/*JavascriptExecutor jse = (JavascriptExecutor) driver;
+	jse.executeScript("window.scrollBy(0,500)", "up");*/
+	//jse.executeScript("scroll(0, -1110);","down");
+
+//scroll to bottom of page
+//JavascriptExecutor js = ((JavascriptExecutor) driver);
+//js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	
+	
+	
 	public static void captureScreenShots(String file_name) throws IOException {
 		String folder_name;
 		DateFormat df;

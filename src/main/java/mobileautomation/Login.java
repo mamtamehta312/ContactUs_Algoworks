@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,7 +35,6 @@ public class Login extends AndroidCapabilities {
 	public static void validLogin() throws Exception {
 		logger1 = extent.createTest("login");
 		try {
-			driver.get(("https://bonitasmembersandbox.microsoftcrmportals.com/SignIn"));
 			 
 			logger1.info("username  \"benm449@gmail.com\" is typed in textbox '//*[@id=\"Username\"]' ");
 			type("Username_ID", "username");
@@ -42,45 +42,30 @@ public class Login extends AndroidCapabilities {
 			type("Password_ID", "password");
 			Thread.sleep(2000);
 			logger1.info("sign-in is clicked");
-			//click("SignIn_ID");
-			//new TouchAction(driver).tap(209,1603).perform();
-
-			//driver.navigate().back();
-			/*Thread.sleep(1000);
-			WebElement plusYouXp = driver.findElement(By.id("SIGN IN"));
-                  int center_x = plusYouXp.getSize().getHeight()/2;
-					int center_y = plusYouXp.getSize().getWidth()/2;
-					System.out.println(center_x+" "+center_y);
-					click("SIGN IN");*/
-					//click("submit-signin-local");
-					
-					//point(213,1599);
-				//	tapObject("SignIn_Xpath");
-					
-					/*WebDriverWait wait = new WebDriverWait(driver, 60);
-					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[6]/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View/android.view.View[14]/android.widget.Button[1]")));
-					driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[6]/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View/android.view.View[14]/android.widget.Button[1]")).click();
-					*/
-					
-					/*WebDriverWait wait1 = new WebDriverWait(driver,40);
-					wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[6]/android.view.View[2]/android.view.View[2]")));
-					driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[6]/android.view.View[2]/android.view.View[2]")).click();
-*/
-			WebDriverWait wait = new WebDriverWait(driver, 30);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[6]/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View/android.view.View[14]/android.widget.Button[1]")));
+			MobileElement element = driver.findElement(By.xpath("//*[@id='submit-signin-local']"));
+			//element.click();
+			Thread.sleep(2000);
+			element.click();
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//*[@id='submit-signin-local']")).sendKeys(Keys.ENTER);
+			//click("SignIn_Xpath");
 			
-					WebElement element = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[6]/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View/android.view.View[14]/android.widget.Button[1]"));
-					JavascriptExecutor executor = (JavascriptExecutor)driver;
-					executor.executeScript("arguments[0].click();", element);
+			Thread.sleep(3000);
+			
+			//swipeup(0,300);
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("window.scrollBy(0,300)", "up");
+			
+			//System.out.println(driver.findElement(By.xpath("/html/body/section/div/div/div/div/div[1]/div[1]/div[2]/p[1]")).getText());
+			
+			
 					
-		
-					//driver.findElement(MobileBy.className("android.widget.Button")).click();
 					
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			
 			WebElement Member = findElement("MemberName_Xpath");
-			WebElement Membership =findElement("MembershipNumber_ID");
-		    WebElement PlanType = findElement("PlanType_ID");
+			WebElement Membership =findElement("MembershipNumber_Xpath");
+		    WebElement PlanType = findElement("PlanType_Xpath");
 			
 			if (Member.isDisplayed()) {
 				Member.click();

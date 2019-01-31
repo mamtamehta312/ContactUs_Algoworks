@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import Base.Capabilities;
+import Base.WebCapabilities;
 
-public class AddClaim extends Capabilities {
+public class AddClaim extends WebCapabilities {
 	@Test()
 	public static void AddClaim() throws Exception {
 

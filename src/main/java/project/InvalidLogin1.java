@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import Base.Capabilities;
+import Base.WebCapabilities;
 
-public class InvalidLogin1 extends Capabilities {
+public class InvalidLogin1 extends WebCapabilities {
 	
 	@Test(enabled=false)
 	public void InvalidLogin() throws Exception {

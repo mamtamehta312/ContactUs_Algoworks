@@ -1,7 +1,9 @@
 package mobileautomation;
 
+import java.io.File;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -9,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import Base.AndroidCapabilities;
-import Base.Capabilities;
+import Base.WebCapabilities;
 import io.appium.java_client.MobileElement;
 
 public class AddClaim extends AndroidCapabilities {
@@ -17,13 +19,17 @@ public class AddClaim extends AndroidCapabilities {
 	public static void AddClaim() throws Exception {
 
 		try {
-			//Login2.validLogin();
+			Login.validLogin();
 
 			logger1 = extent.createTest("Sumbit Claim");
 
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("window.scrollBy(0,-300)", "down");
+			
 			Thread.sleep(1000);
 			logger1.info("Selector is clicked");
 			click("Selector_Xpath");
+			
 			Thread.sleep(1000);
 			logger1.info("Membership option \"//*[@id=\\\"header-navbar-collapse\\\"]/div[2]/ul/li[3]/a\" is clicked");
 			click("MembershipOption_Xpath");
@@ -42,8 +48,8 @@ public class AddClaim extends AndroidCapabilities {
 			Thread.sleep(3000);
 			Element.click();
 			
-			JavascriptExecutor jse = (JavascriptExecutor)driver;
-			jse.executeScript("window.scrollBy(0,500)", "down");
+			JavascriptExecutor jse1 = (JavascriptExecutor)driver;
+			jse1.executeScript("window.scrollBy(0,500)", "down");
 			
 			
 			Thread.sleep(5000);
@@ -61,69 +67,32 @@ public class AddClaim extends AndroidCapabilities {
 //					.toAbsolutePath().toString();
 //
 //			Cababilities.getElementByXpath("//*[@id=\'example\']").sendKeys(absolutePath);
-					
-			String filePath = System.getProperty("user.dir") +  "/src/main/resources/pdf/pdfurl-guide.pdf";
-			driver.findElement(By.xpath("//*[@id=\"AttachFile\"]")).sendKeys(filePath);
+			
+			click("ChooseFile_Xpath");
+			Thread.sleep(1000);
+			driver.switchTo().frame("");
+			/*Alert alert = driver.switchTo().alert();
+			alert.accept();*/
+			
+			
+			Thread.sleep(3000);
+			logger1.info("Record audio and video permission is clicked");
+			driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("com.android.packageinstaller:id/permission_allow_button")).click();
+			
+			Thread.sleep(3000);
+			logger1.info("Documents is choosen");
+			driver.findElement(By.xpath("//*[@id='screenshotContainer']/div/div/div/div/div/div[29]")).click();
+			
+				
 			
 			Thread.sleep(1000);
 			logger1.info(" click on sumbit the claim");
 			click("Insert_Xpath");
 
 			
-			
-			
-			//--------------------------------------------------------
-			
-			
-//			Thread.sleep(5000);
-//			logger1 = extent.createTest("Sumbit complaints");
-//			logger1.info(" click on support button");
-//			click("Support_Xpath");
-//			Thread.sleep(1000);
-//			
-//			logger1.info(" click on complaints/compliments button");
-//			click("Complaints_Xpath");
-//			Thread.sleep(2000);
-//			logger1.info(" click on sumbit a complaints/compliments button");
-//			click("SumbitComplaintsCompliments_Xpath");
-//			Thread.sleep(2000);
-//			WebElement a = findElement("Frame_Xpath");
-//			driver.switchTo().frame(a);
-//			
-//			Thread.sleep(2000);
-//			logger1.info("title \"Complaint Title\" is typed in textbox \"//*[@id=\\\"title\\\"]\"");
-//			type("Title_Xpath","ComplaintTitle");
-//			
-//			Thread.sleep(1000);
-//			logger1.info("type textbox '//*[@id=\"ks_queriytype\"]' is clicked");
-//			Select sel = new Select(findElement("TypeTextbox_Xpath"));
-//			sel.selectByVisibleText("Complaint");
-//			
-//			
-//			Thread.sleep(2000);
-//			logger1.info("Description is typed in textbox //*[@id=\"description\"] is clicked");
-//			type("Description_Xpath","Description");
-//			
-//			Thread.sleep(3000);
-//			logger1.info(" attach pdf file is choosen");
-//			String filePath1 = System.getProperty("user.dir") +  "/src/main/resources/pdf/pdfurl-guide.pdf";
-//			Thread.sleep(1000);
-//			driver.findElement(By.xpath("//*[@id=\"AttachFile\"]")).sendKeys(filePath1);
-//			
-//			Thread.sleep(1000);
-//			logger1.info("Sumbit button is clicked");
-//			click("SumbitButton_Xpath");
-//			
-//			Thread.sleep(1000);
-//			driver.switchTo().defaultContent();
-//
-//			Thread.sleep(2000);
-//			jse.executeScript("window.scrollBy(0,800)", "down");
-			
-			
-			
-			//--------------------------------------------------------
-			
+			Thread.sleep(3000);
 			
 			
      		logger1.pass("Testcase is Passed");

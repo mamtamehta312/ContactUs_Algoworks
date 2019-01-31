@@ -1,4 +1,4 @@
-package project;
+package mobileautomation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -6,15 +6,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import Base.AndroidCapabilities;
 import Base.WebCapabilities;
 
-public class SumbitComplaints extends WebCapabilities {
+public class SumbitComplaints extends AndroidCapabilities {
 
 	@Test()
 	public void sumbitcomplaints() throws Exception {
 
-		//Login2.validLogin();
+		Login.validLogin();
 
+		Thread.sleep(1000);
+		logger1.info("Selector is clicked");
+		click("Selector_Xpath");
+		
 		Thread.sleep(5000);
 		logger1 = extent.createTest("Sumbit complaints");
 		logger1.info(" click on support button");

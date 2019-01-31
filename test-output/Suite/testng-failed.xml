@@ -3,35 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Testcases(failed)">
     <classes>
-      <class name="project.Login2">
+      <class name="mobileautomation.Login">
         <methods>
-          <include name="closeApplication"/>
           <include name="flush"/>
-          <include name="validLogin"/>
-          <include name="LaunchBrowser"/>
           <include name="createReport"/>
+          <include name="validLogin"/>
+          <include name="setUp"/>
+          <include name="closeApplication"/>
         </methods>
-      </class> <!-- project.Login2 -->
-      <class name="project.SumbitComplaints">
-        <methods>
-          <include name="sumbitcomplaints"/>
-        </methods>
-      </class> <!-- project.SumbitComplaints -->
-      <class name="project.LocateProvider5">
-        <methods>
-          <include name="locateProvider"/>
-        </methods>
-      </class> <!-- project.LocateProvider5 -->
-      <class name="project.AddClaim">
+      </class> <!-- mobileautomation.Login -->
+      <class name="mobileautomation.AddClaim">
         <methods>
           <include name="AddClaim"/>
         </methods>
-      </class> <!-- project.AddClaim -->
-      <class name="project.VerifyMembershipText4">
-        <methods>
-          <include name="verifyMembershiptext"/>
-        </methods>
-      </class> <!-- project.VerifyMembershipText4 -->
+      </class> <!-- mobileautomation.AddClaim -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

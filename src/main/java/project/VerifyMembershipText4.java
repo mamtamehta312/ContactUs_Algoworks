@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import Base.Capabilities;
+import Base.WebCapabilities;
 
-public class VerifyMembershipText4 extends Capabilities {
+public class VerifyMembershipText4 extends WebCapabilities {
 
 	public static void assertEquals(String actualResult, String expectedResult) {
 		String str = findElement(actualResult).getText();

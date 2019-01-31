@@ -6,9 +6,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import Base.Capabilities;
+import Base.WebCapabilities;
 
-public class Login2 extends Capabilities {
+public class Login2 extends WebCapabilities {
 	
 //	WebDriverWait wait = new WebDriverWait(driver, 10);
 //	WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ID")));
