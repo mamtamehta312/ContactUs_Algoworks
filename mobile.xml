@@ -5,8 +5,8 @@
 		<classes>
 			<class name="mobileautomation.Login" />
 			<class name="mobileautomation.AddClaim" />
-			<!-- <class name="project.SumbitComplaints" />
-			<class name="project.VerifyMembershipText4" /> 
+			<class name="mobileautomation.SumbitComplaints" />
+			<!-- <class name="project.VerifyMembershipText4" /> 
 			<class name="project.LocateProvider5" /> -->
 		</classes>
 	</test>

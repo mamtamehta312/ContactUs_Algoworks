@@ -55,6 +55,8 @@ public class AndroidCapabilities {
 
 		//capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("browserName", "Chrome");
+		/*capabilities.setCapability("autoGrantPermissions", "true");
+		capabilities.setCapability("autoAcceptAlerts", "true");*/
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		System.out.println("helloo");
 		driver.get(properties.getProperty("url"));

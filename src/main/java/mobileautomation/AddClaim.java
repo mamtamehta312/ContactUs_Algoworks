@@ -1,25 +1,30 @@
 package mobileautomation;
 
 import java.io.File;
+import java.nio.file.FileSystems;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import Base.AndroidCapabilities;
 import Base.WebCapabilities;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class AddClaim extends AndroidCapabilities {
 	@Test()
 	public static void AddClaim() throws Exception {
 
 		try {
-			Login.validLogin();
+			//Login.validLogin();
 
 			logger1 = extent.createTest("Sumbit Claim");
 
@@ -61,18 +66,53 @@ public class AddClaim extends AndroidCapabilities {
 			logger1.info("Select Button '//button[@class=\"primary btn btn-primary\"]' clicked");
 			click("SelectButton_Xpath");
 			
-			Thread.sleep(3000);
-			logger1.info(" attach pdf file is choosen");
+			/*Thread.sleep(3000);
+			logger1.info(" attach pdf file is choosen");*/
 //			String absolutePath = FileSystems.getDefault().Capabilities.getPropertyValue("pathForPdf").normalize()
 //					.toAbsolutePath().toString();
 //
 //			Cababilities.getElementByXpath("//*[@id=\'example\']").sendKeys(absolutePath);
 			
-			click("ChooseFile_Xpath");
-			Thread.sleep(1000);
-			driver.switchTo().frame("");
-			/*Alert alert = driver.switchTo().alert();
-			alert.accept();*/
+			/*click("ChooseFile_Xpath");
+			Thread.sleep(1000);*/
+			
+			/*MobileElement frame = driver.findElement(By.xpath("//*[@id='screenshotContainer']/div/div/div/div/div/div[6]"));
+			driver.switchTo().frame(frame);
+	
+			List<MobileElement> list = driver.findElementsByName("ALLOW");
+			for(MobileElement l:list){
+			l.click();	
+			}*/
+			/*ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-notifications");*/
+			
+			/*if(driver.findElement(By.className("android.widget.Button")).isDisplayed()){
+				driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
+			}*/
+		
+			
+			//com.android.packageinstaller:id/permission_allow_button
+			/*String pathForPdf="src/main/resources/pdf/pdfurl-guide.pdf";
+			
+			String absolutePath = FileSystems.getDefault().getPath(pathForPdf).normalize()
+					.toAbsolutePath().toString();
+			driver.findElement(By.xpath("//*[@id=\"AttachFile\"]")).sendKeys(absolutePath);*/
+			
+			
+
+					//TestUtility.getElementByXpath("//*[@id=\'example\']").sendKeys(absolutePath);
+			
+			/*String filePath ="/storage/emulated/0/Documents/pdfurl-guide.pdf";
+			driver.findElement(By.xpath("//*[@id=\"AttachFile\"]")).sendKeys(filePath);*/
+			
+
+		//	MobileElement frame = driver.findElement(By.xpath("//*[@id='screenshotContainer']/div/div/div/div/div/div[6]"));
+		//	driver.switchTo().frame(frame);
+		//	MobileElement element = driver.findElement(By.xpath("//*[contains(text(), 'ALLOW')]"));
+		//	System.out.println("Text : "+element.getText());
+		//	element.click();
+		/*	driver.switchTo().frame("//*[@id='screenshotContainer']/div/div/div/div/div/div[6]");
+		
 			
 			
 			Thread.sleep(3000);
@@ -83,9 +123,10 @@ public class AddClaim extends AndroidCapabilities {
 			
 			Thread.sleep(3000);
 			logger1.info("Documents is choosen");
-			driver.findElement(By.xpath("//*[@id='screenshotContainer']/div/div/div/div/div/div[29]")).click();
+			driver.findElement(By.xpath("//*[@id='screenshotContainer']/div/div/div/div/div/div[29]")).click();*/
 			
-				
+			
+			
 			
 			Thread.sleep(1000);
 			logger1.info(" click on sumbit the claim");

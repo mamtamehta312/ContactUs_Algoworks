@@ -7,16 +7,19 @@
         <methods>
           <include name="flush"/>
           <include name="createReport"/>
-          <include name="validLogin"/>
           <include name="setUp"/>
           <include name="closeApplication"/>
         </methods>
       </class> <!-- mobileautomation.Login -->
-      <class name="mobileautomation.AddClaim">
+      <class name="project.SumbitComplaints">
         <methods>
-          <include name="AddClaim"/>
+          <include name="closeApplication"/>
+          <include name="createReport"/>
+          <include name="sumbitcomplaints"/>
+          <include name="LaunchBrowser"/>
+          <include name="flush"/>
         </methods>
-      </class> <!-- mobileautomation.AddClaim -->
+      </class> <!-- project.SumbitComplaints -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

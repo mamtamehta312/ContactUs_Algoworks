@@ -14,7 +14,7 @@ public class SumbitComplaints extends AndroidCapabilities {
 	@Test()
 	public void sumbitcomplaints() throws Exception {
 
-		Login.validLogin();
+		//Login.validLogin();
 
 		Thread.sleep(1000);
 		logger1.info("Selector is clicked");
@@ -49,11 +49,11 @@ public class SumbitComplaints extends AndroidCapabilities {
 		logger1.info("Description is typed in textbox //*[@id=\"description\"] is clicked");
 		type("Description_Xpath", "Description");
 
-		Thread.sleep(3000);
+		/*Thread.sleep(3000);
 		logger1.info(" attach pdf file is choosen");
 		String filePath1 = System.getProperty("user.dir") + "/src/main/resources/pdf/pdfurl-guide.pdf";
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id=\"AttachFile\"]")).sendKeys(filePath1);
+		driver.findElement(By.xpath("//*[@id=\"AttachFile\"]")).sendKeys(filePath1);*/
 
 		Thread.sleep(1000);
 		logger1.info("Sumbit button is clicked");
@@ -73,19 +73,7 @@ public class SumbitComplaints extends AndroidCapabilities {
 		logger1 = extent.createTest("View Complaints");
 		logger1.info("complaint is viewed after click toggle bar '//*[@id=\"accordion1\"]/div[1]/div[1]/h4/a/i'");
 		click("Claim1_Xpath");
-//		driver.findElement( 
-//				By.xpath("//table[contains(@class, 'table table-striped table-fluid')]/tbody/tr[1]/td[5]")).click();
-		//*[@id="portalPage"]/div/div[2]/div/div[2]/div/div[2]/table/tbody/tr/td[5]/div/button/span
-		
-		//Thread.sleep(1000);
-//		logger1.info("complaint 2 is viewed after click toggle bar '//*[@id=\"accordion1\"]/div[2]/div[1]/h4/a/i'");
-//		click("Claim2_Xpath");
-//		driver.findElement(By
-//				.xpath("//*[@id=\"portalPage\"]/div/div[2]/div/div[2]/div/div[2]/table/tbody/tr/td[5]/div/ul/li/a"))
-//				.click();
-//		Thread.sleep(1000);
-//		logger1.info("complaint 3 is viewed after click toggle bar '//*[@id=\"accordion1\"]/div[3]/div[1]/h4/a/i'");
-//		click("Claim3_Xpath");
+
 		
 		Thread.sleep(1000);
 		logger1.info("View Details option is clicked");
@@ -97,7 +85,7 @@ public class SumbitComplaints extends AndroidCapabilities {
 		driver.findElement(
 				By.xpath("//*[@id=\"portalPage\"]/div/div[2]/div/div[2]/div/div[10]/div/div/div[1]/button/span[1]"))
 				.click();
-		//*[@id="portalPage"]/div/div[2]/div/div[2]/div/div[2]/table/tbody/tr[1]
+		
 		// driver.switchTo().defaultContent();
 		Thread.sleep(2000);
 

@@ -26,75 +26,50 @@ public class VerifyMembershipText4 extends WebCapabilities {
 	public static void verifyMembershiptext() throws Exception {
 
 		try {
-			Login2.validLogin();
+			//Login2.validLogin();
 			Thread.sleep(2000);
 			logger1 = extent.createTest("Text verification in Membership option");
 			logger1.info("Membership option \"//*[@id=\\\"header-navbar-collapse\\\"]/div[2]/ul/li[3]/a\" is clicked");
-			click("MembershipOption_Xpath");
+			//click("MembershipOption_Xpath");
+			driver.findElement(By.xpath("//*[@id='header-navbar-collapse']/div[2]/ul/li[3]/a")).click();
 
 			Thread.sleep(2000);
 			logger1.info("Membership option \"//*[@id=\\\"header-navbar-collapse\\\"]/div[2]/ul/li[3]/a\" is clicked");
-			click("MembershipOption_Xpath");
-
+			//click("MembershipOption_Xpath");
+			driver.findElement(By.xpath("//*[@id='header-navbar-collapse']/div[2]/ul/li[3]/ul/li[1]/a")).click();
+			
 			Thread.sleep(2000);
-			assertEquals("MemberName_Xpath", "Member Name: Gert Petrus Benjamin Myburgh");
+			//MemberName_Xpath
+			assertEquals("//*[@id='portalPage']/div/div[2]/div/div/div/div/div/div/div[1]/div[2]/p[1]", "Member Name: Gert Petrus Benjamin Myburgh");
 			Thread.sleep(1000);
-			assertEquals("MembershipNumber_Xpath", "Membership Number: 02100100561");
+			//MembershipNumber_Xpath
+			assertEquals("//*[@id='portalPage']/div/div[2]/div/div/div/div/div/div/div[1]/div[2]/p[2]", "Membership Number: 02100100561");
 			Thread.sleep(2000);
-			assertEquals("PlanType_Xpath", "Plan Type: STANDARD SELECT");
+			//PlanType_Xpath
+			assertEquals("//*[@id='portalPage']/div/div[2]/div/div/div/div/div/div/div[1]/div[2]/p[3]", "Plan Type: STANDARD SELECT");
 
 			Thread.sleep(2000);
 			logger1.info("Membership option \"//*[@id=\\\"header-navbar-collapse\\\"]/div[2]/ul/li[3]/a\" is clicked");
-			click("MembershipOption_Xpath");
-
+			//click("MembershipOption_Xpath");
+			driver.findElement(By.xpath("//*[@id='header-navbar-collapse']/div[2]/ul/li[3]/a")).click();
+			
 			Thread.sleep(2000);
 			logger1.info("Benefits & Limits option is clicked");
-			click("BenefitsAndLimitsOption_Xpath");
+			//click("BenefitsAndLimitsOption_Xpath");
+			driver.findElement(By.xpath("//*[@id='header-navbar-collapse']/div[2]/ul/li[3]/ul/li[2]/a")).click();
+			
 
-//			Thread.sleep(2000);
-//			logger1.info("Family option is clicked");
-//			click("FamilyOption_Xpath");
 
-//			logger1.info("Benefits & Limits details of family");
-//			Thread.sleep(2000);
-//			assertEquals("AppliancesHearing_Xpath", "Appliances-Hearing Aids");
-//			assertEquals("Rvalue1_Xpath", "R 16,000.00");
-//			
-//			Thread.sleep(2000);
-//			assertEquals("MentalHealthandSubstanceAbuse_Xpath", "Mental Health and Substance Abuse");
-//			assertEquals("Rvalue2_Xpath", "R 40,600.00");
-//			
-//			Thread.sleep(2000);
-//			assertEquals("Appliances-Stoma&CPAPApparatus_Xpath", "Appliances - Stoma & CPAP Apparatus");
-//			assertEquals("Rvalue3_Xpath", "R 6,550.00");
-//			
-//			Thread.sleep(2000);
-//			assertEquals("Oncology-SocialWorker_Xpath", "Oncology - Social Worker");
-//			assertEquals("Rvalue4_Xpath", "R 2,840.00");
-
-//		for(int i=1;i<=11;i++) {
-//			WebElement a = driver.findElement(By.xpath("//*[@id=\"benefitsFamilydetails\"]/table/tbody/tr[i]/td[1]"));
-//			assertEquals(a.getText(),"Oncology - Social Worker");
-//			
-//			WebElement b = driver.findElement(By.xpath("//*[@id=\"benefitsFamilydetails\"]/table/tbody/tr[i]/td[2]"));
-//			assertEquals("Oncology-SocialWorker_Xpath","Oncology - Social Worker");
-//		}
-//		WebElement table = driver.findElement(By.xpath("//*[@id=\"family\"]/div"));
-//		List<WebElement> rows = table.findElements(By.tagName("tr"));
-//		for(WebElement a :rows) {
-//		 List<WebElement> u = a.findElements(By.tagName("td"));
-//		 for(WebElement i : u) {
-//			 logger1.info("gdg : "+i.getText());
-//			}
-//		}
 
 			Thread.sleep(2000);
+			//MembershipOption_Xpath
 			logger1.info("Membership option \"//*[@id=\\\"header-navbar-collapse\\\"]/div[2]/ul/li[3]/a\" is clicked");
-			click("MembershipOption_Xpath");
+			driver.findElement(By.xpath("//*[@id='header-navbar-collapse']/div[2]/ul/li[3]/a")).click();
 
 			Thread.sleep(2000);
 			logger1.info("Contributions option is clicked");
-			click("Contributions_Xpath");
+			//click("Contributions_Xpath");
+			driver.findElement(By.xpath("//*[@id='header-navbar-collapse']/div[2]/ul/li[3]/ul/li[4]/a")).click();
 
 			Thread.sleep(2000);
 			WebElement a1 = findElement("ContributionTable_Xpath");
