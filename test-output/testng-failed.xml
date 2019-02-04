@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Testcases(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="mobileautomation.Login">
-        <methods>
-          <include name="flush"/>
-          <include name="createReport"/>
-          <include name="setUp"/>
-          <include name="closeApplication"/>
-        </methods>
-      </class> <!-- mobileautomation.Login -->
-      <class name="project.SumbitComplaints">
+      <class name="project.Login2">
         <methods>
           <include name="closeApplication"/>
+          <include name="validLogin"/>
           <include name="createReport"/>
-          <include name="sumbitcomplaints"/>
           <include name="LaunchBrowser"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- project.SumbitComplaints -->
+      </class> <!-- project.Login2 -->
     </classes>
-  </test> <!-- Testcases(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

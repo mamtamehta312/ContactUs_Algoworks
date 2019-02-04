@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="mobileautomation.AddClaim">
+      <class name="project.Login2">
         <methods>
-          <include name="flush"/>
-          <include name="createReport"/>
-          <include name="AddClaim"/>
-          <include name="setUp"/>
           <include name="closeApplication"/>
+          <include name="validLogin"/>
+          <include name="createReport"/>
+          <include name="LaunchBrowser"/>
+          <include name="flush"/>
         </methods>
-      </class> <!-- mobileautomation.AddClaim -->
+      </class> <!-- project.Login2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

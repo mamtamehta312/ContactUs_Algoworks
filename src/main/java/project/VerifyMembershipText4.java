@@ -39,7 +39,7 @@ public class VerifyMembershipText4 extends WebCapabilities {
 			driver.findElement(By.xpath("//*[@id='header-navbar-collapse']/div[2]/ul/li[3]/ul/li[1]/a")).click();
 			
 			Thread.sleep(2000);
-			//MemberName_Xpath
+			//MemberName_Xpath  
 			assertEquals("//*[@id='portalPage']/div/div[2]/div/div/div/div/div/div/div[1]/div[2]/p[1]", "Member Name: Gert Petrus Benjamin Myburgh");
 			Thread.sleep(1000);
 			//MembershipNumber_Xpath

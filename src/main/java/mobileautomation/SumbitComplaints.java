@@ -13,7 +13,8 @@ public class SumbitComplaints extends AndroidCapabilities {
 
 	@Test()
 	public void sumbitcomplaints() throws Exception {
-
+		try {
+		logger1 = extent.createTest("Sumbit complaints");
 		//Login.validLogin();
 
 		Thread.sleep(1000);
@@ -21,7 +22,6 @@ public class SumbitComplaints extends AndroidCapabilities {
 		click("Selector_Xpath");
 		
 		Thread.sleep(5000);
-		logger1 = extent.createTest("Sumbit complaints");
 		logger1.info(" click on support button");
 		click("Support_Xpath");
 		Thread.sleep(1000);
@@ -66,7 +66,7 @@ public class SumbitComplaints extends AndroidCapabilities {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,800)", "down");
 		
-		
+		logger1.pass("Testcase is Passed");
 		
 		
 		Thread.sleep(3000);
@@ -91,6 +91,13 @@ public class SumbitComplaints extends AndroidCapabilities {
 
 		
 		logger1.pass("Testcase is Passed");
+	}                                                                                                                                                     
+
+	catch (Exception e) {
+		logger1.fail(e);
+		captureScreenShots("ErrorScreenshot.png");                                
+		throw e;
+	}
 
 	}
 }
