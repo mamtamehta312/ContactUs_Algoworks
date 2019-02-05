@@ -5,12 +5,20 @@
     <classes>
       <class name="project.Login2">
         <methods>
-          <include name="closeApplication"/>
-          <include name="createReport"/>
+          <include name="validLogin"/>
           <include name="LaunchBrowser"/>
-          <include name="flush"/>
         </methods>
       </class> <!-- project.Login2 -->
+      <class name="project.SumbitComplaints">
+        <methods>
+          <include name="sumbitcomplaints"/>
+        </methods>
+      </class> <!-- project.SumbitComplaints -->
+      <class name="project.AddClaim">
+        <methods>
+          <include name="AddClaim"/>
+        </methods>
+      </class> <!-- project.AddClaim -->
       <class name="project.LocateProvider5">
         <methods>
           <include name="locateProvider"/>
