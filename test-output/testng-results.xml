@@ -1,51 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="8" total="11" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="108252" started-at="2019-02-01T07:22:37Z" finished-at="2019-02-01T07:24:25Z">
+  <suite name="Suite" duration-ms="7081" started-at="2019-02-11T12:57:46Z" finished-at="2019-02-11T12:57:53Z">
     <groups>
     </groups>
-    <test name="Testcases" duration-ms="108252" started-at="2019-02-01T07:22:37Z" finished-at="2019-02-01T07:24:25Z">
-      <class name="mobileautomation.AddClaim">
-        <test-method status="PASS" signature="AddClaim()[pri:0, instance:mobileautomation.AddClaim@148080bb]" name="AddClaim" duration-ms="37794" started-at="2019-02-01T12:52:58Z" finished-at="2019-02-01T12:53:36Z">
+    <test name="Testcases" duration-ms="7081" started-at="2019-02-11T12:57:46Z" finished-at="2019-02-11T12:57:53Z">
+      <class name="webAutomation.Login2">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webAutomation.Login2@47c62251]" name="LaunchBrowser" is-config="true" duration-ms="8451" started-at="2019-02-11T18:27:38Z" finished-at="2019-02-11T18:27:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Safari]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddClaim -->
-      </class> <!-- mobileautomation.AddClaim -->
-      <class name="mobileautomation.SumbitComplaints">
-        <test-method status="PASS" signature="sumbitcomplaints()[pri:0, instance:mobileautomation.SumbitComplaints@dc24521]" name="sumbitcomplaints" duration-ms="48751" started-at="2019-02-01T12:53:36Z" finished-at="2019-02-01T12:54:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sumbitcomplaints -->
-      </class> <!-- mobileautomation.SumbitComplaints -->
-      <class name="mobileautomation.Login">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:mobileautomation.Login@55d56113]" name="setUp" is-config="true" duration-ms="24501" started-at="2019-02-01T12:52:12Z" finished-at="2019-02-01T12:52:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:mobileautomation.Login@55d56113]" name="createReport" is-config="true" duration-ms="81" started-at="2019-02-01T12:52:37Z" finished-at="2019-02-01T12:52:37Z">
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="createReport()[pri:0, instance:webAutomation.Login2@47c62251]" name="createReport" is-config="true" duration-ms="160" started-at="2019-02-11T18:27:46Z" finished-at="2019-02-11T18:27:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:mobileautomation.Login@55d56113]" name="validLogin" duration-ms="21232" started-at="2019-02-01T12:52:37Z" finished-at="2019-02-01T12:52:58Z">
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:webAutomation.Login2@47c62251]" name="validLogin" duration-ms="6616" started-at="2019-02-11T18:27:46Z" finished-at="2019-02-11T18:27:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:mobileautomation.Login@55d56113]" name="flush" is-config="true" duration-ms="361" started-at="2019-02-01T12:54:25Z" finished-at="2019-02-01T12:54:25Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:webAutomation.Login2@47c62251]" name="flush" is-config="true" duration-ms="287" started-at="2019-02-11T18:27:53Z" finished-at="2019-02-11T18:27:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:mobileautomation.Login@55d56113]" name="closeApplication" is-config="true" duration-ms="3252" started-at="2019-02-01T12:54:25Z" finished-at="2019-02-01T12:54:28Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webAutomation.Login2@47c62251]" name="closeApplication" is-config="true" duration-ms="99" started-at="2019-02-11T18:27:58Z" finished-at="2019-02-11T18:27:58Z">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- mobileautomation.Login -->
+      </class> <!-- webAutomation.Login2 -->
     </test> <!-- Testcases -->
   </suite> <!-- Suite -->
 </testng-results>

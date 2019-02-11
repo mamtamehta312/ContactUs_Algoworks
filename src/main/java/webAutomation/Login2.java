@@ -1,4 +1,4 @@
-package project;
+package webAutomation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -27,7 +27,7 @@ public class Login2 extends WebCapabilities {
 			logger1.info("sign-in is clicked");
 			click("SignIn_Xpath");
 
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 			
 			WebElement Member = findElement("MemberName_Xpath");
 			WebElement Membership =findElement("MembershipNumber_Xpath");

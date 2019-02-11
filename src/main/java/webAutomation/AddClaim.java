@@ -1,4 +1,4 @@
-package project;
+package webAutomation;
 
 import java.util.List;
 
