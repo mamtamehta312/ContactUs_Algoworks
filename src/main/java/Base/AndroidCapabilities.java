@@ -34,6 +34,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
 
 public class AndroidCapabilities {
@@ -49,12 +50,13 @@ public class AndroidCapabilities {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		capabilities.setCapability("deviceName", "4d00b5844e003125");
-		// Emulator-5554
+		//  Emulator-5554   Pixel_2_XL_API_27   
 
 		capabilities.setCapability(CapabilityType.VERSION, "7.0");
 
-		//capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("browserName", "Chrome");
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+		capabilities.setCapability("Emulator", "true");
 		/*capabilities.setCapability("autoGrantPermissions", "true");
 		capabilities.setCapability("autoAcceptAlerts", "true");*/
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);

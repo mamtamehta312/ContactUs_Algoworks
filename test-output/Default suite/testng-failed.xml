@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="webAutomation.Login2">
         <methods>
           <include name="closeApplication"/>
@@ -12,6 +13,17 @@
           <include name="flush"/>
         </methods>
       </class> <!-- webAutomation.Login2 -->
+=======
+      <class name="project.Login2">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="validLogin"/>
+          <include name="createReport"/>
+          <include name="LaunchBrowser"/>
+          <include name="flush"/>
+        </methods>
+      </class> <!-- project.Login2 -->
+>>>>>>> 14542226ff805da97283bc9f9f39c093ff407922
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

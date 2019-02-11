@@ -5,10 +5,14 @@
 	<test thread-count="5" name="Testcases" verbose="2">
 	
 		<classes>
+
 			<class name="webAutomation.Login2" />
 			<!-- <class name="webAutomation.AddClaim" />
 			<class name="webAutomation.SumbitComplaints" />
 			<class name="project.LocateProvider5" /> -->
+
+			
+
 		</classes>
 	</test>
 

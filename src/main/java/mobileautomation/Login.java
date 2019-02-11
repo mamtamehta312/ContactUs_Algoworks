@@ -46,8 +46,8 @@ public class Login extends AndroidCapabilities {
 			//element.click();
 			Thread.sleep(2000);
 			element.click();
-			Thread.sleep(2000);
-			driver.findElement(By.xpath("//*[@id='submit-signin-local']")).sendKeys(Keys.ENTER);
+			/*Thread.sleep(2000);
+			driver.findElement(By.xpath("//*[@id='submit-signin-local']")).sendKeys(Keys.ENTER);*/
 			//click("SignIn_Xpath");
 			
 			Thread.sleep(3000);
