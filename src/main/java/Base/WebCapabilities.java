@@ -51,7 +51,7 @@ public class WebCapabilities {
 	public static void LaunchBrowser(@Optional("abc") String browser) {
 		{
 			
-			System.out.println("abd "+browser);
+			System.out.println("browser is "+browser);
 			if (browser.equalsIgnoreCase("Chrome")) {
 				 driver = new ChromeDriver();
 			} else if (browser.equalsIgnoreCase("Safari")) {

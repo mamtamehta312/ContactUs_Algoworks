@@ -16,14 +16,18 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -34,6 +38,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
 
@@ -44,47 +49,58 @@ public class AndroidCapabilities {
 	public static ExtentHtmlReporter reporter;
 	public static ExtentReports extent;
 	public static ExtentTest logger1;
+	
 
+	@Parameters("browser")
 	@BeforeSuite
-	public void setUp() throws MalformedURLException {
+	public void setUp(@Optional("abc") String browser) throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-		capabilities.setCapability("deviceName", "4d00b5844e003125");
-		//  Emulator-5554   Pixel_2_XL_API_27   
+		System.out.println("browser is " + browser);
+		if (browser.equalsIgnoreCase("Chrome")) {
 
-		capabilities.setCapability(CapabilityType.VERSION, "7.0");
-
-		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
-		capabilities.setCapability("Emulator", "true");
-		/*capabilities.setCapability("autoGrantPermissions", "true");
-		capabilities.setCapability("autoAcceptAlerts", "true");*/
-		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-		System.out.println("helloo");
-		driver.get(properties.getProperty("url"));
-
-	}
-
-	/*
-	 * @Test public void tc() throws InterruptedException {
-	 * driver.get(properties.getProperty("url"));
-	 * 
-	 * }
-	 */
-	static Properties properties;
-
-	static {
-		properties = new Properties();
-		FileInputStream fis;
-		try {
-			fis = new FileInputStream(
-					System.getProperty("user.dir") + "//src//main//resources//Properties//Android_OR.properties");
-			properties.load(fis);
-		} catch (IOException e) {
-			e.printStackTrace();
+			capabilities.setCapability("deviceName", "4d00b5844e003125");
+			// Emulator-5554 Pixel_2_XL_API_27
+			capabilities.setCapability(CapabilityType.VERSION, "7.0");
+			capabilities.setCapability("platformName", "Android");
+			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+			capabilities.setCapability("Emulator", "true");
+			/*
+			 * capabilities.setCapability("autoGrantPermissions", "true");
+			 * capabilities.setCapability("autoAcceptAlerts", "true");
+			 */
+			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		}
 
+		else if (browser.equalsIgnoreCase("Safari")) {
+			{
+				capabilities.setCapability("deviceName", "iPhone X");
+				capabilities.setCapability("udid", "08F44F8B-AD72-4789-97AC-BF34A84F2F0A");
+				capabilities.setCapability("platformName", "ios");
+				capabilities.setCapability("automationName", "XCUITest");
+				capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "safari");
+				capabilities.setCapability("Emulator", "true");
+			    driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+
+			}
+		}
+
+		driver.get(properties.getProperty("url"));
 	}
+	
+
+static Properties properties;
+static {
+	properties = new Properties();
+	FileInputStream fis;
+	try {
+		fis = new FileInputStream(
+				System.getProperty("user.dir") + "//src//main//resources//Properties//Android_OR.properties");
+		properties.load(fis);
+	}catch(IOException e) {
+		e.printStackTrace();
+	}
+}
 
 	public static String getObject(String Data) throws IOException {
 		String data = properties.getProperty(Data);
@@ -164,21 +180,21 @@ public class AndroidCapabilities {
 	}
 
 	public static void swipeup(int xPoint, int yPoint) {
-	JavascriptExecutor jse = (JavascriptExecutor) driver;
-	jse.executeScript("window.scrollBy(xPoint,yPoint)", "up");
-	
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(xPoint,yPoint)", "up");
+
 	}
-	
-	/*JavascriptExecutor jse = (JavascriptExecutor) driver;
-	jse.executeScript("window.scrollBy(0,500)", "up");*/
-	//jse.executeScript("scroll(0, -1110);","down");
+
+	/*
+	 * JavascriptExecutor jse = (JavascriptExecutor) driver;
+	 * jse.executeScript("window.scrollBy(0,500)", "up");
+	 */
+	// jse.executeScript("scroll(0, -1110);","down");
 
 //scroll to bottom of page
 //JavascriptExecutor js = ((JavascriptExecutor) driver);
 //js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-	
-	
-	
+
 	public static void captureScreenShots(String file_name) throws IOException {
 		String folder_name;
 		DateFormat df;

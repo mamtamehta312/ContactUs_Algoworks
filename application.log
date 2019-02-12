@@ -1,0 +1,2 @@
+2019-02-12 17:01:15,843  INFO [Forwarding quit on session 4a631410-e248-40e6-8a57-dd7abacb2523 to remote] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:4723: Connection reset
+2019-02-12 17:01:15,846  INFO [Forwarding quit on session 4a631410-e248-40e6-8a57-dd7abacb2523 to remote] RetryExec:113 - Retrying request to {}->http://127.0.0.1:4723

@@ -4,15 +4,15 @@
   <parameter name="browser" value="Safari"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="webAutomation.Login2">
+      <class name="mobileautomation.Login">
         <methods>
-          <include name="closeApplication"/>
-          <include name="createReport"/>
-          <include name="LaunchBrowser"/>
-          <include name="validLogin"/>
           <include name="flush"/>
+          <include name="createReport"/>
+          <include name="validLogin"/>
+          <include name="setUp"/>
+          <include name="closeApplication"/>
         </methods>
-      </class> <!-- webAutomation.Login2 -->
+      </class> <!-- mobileautomation.Login -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

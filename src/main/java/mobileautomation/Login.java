@@ -37,29 +37,23 @@ public class Login extends AndroidCapabilities {
 		try {
 			 
 			logger1.info("username  \"benm449@gmail.com\" is typed in textbox '//*[@id=\"Username\"]' ");
-			type("Username_ID", "username");
+			type("Username_Xpath", "username");
 			logger1.info("correct password \"Ranger40#\" is typed in textbox '//*[@id=\"Password\"]' ");
-			type("Password_ID", "password");
+			type("Password_Xpath", "password");
 			Thread.sleep(2000);
 			logger1.info("sign-in is clicked");
-			MobileElement element = driver.findElement(By.xpath("//*[@id='submit-signin-local']"));
-			//element.click();
-			Thread.sleep(2000);
-			element.click();
-			/*Thread.sleep(2000);
-			driver.findElement(By.xpath("//*[@id='submit-signin-local']")).sendKeys(Keys.ENTER);*/
-			//click("SignIn_Xpath");
-			
-			Thread.sleep(3000);
+//			MobileElement element = driver.findElement(By.xpath("//*[@id='submit-signin-local']"));
+//			//element.click();
+//			Thread.sleep(2000);
+//			element.click();
+			click("SignIn_Xpath");
+		
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/section/div/div/div/div/div[1]/div[1]/div[2]/p[1]")));
 			
 			//swipeup(0,300);
 			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("window.scrollBy(0,300)", "up");
-			
-			//System.out.println(driver.findElement(By.xpath("/html/body/section/div/div/div/div/div[1]/div[1]/div[2]/p[1]")).getText());
-			
-			
-					
 					
 			Thread.sleep(2000);
 			
