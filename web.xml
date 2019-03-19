@@ -6,10 +6,10 @@
 	
 		<classes>
 
-			<class name="webAutomation.Login2" />
-			<class name="webAutomation.AddClaim" />
+			<class name="webautomation.FormFilling" />
+		<!--	<class name="webAutomation.AddClaim" />
 			<class name="webAutomation.SumbitComplaints" />
-			<!-- <class name="project.LocateProvider5" /> -->
+			 <class name="project.LocateProvider5" /> -->
 
 			
 

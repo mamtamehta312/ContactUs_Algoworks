@@ -72,7 +72,7 @@ public class WebCapabilities {
 		FileInputStream fis;
 		try {
 			fis = new FileInputStream(
-					System.getProperty("user.dir") + "//src//main//resources//Properties//WEB_OR.properties");
+					System.getProperty("user.dir") + "//src//main//resources//Properties//Android_OR.properties");
 			properties.load(fis);
 		} catch (IOException e) {
 			e.printStackTrace();

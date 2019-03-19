@@ -59,12 +59,12 @@ public class AndroidCapabilities {
 		System.out.println("browser is " + browser);
 		if (browser.equalsIgnoreCase("Chrome")) {
 
-			capabilities.setCapability("deviceName", "4d00b5844e003125");
+			capabilities.setCapability("deviceName", "ce011821740e3c530c");
 			// Emulator-5554 Pixel_2_XL_API_27
-			capabilities.setCapability(CapabilityType.VERSION, "7.0");
+			capabilities.setCapability(CapabilityType.VERSION, "8.0");
 			capabilities.setCapability("platformName", "Android");
 			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
-			capabilities.setCapability("Emulator", "true");
+		//	capabilities.setCapability("Emulator", "true");
 			/*
 			 * capabilities.setCapability("autoGrantPermissions", "true");
 			 * capabilities.setCapability("autoAcceptAlerts", "true");
@@ -84,7 +84,7 @@ public class AndroidCapabilities {
 
 			}
 		}
-
+		//System.out.println("helloo");
 		driver.get(properties.getProperty("url"));
 	}
 	
@@ -96,7 +96,7 @@ static {
 	try {
 		fis = new FileInputStream(
 				System.getProperty("user.dir") + "//src//main//resources//Properties//Android_OR.properties");
-		properties.load(fis);
+		properties.load(fis);   
 	}catch(IOException e) {
 		e.printStackTrace();
 	}
@@ -148,7 +148,7 @@ static {
 		return WebElement;
 	}
 
-	public void back() {
+	public static void back() {
 		driver.navigate().back();
 	}
 

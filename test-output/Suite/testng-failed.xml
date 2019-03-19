@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="browser" value="Safari"/>
+  <parameter name="browser" value="chrome"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="mobileautomation.Login">
+      <class name="mobileautomation.FormFilling">
         <methods>
           <include name="flush"/>
+          <include name="formFilling"/>
           <include name="createReport"/>
-          <include name="validLogin"/>
           <include name="setUp"/>
           <include name="closeApplication"/>
         </methods>
-      </class> <!-- mobileautomation.Login -->
+      </class> <!-- mobileautomation.FormFilling -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->
