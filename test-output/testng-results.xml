@@ -5,12 +5,12 @@
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="56368" started-at="2019-04-03T08:00:49Z" finished-at="2019-04-03T08:01:45Z">
+  <suite name="Suite" duration-ms="58684" started-at="2019-04-03T10:05:53Z" finished-at="2019-04-03T10:06:52Z">
     <groups>
     </groups>
-    <test name="Testcases" duration-ms="56368" started-at="2019-04-03T08:00:49Z" finished-at="2019-04-03T08:01:45Z">
+    <test name="Testcases" duration-ms="58684" started-at="2019-04-03T10:05:53Z" finished-at="2019-04-03T10:06:52Z">
       <class name="mobileautomation.FormFilling">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="setUp" is-config="true" duration-ms="18199" started-at="2019-04-03T13:30:31Z" finished-at="2019-04-03T13:30:49Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="setUp" is-config="true" duration-ms="16141" started-at="2019-04-03T15:35:37Z" finished-at="2019-04-03T15:35:53Z">
           <params>
             <param index="0">
               <value>
@@ -21,19 +21,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="createReport" is-config="true" duration-ms="180" started-at="2019-04-03T13:30:49Z" finished-at="2019-04-03T13:30:49Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="createReport" is-config="true" duration-ms="147" started-at="2019-04-03T15:35:53Z" finished-at="2019-04-03T15:35:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="formFilling()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="formFilling" duration-ms="55672" started-at="2019-04-03T13:30:49Z" finished-at="2019-04-03T13:31:45Z">
+        <test-method status="PASS" signature="formFilling()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="formFilling" duration-ms="58013" started-at="2019-04-03T15:35:53Z" finished-at="2019-04-03T15:36:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formFilling -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="flush" is-config="true" duration-ms="490" started-at="2019-04-03T13:31:45Z" finished-at="2019-04-03T13:31:45Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="flush" is-config="true" duration-ms="488" started-at="2019-04-03T15:36:51Z" finished-at="2019-04-03T15:36:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="closeApplication" is-config="true" duration-ms="1163" started-at="2019-04-03T13:31:45Z" finished-at="2019-04-03T13:31:46Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="closeApplication" is-config="true" duration-ms="1805" started-at="2019-04-03T15:36:52Z" finished-at="2019-04-03T15:36:53Z">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>
