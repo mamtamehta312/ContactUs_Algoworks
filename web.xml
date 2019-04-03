@@ -7,27 +7,10 @@
 		<classes>
 
 			<class name="webautomation.FormFilling" />
-		<!--	<class name="webAutomation.AddClaim" />
-			<class name="webAutomation.SumbitComplaints" />
-			 <class name="project.LocateProvider5" /> -->
-
-			
-
-		</classes>
+			</classes>
 	</test>
 
-	<!--  <test thread-count="5" name="Apply">
-		<classes>
-			<class name="tests.workflow.ApplyJob" />
-		</classes>
-	</test>
-
-	<test thread-count="5" name="Selection">
-		<classes>
-			<class name="tests.workflow.CandidateSelection" />
-		</classes>
-	</test>  -->
-	<!-- Test -->
+	
 </suite> <!-- Suite -->
 
 

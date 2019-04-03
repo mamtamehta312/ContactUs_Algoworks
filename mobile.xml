@@ -5,23 +5,11 @@
 	<test thread-count="5" name="Testcases" verbose="2">
 		<classes>
 			<class name="mobileautomation.FormFilling" />
-			<!-- <class name="mobileautomation.AddClaim" />
-			<class name="mobileautomation.SumbitComplaints" /> -->
+			
 		</classes>
 	</test>
 
-	<!--  <test thread-count="5" name="Apply">
-		<classes>
-			<class name="tests.workflow.ApplyJob" />
-		</classes>
-	</test>
-
-	<test thread-count="5" name="Selection">
-		<classes>
-			<class name="tests.workflow.CandidateSelection" />
-		</classes>
-	</test>  -->
-	<!-- Test -->
+	
 </suite> <!-- Suite -->
 
 
