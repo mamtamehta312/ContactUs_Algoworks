@@ -115,6 +115,12 @@ static {
 		} else if (Locator.endsWith("_ID")) {
 			driver.findElement(By.id(properties.getProperty(Locator))).sendKeys(properties.getProperty(key));
 		}
+		else if(Locator.endsWith("_ID1")) {
+			driver.findElement(By.id(properties.getProperty(Locator))).sendKeys(properties.getProperty(key));
+		}
+		else if(Locator.endsWith("_Xpath1")){
+			driver.findElement(By.xpath(properties.getProperty(Locator))).sendKeys(properties.getProperty(key));
+		}
 	}
 
 	public static void click(String Locator) {
@@ -124,8 +130,14 @@ static {
 		} else if (Locator.endsWith("_ID")) {
 			driver.findElement(By.id(properties.getProperty(Locator))).click();
 			// driver.findElementByAccessibilityId(properties.getProperty(Locator)).click();
-
+}
+		else if(Locator.endsWith("_ID1")) {
+			driver.findElement(By.id(properties.getProperty(Locator))).click();
 		}
+		else if(Locator.endsWith("_Xpath1")){
+			driver.findElement(By.xpath(properties.getProperty(Locator))).click();
+		}
+		
 	}
 
 	public static String getPropertyValue(String key) {
@@ -152,6 +164,11 @@ static {
 		driver.navigate().back();
 	}
 
+	public static void to(String String) {
+		driver.navigate().to(String);
+	}
+
+	
 	public void clear(String Locator) {
 		if (Locator.endsWith("_Xpath")) {
 			driver.findElement(By.xpath(properties.getProperty(Locator))).clear();
@@ -159,7 +176,12 @@ static {
 		} else if (Locator.endsWith("_ID")) {
 			driver.findElement(By.id(properties.getProperty(Locator))).clear();
 			// driver.findElementByAccessibilityId(properties.getProperty(Locator)).click();
-
+}
+		else if(Locator.endsWith("_ID1")) {
+			driver.findElement(By.id(properties.getProperty(Locator))).clear();
+		}
+		else if(Locator.endsWith("_Xpath1")){
+			driver.findElement(By.xpath(properties.getProperty(Locator))).clear();
 		}
 	}
 
@@ -215,11 +237,13 @@ static {
 		reporter = new ExtentHtmlReporter("./extent.html");
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
+		
 	}
 
 	@AfterTest
 	public void flush() throws IOException {
 		extent.flush();
+		//reporter.setAppendExisting(true);
 	}
 
 	@AfterSuite

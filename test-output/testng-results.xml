@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
   <reporter-output>
     <line>
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="58684" started-at="2019-04-03T10:05:53Z" finished-at="2019-04-03T10:06:52Z">
+  <suite name="Suite" duration-ms="141451" started-at="2019-04-10T05:53:55Z" finished-at="2019-04-10T05:56:17Z">
     <groups>
     </groups>
-    <test name="Testcases" duration-ms="58684" started-at="2019-04-03T10:05:53Z" finished-at="2019-04-03T10:06:52Z">
+    <test name="Testcases" duration-ms="141451" started-at="2019-04-10T05:53:55Z" finished-at="2019-04-10T05:56:17Z">
       <class name="mobileautomation.FormFilling">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="setUp" is-config="true" duration-ms="16141" started-at="2019-04-03T15:35:37Z" finished-at="2019-04-03T15:35:53Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mobileautomation.FormFilling@78c03f1f]" name="setUp" is-config="true" duration-ms="31757" started-at="2019-04-10T11:23:24Z" finished-at="2019-04-10T11:23:55Z">
           <params>
             <param index="0">
               <value>
@@ -21,19 +21,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="createReport" is-config="true" duration-ms="147" started-at="2019-04-03T15:35:53Z" finished-at="2019-04-03T15:35:53Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:mobileautomation.FormFilling@78c03f1f]" name="createReport" is-config="true" duration-ms="606" started-at="2019-04-10T11:23:55Z" finished-at="2019-04-10T11:23:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="formFilling()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="formFilling" duration-ms="58013" started-at="2019-04-03T15:35:53Z" finished-at="2019-04-03T15:36:51Z">
+        <test-method status="PASS" signature="formFilling()[pri:0, instance:mobileautomation.FormFilling@78c03f1f]" name="formFilling" duration-ms="63698" started-at="2019-04-10T11:23:56Z" finished-at="2019-04-10T11:25:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formFilling -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="flush" is-config="true" duration-ms="488" started-at="2019-04-03T15:36:51Z" finished-at="2019-04-03T15:36:52Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:mobileautomation.FormFilling@78c03f1f]" name="flush" is-config="true" duration-ms="687" started-at="2019-04-10T11:26:16Z" finished-at="2019-04-10T11:26:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:mobileautomation.FormFilling@52a86356]" name="closeApplication" is-config="true" duration-ms="1805" started-at="2019-04-03T15:36:52Z" finished-at="2019-04-03T15:36:53Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:mobileautomation.FormFilling@78c03f1f]" name="closeApplication" is-config="true" duration-ms="13287" started-at="2019-04-10T11:26:17Z" finished-at="2019-04-10T11:26:30Z">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>
@@ -41,6 +41,16 @@
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- mobileautomation.FormFilling -->
+      <class name="mobileautomation.ContactForm">
+        <test-method status="PASS" signature="init()[pri:0, instance:mobileautomation.ContactForm@5ec0a365]" name="init" is-config="true" duration-ms="9858" started-at="2019-04-10T11:25:00Z" finished-at="2019-04-10T11:25:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="contactForm()[pri:0, instance:mobileautomation.ContactForm@5ec0a365]" name="contactForm" duration-ms="66529" started-at="2019-04-10T11:25:10Z" finished-at="2019-04-10T11:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactForm -->
+      </class> <!-- mobileautomation.ContactForm -->
     </test> <!-- Testcases -->
   </suite> <!-- Suite -->
 </testng-results>
