@@ -18,11 +18,11 @@ import io.appium.java_client.MobileElement;
 
 public class Server extends AndroidCapabilities{
     
-	/*@BeforeClass
+	@BeforeClass
 	public void ServerNext() {
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.navigate().to(properties.getProperty("sServer_Url"));
-	}*/
+	}
 	@Test
 	public static void server() throws Exception {
 		logger1 = extent.createTest("server");
@@ -76,12 +76,13 @@ public class Server extends AndroidCapabilities{
 			Thread.sleep(2000);
 			click("sButton_Xpath");
 			
-			WebDriverWait wait = new WebDriverWait(driver, 1);
+			//Thread.sleep(10000);
+			/*WebDriverWait wait = new WebDriverWait(driver, 1);
 			if(wait.until(ExpectedConditions.alertIsPresent())==null) {
 				Thread.sleep(10000);
 			}else {
 				click("sConfirmationButton_Xpath");
-			}
+			}*/
 			
 		}
 		catch(Exception e) {

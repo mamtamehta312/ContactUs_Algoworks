@@ -18,8 +18,8 @@ public class ContactForm extends AndroidCapabilities{
 	@BeforeClass
 	public static void init() {
 		
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		driver.navigate().to("https://www.couchbase.com/contact");
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.navigate().to(properties.getProperty("ContactForm_url"));
 	}
 	@Test()
 	public static void contactForm() throws Exception {
@@ -30,11 +30,11 @@ public class ContactForm extends AndroidCapabilities{
 			
 			Thread.sleep(2000);
 			logger1.info("First name 'Bob' is typed in textbox '//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/input'");
-			type("FirstName_Xpath1", "FirstName");
+			type("cFirstName_Xpath", "cFirstName");
 			
             Thread.sleep(2000);
 			logger1.info("Last name 'Jackson' is typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[1]/div[2]/div/input'");
-			type("LastName_Xpath1", "LastName");
+			type("cLastName_Xpath", "cLastName");
 			jse.executeScript("window.scrollBy(0,100)", "up");
 
 			Thread.sleep(5000);
@@ -48,19 +48,19 @@ public class ContactForm extends AndroidCapabilities{
 			//jse.executeScript("window.scrollBy(0,100)", "up");
             Thread.sleep(2000);
 			logger1.info("Area code+phone is '9899928177' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[2]/div[2]/div/label'");
-			type("PhoneNumber_Xpath1", "PhoneNumber");
+			type("cPhoneNumber_Xpath", "cPhoneNumber");
 			
 			Thread.sleep(2000);
 			logger1.info("Business Email Address 'Bob.Jackson@gmail.com' typed in textbox '//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[3]/input'");
-			type("BusinessEmailAddress_Xpath1","BusinessEmailAddress");
+			type("cBusinessEmailAddress_Xpath","cBusinessEmailAddress");
 			
 	         Thread.sleep(2000);
 			 logger1.info("Company 'Algoworks' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[4]/input'");
-			 type("Company_Xpath1", "Company");
+			 type("cCompany_Xpath", "cCompany");
 			 
 			 Thread.sleep(2000);	
 			 logger1.info("Job Title 'Software Test Engineer' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[5]/input'");
-			 type("JobTitle_Xpath1", "JobTitle");
+			 type("cJobTitle_Xpath", "cJobTitle");
 			 
 			 Thread.sleep(2000);
 			 logger1.info("Country 'United States' is selected");
@@ -78,7 +78,7 @@ public class ContactForm extends AndroidCapabilities{
 			 
 			 Thread.sleep(2000);	
 			 logger1.info("City name 'Noida' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[9]/input'");
-		     type("City_Xpath1", "City");
+		     type("cCity_Xpath", "cCity");
 		     
 		     Thread.sleep(2000);
 		     logger1.info("Partner Inquiry is selected");
@@ -94,11 +94,11 @@ public class ContactForm extends AndroidCapabilities{
 				
 				Thread.sleep(2000);	
 				logger1.info("City name 'Noida' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[9]/input'");
-				type("Message_Xpath1", "Message");
+				type("cMessage_Xpath", "cMessage");
 				
 				Thread.sleep(2000);
 				 logger1.info("Contact Us button is selected");
-				driver.findElement(By.xpath("//*[@id=\'global-content\']/div/div[2]/section/div/form/div[13]/button")).click();
+				 click("cContactUsButton_Xpath");
 				
 				jse.executeScript("window.scrollBy(0, -800)", "down");
 				Thread.sleep(5000);

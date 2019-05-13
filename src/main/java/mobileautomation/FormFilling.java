@@ -46,13 +46,13 @@ public class FormFilling extends AndroidCapabilities {
 			Thread.sleep(2000);
 			logger1.info(
 					"First name 'Bob' is typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[1]/div[1]/div/input'");
-			type("FirstName_Xpath", "FirstName");
+			type("fFirstName_Xpath", "fFirstName");
 
 			Thread.sleep(2000);
 
 			logger1.info(
 					"Last name 'Jackson' is typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[1]/div[2]/div/input'");
-			type("LastName_Xpath", "LastName");
+			type("fLastName_Xpath", "fLastName");
 
 			Thread.sleep(2000);
 			JavascriptExecutor jse1 = (JavascriptExecutor) driver;
@@ -62,33 +62,33 @@ public class FormFilling extends AndroidCapabilities {
 			logger1.info("Country code '+91' for country 'UK' is selected");
 			// MobileElement s =
 			// driver.findElement(By.xpath("//*[@id='global-content']/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/select"));
-			WebElement s = findElement("CountryCode_Xpath");
+			WebElement s = findElement("fCountryCode_Xpath");
 			Select jobType = new Select(s);
-			jobType.selectByVisibleText(AndroidCapabilities.getPropertyValue("CountryCode"));
+			jobType.selectByVisibleText(AndroidCapabilities.getPropertyValue("fCountryCode"));
 
 			// ----------------------------------------------------------------------------------------------
 
 			Thread.sleep(2000);
 			logger1.info(
 					"Area code+phone is '9899928177' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[2]/div[2]/div/label'");
-			type("PhoneNumber_Xpath", "PhoneNumber");
+			type("fPhoneNumber_Xpath", "fPhoneNumber");
 
 			Thread.sleep(2000);
 			logger1.info(
 					"Business Email Address 'Bob.Jackson@gmail.com' typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[3]'");
-			type("BusinessEmailAddress_Xpath", "BusinessEmailAddress");
+			type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
 
 			// ---------------------------------------------------------------------------------------------------
 
 			Thread.sleep(2000);
 			logger1.info(
 					"Company 'Algoworks' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[4]/input'");
-			type("Company_Xpath", "Company");
+			type("fCompany_Xpath", "fCompany");
 
 			Thread.sleep(2000);
 			logger1.info(
 					"Job Title 'Software Test Engineer' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[5]/input'");
-			type("JobTitle_Xpath", "JobTitle");
+			type("fJobTitle_Xpath", "fJobTitle");
 
 			// --------------------------------------------------------------------------------------------------------------------------------------------------
 			Thread.sleep(2000);
@@ -97,44 +97,44 @@ public class FormFilling extends AndroidCapabilities {
 
 			logger1.info(
 					"Country name 'United Kingdom' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[6]/span/span'");
-			WebElement s1 = findElement("Country2_Xpath");
+			WebElement s1 = findElement("fCountry2_Xpath");
 			Select jobType1 = new Select(s1);
 			Thread.sleep(2000);
-			jobType1.selectByValue(AndroidCapabilities.getPropertyValue("Country2"));
+			jobType1.selectByValue(AndroidCapabilities.getPropertyValue("fCountry2"));
 
 			// ----------------------------------------------------------------------------------------------------------------
 
 			Thread.sleep(2000);
 			logger1.info(
 					"City name 'Noida' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[9]/input'");
-			type("City_Xpath", "City");
+			type("fCity_Xpath", "fCity");
 
 			Thread.sleep(2000);
 			logger1.info("'Reason for inquiry' is given in textbox '//*[@id='contactUsReasonforInquiry']'");
-			WebElement s3 = findElement("JobInquiry_Xpath");
+			WebElement s3 = findElement("fJobInquiry_Xpath");
 			Select jobType3 = new Select(s3);
 			Thread.sleep(2000);
-			jobType3.selectByVisibleText(AndroidCapabilities.getPropertyValue("JobInquiry"));
+			jobType3.selectByVisibleText(AndroidCapabilities.getPropertyValue("fJobInquiry"));
 
 			jse2.executeScript("window.scrollBy(0,100)", "up");
 
 			Thread.sleep(2000);
 			logger1.info(
 					"Message is displayed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[9]/input'");
-			type("Message_Xpath", "Message");
+			type("fMessage_Xpath", "fMessage");
 
 			jse2.executeScript("window.scrollBy(0,300)", "up");
 			Thread.sleep(2000);
 
 			logger1.info(
 					"'contact us' is clicked having id '//*[@id='global-content']/div[3]/div[1]/section/div/form/div[13]/button'");
-			click("ContactUs_Xpath");
+			click("fContactUs_Xpath");
 			Thread.sleep(2000);
-			click("ContactUs_Xpath");
+			click("fContactUs_Xpath");
 			Thread.sleep(5000);
 
 			jse2.executeScript("window.scrollBy(0, -800)", "down");
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 
 			logger1.pass("Testcase is Passed");
 

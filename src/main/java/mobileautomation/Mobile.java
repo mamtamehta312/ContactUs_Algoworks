@@ -1,6 +1,5 @@
 package mobileautomation;
 
-import java.awt.Robot;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
@@ -8,8 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -33,11 +32,11 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class Mobile extends AndroidCapabilities{
 	
 	@BeforeClass
-	public void mobileNext() {
-		
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	public void ServerNext() {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.navigate().to(properties.getProperty("mMobile_Url"));
 	}
+	
 	
 	@Test
 	public static void mobile() throws Exception {
@@ -46,7 +45,7 @@ public class Mobile extends AndroidCapabilities{
 			JavascriptExecutor jsed = (JavascriptExecutor) driver;
 			jsed.executeScript("window.scrollBy(0,1000)", "up");
 			
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			logger1.info("First Name 'Bob' has been entered into the text field");
 			type("mFirstName_Xpath","mName");
 			
@@ -83,66 +82,21 @@ public class Mobile extends AndroidCapabilities{
 			type("mCity_Xpath","mCity");
 			
 			jsed.executeScript("window.scrollBy(0,100)", "up");
-			//driver.findElement(By.cssSelector(" div.I agree to the  div:nth-child(3)")).click();
 			
-			//driver.findElement(By.cssSelector("a:not(.href)")).click();
-			WebDriverWait wait = new WebDriverWait(driver, 20);
-			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a:not(.href)")));
-			element.click();
-		
-			/*JavascriptExecutor js = (JavascriptExecutor)driver;
-			js.executeScript("document.findElementsByName('termsandConditions')[0].click()")*/
+			Thread.sleep(3000);
+			//driver.findElement(By.cssSelector("#mktoForm_2768 > div.mktoFormRow.checkbox_block_1.checkbox_block.checkbox_width > div.mktoFieldDescriptor.mktoFormCol > div.mktoFieldWrap.mktoRequiredField > div.mktoLogicalField.mktoCheckboxList.mktoHasWidth.mktoRequired.mktoInvalid > label")).click();
+			//driver.findElement(By.cssSelector("/*[.=''::before']")).click();
+			//driver.findElement(By.xpath("//span[contains(text(),'I agree to the')]")).click();
+			//driver.findElement(By.cssSelector("label:before")).click();
+			/*Actions action = new Actions(driver);
+			action.moveToElement(driver.findElement(By.cssSelector("mktoCheckbox_52362_0"))).build().perform();*/
 			
-			/*WebElement switchLabel = driver.findElement(By.xpath("//input[@name='termsandConditions']"));
-			String colorRGB = ((JavascriptExecutor)driver)
-			        .executeScript("return window.getComputedStyle(arguments[0], '::before').getPropertyValue('style');",switchLabel).toString();
-			System.out.println(colorRGB);*/
-		
-			/*driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-			driver.findElement(By.xpath("//input[@name='termsandConditions']")).click();*/
-			//WebElement element = driver.findElement(By.xpath("//*[contains(@id, 'mktoForm_')]/div[10]/div[1]/div[2]/div[2]/label"));
-			/*Point coordinates = driver.findElement(By.cssSelector("input[name='termsandConditions']")).getLocation();
-			Robot robot = new Robot();
-			WebElement markNews = driver.findElement(By.cssSelector("input[name='termsandConditions']"));
-			markNews.click();
-			System.out.println(coordinates.x);
-			System.out.println(coordinates.y);
-			robot.mouseMove(coordinates.x,coordinates.y);*/
-
-
+			/*WebElement label = driver.findElement(By.xpath("//label[@for='mktoCheckbox_52362_0']"));
+			new Actions(driver).moveToElement(label, 1, 1).click().perform();*/
+			/*MobileElement element = driver.findElement(By.id("mktoCheckbox_51340_0"));
+			Actions action = new Actions(driver);
+			action.moveToElement(element).moveByOffset(200, 15).click().build().perform();*/
 			
-			/*Point point = element.getLocation();
-			 int xcord = point.getX();
-			 System.out.println("Position of the webelement from left side is "+xcord +" pixels");
-			 int ycord = point.getY();
-			 System.out.println("Position of the webelement from top side is "+ycord +" pixels");
-			 Actions action = new Actions(driver);
-			 action.moveToElement(element, xcord, ycord).click().build().perform();*/
-			//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			/*WebDriverWait wait = new WebDriverWait(driver,30);
-		    wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[name='termsandConditions']")));
-		    driver.findElement(By.cssSelector("input[name='termsandConditions']")).click();*/
-		    
-			/*WebElement element1 = driver.findElement(By.cssSelector("input[name='termsandConditions']"));
-			JavascriptExecutor executor = (JavascriptExecutor)driver;
-			executor.executeScript("document.getElementById('mktoCheckbox_51340_0').value='true'", element1);
-			WebElement yourChkBox  = driver.findElement(By.xpath("//*[@name='termsandConditions']/parent::div"));*/
-
-			//JavascriptExecutor js = (JavascriptExecutor) driver;        
-			//((JavascriptExecutor) driver).executeScript("el = document.elementFromPoint(xcord, ycord); el.click();");
-			
-			//driver.findElement(By.cssSelector("input[name='termsandConditions']")).click();
-			
-			
-			/*WebElement yourChkBox  = driver.findElement(By.xpath("//*[@name='termsandConditions']/parent::div"));
-
-			WebDriverWait wait = new WebDriverWait(driver, 20);
-			wait.until(ExpectedConditions.visibilityOf(yourChkBox));
-
-			Actions act = new Actions(driver);
-			act.moveToElement(yourChkBox).click().build().perform();*/
-			
-			//Thread.sleep(3000);
 			//driver.findElement(By.xpath("//*[contains(@id,'mktoForm_')]/div[10]/div[1]/div[2]/div[2]/label")).click();
 			//List<MobileElement> checkbox=driver.findElements(By.xpath("//input[starts-with(@id,'mktoCheckbox_')]"));
 			/*List<MobileElement> checkbox=driver.findElements(By.xpath("//input[contains(@id,'mktoCheckbox_')][contains(@type,'checkbox')]"));
@@ -164,18 +118,12 @@ public class Mobile extends AndroidCapabilities{
 			logger1.info("Checkbox 'License Agreement' has been checked");
 			click("mCheckbox_Xpath");*/
 			
-			/*driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-			Actions action = new Actions(driver);
-			action.moveToElement(driver.findElement(By.cssSelector("input[name='termsandConditions']"))).click().build().perform();*/
-			
-			//driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[10]/div[1]/div[2]/div[2]/label/span/span/a")).click();
+			//driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			/*WebElement checkbox = driver.findElement(By.xpath("//input[contains(@name, 'formid')]"));
 			String js = "arguments[0].setAttribute('type','text')";
 			((JavascriptExecutor) driver).executeScript(js, checkbox);
 			
 			driver.findElement(By.xpath("//input[contains(@id, 'mktoCheckbox_')][contains(@name, 'termsandConditions')]")).click();*/
-			
-			//driver.findElement(By.cssSelector("label.mktoCheckbox_51340_0::before")).click();
 			//driver.findElement(By.xpath("//*[@class='mktoLogicalField mktoCheckboxList mktoHasWidth mktoRequired mktoInvalid']/input")).click();
 			/*WebElement myElement = driver.findElement(By.xpath("//*[contains(@id,'mktoForm_')]/div[10]/div[1]/div[2]/div[2]"));
 			String js = "arguments[0].setAttribute('type','text')";
@@ -206,12 +154,12 @@ public class Mobile extends AndroidCapabilities{
 			Thread.sleep(2000);
 			click("mButton_Xpath");
 			
-			WebDriverWait wait1 = new WebDriverWait(driver, 300);
-			if(wait1.until(ExpectedConditions.alertIsPresent())==null) {
+			/*WebDriverWait wait = new WebDriverWait(driver, 300);
+			if(wait.until(ExpectedConditions.alertIsPresent())==null) {
 				Thread.sleep(10000);
 			}else {
 				click("mConfirmationButton_Xpath");
-			}
+			}*/
 			
 		}
 		catch(Exception e) {

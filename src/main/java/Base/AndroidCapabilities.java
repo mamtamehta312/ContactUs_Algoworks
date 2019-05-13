@@ -1,6 +1,5 @@
 package Base;
 
-import org.testng.annotations.BeforeMethod;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -21,7 +20,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -46,8 +44,6 @@ import io.appium.java_client.touch.offset.PointOption;
 
 public class AndroidCapabilities {
 
-	private static final String String = null;
-
 	protected static AppiumDriver<MobileElement> driver;
 
 	public static ExtentHtmlReporter reporter;
@@ -55,29 +51,29 @@ public class AndroidCapabilities {
 	public static ExtentTest logger1;
 	
 
-	@BeforeMethod
 	@Parameters("browser")
 	@BeforeSuite
-	public void setUp(@Optional("chrome") String browser) throws MalformedURLException {
+	public void setUp(@Optional("abc") String browser) throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		System.out.println("browser is " + browser);
 		if (browser.equalsIgnoreCase("Chrome")) {
 
-			capabilities.setCapability("deviceName", "Emulator-5554 Pixel_XL_API_28");
-			
-			capabilities.setCapability(CapabilityType.VERSION, "9.0");
+			capabilities.setCapability("deviceName", "Emulator-5554 Nexus_6_API_28");
+			// ,ce011821740e3c530c
+			capabilities.setCapability(CapabilityType.VERSION, "8.0");
 			capabilities.setCapability("platformName", "Android");
-			
 			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
 			capabilities.setCapability("Emulator", "true");
-			capabilities.setCapability("chromedriverExecutable", "/home/shashi/chromedriver_linux64 (1)/chromedriver");
-//			capabilities.setCapability("autoGrantPermissions", "true");
-//			capabilities.setCapability("automationName", "UiAutomator2");
-			
+			/*
+			 * capabilities.setCapability("autoGrantPermissions", "true");
+			 * capabilities.setCapability("autoAcceptAlerts", "true");
+			 */
+			//System.setProperty("webdriver.chrome.driver", "/home/chanchal/Downloads/chromedriver");
+			capabilities.setCapability("chromedriverExecutable", "/home/chanchal/Downloads/chromedriver");
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		}
-		
+
 		else if (browser.equalsIgnoreCase("Safari")) {
 			{
 				capabilities.setCapability("deviceName", "iPhone X");
@@ -86,17 +82,16 @@ public class AndroidCapabilities {
 				capabilities.setCapability("automationName", "XCUITest");
 				capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "safari");
 				capabilities.setCapability("Emulator", "true");
-				
 			    driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
 			}
 		}
 		//System.out.println("helloo");
-		driver.get(properties.getProperty("sServer_Url"));
+		driver.get(properties.getProperty("url"));
 	}
 	
 
-public static Properties properties;
+protected static Properties properties;
 static {
 	properties = new Properties();
 	FileInputStream fis;
@@ -118,12 +113,17 @@ static {
 	public static void type(String Locator, String key) {
 		if (Locator.endsWith("_Xpath")) {
 			driver.findElement(By.xpath(properties.getProperty(Locator))).sendKeys(properties.getProperty(key));
-			
+
 		} else if (Locator.endsWith("_ID")) {
 			driver.findElement(By.id(properties.getProperty(Locator))).sendKeys(properties.getProperty(key));
 		}
+		else if(Locator.endsWith("_ID1")) {
+			driver.findElement(By.id(properties.getProperty(Locator))).sendKeys(properties.getProperty(key));
+		}
+		else if(Locator.endsWith("_Xpath1")){
+			driver.findElement(By.xpath(properties.getProperty(Locator))).sendKeys(properties.getProperty(key));
+		}
 	}
-	
 
 	public static void click(String Locator) {
 		if (Locator.endsWith("_Xpath")) {
@@ -132,10 +132,15 @@ static {
 		} else if (Locator.endsWith("_ID")) {
 			driver.findElement(By.id(properties.getProperty(Locator))).click();
 			// driver.findElementByAccessibilityId(properties.getProperty(Locator)).click();
-
+}
+		else if(Locator.endsWith("_ID1")) {
+			driver.findElement(By.id(properties.getProperty(Locator))).click();
 		}
+		else if(Locator.endsWith("_Xpath1")){
+			driver.findElement(By.xpath(properties.getProperty(Locator))).click();
+		}
+		
 	}
-	
 
 	public static String getPropertyValue(String key) {
 
@@ -153,16 +158,19 @@ static {
 			// driver.findElementByAccessibilityId(properties.getProperty(Locator)).click();
 
 		}
+
 		return WebElement;
 	}
 
 	public static void back() {
 		driver.navigate().back();
 	}
-	public static void to() {
+
+	public static void to(String String) {
 		driver.navigate().to(String);
 	}
 
+	
 	public void clear(String Locator) {
 		if (Locator.endsWith("_Xpath")) {
 			driver.findElement(By.xpath(properties.getProperty(Locator))).clear();
@@ -170,7 +178,12 @@ static {
 		} else if (Locator.endsWith("_ID")) {
 			driver.findElement(By.id(properties.getProperty(Locator))).clear();
 			// driver.findElementByAccessibilityId(properties.getProperty(Locator)).click();
-
+}
+		else if(Locator.endsWith("_ID1")) {
+			driver.findElement(By.id(properties.getProperty(Locator))).clear();
+		}
+		else if(Locator.endsWith("_Xpath1")){
+			driver.findElement(By.xpath(properties.getProperty(Locator))).clear();
 		}
 	}
 
@@ -226,11 +239,13 @@ static {
 		reporter = new ExtentHtmlReporter("./extent.html");
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
+		
 	}
 
 	@AfterTest
 	public void flush() throws IOException {
 		extent.flush();
+		//reporter.setAppendExisting(true);
 	}
 
 	@AfterSuite

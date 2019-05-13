@@ -15,7 +15,7 @@ public class Downloads extends AndroidCapabilities {
 
 	@BeforeClass
 	public void downloadNext() {
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.navigate().to(properties.getProperty("Downloads_url"));
 	}
 	@Test
