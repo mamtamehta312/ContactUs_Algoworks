@@ -55,6 +55,7 @@ public class Server extends AndroidCapabilities{
 			type("sPhoneNumber_Xpath","sNumber");
 			
 			Thread.sleep(2000);
+			logger1.info("'Australia' country has been entered into the field");
 			MobileElement selectEle = driver.findElement(By.xpath("//*[@id=\'Country\']"));
 			Select ele = new Select(selectEle);
 			ele.selectByVisibleText("Australia");
@@ -74,6 +75,7 @@ public class Server extends AndroidCapabilities{
 			click("sCheckbox1_Xpath");
 					
 			Thread.sleep(2000);
+			logger1.info("'Download Now' button is pressed");
 			click("sButton_Xpath");
 			
 			//Thread.sleep(10000);

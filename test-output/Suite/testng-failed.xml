@@ -4,35 +4,17 @@
   <parameter name="browser" value="chrome"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="mobileautomation.Downloads">
+      <class name="webautomation.FormFilling">
         <methods>
-          <include name="downloadNext"/>
+          <include name="validLogin"/>
         </methods>
-      </class> <!-- mobileautomation.Downloads -->
-      <class name="mobileautomation.Mobile">
-        <methods>
-          <include name="ServerNext"/>
-        </methods>
-      </class> <!-- mobileautomation.Mobile -->
-      <class name="mobileautomation.FormFilling">
-        <methods>
-          <include name="flush"/>
-          <include name="formFilling"/>
-          <include name="createReport"/>
-          <include name="setUp"/>
-          <include name="closeApplication"/>
-        </methods>
-      </class> <!-- mobileautomation.FormFilling -->
+      </class> <!-- webautomation.FormFilling -->
       <class name="mobileautomation.ContactForm">
         <methods>
-          <include name="init"/>
+          <include name="contactForm"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- mobileautomation.ContactForm -->
-      <class name="mobileautomation.Server">
-        <methods>
-          <include name="ServerNext"/>
-        </methods>
-      </class> <!-- mobileautomation.Server -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

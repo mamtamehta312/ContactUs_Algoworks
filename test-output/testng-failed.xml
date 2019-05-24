@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Testcases(failed)">
     <classes>
-      <class name="mobileautomation.FormFilling">
+      <class name="webautomation.FormFilling">
         <methods>
-          <include name="formFilling"/>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- webautomation.FormFilling -->
+      <class name="mobileautomation.ContactForm">
+        <methods>
+          <include name="contactForm"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- mobileautomation.FormFilling -->
+      </class> <!-- mobileautomation.ContactForm -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Testcases(failed) -->
+</suite> <!-- Failed suite [Suite] -->

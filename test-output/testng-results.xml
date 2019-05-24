@@ -1,92 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="16" total="21" passed="5">
   <reporter-output>
+    <line>
+      <![CDATA[===Session End===]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22" started-at="2019-05-13T10:49:19Z" finished-at="2019-05-13T10:49:19Z">
+  <suite name="Suite" duration-ms="194521" started-at="2019-05-24T07:07:29Z" finished-at="2019-05-24T07:10:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22" started-at="2019-05-13T10:49:19Z" finished-at="2019-05-13T10:49:19Z">
-      <class name="mobileautomation.FormFilling">
-        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:mobileautomation.FormFilling@3327bd23]" name="setUp" is-config="true" duration-ms="0" started-at="2019-05-13T16:19:19Z" finished-at="2019-05-13T16:19:19Z">
+    <test name="Testcases" duration-ms="194521" started-at="2019-05-24T07:07:29Z" finished-at="2019-05-24T07:10:43Z">
+      <class name="webautomation.Server">
+        <test-method status="PASS" signature="ServerNext()[pri:0, instance:webautomation.Server@6093dd95]" name="ServerNext" is-config="true" duration-ms="26795" started-at="2019-05-24T12:39:09Z" finished-at="2019-05-24T12:39:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ServerNext -->
+        <test-method status="PASS" signature="server()[pri:0, instance:webautomation.Server@6093dd95]" name="server" duration-ms="24222" started-at="2019-05-24T12:39:36Z" finished-at="2019-05-24T12:40:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- server -->
+      </class> <!-- webautomation.Server -->
+      <class name="webautomation.Downloads">
+        <test-method status="PASS" signature="downloadNext()[pri:0, instance:webautomation.Downloads@6d4b1c02]" name="downloadNext" is-config="true" duration-ms="6243" started-at="2019-05-24T12:38:36Z" finished-at="2019-05-24T12:38:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadNext -->
+        <test-method status="PASS" signature="downloads()[pri:0, instance:webautomation.Downloads@6d4b1c02]" name="downloads" duration-ms="26727" started-at="2019-05-24T12:38:43Z" finished-at="2019-05-24T12:39:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloads -->
+      </class> <!-- webautomation.Downloads -->
+      <class name="webautomation.FormFilling">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.FormFilling@6a41eaa2]" name="LaunchBrowser" is-config="true" duration-ms="7731" started-at="2019-05-24T12:37:21Z" finished-at="2019-05-24T12:37:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[abc]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at Base.AndroidCapabilities.setUp(AndroidCapabilities.java:90)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="createReport()[pri:0, instance:mobileautomation.FormFilling@3327bd23]" name="createReport" is-config="true" duration-ms="0" started-at="2019-05-13T16:19:19Z" finished-at="2019-05-13T16:19:19Z">
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="createReport()[pri:0, instance:webautomation.FormFilling@6a41eaa2]" name="createReport" is-config="true" duration-ms="126" started-at="2019-05-24T12:37:29Z" finished-at="2019-05-24T12:37:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="SKIP" signature="formFilling()[pri:0, instance:mobileautomation.FormFilling@3327bd23]" name="formFilling" duration-ms="0" started-at="2019-05-13T16:19:19Z" finished-at="2019-05-13T16:19:19Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at Base.AndroidCapabilities.setUp(AndroidCapabilities.java:90)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:webautomation.FormFilling@6a41eaa2]" name="validLogin" duration-ms="33711" started-at="2019-05-24T12:37:29Z" finished-at="2019-05-24T12:38:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- formFilling -->
-        <test-method status="SKIP" signature="flush()[pri:0, instance:mobileautomation.FormFilling@3327bd23]" name="flush" is-config="true" duration-ms="0" started-at="2019-05-13T16:19:19Z" finished-at="2019-05-13T16:19:19Z">
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:webautomation.FormFilling@6a41eaa2]" name="flush" is-config="true" duration-ms="188" started-at="2019-05-24T12:40:43Z" finished-at="2019-05-24T12:40:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="SKIP" signature="closeApplication()[pri:0, instance:mobileautomation.FormFilling@3327bd23]" name="closeApplication" is-config="true" duration-ms="0" started-at="2019-05-13T16:19:19Z" finished-at="2019-05-13T16:19:19Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webautomation.FormFilling@6a41eaa2]" name="closeApplication" is-config="true" duration-ms="279" started-at="2019-05-24T12:40:43Z" finished-at="2019-05-24T12:40:43Z">
           <reporter-output>
+            <line>
+              <![CDATA[===Session End===]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- mobileautomation.FormFilling -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- webautomation.FormFilling -->
+      <class name="webautomation.Mobile">
+        <test-method status="PASS" signature="mobileNext()[pri:0, instance:webautomation.Mobile@5622fdf]" name="mobileNext" is-config="true" duration-ms="20868" started-at="2019-05-24T12:40:00Z" finished-at="2019-05-24T12:40:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileNext -->
+        <test-method status="PASS" signature="mobile()[pri:0, instance:webautomation.Mobile@5622fdf]" name="mobile" duration-ms="21696" started-at="2019-05-24T12:40:21Z" finished-at="2019-05-24T12:40:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile -->
+      </class> <!-- webautomation.Mobile -->
+      <class name="webautomation.ContactForm">
+        <test-method status="PASS" signature="init()[pri:0, instance:webautomation.ContactForm@7cd62f43]" name="init" is-config="true" duration-ms="4034" started-at="2019-05-24T12:38:02Z" finished-at="2019-05-24T12:38:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="contactform()[pri:0, instance:webautomation.ContactForm@7cd62f43]" name="contactform" duration-ms="29884" started-at="2019-05-24T12:38:07Z" finished-at="2019-05-24T12:38:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactform -->
+      </class> <!-- webautomation.ContactForm -->
+    </test> <!-- Testcases -->
+  </suite> <!-- Suite -->
 </testng-results>

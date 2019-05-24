@@ -24,7 +24,7 @@ public class ContactForm extends AndroidCapabilities{
 	@Test()
 	public static void contactForm() throws Exception {
 		logger1 = extent.createTest("contactForm");	 
-		try {
+		try {                   
 			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("window.scrollBy(0,100)", "up");
 			
@@ -42,10 +42,7 @@ public class ContactForm extends AndroidCapabilities{
 			MobileElement val = driver.findElement(By.xpath("//*[@id=\'global-content\']/div/div[2]/section/div/form/div[2]/div[1]/div/span/select"));
 			Select valueType = new Select(val);
 			valueType.selectByVisibleText("UK (+44)");
-			//driver.executescript("arguments[0].click()", element);
-			//driver.executeScript("arguments[0].click();", driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")));
-	        //JavascriptExecutor jse = (JavascriptExecutor) driver;
-			//jse.executeScript("window.scrollBy(0,100)", "up");
+		
             Thread.sleep(2000);
 			logger1.info("Area code+phone is '9899928177' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[2]/div[2]/div/label'");
 			type("cPhoneNumber_Xpath", "cPhoneNumber");

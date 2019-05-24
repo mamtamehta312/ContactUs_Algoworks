@@ -53,6 +53,7 @@ public class WebCapabilities {
 			
 			System.out.println("browser is "+browser);
 			if (browser.equalsIgnoreCase("Chrome")) {
+		   System.setProperty("webdriver.chrome.driver", "/home/chanchal/Downloads/chromedriver");	
 				 driver = new ChromeDriver();
 			} else if (browser.equalsIgnoreCase("Safari")) {
 				 driver = new SafariDriver();
@@ -60,19 +61,19 @@ public class WebCapabilities {
 
 		}
 
-		driver.get(properties.getProperty("url"));
+		driver.get(properties.getProperty("form_url"));
 		driver.manage().window().maximize();
 
 	}
 
-	static Properties properties;
+	protected static Properties properties;
 
 	static {
 		properties = new Properties();
 		FileInputStream fis;
 		try {
 			fis = new FileInputStream(
-					System.getProperty("user.dir") + "//src//main//resources//Properties//Android_OR.properties");
+					System.getProperty("user.dir") + "//src//main//resources//Properties//Web_OR.properties");
 			properties.load(fis);
 		} catch (IOException e) {
 			e.printStackTrace();

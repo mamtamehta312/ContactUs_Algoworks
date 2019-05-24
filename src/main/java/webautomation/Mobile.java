@@ -1,18 +1,28 @@
 package webautomation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Base.WebCapabilities;
 import io.appium.java_client.MobileElement;
-@Test
-public class Mobile extends WebCapabilities{
 
+public class Mobile extends WebCapabilities{
+	@BeforeClass
+	public void mobileNext() {
+		
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.navigate().to(properties.getProperty("mMobile_Url"));
+	}
+	
+	@Test
 	public static void mobile() throws Exception {
 		logger1 = extent.createTest("mobile");
 		try {
@@ -36,7 +46,7 @@ public class Mobile extends WebCapabilities{
 			
 			Thread.sleep(2000);
 			logger1.info("Email 'Bob.jackson@gmail.com' has been entered into the text field");
-			type("mEmail_Xpath","mEmail");
+			//type("mEmail_Xpath","mEmail");
 			
 			Thread.sleep(2000);
 			logger1.info("Phone '1(866)648-7575' has been entered into the field");
@@ -65,6 +75,7 @@ public class Mobile extends WebCapabilities{
 			
 			
 			Thread.sleep(2000);
+			logger1.info("'Download Now' button is pressed");
 			click("mButton_Xpath");
 			
 			/*WebDriverWait wait1 = new WebDriverWait(driver, 300);

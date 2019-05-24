@@ -2,6 +2,7 @@ package mobileautomation;
 
 import java.net.MalformedURLException;
 
+
 import java.net.URL;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -60,8 +61,6 @@ public class FormFilling extends AndroidCapabilities {
 
 			Thread.sleep(3000);
 			logger1.info("Country code '+91' for country 'UK' is selected");
-			// MobileElement s =
-			// driver.findElement(By.xpath("//*[@id='global-content']/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/select"));
 			WebElement s = findElement("fCountryCode_Xpath");
 			Select jobType = new Select(s);
 			jobType.selectByVisibleText(AndroidCapabilities.getPropertyValue("fCountryCode"));
@@ -130,8 +129,8 @@ public class FormFilling extends AndroidCapabilities {
 					"'contact us' is clicked having id '//*[@id='global-content']/div[3]/div[1]/section/div/form/div[13]/button'");
 			click("fContactUs_Xpath");
 			Thread.sleep(2000);
-			click("fContactUs_Xpath");
-			Thread.sleep(5000);
+			/*click("fContactUs_Xpath");
+			Thread.sleep(5000);*/
 
 			jse2.executeScript("window.scrollBy(0, -800)", "down");
 			Thread.sleep(8000);

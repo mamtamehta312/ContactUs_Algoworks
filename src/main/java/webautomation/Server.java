@@ -1,19 +1,26 @@
 package webautomation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Base.WebCapabilities;
 import io.appium.java_client.MobileElement;
 
-@Test
 public class Server extends WebCapabilities{
-
+	@BeforeClass
+	public void ServerNext() {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.navigate().to(properties.getProperty("sServer_Url"));
+	}
+	@Test
 	public static void server() throws Exception {
 		logger1 = extent.createTest("server");
 		try {
@@ -44,6 +51,7 @@ public class Server extends WebCapabilities{
 			type("sPhoneNumber_Xpath","sNumber");
 			
 			Thread.sleep(2000);
+			logger1.info("'Australia' country has been entered into the field");
 			WebElement selectEle = driver.findElement(By.xpath("//*[@id=\'Country\']"));
 			Select ele = new Select(selectEle);
 			ele.selectByVisibleText("Australia");
@@ -62,6 +70,7 @@ public class Server extends WebCapabilities{
 			click("sCheckbox1_Xpath");
 					
 			Thread.sleep(2000);
+			logger1.info("'Download Now' button is pressed");
 			click("sButton_Xpath");
 			
 			/*WebDriverWait wait = new WebDriverWait(driver, 1);

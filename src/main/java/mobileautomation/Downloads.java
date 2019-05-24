@@ -37,6 +37,7 @@ public class Downloads extends AndroidCapabilities {
 			support_type.selectByVisibleText("Swift");
 			
 			Thread.sleep(2000);
+			logger1.info("Downloads Button is selected");
 			click("dDownloadsButton_Xpath");
 			Thread.sleep(2000);
 			
