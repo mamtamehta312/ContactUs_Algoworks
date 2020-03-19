@@ -44,10 +44,10 @@ public class FormFilling extends WebCapabilities {
 
             Thread.sleep(3000);                                                                                                                                                             
 			
-			logger1.info("Country code '+91' for country 'UK (+44)' is selected");
+			//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
 			//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
-			type("fCountryCode_Xpath","fCountryCode");
-			Thread.sleep(3000);   
+			//type("fCountryCode_Xpath","fCountryCode");
+			//Thread.sleep(3000);   
 
 			logger1.info(
 					"Area code+phone is '9899928177' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[2]/div[2]/div/label'");

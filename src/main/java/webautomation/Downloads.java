@@ -22,12 +22,19 @@ public class Downloads extends WebCapabilities{
 	public static void downloads() throws Exception {
 		logger1 = extent.createTest("downloads");
 		try {
-			JavascriptExecutor jsed = (JavascriptExecutor) driver;
 			
 			Thread.sleep(2000);
 			logger1.info("Click on mobile tab '//*[@id='global-content']/section[1]/div/div/div[1]/ul/li[2]'");
 			click("dTab_Xpath");
 			Thread.sleep(2000);
+			
+            JavascriptExecutor jsed = (JavascriptExecutor) driver;
+			jsed.executeScript("window.scrollBy(0,150)", "up");
+			
+			/*Thread.sleep(2000);
+			logger1.info("Click on Popup Cancel button ");
+			click("dPopupCancel_Xpath");
+			Thread.sleep(2000); */
 			
 			Thread.sleep(2000);
 			logger1.info("Downloads Button is selected");
@@ -42,8 +49,8 @@ public class Downloads extends WebCapabilities{
 			type("dLastName_Xpath", "dLastName");
 			Thread.sleep(2000);
 			
-			logger1.info("Country 'United States/Canada (+1)' is selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[4]/div/div/div/div/form/div[2]/div[1]/div/span/span")).sendKeys("United States/Canada (+1)");
+			//logger1.info("Country 'United States/Canada (+1)' is selected");
+			//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[4]/div/div/div/div/form/div[2]/div[1]/div/span/span")).sendKeys("United States/Canada (+1)");
 			
 			logger1.info("Phone number with area code is entered into the AREA CODE + PHONE field");
 			type("dPhoneNumber_Xpath","dNumber");

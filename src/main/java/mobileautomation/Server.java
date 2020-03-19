@@ -76,7 +76,10 @@ public class Server extends AndroidCapabilities{
 					
 			Thread.sleep(2000);
 			logger1.info("'Download Now' button is pressed");
-			click("sButton_Xpath");
+			click("sButton_Xpath");		
+			Thread.sleep(5000);
+			
+			logger1.pass("Testcase is Passed");
 			
 			//Thread.sleep(10000);
 			/*WebDriverWait wait = new WebDriverWait(driver, 1);

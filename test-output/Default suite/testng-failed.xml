@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="webautomation.FormFilling">
+      <class name="mobileautomation.Mobile">
         <methods>
-          <include name="validLogin"/>
-          <include name="LaunchBrowser"/>
+          <include name="mobile"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- webautomation.FormFilling -->
+      </class> <!-- mobileautomation.Mobile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

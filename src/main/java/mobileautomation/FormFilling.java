@@ -17,6 +17,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -35,6 +36,13 @@ public class FormFilling extends AndroidCapabilities {
 	// WebDriverWait wait = new WebDriverWait(driver, 10);
 	// WebElement element =
 	// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ID")));
+	
+	@BeforeClass
+	public static void init() {
+		
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.navigate().to(properties.getProperty("url"));
+	}
 
 	@Test()
 	public static void formFilling() throws Exception {
@@ -48,6 +56,8 @@ public class FormFilling extends AndroidCapabilities {
 			logger1.info(
 					"First name 'Bob' is typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[1]/div[1]/div/input'");
 			type("fFirstName_Xpath", "fFirstName");
+			
+		
 
 			Thread.sleep(2000);
 
@@ -59,11 +69,11 @@ public class FormFilling extends AndroidCapabilities {
 			JavascriptExecutor jse1 = (JavascriptExecutor) driver;
 			jse1.executeScript("window.scrollBy(0,100)", "up");
 
-			Thread.sleep(3000);
-			logger1.info("Country code '+91' for country 'UK' is selected");
-			WebElement s = findElement("fCountryCode_Xpath");
-			Select jobType = new Select(s);
-			jobType.selectByVisibleText(AndroidCapabilities.getPropertyValue("fCountryCode"));
+			//Thread.sleep(3000);
+			//logger1.info("Country code '+91' for country 'UK' is selected");
+			//WebElement s = findElement("fCountryCode_Xpath");
+			//Select jobType = new Select(s);
+			//jobType.selectByVisibleText(AndroidCapabilities.getPropertyValue("fCountryCode"));
 
 			// ----------------------------------------------------------------------------------------------
 
@@ -71,11 +81,17 @@ public class FormFilling extends AndroidCapabilities {
 			logger1.info(
 					"Area code+phone is '9899928177' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[2]/div[2]/div/label'");
 			type("fPhoneNumber_Xpath", "fPhoneNumber");
-
+			
+		
 			Thread.sleep(2000);
 			logger1.info(
 					"Business Email Address 'Bob.Jackson@gmail.com' typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[3]'");
 			type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
+			
+			
+/*			Thread.sleep(5000);
+			logger1.info("Popup is closed");
+			click("fPopupClose_Xpath");*/
 
 			// ---------------------------------------------------------------------------------------------------
 
@@ -125,13 +141,18 @@ public class FormFilling extends AndroidCapabilities {
 			jse2.executeScript("window.scrollBy(0,300)", "up");
 			Thread.sleep(2000);
 
-			logger1.info(
+/*			logger1.info(
 					"'contact us' is clicked having id '//*[@id='global-content']/div[3]/div[1]/section/div/form/div[13]/button'");
 			click("fContactUs_Xpath");
-			Thread.sleep(2000);
+			Thread.sleep(2000);*/
 			/*click("fContactUs_Xpath");
 			Thread.sleep(5000);*/
 
+			 logger1.info("Contact Us button is selected");
+			 WebElement button =driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
+				JavascriptExecutor jsexec = (JavascriptExecutor)driver;
+				jsexec.executeScript("arguments[0].click();", button);			
+			
 			jse2.executeScript("window.scrollBy(0, -800)", "down");
 			Thread.sleep(8000);
 

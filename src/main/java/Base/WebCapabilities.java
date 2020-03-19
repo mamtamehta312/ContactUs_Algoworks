@@ -53,7 +53,7 @@ public class WebCapabilities {
 			
 			System.out.println("browser is "+browser);
 			if (browser.equalsIgnoreCase("Chrome")) {
-		   System.setProperty("webdriver.chrome.driver", "/home/chanchal/Downloads/chromedriver");	
+		   System.setProperty("webdriver.chrome.driver", "/home/riya/Downloads/chromedriver_linux64/chromedriver");	
 				 driver = new ChromeDriver();
 			} else if (browser.equalsIgnoreCase("Safari")) {
 				 driver = new SafariDriver();

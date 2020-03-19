@@ -46,7 +46,7 @@ public class Mobile extends WebCapabilities{
 			
 			Thread.sleep(2000);
 			logger1.info("Email 'Bob.jackson@gmail.com' has been entered into the text field");
-			//type("mEmail_Xpath","mEmail");
+			type("mEmail_Xpath","mEmail");
 			
 			Thread.sleep(2000);
 			logger1.info("Phone '1(866)648-7575' has been entered into the field");

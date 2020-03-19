@@ -59,7 +59,7 @@ public class AndroidCapabilities {
 		System.out.println("browser is " + browser);
 		if (browser.equalsIgnoreCase("Chrome")) {
 
-			capabilities.setCapability("deviceName", "Emulator-5554 Nexus_6_API_28");
+			capabilities.setCapability("deviceName", "Emulator-5554 Pixel_2_API_29");
 			// ,ce011821740e3c530c
 			capabilities.setCapability(CapabilityType.VERSION, "8.0");
 			capabilities.setCapability("platformName", "Android");
@@ -69,19 +69,20 @@ public class AndroidCapabilities {
 			 * capabilities.setCapability("autoGrantPermissions", "true");
 			 * capabilities.setCapability("autoAcceptAlerts", "true");
 			 */
-			//System.setProperty("webdriver.chrome.driver", "/home/chanchal/Downloads/chromedriver");
-			capabilities.setCapability("chromedriverExecutable", "/home/chanchal/Downloads/chromedriver");
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Poonam\\Downloads\\New folder\\chromedriver_win32\\chromedriver.exe");
+			capabilities.setCapability("chromedriverExecutable", "C:\\seleniumdrivers\\chromedriver1.exe");
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		}
 
 		else if (browser.equalsIgnoreCase("Safari")) {
 			{
-				capabilities.setCapability("deviceName", "iPhone X");
-				capabilities.setCapability("udid", "08F44F8B-AD72-4789-97AC-BF34A84F2F0A");
+				capabilities.setCapability("deviceName", "iPhone 8");
+				capabilities.setCapability("udid", "9A52883B-9C65-45D6-9B37-2C2EA815C48F");
 				capabilities.setCapability("platformName", "ios");
 				capabilities.setCapability("automationName", "XCUITest");
 				capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "safari");
 				capabilities.setCapability("Emulator", "true");
+				capabilities.setCapability("platformVersion", "12.2");
 			    driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
 			}
