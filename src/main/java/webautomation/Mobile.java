@@ -29,11 +29,11 @@ public class Mobile extends WebCapabilities{
 			JavascriptExecutor jsed = (JavascriptExecutor) driver;
 			
 			Thread.sleep(2000);
-			logger1.info("First Name 'Bob' has been entered into the text field");
+			logger1.info("First Name 'Form' has been entered into the text field");
 			type("mFirstName_Xpath","mName");
 			
 			Thread.sleep(2000);
-			logger1.info("Last Name 'jackson' has been entered into the text field");
+			logger1.info("Last Name 'Testing' has been entered into the text field");
 			type("mLastName_Xpath","mLastName");
 			
 			Thread.sleep(2000);
@@ -45,7 +45,7 @@ public class Mobile extends WebCapabilities{
 			type("mRole_Xpath","mRole");
 			
 			Thread.sleep(2000);
-			logger1.info("Email 'Bob.jackson@gmail.com' has been entered into the text field");
+			logger1.info("Email 'poonam.gupta@algoworks.com' has been entered into the text field");
 			type("mEmail_Xpath","mEmail");
 			
 			Thread.sleep(2000);
@@ -77,6 +77,7 @@ public class Mobile extends WebCapabilities{
 			Thread.sleep(2000);
 			logger1.info("'Download Now' button is pressed");
 			click("mButton_Xpath");
+			Thread.sleep(2000);
 			
 			/*WebDriverWait wait1 = new WebDriverWait(driver, 300);
 			if(wait1.until(ExpectedConditions.alertIsPresent())==null) {
@@ -90,6 +91,10 @@ public class Mobile extends WebCapabilities{
 			logger1.fail(e);                           
 			throw e;
 		}
-	}
+	
+		Thread.sleep(5000);
+
+		logger1.pass("Testcase Mobile is Passed");
+		}
 }
 

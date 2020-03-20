@@ -33,13 +33,13 @@ public class FormFilling extends WebCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info(
-					"First name 'Bob' is typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[1]/div[1]/div/input'");
+					"First name 'Form' is typed in textbox");
 			type("fFirstName_Xpath", "fFirstName");
 
 			Thread.sleep(2000);
 
 			logger1.info(
-					"Last name 'Jackson' is typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[1]/div[2]/div/input'");
+					"Last name 'Testing' is typed in textbox ");
 			type("fLastName_Xpath", "fLastName");
 
             Thread.sleep(3000);                                                                                                                                                             
@@ -50,39 +50,39 @@ public class FormFilling extends WebCapabilities {
 			//Thread.sleep(3000);   
 
 			logger1.info(
-					"Area code+phone is '9899928177' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[2]/div[2]/div/label'");
+					"Area code+phone is '9899928177' given in textbox ");
 			type("fPhoneNumber_Xpath", "fPhoneNumber");
 
 			Thread.sleep(2000);
 			logger1.info(
-					"Business Email Address 'Bob.Jackson@gmail.com' typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[3]'");
+					"Business Email Address 'poonam.gupta@algoworks.com' typed in textbox ");
 			type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
 
 			
 			Thread.sleep(2000);
 			logger1.info(
-					"Company 'Algoworks' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[4]/input'");
+					"Company 'Algoworks' given in textbox ");
 			type("fCompany_Xpath", "fCompany");
 
 			Thread.sleep(2000);
 			logger1.info(
-					"Job Title 'Software Test Engineer' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[5]/input'");
+					"Job Title 'Automation QA' given in textbox ");
 			type("fJobTitle_Xpath", "fJobTitle");
 
 
-			logger1.info("Country code '+91' for country 'India' is selected");
+			logger1.info("'United States' is selected");
 			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/span")).sendKeys("United States");
 	 
-			logger1.info("Country code '+91' for state 'Alabama' is selected");
+			logger1.info("State 'Alabama' is selected");
 			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
 			
 			Thread.sleep(2000);
 			logger1.info(
-					"City name 'Noida' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[9]/input'");
+					"City name 'Noida' given in textbox");
 			type("fCity_Xpath", "fCity");
 
 			Thread.sleep(2000);
-			logger1.info("'Reason for inquiry' is given in textbox '//*[@id='contactUsReasonforInquiry']'");
+			logger1.info("'Reason for inquiry' is given in textbox");
 			driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
 
 	
@@ -91,14 +91,14 @@ public class FormFilling extends WebCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info(
-					"Message is displayed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[9]/input'");
+					"Message is displayed in textbox 'Type you enquiry here'");
 			type("fMessage_Xpath", "fMessage");
 
 			jse.executeScript("window.scrollBy(0,300)", "up");
 			Thread.sleep(2000);
 
 			logger1.info(
-					"'contact us' is clicked having id '//*[@id='global-content']/div[3]/div[1]/section/div/form/div[13]/button'");
+					"'contact us' is clicked ");
 			click("fContactUs_Xpath");
 			Thread.sleep(2000);
 			
@@ -106,7 +106,7 @@ public class FormFilling extends WebCapabilities {
 			jse.executeScript("window.scrollBy(0, -800)", "down");
 			Thread.sleep(5000);
 
-			logger1.pass("Testcase is Passed");
+			logger1.pass("Testcase Formfilling is Passed");
 
 		}
 

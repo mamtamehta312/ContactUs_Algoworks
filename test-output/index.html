@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -112,12 +112,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="webautomation.linkpageflow" hash-for-method="firsturl">firsturl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="webautomation.Mobile" hash-for-method="mobile">mobile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="webautomation.Server" hash-for-method="server">server</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="webautomation.FormFilling" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,6 +142,36 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">webautomation.ContactForm</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactform">
+                  </a> <!-- contactform -->
+                  <span class="method-name">contactform</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">webautomation.linkpageflow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="firsturl">
+                  </a> <!-- firsturl -->
+                  <span class="method-name">firsturl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -150,14 +190,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">webautomation.ContactForm</span>
+              <span class="class-name">webautomation.FormFilling</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="contactform">
-                  </a> <!-- contactform -->
-                  <span class="method-name">contactform</span>
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,8 +243,10 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;test thread-count=&quot;6&quot; verbose=&quot;2&quot; name=&quot;Testcases&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;2&quot; name=&quot;Testcases&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;webautomation.linkpageflow&quot;/&gt;
+      &lt;class name=&quot;webautomation.FormFilling&quot;/&gt;
       &lt;class name=&quot;webautomation.ContactForm&quot;/&gt;
       &lt;class name=&quot;webautomation.Downloads&quot;/&gt;
       &lt;class name=&quot;webautomation.Server&quot;/&gt;
@@ -222,7 +264,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Testcases (4 classes)</span>
+                <span class="test-name">Testcases (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,28 +290,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'contactform')
-data.setCell(0, 2, 'webautomation.ContactForm')
-data.setCell(0, 3, 27628);
+data.setCell(0, 1, 'firsturl')
+data.setCell(0, 2, 'webautomation.linkpageflow')
+data.setCell(0, 3, 228592);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'downloads')
-data.setCell(1, 2, 'webautomation.Downloads')
-data.setCell(1, 3, 26221);
+data.setCell(1, 1, 'contactform')
+data.setCell(1, 2, 'webautomation.ContactForm')
+data.setCell(1, 3, 32362);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'server')
-data.setCell(2, 2, 'webautomation.Server')
-data.setCell(2, 3, 26109);
+data.setCell(2, 1, 'downloads')
+data.setCell(2, 2, 'webautomation.Downloads')
+data.setCell(2, 3, 32026);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'mobile')
-data.setCell(3, 2, 'webautomation.Mobile')
-data.setCell(3, 3, 22265);
+data.setCell(3, 1, 'validLogin')
+data.setCell(3, 2, 'webautomation.FormFilling')
+data.setCell(3, 3, 30389);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'server')
+data.setCell(4, 2, 'webautomation.Server')
+data.setCell(4, 3, 29945);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'mobile')
+data.setCell(5, 2, 'webautomation.Mobile')
+data.setCell(5, 3, 29283);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -284,11 +334,37 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">20 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">webautomation.ContactForm</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeApplication</span>
+                <br/>
+                <span class="ignored-method-name">createReport</span>
+                <br/>
+                <span class="ignored-method-name">LaunchBrowser</span>
+                <br/>
+                <span class="ignored-method-name">flush</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">webautomation.Server</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeApplication</span>
+                <br/>
+                <span class="ignored-method-name">createReport</span>
+                <br/>
+                <span class="ignored-method-name">LaunchBrowser</span>
+                <br/>
+                <span class="ignored-method-name">flush</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">webautomation.FormFilling</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">closeApplication</span>
                 <br/>
@@ -334,66 +410,84 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">webautomation.ContactForm</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">webautomation.linkpageflow</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">LaunchBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">createReport</span>
-                <span class="method-start">6691 ms</span>
+                <span class="method-start">7226 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webautomation.FormFilling</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validLogin</span>
+                <span class="method-start">7371 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webautomation.ContactForm</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">6860 ms</span>
+                <span class="method-start">37767 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">contactform</span>
-                <span class="method-start">9058 ms</span>
+                <span class="method-start">40869 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webautomation.Downloads</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">downloadNext</span>
-                <span class="method-start">36689 ms</span>
+                <span class="method-start">73234 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">downloads</span>
-                <span class="method-start">42573 ms</span>
+                <span class="method-start">79898 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webautomation.Server</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">ServerNext</span>
-                <span class="method-start">68799 ms</span>
+                <span class="method-start">111929 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">server</span>
-                <span class="method-start">87004 ms</span>
+                <span class="method-start">131946 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webautomation.Mobile</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">mobileNext</span>
-                <span class="method-start">113115 ms</span>
+                <span class="method-start">161892 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">mobile</span>
-                <span class="method-start">124248 ms</span>
+                <span class="method-start">169893 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">webautomation.ContactForm</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">webautomation.linkpageflow</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">check</span>
+                <span class="method-start">199179 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">firsturl</span>
+                <span class="method-start">199185 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">flush</span>
-                <span class="method-start">146515 ms</span>
+                <span class="method-start">427780 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">146692 ms</span>
+                <span class="method-start">427968 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -46,11 +46,11 @@ public class ContactForm extends WebCapabilities {
 			//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
 			
 			Thread.sleep(2000);
-			logger1.info("PhoneNumber '9899928177' is typed in textbox '//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div[2]/div/input'");
+			logger1.info("PhoneNumber '9899928177' is typed in textbox '/html/body/main/div/div[2]/section/div/form/div[2]/div/div/input'");
 			type("cPhoneNumber_Xpath","cPhoneNumber");
 			
 			Thread.sleep(2000);
-			logger1.info("Email 'shashi.singh@algoworks.com' is typed in textbox '//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[3]/input'");
+			logger1.info("Email 'poonam.gupta@algoworks.com' is typed in textbox '//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[3]/input'");
 			type("cBusinessEmailAddress_Xpath","cBusinessEmailAddress");
 			
 			Thread.sleep(2000);
@@ -70,7 +70,7 @@ public class ContactForm extends WebCapabilities {
 			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
 			
 			Thread.sleep(2000);
-			logger1.info("City 'Sydney' is typed in textbox '//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/input'");
+			logger1.info("City 'Noida' is typed in textbox '//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/input'");
 			type("cCity_Xpath", "cCity");
 			
 			
@@ -85,10 +85,14 @@ public class ContactForm extends WebCapabilities {
 			Thread.sleep(2000);
 			logger1.info("Contact Us button is selected");
 			click("cContactUsButton_Xpath");
+			Thread.sleep(2000);
 			
 		} catch (Exception e) {
 			logger1.fail(e);
 			throw e;
 		}
+		Thread.sleep(3000);
+
+		logger1.pass("Testcase ContactForm is Passed");
 	}
 }
