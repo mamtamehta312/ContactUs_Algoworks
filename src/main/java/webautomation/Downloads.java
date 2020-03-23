@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -76,9 +77,13 @@ public class Downloads extends WebCapabilities{
 			click("dCheckbox_Xpath");
 			Thread.sleep(2000);
 			
-			logger1.info("Button 'Try It Free Now' button has been clicked");
+			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dButton_Xpath");
 			Thread.sleep(3000);
+			
+			logger1.info("checking the redirection");
+			String url = driver.getCurrentUrl();
+			Assert.assertEquals(url, "https://www.couchbase.com/downloads/thankyou/enterprise?product=couchbase-lite&version=2.7.0&platform=swift&addon=false&beta=false" );
 					
 		}
 		catch(Exception e) {

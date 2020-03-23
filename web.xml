@@ -8,9 +8,11 @@
            <class name="webautomation.linkpageflow"/> 
 	       <class name="webautomation.FormFilling" />  
 	 	   <class name="webautomation.ContactForm"/>
-		   <class name="webautomation.Downloads"/>
+	       <class name="webautomation.Downloads"/>
 		   <class name="webautomation.Server"/>
 		   <class name="webautomation.Mobile"/>
+	 	   <class name="webautomation.ContactFormNegative"/>
+		 
 	   </classes>
 	</test>
 
