@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -27,11 +28,11 @@ public class Server extends WebCapabilities{
 			JavascriptExecutor jsed = (JavascriptExecutor) driver;
 			
 			Thread.sleep(2000);
-			logger1.info("First Name 'Bob' has been entered into the text field");
+			logger1.info("First Name 'Form' has been entered into the text field");
 			type("sFirstName_Xpath","sName");
 			
 			Thread.sleep(2000);
-			logger1.info("Last Name 'jackson' has been entered into the text field");
+			logger1.info("Last Name 'Testing' has been entered into the text field");
 			type("sLastName_Xpath","sLastName");
 			
 			Thread.sleep(2000);
@@ -43,7 +44,7 @@ public class Server extends WebCapabilities{
 			type("sRole_Xpath","sRole");
 			
 			Thread.sleep(2000);
-			logger1.info("Email 'Bob.jackson@gmail.com' has been entered into the text field");
+			logger1.info("Email 'poonam.gupta@algoworks.com' has been entered into the text field");
 			type("sEmail_Xpath","sEmail");
 			
 			Thread.sleep(2000);
@@ -72,6 +73,12 @@ public class Server extends WebCapabilities{
 			Thread.sleep(2000);
 			logger1.info("'Download Now' button is pressed");
 			click("sButton_Xpath");
+			Thread.sleep(2000);
+			
+			logger1.info("checking the redirection");
+			String url = driver.getCurrentUrl();
+			Assert.assertEquals(url, "https://www.couchbase.com/downloads/campaign-enterprise?product=couchbase-server&version=6.5.0" );
+					
 			
 			/*WebDriverWait wait = new WebDriverWait(driver, 1);
 			if(wait.until(ExpectedConditions.alertIsPresent())==null) {
@@ -85,6 +92,9 @@ public class Server extends WebCapabilities{
 			logger1.fail(e);                           
 			throw e;
 		}
+		Thread.sleep(3000);
+
+		logger1.pass("Testcase Server is Passed");
 	}
 }
 

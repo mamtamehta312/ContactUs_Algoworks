@@ -352,7 +352,9 @@ System.out.println("successfully verified33");
 			logger1.fail(e);                           
 			throw e;
 		}
-		
+		Thread.sleep(3000);
+
+		logger1.pass("Testcase  linkpageflow is Passed");
 		
 	}
 	/*

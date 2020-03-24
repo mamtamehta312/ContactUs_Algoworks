@@ -1,46 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="12" total="16" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="139996" started-at="2020-03-19T14:16:54Z" finished-at="2020-03-19T14:19:14Z">
+  <suite name="Suite" duration-ms="40795" started-at="2020-03-23T13:36:10Z" finished-at="2020-03-23T13:36:51Z">
     <groups>
     </groups>
-    <test name="Testcases" duration-ms="139996" started-at="2020-03-19T14:16:54Z" finished-at="2020-03-19T14:19:14Z">
-      <class name="webautomation.Server">
-        <test-method status="PASS" signature="ServerNext()[pri:0, instance:webautomation.Server@343f4d3d]" name="ServerNext" is-config="true" duration-ms="18205" started-at="2020-03-19T19:47:56Z" finished-at="2020-03-19T19:48:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ServerNext -->
-        <test-method status="PASS" signature="server()[pri:0, instance:webautomation.Server@343f4d3d]" name="server" duration-ms="26109" started-at="2020-03-19T19:48:15Z" finished-at="2020-03-19T19:48:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- server -->
-      </class> <!-- webautomation.Server -->
-      <class name="webautomation.Downloads">
-        <test-method status="PASS" signature="downloadNext()[pri:0, instance:webautomation.Downloads@57baeedf]" name="downloadNext" is-config="true" duration-ms="5884" started-at="2020-03-19T19:47:24Z" finished-at="2020-03-19T19:47:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- downloadNext -->
-        <test-method status="PASS" signature="downloads()[pri:0, instance:webautomation.Downloads@57baeedf]" name="downloads" duration-ms="26221" started-at="2020-03-19T19:47:30Z" finished-at="2020-03-19T19:47:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- downloads -->
-      </class> <!-- webautomation.Downloads -->
-      <class name="webautomation.Mobile">
-        <test-method status="PASS" signature="mobileNext()[pri:0, instance:webautomation.Mobile@53b32d7]" name="mobileNext" is-config="true" duration-ms="11133" started-at="2020-03-19T19:48:41Z" finished-at="2020-03-19T19:48:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mobileNext -->
-        <test-method status="PASS" signature="mobile()[pri:0, instance:webautomation.Mobile@53b32d7]" name="mobile" duration-ms="22265" started-at="2020-03-19T19:48:52Z" finished-at="2020-03-19T19:49:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mobile -->
-      </class> <!-- webautomation.Mobile -->
-      <class name="webautomation.ContactForm">
-        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.ContactForm@42e26948]" name="LaunchBrowser" is-config="true" duration-ms="6687" started-at="2020-03-19T19:46:48Z" finished-at="2020-03-19T19:46:54Z">
+    <test name="Testcases" duration-ms="40795" started-at="2020-03-23T13:36:10Z" finished-at="2020-03-23T13:36:51Z">
+      <class name="webautomation.ContactFormNegative">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.ContactFormNegative@7d9d1a19]" name="LaunchBrowser" is-config="true" duration-ms="8411" started-at="2020-03-23T19:06:02Z" finished-at="2020-03-23T19:06:10Z">
           <params>
             <param index="0">
               <value>
@@ -51,30 +21,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:webautomation.ContactForm@42e26948]" name="createReport" is-config="true" duration-ms="165" started-at="2020-03-19T19:46:54Z" finished-at="2020-03-19T19:46:55Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:webautomation.ContactFormNegative@7d9d1a19]" name="createReport" is-config="true" duration-ms="163" started-at="2020-03-23T19:06:10Z" finished-at="2020-03-23T19:06:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="init()[pri:0, instance:webautomation.ContactForm@42e26948]" name="init" is-config="true" duration-ms="2193" started-at="2020-03-19T19:46:55Z" finished-at="2020-03-19T19:46:57Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:webautomation.ContactFormNegative@7d9d1a19]" name="init" is-config="true" duration-ms="2582" started-at="2020-03-23T19:06:11Z" finished-at="2020-03-23T19:06:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="contactform()[pri:0, instance:webautomation.ContactForm@42e26948]" name="contactform" duration-ms="27628" started-at="2020-03-19T19:46:57Z" finished-at="2020-03-19T19:47:24Z">
+        <test-method status="PASS" signature="contactform()[pri:0, instance:webautomation.ContactFormNegative@7d9d1a19]" name="contactform" duration-ms="37660" started-at="2020-03-23T19:06:13Z" finished-at="2020-03-23T19:06:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactform -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:webautomation.ContactForm@42e26948]" name="flush" is-config="true" duration-ms="168" started-at="2020-03-19T19:49:14Z" finished-at="2020-03-19T19:49:14Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:webautomation.ContactFormNegative@7d9d1a19]" name="flush" is-config="true" duration-ms="353" started-at="2020-03-23T19:06:51Z" finished-at="2020-03-23T19:06:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webautomation.ContactForm@42e26948]" name="closeApplication" is-config="true" duration-ms="84" started-at="2020-03-19T19:49:14Z" finished-at="2020-03-19T19:49:14Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webautomation.ContactFormNegative@7d9d1a19]" name="closeApplication" is-config="true" duration-ms="79" started-at="2020-03-23T19:06:51Z" finished-at="2020-03-23T19:06:51Z">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- webautomation.ContactForm -->
+      </class> <!-- webautomation.ContactFormNegative -->
     </test> <!-- Testcases -->
   </suite> <!-- Suite -->
 </testng-results>

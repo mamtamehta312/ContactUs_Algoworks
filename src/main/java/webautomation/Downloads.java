@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -24,7 +25,7 @@ public class Downloads extends WebCapabilities{
 		try {
 			
 			Thread.sleep(2000);
-			logger1.info("Click on mobile tab '//*[@id='global-content']/section[1]/div/div/div[1]/ul/li[2]'");
+			logger1.info("Click on mobile tab '//*[@id=\"UI - DL - Tab - mobile\"]'");
 			click("dTab_Xpath");
 			Thread.sleep(2000);
 			
@@ -41,11 +42,11 @@ public class Downloads extends WebCapabilities{
 			click("dDownloadsButton_Xpath");
 			Thread.sleep(2000);
 			
-			logger1.info("First name 'Bob' is typed in textbox '//*[@id=\'global-content\']/div[4]/div/div/div/div/form/div[1]/div[1]/div/input'");
+			logger1.info("First name 'Form' is typed in textbox '//*[@id=\\'global-content\\']/div[4]/div/div/div/div/form/div[1]/div[1]/div/input'");
 			type("dFirstName_Xpath","dName");
 			Thread.sleep(2000);
 			
-			logger1.info("Last name 'Jackson' is typed in textbox '//*[@id=\'global-content\']/div[3]/div[1]/section/div/form/div[1]/div[2]/div/input'");
+			logger1.info("Last name 'Testing' is typed in textbox '//*[@id=\\'global-content\\']/div[4]/div/div/div/div/form/div[1]/div[2]/div/input'");
 			type("dLastName_Xpath", "dLastName");
 			Thread.sleep(2000);
 			
@@ -56,11 +57,11 @@ public class Downloads extends WebCapabilities{
 			type("dPhoneNumber_Xpath","dNumber");
 			Thread.sleep(2000);
 			
-			logger1.info("Business email id 'Testing@algoworks.com' has been entered to the email field");
+			logger1.info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field");
 			type("dEmail_Xpath","dEmail");
 			Thread.sleep(2000);
 			
-			logger1.info("Business email id 'Testing@algoworks.com' has been entered to the email field");
+			logger1.info("Company name 'Algoworks' is selected");
 			type("dCompany_Xpath","dCompany");
 			Thread.sleep(2000);
 			
@@ -76,15 +77,22 @@ public class Downloads extends WebCapabilities{
 			click("dCheckbox_Xpath");
 			Thread.sleep(2000);
 			
-			logger1.info("Button 'Try It Free Now' button has been clicked");
+			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dButton_Xpath");
-			Thread.sleep(2000);
+			Thread.sleep(3000);
+			
+			logger1.info("checking the redirection");
+			String url = driver.getCurrentUrl();
+			Assert.assertEquals(url, "https://www.couchbase.com/downloads/thankyou/enterprise?product=couchbase-lite&version=2.7.0&platform=swift&addon=false&beta=false" );
 					
 		}
 		catch(Exception e) {
 			logger1.fail(e);                           
 			throw e;
 		}
+		Thread.sleep(5000);
+
+		logger1.pass("Testcase Downloads is Passed");
 	}
 }
 
