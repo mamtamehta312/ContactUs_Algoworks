@@ -5,12 +5,14 @@
 	<test thread-count="1" name="Testcases" verbose="2">
 	
 		<classes>
-           <class name="webautomation.linkpageflow"/> 
-	       <class name="webautomation.FormFilling" />  
-	 	   <class name="webautomation.ContactForm"/>
-	       <class name="webautomation.Downloads"/>
-		   <class name="webautomation.Server"/>
-		   <class name="webautomation.Mobile"/>
+		 <class name="webautomation.FormFilling"/>
+		 <class name="webautomation.linkpageflow"/>
+	     <class name="webautomation.ContactForm"/>
+         <class name="webautomation.Downloads"/>
+         <class name="webautomation.Mobile"/>
+         <class name="webautomation.Server"/>
+         <class name="webautomation.ContactFormNegative"/>
+                
 	 	   <class name="webautomation.ContactFormNegative"/>
 		 
 	   </classes>

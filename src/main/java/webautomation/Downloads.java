@@ -25,7 +25,7 @@ public class Downloads extends WebCapabilities{
 		try {
 			
 			Thread.sleep(2000);
-			logger1.info("Click on mobile tab '//*[@id=\"UI - DL - Tab - mobile\"]'");
+			logger1.info("Click on mobile tab");
 			click("dTab_Xpath");
 			Thread.sleep(2000);
 			
@@ -42,11 +42,11 @@ public class Downloads extends WebCapabilities{
 			click("dDownloadsButton_Xpath");
 			Thread.sleep(2000);
 			
-			logger1.info("First name 'Form' is typed in textbox '//*[@id=\\'global-content\\']/div[4]/div/div/div/div/form/div[1]/div[1]/div/input'");
+			logger1.info("First name 'Form' is typed in textbox");
 			type("dFirstName_Xpath","dName");
 			Thread.sleep(2000);
 			
-			logger1.info("Last name 'Testing' is typed in textbox '//*[@id=\\'global-content\\']/div[4]/div/div/div/div/form/div[1]/div[2]/div/input'");
+			logger1.info("Last name 'Testing' is typed in textbox");
 			type("dLastName_Xpath", "dLastName");
 			Thread.sleep(2000);
 			
