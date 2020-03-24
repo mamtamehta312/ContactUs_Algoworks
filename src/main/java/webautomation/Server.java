@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -73,6 +74,11 @@ public class Server extends WebCapabilities{
 			logger1.info("'Download Now' button is pressed");
 			click("sButton_Xpath");
 			Thread.sleep(2000);
+			
+			logger1.info("checking the redirection");
+			String url = driver.getCurrentUrl();
+			Assert.assertEquals(url, "https://www.couchbase.com/downloads/campaign-enterprise?product=couchbase-server&version=6.5.0" );
+					
 			
 			/*WebDriverWait wait = new WebDriverWait(driver, 1);
 			if(wait.until(ExpectedConditions.alertIsPresent())==null) {

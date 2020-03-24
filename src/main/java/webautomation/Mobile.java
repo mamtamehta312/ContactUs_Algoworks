@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -78,6 +79,15 @@ public class Mobile extends WebCapabilities{
 			logger1.info("'Download Now' button is pressed");
 			click("mButton_Xpath");
 			Thread.sleep(2000);
+			
+		//	https://www.couchbase.com/downloads/campaign-enterprise?product=couchbase-lite&version=2.7.0
+			
+			
+			logger1.info("checking the redirection");
+			String url = driver.getCurrentUrl();
+			Assert.assertEquals(url, "https://www.couchbase.com/downloads/campaign-enterprise?product=couchbase-lite&version=2.7.0" );
+					
+			
 			
 			/*WebDriverWait wait1 = new WebDriverWait(driver, 300);
 			if(wait1.until(ExpectedConditions.alertIsPresent())==null) {

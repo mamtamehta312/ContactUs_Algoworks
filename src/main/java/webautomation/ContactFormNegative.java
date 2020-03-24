@@ -15,10 +15,8 @@ import org.testng.annotations.Test;
 
 import Base.WebCapabilities;
 
+public class ContactFormNegative extends WebCapabilities {
 
-
-public class ContactForm extends WebCapabilities {
-	
 	@BeforeClass
 	public static void init() {
 		
@@ -35,16 +33,12 @@ public class ContactForm extends WebCapabilities {
 			jse.executeScript("window.scrollBy(0,400)", "up");
 
 			Thread.sleep(2000);
-			logger1.info("First name 'Form' is typed in textbox ");
-			type("cFirstName_Xpath", "cFirstName");
+			logger1.info("First name 'F' is typed in textbox");
+			type("cFirstNameNeg_Xpath", "cFirstNameNeg");
 			
 			Thread.sleep(2000);
 			logger1.info("Last name 'Testing' is typed in textbox");
 			type("cLastName_Xpath","cLastName");
-			
-			//Thread.sleep(2000);
-			//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
-			//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
 			
 			Thread.sleep(2000);
 			logger1.info("PhoneNumber '9899928177' is typed in textbox");
@@ -88,26 +82,23 @@ public class ContactForm extends WebCapabilities {
 			click("cContactUsButton_Xpath");
 			Thread.sleep(2000);
 			
-			JavascriptExecutor jss = (JavascriptExecutor) driver;
-			jss.executeScript("window.scrollTo(0, 0)");
-
+			JavascriptExecutor jsn = (JavascriptExecutor) driver;
+			jsn.executeScript("window.scrollBy(0,-400)", "down");
 			
 			Thread.sleep(2000);
 			logger1.info("Checked 'Thank you' text on submission");
-			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/p"));
+			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Thank you for your submission.\n" + 
-					"A Couchbase representative will contact you shortly.");
-
-			//boolean present = driver.findElement(By.xpath("/html/body/main/div[3]/div[1]/section/div/p/text()[1]"));
-			
-			
-		} catch (Exception e) {
-			logger1.fail(e);
-			throw e;
+			Assert.assertEquals(present, "Must contain 2-50 characters.");
 		}
-		Thread.sleep(3000);
+			
+			catch (Exception e) {
+				logger1.fail(e);
+				throw e;
+			}
+			Thread.sleep(3000);
 
-		logger1.pass("Testcase ContactForm is Passed");
+			logger1.pass("Testcase ContactForm Negative is Passed");
+		}
+	
 	}
-}

@@ -1,5 +1,6 @@
 package webautomation;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -105,6 +106,17 @@ public class FormFilling extends WebCapabilities {
 
 			jse.executeScript("window.scrollBy(0, -800)", "down");
 			Thread.sleep(5000);
+			
+			JavascriptExecutor jsf = (JavascriptExecutor) driver;
+			jsf.executeScript("window.scrollBy(0,400)", "up");
+			
+			Thread.sleep(2000);
+			logger1.info("Checked 'Thank you' text on submission");
+			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/p"));
+			String present = TxtBoxContent.getText();
+			Assert.assertEquals(present, "Thank you for your submission.\n" + 
+					"A Couchbase representative will contact you shortly.");
+
 
 			logger1.pass("Testcase Formfilling is Passed");
 
