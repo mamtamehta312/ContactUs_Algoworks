@@ -8,7 +8,7 @@
         <methods>
           <include name="closeApplication"/>
           <include name="init"/>
-          <include name="contactform"/>
+          <include name="contactformdigits"/>
           <include name="createReport"/>
           <include name="LaunchBrowser"/>
           <include name="flush"/>

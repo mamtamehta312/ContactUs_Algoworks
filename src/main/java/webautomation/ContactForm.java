@@ -71,7 +71,7 @@ public class ContactForm extends WebCapabilities {
 			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
 			
 			Thread.sleep(2000);
-			logger1.info("City 'Noida' is typed in textbox '//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/input'");
+			logger1.info("City 'Noida' is typed in textbox");
 			type("cCity_Xpath", "cCity");
 			
 			
@@ -80,7 +80,7 @@ public class ContactForm extends WebCapabilities {
 			driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
 		
 			Thread.sleep(2000);
-			logger1.info("Message 'Type your inquiry here' is entered in textarea'//*[@id=\"comment\"]'");
+			logger1.info("Message 'Type your inquiry here' is entered in textarea");
 			type("cMessage_Xpath","cMessage");
 			
 			Thread.sleep(2000);
