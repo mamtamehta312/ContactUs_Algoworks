@@ -4,16 +4,45 @@
   <parameter name="browser" value="chrome"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="webautomation.ContactFormNegative">
+      <class name="webautomation.ContactForm">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- webautomation.ContactForm -->
+      <class name="webautomation.FormFilling">
         <methods>
           <include name="closeApplication"/>
-          <include name="init"/>
-          <include name="contactformdigits"/>
           <include name="createReport"/>
           <include name="LaunchBrowser"/>
           <include name="flush"/>
         </methods>
+      </class> <!-- webautomation.FormFilling -->
+      <class name="webautomation.Mobile">
+        <methods>
+          <include name="mobileNext"/>
+        </methods>
+      </class> <!-- webautomation.Mobile -->
+      <class name="webautomation.linkpageflow">
+        <methods>
+          <include name="check"/>
+        </methods>
+      </class> <!-- webautomation.linkpageflow -->
+      <class name="webautomation.Downloads">
+        <methods>
+          <include name="downloadNext"/>
+        </methods>
+      </class> <!-- webautomation.Downloads -->
+      <class name="webautomation.ContactFormNegative">
+        <methods>
+          <include name="init"/>
+        </methods>
       </class> <!-- webautomation.ContactFormNegative -->
+      <class name="webautomation.Server">
+        <methods>
+          <include name="server"/>
+          <include name="ServerNext"/>
+        </methods>
+      </class> <!-- webautomation.Server -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->
