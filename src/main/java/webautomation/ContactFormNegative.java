@@ -1851,10 +1851,10 @@ public class ContactFormNegative extends WebCapabilities {
 					}
 				}
 					
-					@Test(priority=6)
-					  public static void contactformjobtitlenegative() throws Exception {
-						driver.navigate().refresh();
-						logger1 = extent.createTest("contactform_negative_jobtitle");
+			@Test(priority=6)
+		    public static void contactformjobtitlenegative() throws Exception {
+			driver.navigate().refresh();
+			logger1 = extent.createTest("contactform_negative_jobtitle");
 						try {
 
 							JavascriptExecutor jse = (JavascriptExecutor) driver;
