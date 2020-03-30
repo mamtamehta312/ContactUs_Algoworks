@@ -2859,7 +2859,211 @@ public class ContactFormNegative extends WebCapabilities {
 								logger1.fail(e);
 								throw e;
 							}
+						}
+						@Test(priority=9)
+						  public static void contactformREasonforinquirynegative() throws Exception {
+							driver.navigate().refresh();
+							logger1 = extent.createTest("contactform_negative_reasonforinquiry");
+							try {
+
+								JavascriptExecutor jse = (JavascriptExecutor) driver;
+								jse.executeScript("window.scrollBy(0,400)", "up");
+
+								Thread.sleep(2000);
+								logger1.info("First name 'Form' is typed in textbox");
+								type("cFirstName_Xpath", "cFirstName");
+								
+								Thread.sleep(2000);
+								logger1.info("Last name 'Testing' is typed in textbox");
+								type("cLastName_Xpath","cLastName");
+								
+								Thread.sleep(2000);
+								logger1.info("PhoneNumber '9899928177' is typed in textbox");
+								type("cPhoneNumber_Xpath","cPhoneNumber");
+								
+								Thread.sleep(2000);
+								logger1.info("Email 'poonam.gupta@algoworks.com' is typed in textbox");
+								type("cBusinessEmailAddress_Xpath","cBusinessEmailAddress");
+								
+								Thread.sleep(2000);
+								logger1.info("Company name 'Algoworks' is typed in textbox");
+								type("cCompany_Xpath","cCompany");
+								
+								Thread.sleep(2000);
+								logger1.info("JobTitle 'Automation QA' is typed in textbox");
+								type("cJobTitle_Xpath","cJobTitle");
+								
+								Thread.sleep(2000);
+								logger1.info("Country 'United States' is selected");
+								driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[6]/span/span")).sendKeys("United States");
+								
+								Thread.sleep(2000);
+								logger1.info("State 'Alabama' is selected");
+								driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
+								
+								Thread.sleep(2000);
+								logger1.info("City 'Noida' is typed in textbox");
+								type("cCity_Xpath", "cCity");
+								
+								Thread.sleep(3000);
+								logger1.info("' ' is selected");
+								driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys(" ");
 							
+								Thread.sleep(2000);
+								logger1.info("Message 'Type your inquiry here' is entered in textarea");
+								type("cMessage_Xpath","cMessage");
+								
+								Thread.sleep(2000);
+								logger1.info("Contact Us button is selected");
+								click("cContactUsButton_Xpath");
+								Thread.sleep(2000);
+								
+								JavascriptExecutor jsn = (JavascriptExecutor) driver;
+								jsn.executeScript("window.scrollBy(0,-400)", "down");
+								
+								Thread.sleep(2000);
+								logger1.info("Checked error text on submission");
+								WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[10]/div"));
+								String present = TxtBoxContent.getText();
+								Assert.assertEquals(present, "Please select an option from the dropdown menu.");
+								
+								driver.navigate().refresh();
+								logger1.info("------------------------------------------------------------");
+								
+								
+							}
+							catch (Exception e) {
+								logger1.fail(e);
+								throw e;
+							}
+						}
+						
+						@Test(priority=10)
+						  public static void contactformGDPRCountrynegative() throws Exception {
+							driver.navigate().refresh();
+							logger1 = extent.createTest("contactform_negative_GDPRCountry");
+							try {
+
+								JavascriptExecutor jse = (JavascriptExecutor) driver;
+								jse.executeScript("window.scrollBy(0,400)", "up");
+
+								Thread.sleep(2000);
+								logger1.info("First name 'Form' is typed in textbox");
+								type("cFirstName_Xpath", "cFirstName");
+								
+								Thread.sleep(2000);
+								logger1.info("Last name 'Testing' is typed in textbox");
+								type("cLastName_Xpath","cLastName");
+								
+								Thread.sleep(2000);
+								logger1.info("PhoneNumber '9899928177' is typed in textbox");
+								type("cPhoneNumber_Xpath","cPhoneNumber");
+								
+								Thread.sleep(2000);
+								logger1.info("Email 'poonam.gupta@algoworks.com' is typed in textbox");
+								type("cBusinessEmailAddress_Xpath","cBusinessEmailAddress");
+								
+								Thread.sleep(2000);
+								logger1.info("Company name 'Algoworks' is typed in textbox");
+								type("cCompany_Xpath","cCompany");
+								
+								Thread.sleep(2000);
+								logger1.info("JobTitle 'Automation QA' is typed in textbox");
+								type("cJobTitle_Xpath","cJobTitle");
+								
+								Thread.sleep(2000);
+								logger1.info("Country 'UNITED KINGDOM' is selected");
+								driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[6]/span/span")).sendKeys("UNITED KINGDOM");
+								
+								Thread.sleep(2000);
+								logger1.info("City 'Noida' is typed in textbox");
+								type("cCity_Xpath", "cCity");
+								
+								Thread.sleep(3000);
+								logger1.info("Sales Inquiry is selected");
+								driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
+							
+								Thread.sleep(2000);
+								logger1.info("Message 'Type your inquiry here' is entered in textarea");
+								type("cMessage_Xpath","cMessage");
+								
+								Thread.sleep(2000);
+								logger1.info("Contact Us button is selected");
+								click("cContactUsButton_Xpath");
+								Thread.sleep(2000);
+								
+								Thread.sleep(2000);
+								logger1.info("Checked error text on submission");
+								WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[12]/div/div/div[2]/div"));
+								String present = TxtBoxContent.getText();
+								Assert.assertEquals(present, "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy");
+								
+								driver.navigate().refresh();
+								logger1.info("------------------------------------------------------------");
+								
+								JavascriptExecutor je = (JavascriptExecutor) driver;
+								je.executeScript("window.scrollBy(0,400)", "up");
+
+								Thread.sleep(2000);
+								logger1.info("First name 'Form' is typed in textbox");
+								type("cFirstName_Xpath", "cFirstName");
+								
+								Thread.sleep(2000);
+								logger1.info("Last name 'Testing' is typed in textbox");
+								type("cLastName_Xpath","cLastName");
+								
+								Thread.sleep(2000);
+								logger1.info("PhoneNumber '9899928177' is typed in textbox");
+								type("cPhoneNumber_Xpath","cPhoneNumber");
+								
+								Thread.sleep(2000);
+								logger1.info("Email 'poonam.gupta@algoworks.com' is typed in textbox");
+								type("cBusinessEmailAddress_Xpath","cBusinessEmailAddress");
+								
+								Thread.sleep(2000);
+								logger1.info("Company name 'Algoworks' is typed in textbox");
+								type("cCompany_Xpath","cCompany");
+								
+								Thread.sleep(2000);
+								logger1.info("JobTitle 'Automation QA' is typed in textbox");
+								type("cJobTitle_Xpath","cJobTitle");
+								
+								Thread.sleep(2000);
+								logger1.info("Country 'FRANCE' is selected");
+								driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[6]/span/span")).sendKeys("FRANCE");
+								
+								Thread.sleep(2000);
+								logger1.info("City 'Noida' is typed in textbox");
+								type("cCity_Xpath", "cCity");
+								
+								Thread.sleep(3000);
+								logger1.info("Sales Inquiry is selected");
+								driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
+							
+								Thread.sleep(2000);
+								logger1.info("Message 'Type your inquiry here' is entered in textarea");
+								type("cMessage_Xpath","cMessage");
+								
+								Thread.sleep(2000);
+								logger1.info("Contact Us button is selected");
+								click("cContactUsButton_Xpath");
+								Thread.sleep(2000);
+								
+								Thread.sleep(2000);
+								logger1.info("Checked error text on submission");
+								WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[12]/div/div/div[2]/div"));
+								String error = TxtBox.getText();
+								Assert.assertEquals(error, "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy");
+								
+								driver.navigate().refresh();
+								logger1.info("------------------------------------------------------------");
+								
+								
+							}
+							catch (Exception e) {
+								logger1.fail(e);
+								throw e;
+							}
 					Thread.sleep(3000);
 
 					logger1.pass("Testcase ContactForm Negative is Passed");
