@@ -1006,7 +1006,7 @@ public class ContactFormNegative extends WebCapabilities {
 				type("cLastName_Xpath","cLastName");
 				
 				Thread.sleep(2000);
-				logger1.info("PhoneNumber '' is typed in textbox");
+				logger1.info("PhoneNumber ' ' is typed in textbox");
 				type("cPhoneNumberNegBlank_Xpath","cPhoneNumberNegBlank");
 				
 				Thread.sleep(2000);
@@ -2861,7 +2861,7 @@ public class ContactFormNegative extends WebCapabilities {
 							}
 						}
 						@Test(priority=9)
-						  public static void contactformREasonforinquirynegative() throws Exception {
+						  public static void contactformReasonforinquirynegative() throws Exception {
 							driver.navigate().refresh();
 							logger1 = extent.createTest("contactform_negative_reasonforinquiry");
 							try {
