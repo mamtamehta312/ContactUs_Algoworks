@@ -4,16 +4,16 @@
   <parameter name="browser" value="chrome"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="webautomation.DownloadsNegative">
+      <class name="webautomation.MobileNegative">
         <methods>
           <include name="closeApplication"/>
-          <include name="NegativeFirstName"/>
-          <include name="downloadNext"/>
+          <include name="mobileNext"/>
           <include name="createReport"/>
+          <include name="Firstnamenegative"/>
           <include name="LaunchBrowser"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- webautomation.DownloadsNegative -->
+      </class> <!-- webautomation.MobileNegative -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

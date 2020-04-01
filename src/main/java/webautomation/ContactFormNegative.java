@@ -1802,7 +1802,7 @@ public class ContactFormNegative extends WebCapabilities {
 						type("cBusinessEmailAddress_Xpath","cBusinessEmailAddress");
 						
 						Thread.sleep(2000);
-						logger1.info("Company name '' is typed in textbox");
+						logger1.info("Company name ' ' is typed in textbox");
 						type("cCompanyBlank_Xpath","cCompanyBlank");
 						
 						Thread.sleep(2000);
