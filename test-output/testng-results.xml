@@ -5,12 +5,12 @@
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="34466" started-at="2020-03-31T12:23:06Z" finished-at="2020-03-31T12:23:41Z">
+  <suite name="Suite" duration-ms="95197" started-at="2020-04-01T12:19:03Z" finished-at="2020-04-01T12:20:38Z">
     <groups>
     </groups>
-    <test name="Testcases" duration-ms="34466" started-at="2020-03-31T12:23:06Z" finished-at="2020-03-31T12:23:41Z">
-      <class name="webautomation.FormFilling">
-        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.FormFilling@4883b407]" name="LaunchBrowser" is-config="true" duration-ms="17112" started-at="2020-03-31T17:52:49Z" finished-at="2020-03-31T17:53:06Z">
+    <test name="Testcases" duration-ms="95197" started-at="2020-04-01T12:19:03Z" finished-at="2020-04-01T12:20:38Z">
+      <class name="webautomation.MobileNegative">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.MobileNegative@7d9d1a19]" name="LaunchBrowser" is-config="true" duration-ms="19033" started-at="2020-04-01T17:48:44Z" finished-at="2020-04-01T17:49:03Z">
           <params>
             <param index="0">
               <value>
@@ -21,26 +21,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:webautomation.FormFilling@4883b407]" name="createReport" is-config="true" duration-ms="169" started-at="2020-03-31T17:53:06Z" finished-at="2020-03-31T17:53:06Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:webautomation.MobileNegative@7d9d1a19]" name="createReport" is-config="true" duration-ms="145" started-at="2020-04-01T17:49:03Z" finished-at="2020-04-01T17:49:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:webautomation.FormFilling@4883b407]" name="validLogin" duration-ms="33975" started-at="2020-03-31T17:53:06Z" finished-at="2020-03-31T17:53:40Z">
+        <test-method status="PASS" signature="mobileNext()[pri:0, instance:webautomation.MobileNegative@7d9d1a19]" name="mobileNext" is-config="true" duration-ms="20917" started-at="2020-04-01T17:49:03Z" finished-at="2020-04-01T17:49:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:webautomation.FormFilling@4883b407]" name="flush" is-config="true" duration-ms="305" started-at="2020-03-31T17:53:40Z" finished-at="2020-03-31T17:53:41Z">
+        </test-method> <!-- mobileNext -->
+        <test-method status="PASS" signature="Firstnamenegative()[pri:0, instance:webautomation.MobileNegative@7d9d1a19]" name="Firstnamenegative" duration-ms="73947" started-at="2020-04-01T17:49:24Z" finished-at="2020-04-01T17:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Firstnamenegative -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:webautomation.MobileNegative@7d9d1a19]" name="flush" is-config="true" duration-ms="172" started-at="2020-04-01T17:50:38Z" finished-at="2020-04-01T17:50:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webautomation.FormFilling@4883b407]" name="closeApplication" is-config="true" duration-ms="85" started-at="2020-03-31T17:53:41Z" finished-at="2020-03-31T17:53:41Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webautomation.MobileNegative@7d9d1a19]" name="closeApplication" is-config="true" duration-ms="124" started-at="2020-04-01T17:50:38Z" finished-at="2020-04-01T17:50:38Z">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- webautomation.FormFilling -->
+      </class> <!-- webautomation.MobileNegative -->
     </test> <!-- Testcases -->
   </suite> <!-- Suite -->
 </testng-results>
