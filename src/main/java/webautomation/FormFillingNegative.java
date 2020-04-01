@@ -3019,6 +3019,752 @@ public class FormFillingNegative extends WebCapabilities {
 				logger1.fail(e);
 				throw e;
 			}
+		}
+		@Test(priority=8)
+		public static void NegativeCity() throws Exception {
+			logger1 = extent.createTest("formFilling_city_negative");
+			try {
+
+				JavascriptExecutor jse = (JavascriptExecutor) driver;
+				jse.executeScript("window.scrollBy(0,400)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("First name 'Form' is typed in textbox");
+				type("fFirstName_Xpath", "fFirstName");
+
+				Thread.sleep(2000);
+
+				logger1.info("Last name 'Testing' is typed in textbox ");
+				type("fLastName_Xpath", "fLastName");
+
+	            Thread.sleep(3000);                                                                                                                                                             
+				
+				//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
+				//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
+				//type("fCountryCode_Xpath","fCountryCode");
+				//Thread.sleep(3000);   
+
+				logger1.info("Area code+phone is '9899928177' given in textbox ");
+				type("fPhoneNumber_Xpath", "fPhoneNumber");
+
+				Thread.sleep(2000);
+				logger1.info("Business Email Address 'poonam.gupta@algoworks' typed in textbox");
+				type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
+
+				
+				Thread.sleep(2000);
+				logger1.info("Company 'Algoworks' given in textbox ");
+				type("fCompany_Xpath", "fCompany");
+
+				Thread.sleep(2000);
+				logger1.info("Job Title 'Automation QA' given in textbox ");
+				type("fJobTitle_Xpath", "fJobTitle");
+
+				Thread.sleep(2000);
+				logger1.info("'United States' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/span")).sendKeys("United States");
+		 
+				Thread.sleep(2000);
+				logger1.info("State 'Alabama' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
+				
+				Thread.sleep(2000);
+				logger1.info("City name 'N' given in textbox");
+				type("fCityNeg_Xpath", "fCityNeg");
+
+				Thread.sleep(2000);
+				logger1.info("'Reason for inquiry' is given in textbox");
+				driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
+				
+				//jse.executeScript("window.scrollBy(0,100)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("Message is displayed in textbox 'Type you enquiry here'");
+				type("fMessage_Xpath", "fMessage");
+
+				//jse.executeScript("window.scrollBy(0,300)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("'contact us' is clicked ");
+				click("fContactUs_Xpath");
+				Thread.sleep(2000);
+				
+				Thread.sleep(2000);
+				//jse.executeScript("window.scrollBy(0, -800)", "down");
+				
+				JavascriptExecutor jsf = (JavascriptExecutor) driver;
+				jsf.executeScript("window.scrollBy(0,400)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("Checked error text on submission");
+				WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
+				String present = TxtBoxContent.getText();
+				Assert.assertEquals(present, "Must contain 2-50 characters.");
+				
+				Thread.sleep(2000);
+				driver.navigate().refresh();
+				logger1.info("------------------------------------------------------------");
+				
+				JavascriptExecutor se = (JavascriptExecutor) driver;
+				se.executeScript("window.scrollBy(0,400)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("First name 'Form' is typed in textbox");
+				type("fFirstName_Xpath", "fFirstName");
+
+				Thread.sleep(2000);
+
+				logger1.info("Last name 'Testing' is typed in textbox ");
+				type("fLastName_Xpath", "fLastName");
+
+	            Thread.sleep(3000);                                                                                                                                                             
+				
+				//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
+				//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
+				//type("fCountryCode_Xpath","fCountryCode");
+				//Thread.sleep(3000);   
+
+				logger1.info("Area code+phone is '9899928177' given in textbox ");
+				type("fPhoneNumber_Xpath", "fPhoneNumber");
+
+				Thread.sleep(2000);
+				logger1.info("Business Email Address 'poonam.gupta@algoworks' typed in textbox");
+				type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
+
+				
+				Thread.sleep(2000);
+				logger1.info("Company 'Algoworks' given in textbox ");
+				type("fCompany_Xpath", "fCompany");
+
+				Thread.sleep(2000);
+				logger1.info("Job Title 'Automation QA' given in textbox ");
+				type("fJobTitle_Xpath", "fJobTitle");
+
+				Thread.sleep(2000);
+				logger1.info("'United States' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/span")).sendKeys("United States");
+		 
+				Thread.sleep(2000);
+				logger1.info("State 'Alabama' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
+				
+				Thread.sleep(2000);
+				logger1.info("City name '@@' given in textbox");
+				type("fCitySpcl_Xpath", "fCitySpcl");
+
+				Thread.sleep(2000);
+				logger1.info("'Reason for inquiry' is given in textbox");
+				driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
+				
+				//jse.executeScript("window.scrollBy(0,100)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("Message is displayed in textbox 'Type you enquiry here'");
+				type("fMessage_Xpath", "fMessage");
+
+				//jse.executeScript("window.scrollBy(0,300)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("'contact us' is clicked ");
+				click("fContactUs_Xpath");
+				Thread.sleep(2000);
+				
+				Thread.sleep(2000);
+				//jse.executeScript("window.scrollBy(0, -800)", "down");
+				
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("window.scrollBy(0,400)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("Checked error text on submission");
+				WebElement Content = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
+				String presents = Content.getText();
+				Assert.assertEquals(presents, "Must contain 2-50 characters.");
+				
+				Thread.sleep(2000);
+				driver.navigate().refresh();
+				logger1.info("------------------------------------------------------------");
+				
+				JavascriptExecutor e = (JavascriptExecutor) driver;
+				e.executeScript("window.scrollBy(0,400)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("First name 'Form' is typed in textbox");
+				type("fFirstName_Xpath", "fFirstName");
+
+				Thread.sleep(2000);
+
+				logger1.info("Last name 'Testing' is typed in textbox ");
+				type("fLastName_Xpath", "fLastName");
+
+	            Thread.sleep(3000);                                                                                                                                                             
+				
+				//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
+				//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
+				//type("fCountryCode_Xpath","fCountryCode");
+				//Thread.sleep(3000);   
+
+				logger1.info("Area code+phone is '9899928177' given in textbox ");
+				type("fPhoneNumber_Xpath", "fPhoneNumber");
+
+				Thread.sleep(2000);
+				logger1.info("Business Email Address 'poonam.gupta@algoworks' typed in textbox");
+				type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
+
+				
+				Thread.sleep(2000);
+				logger1.info("Company 'Algoworks' given in textbox ");
+				type("fCompany_Xpath", "fCompany");
+
+				Thread.sleep(2000);
+				logger1.info("Job Title 'Automation QA' given in textbox ");
+				type("fJobTitle_Xpath", "fJobTitle");
+
+				Thread.sleep(2000);
+				logger1.info("'United States' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/span")).sendKeys("United States");
+		 
+				Thread.sleep(2000);
+				logger1.info("State 'Alabama' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
+				
+				Thread.sleep(2000);
+				logger1.info("City name 'Noida%' given in textbox");
+				type("fCitySpc_Xpath", "fCitySpc");
+
+				Thread.sleep(2000);
+				logger1.info("'Reason for inquiry' is given in textbox");
+				driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
+				
+				//jse.executeScript("window.scrollBy(0,100)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("Message is displayed in textbox 'Type you enquiry here'");
+				type("fMessage_Xpath", "fMessage");
+
+				//jse.executeScript("window.scrollBy(0,300)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("'contact us' is clicked ");
+				click("fContactUs_Xpath");
+				Thread.sleep(2000);
+				
+				Thread.sleep(2000);
+				//jse.executeScript("window.scrollBy(0, -800)", "down");
+				
+				JavascriptExecutor s = (JavascriptExecutor) driver;
+				s.executeScript("window.scrollBy(0,400)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("Checked error text on submission");
+				WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
+				String error = Text.getText();
+				Assert.assertEquals(error, "Must contain 2-50 characters.");
+				
+				Thread.sleep(2000);
+				driver.navigate().refresh();
+				logger1.info("------------------------------------------------------------");
+				
+				JavascriptExecutor ex = (JavascriptExecutor) driver;
+				ex.executeScript("window.scrollBy(0,400)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("First name 'Form' is typed in textbox");
+				type("fFirstName_Xpath", "fFirstName");
+
+				Thread.sleep(2000);
+
+				logger1.info("Last name 'Testing' is typed in textbox ");
+				type("fLastName_Xpath", "fLastName");
+
+	            Thread.sleep(3000);                                                                                                                                                             
+				
+				//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
+				//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
+				//type("fCountryCode_Xpath","fCountryCode");
+				//Thread.sleep(3000);   
+
+				logger1.info("Area code+phone is '9899928177' given in textbox ");
+				type("fPhoneNumber_Xpath", "fPhoneNumber");
+
+				Thread.sleep(2000);
+				logger1.info("Business Email Address 'poonam.gupta@algoworks' typed in textbox");
+				type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
+
+				
+				Thread.sleep(2000);
+				logger1.info("Company 'Algoworks' given in textbox ");
+				type("fCompany_Xpath", "fCompany");
+
+				Thread.sleep(2000);
+				logger1.info("Job Title 'Automation QA' given in textbox ");
+				type("fJobTitle_Xpath", "fJobTitle");
+
+				Thread.sleep(2000);
+				logger1.info("'United States' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/span")).sendKeys("United States");
+		 
+				Thread.sleep(2000);
+				logger1.info("State 'Alabama' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
+				
+				Thread.sleep(2000);
+				logger1.info("City name '123456' given in textbox");
+				type("fCityNum_Xpath", "fCityNum");
+
+				Thread.sleep(2000);
+				logger1.info("'Reason for inquiry' is given in textbox");
+				driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
+				
+				//jse.executeScript("window.scrollBy(0,100)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("Message is displayed in textbox 'Type you enquiry here'");
+				type("fMessage_Xpath", "fMessage");
+
+				//jse.executeScript("window.scrollBy(0,300)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("'contact us' is clicked ");
+				click("fContactUs_Xpath");
+				Thread.sleep(2000);
+				
+				Thread.sleep(2000);
+				//jse.executeScript("window.scrollBy(0, -800)", "down");
+				
+				JavascriptExecutor script = (JavascriptExecutor) driver;
+				script.executeScript("window.scrollBy(0,400)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("Checked error text on submission");
+				WebElement Texts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
+				String errors = Texts.getText();
+				Assert.assertEquals(errors, "Must contain 2-50 characters.");
+				
+				Thread.sleep(2000);
+				driver.navigate().refresh();
+				logger1.info("------------------------------------------------------------");
+				
+				JavascriptExecutor exe = (JavascriptExecutor) driver;
+				exe.executeScript("window.scrollBy(0,400)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("First name 'Form' is typed in textbox");
+				type("fFirstName_Xpath", "fFirstName");
+
+				Thread.sleep(2000);
+
+				logger1.info("Last name 'Testing' is typed in textbox ");
+				type("fLastName_Xpath", "fLastName");
+
+	            Thread.sleep(3000);                                                                                                                                                             
+				
+				//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
+				//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
+				//type("fCountryCode_Xpath","fCountryCode");
+				//Thread.sleep(3000);   
+
+				logger1.info("Area code+phone is '9899928177' given in textbox ");
+				type("fPhoneNumber_Xpath", "fPhoneNumber");
+
+				Thread.sleep(2000);
+				logger1.info("Business Email Address 'poonam.gupta@algoworks' typed in textbox");
+				type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
+
+				
+				Thread.sleep(2000);
+				logger1.info("Company 'Algoworks' given in textbox ");
+				type("fCompany_Xpath", "fCompany");
+
+				Thread.sleep(2000);
+				logger1.info("Job Title 'Automation QA' given in textbox ");
+				type("fJobTitle_Xpath", "fJobTitle");
+
+				Thread.sleep(2000);
+				logger1.info("'United States' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/span")).sendKeys("United States");
+		 
+				Thread.sleep(2000);
+				logger1.info("State 'Alabama' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
+				
+				Thread.sleep(2000);
+				logger1.info("City name ' ' given in textbox");
+				type("fCityBlank_Xpath", "fCityBlank");
+
+				Thread.sleep(2000);
+				logger1.info("'Reason for inquiry' is given in textbox");
+				driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
+				
+				//jse.executeScript("window.scrollBy(0,100)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("Message is displayed in textbox 'Type you enquiry here'");
+				type("fMessage_Xpath", "fMessage");
+
+				//jse.executeScript("window.scrollBy(0,300)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("'contact us' is clicked ");
+				click("fContactUs_Xpath");
+				Thread.sleep(2000);
+				
+				Thread.sleep(2000);
+				//jse.executeScript("window.scrollBy(0, -800)", "down");
+				
+				JavascriptExecutor scripts = (JavascriptExecutor) driver;
+				scripts.executeScript("window.scrollBy(0,400)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("Checked error text on submission");
+				WebElement Txt = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
+				String err = Txt.getText();
+				Assert.assertEquals(err, "Must contain 2-50 characters.");
+				
+				Thread.sleep(2000);
+				driver.navigate().refresh();
+				logger1.info("------------------------------------------------------------");
+				
+				JavascriptExecutor exec = (JavascriptExecutor) driver;
+				exec.executeScript("window.scrollBy(0,400)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("First name 'Form' is typed in textbox");
+				type("fFirstName_Xpath", "fFirstName");
+
+				Thread.sleep(2000);
+
+				logger1.info("Last name 'Testing' is typed in textbox ");
+				type("fLastName_Xpath", "fLastName");
+
+	            Thread.sleep(3000);                                                                                                                                                             
+				
+				//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
+				//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
+				//type("fCountryCode_Xpath","fCountryCode");
+				//Thread.sleep(3000);   
+
+				logger1.info("Area code+phone is '9899928177' given in textbox ");
+				type("fPhoneNumber_Xpath", "fPhoneNumber");
+
+				Thread.sleep(2000);
+				logger1.info("Business Email Address 'poonam.gupta@algoworks' typed in textbox");
+				type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
+
+				
+				Thread.sleep(2000);
+				logger1.info("Company 'Algoworks' given in textbox ");
+				type("fCompany_Xpath", "fCompany");
+
+				Thread.sleep(2000);
+				logger1.info("Job Title 'Automation QA' given in textbox ");
+				type("fJobTitle_Xpath", "fJobTitle");
+
+				Thread.sleep(2000);
+				logger1.info("'United States' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/span")).sendKeys("United States");
+		 
+				Thread.sleep(2000);
+				logger1.info("State 'Alabama' is selected");
+				driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
+				
+				Thread.sleep(2000);
+				logger1.info("City name 'Noida1234' given in textbox");
+				type("fCityAlphdigit_Xpath", "fCityAlphdigit");
+
+				Thread.sleep(2000);
+				logger1.info("'Reason for inquiry' is given in textbox");
+				driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
+				
+				//jse.executeScript("window.scrollBy(0,100)", "up");
+
+				Thread.sleep(2000);
+				logger1.info("Message is displayed in textbox 'Type you enquiry here'");
+				type("fMessage_Xpath", "fMessage");
+
+				//jse.executeScript("window.scrollBy(0,300)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("'contact us' is clicked ");
+				click("fContactUs_Xpath");
+				Thread.sleep(2000);
+				
+				Thread.sleep(2000);
+				//jse.executeScript("window.scrollBy(0, -800)", "down");
+				
+				JavascriptExecutor scri = (JavascriptExecutor) driver;
+				scri.executeScript("window.scrollBy(0,400)", "up");
+				
+				Thread.sleep(2000);
+				logger1.info("Checked error text on submission");
+				WebElement T = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
+				String errs = T.getText();
+				Assert.assertEquals(errs, "Must contain 2-50 characters.");
+				
+				Thread.sleep(2000);
+				driver.navigate().refresh();
+				logger1.info("------------------------------------------------------------");
+				
+			}
+		
+			catch (Exception e) {
+				logger1.fail(e);
+				throw e;
+			}
+		}
+			
+			@Test(priority=9)
+			public static void NegativeReasonforInquiry() throws Exception {
+				logger1 = extent.createTest("formFilling_ReasonForInquiry_negative");
+				try {
+
+					JavascriptExecutor jse = (JavascriptExecutor) driver;
+					jse.executeScript("window.scrollBy(0,400)", "up");
+
+					Thread.sleep(2000);
+					logger1.info("First name 'Form' is typed in textbox");
+					type("fFirstName_Xpath", "fFirstName");
+
+					Thread.sleep(2000);
+
+					logger1.info("Last name 'Testing' is typed in textbox ");
+					type("fLastName_Xpath", "fLastName");
+
+		            Thread.sleep(3000);                                                                                                                                                             
+					
+					//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
+					//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
+					//type("fCountryCode_Xpath","fCountryCode");
+					//Thread.sleep(3000);   
+
+					logger1.info("Area code+phone is '9899928177' given in textbox ");
+					type("fPhoneNumber_Xpath", "fPhoneNumber");
+
+					Thread.sleep(2000);
+					logger1.info("Business Email Address 'poonam.gupta@algoworks' typed in textbox");
+					type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
+
+					
+					Thread.sleep(2000);
+					logger1.info("Company 'Algoworks' given in textbox ");
+					type("fCompany_Xpath", "fCompany");
+
+					Thread.sleep(2000);
+					logger1.info("Job Title 'Automation QA' given in textbox ");
+					type("fJobTitle_Xpath", "fJobTitle");
+
+					Thread.sleep(2000);
+					logger1.info("'United States' is selected");
+					driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/span")).sendKeys("United States");
+			 
+					Thread.sleep(2000);
+					logger1.info("State 'Alabama' is selected");
+					driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
+					
+					Thread.sleep(2000);
+					logger1.info("City name 'Noida' given in textbox");
+					type("fCity_Xpath", "fCity");
+
+					Thread.sleep(2000);
+					logger1.info("' ' is given in textbox");
+					driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys(" ");
+					
+					//jse.executeScript("window.scrollBy(0,100)", "up");
+
+					Thread.sleep(2000);
+					logger1.info("Message is displayed in textbox 'Type you enquiry here'");
+					type("fMessage_Xpath", "fMessage");
+
+					//jse.executeScript("window.scrollBy(0,300)", "up");
+					
+					Thread.sleep(2000);
+					logger1.info("'contact us' is clicked ");
+					click("fContactUs_Xpath");
+					Thread.sleep(2000);
+					
+					Thread.sleep(2000);
+					//jse.executeScript("window.scrollBy(0, -800)", "down");
+					
+					JavascriptExecutor jsf = (JavascriptExecutor) driver;
+					jsf.executeScript("window.scrollBy(0,400)", "up");
+					
+					Thread.sleep(2000);
+					logger1.info("Checked error text on submission");
+					WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[10]/div"));
+					String present = TxtBoxContent.getText();
+					Assert.assertEquals(present, "Please select an option from the dropdown menu.");
+					
+					Thread.sleep(2000);
+					driver.navigate().refresh();
+					logger1.info("------------------------------------------------------------");
+				}
+				catch (Exception e) {
+					logger1.fail(e);
+					throw e;
+				}
+			}
+			@Test(priority=10)
+			public static void NegativeGDPRCountry() throws Exception {
+				logger1 = extent.createTest("formFilling_GDPRCountry_negative");
+				try {
+
+					JavascriptExecutor jse = (JavascriptExecutor) driver;
+					jse.executeScript("window.scrollBy(0,400)", "up");
+
+					Thread.sleep(2000);
+					logger1.info("First name 'Form' is typed in textbox");
+					type("fFirstName_Xpath", "fFirstName");
+
+					Thread.sleep(2000);
+
+					logger1.info("Last name 'Testing' is typed in textbox ");
+					type("fLastName_Xpath", "fLastName");
+
+		            Thread.sleep(3000);                                                                                                                                                             
+					
+					//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
+					//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
+					//type("fCountryCode_Xpath","fCountryCode");
+					//Thread.sleep(3000);   
+
+					logger1.info("Area code+phone is '9899928177' given in textbox ");
+					type("fPhoneNumber_Xpath", "fPhoneNumber");
+
+					Thread.sleep(2000);
+					logger1.info("Business Email Address 'poonam.gupta@algoworks' typed in textbox");
+					type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
+
+					
+					Thread.sleep(2000);
+					logger1.info("Company 'Algoworks' given in textbox ");
+					type("fCompany_Xpath", "fCompany");
+
+					Thread.sleep(2000);
+					logger1.info("Job Title 'Automation QA' given in textbox ");
+					type("fJobTitle_Xpath", "fJobTitle");
+
+					Thread.sleep(2000);
+					logger1.info("'United Kingdom' is selected");
+					driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/span")).sendKeys("UNITED KINGDOM");
+			 
+					Thread.sleep(2000);
+					logger1.info("City name 'Noida' given in textbox");
+					type("fCity_Xpath", "fCity");
+
+					Thread.sleep(2000);
+					logger1.info("'Reason for inquiry' is given in textbox");
+					driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
+					
+					//jse.executeScript("window.scrollBy(0,100)", "up");
+
+					Thread.sleep(2000);
+					logger1.info("Message is displayed in textbox 'Type you enquiry here'");
+					type("fMessage_Xpath", "fMessage");
+
+					//jse.executeScript("window.scrollBy(0,300)", "up");
+					
+					Thread.sleep(2000);
+					logger1.info("'contact us' is clicked ");
+					click("fContactUs_Xpath");
+					Thread.sleep(2000);
+					
+					Thread.sleep(2000);
+					//jse.executeScript("window.scrollBy(0, -800)", "down");
+					
+					JavascriptExecutor jsf = (JavascriptExecutor) driver;
+					jsf.executeScript("window.scrollBy(0,400)", "up");
+					
+					Thread.sleep(2000);
+					logger1.info("Checked error text on submission");
+					WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[12]/div/div/div[2]/div"));
+					String present = TxtBoxContent.getText();
+					Assert.assertEquals(present, "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy");
+					
+					Thread.sleep(2000);
+					driver.navigate().refresh();
+					logger1.info("------------------------------------------------------------");
+					
+					JavascriptExecutor jex = (JavascriptExecutor) driver;
+					jex.executeScript("window.scrollBy(0,400)", "up");
+
+					Thread.sleep(2000);
+					logger1.info("First name 'Form' is typed in textbox");
+					type("fFirstName_Xpath", "fFirstName");
+
+					Thread.sleep(2000);
+
+					logger1.info("Last name 'Testing' is typed in textbox ");
+					type("fLastName_Xpath", "fLastName");
+
+		            Thread.sleep(3000);                                                                                                                                                             
+					
+					//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
+					//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
+					//type("fCountryCode_Xpath","fCountryCode");
+					//Thread.sleep(3000);   
+
+					logger1.info("Area code+phone is '9899928177' given in textbox ");
+					type("fPhoneNumber_Xpath", "fPhoneNumber");
+
+					Thread.sleep(2000);
+					logger1.info("Business Email Address 'poonam.gupta@algoworks' typed in textbox");
+					type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
+
+					
+					Thread.sleep(2000);
+					logger1.info("Company 'Algoworks' given in textbox ");
+					type("fCompany_Xpath", "fCompany");
+
+					Thread.sleep(2000);
+					logger1.info("Job Title 'Automation QA' given in textbox ");
+					type("fJobTitle_Xpath", "fJobTitle");
+
+					Thread.sleep(2000);
+					logger1.info("'FRANCE' is selected");
+					driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/span")).sendKeys("FRANCE");
+			 
+					Thread.sleep(2000);
+					logger1.info("City name 'Noida' given in textbox");
+					type("fCity_Xpath", "fCity");
+
+					Thread.sleep(2000);
+					logger1.info("'Reason for inquiry' is given in textbox");
+					driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
+					
+					//jse.executeScript("window.scrollBy(0,100)", "up");
+
+					Thread.sleep(2000);
+					logger1.info("Message is displayed in textbox 'Type you enquiry here'");
+					type("fMessage_Xpath", "fMessage");
+
+					//jse.executeScript("window.scrollBy(0,300)", "up");
+					
+					Thread.sleep(2000);
+					logger1.info("'contact us' is clicked ");
+					click("fContactUs_Xpath");
+					Thread.sleep(2000);
+					
+					Thread.sleep(2000);
+					//jse.executeScript("window.scrollBy(0, -800)", "down");
+					
+					JavascriptExecutor js = (JavascriptExecutor) driver;
+					js.executeScript("window.scrollBy(0,400)", "up");
+					
+					Thread.sleep(2000);
+					logger1.info("Checked error text on submission");
+					WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[12]/div/div/div[2]/div"));
+					String error = TxtBox.getText();
+					Assert.assertEquals(error, "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy");
+					
+					Thread.sleep(2000);
+					driver.navigate().refresh();
+					logger1.info("------------------------------------------------------------");
+				}
+				catch (Exception e) {
+					logger1.fail(e);
+					throw e;
+				}
+				
 			Thread.sleep(3000);
 		logger1.pass("Testcase FormFilling Negative is Passed");
 	}

@@ -83,6 +83,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/riya/Downloads/selenium-server-standalone-3.141.59.jar"/>
-	<classpathentry kind="lib" path="/home/riya/Downloads/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
