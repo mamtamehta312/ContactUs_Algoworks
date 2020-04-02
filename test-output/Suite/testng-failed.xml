@@ -9,7 +9,7 @@
           <include name="closeApplication"/>
           <include name="mobileNext"/>
           <include name="createReport"/>
-          <include name="Firstnamenegative"/>
+          <include name="Emailnegative"/>
           <include name="LaunchBrowser"/>
           <include name="flush"/>
         </methods>

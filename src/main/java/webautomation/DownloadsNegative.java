@@ -976,15 +976,7 @@ try {
 			logger1.info("Click on mobile tab");
 			click("dTab_Xpath");
 			Thread.sleep(2000);
-			
-      //      JavascriptExecutor jsed = (JavascriptExecutor) driver;
-		//	jsed.executeScript("window.scrollBy(0,150)", "up");
-			
-			/*Thread.sleep(2000);
-			logger1.info("Click on Popup Cancel button ");
-			click("dPopupCancel_Xpath");
-			Thread.sleep(2000); */
-			
+	
 			Thread.sleep(2000);
 			logger1.info("Downloads Button is selected");
 			click("dDownloadsButton_Xpath");
@@ -997,10 +989,7 @@ try {
 			logger1.info("Last name 'Testing' is typed in textbox");
 			type("dLastName_Xpath", "dLastName");
 			Thread.sleep(2000);
-			
-			//logger1.info("Country 'United States/Canada (+1)' is selected");
-			//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[4]/div/div/div/div/form/div[2]/div[1]/div/span/span")).sendKeys("United States/Canada (+1)");
-			
+		
 			logger1.info("Phone number '!@#$%^&*' is entered into the AREA CODE + PHONE field");
 			type("dPhoneNumberAllSpc_Xpath","dNumberAllSpc");
 			Thread.sleep(2000);
@@ -1043,15 +1032,7 @@ try {
 			logger1.info("Click on mobile tab");
 			click("dTab_Xpath");
 			Thread.sleep(2000);
-			
-      //      JavascriptExecutor jsed = (JavascriptExecutor) driver;
-		//	jsed.executeScript("window.scrollBy(0,150)", "up");
-			
-			/*Thread.sleep(2000);
-			logger1.info("Click on Popup Cancel button ");
-			click("dPopupCancel_Xpath");
-			Thread.sleep(2000); */
-			
+	
 			Thread.sleep(2000);
 			logger1.info("Downloads Button is selected");
 			click("dDownloadsButton_Xpath");
@@ -1064,10 +1045,7 @@ try {
 			logger1.info("Last name 'Testing' is typed in textbox");
 			type("dLastName_Xpath", "dLastName");
 			Thread.sleep(2000);
-			
-			//logger1.info("Country 'United States/Canada (+1)' is selected");
-			//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[4]/div/div/div/div/form/div[2]/div[1]/div/span/span")).sendKeys("United States/Canada (+1)");
-			
+		
 			logger1.info("Phone number 'abcdefghi' is entered into the AREA CODE + PHONE field");
 			type("dPhoneNumberAllAlph_Xpath","dNumberAllAlph");
 			Thread.sleep(2000);
