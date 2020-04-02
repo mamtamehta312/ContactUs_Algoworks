@@ -10,10 +10,10 @@
          <class name="webautomation.Downloads"/>
          <class name="webautomation.Mobile"/>
          <class name="webautomation.ContactFormNegative"/>
-         <class name="webautomation.FormFillingNegative"/>
-         <class name="webautomation.DownloadsNegative"/>
-		<class name="webautomation.MobileNegative"/>
-	
+<class name="webautomation.FormFillingNegative"/>
+ <class name="webautomation.DownloadsNegative"/>
+  <class name="webautomation.MobileNegative"/>
+  
 	   </classes>
 	</test>
 
