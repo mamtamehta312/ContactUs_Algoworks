@@ -330,8 +330,8 @@ try {
 			logger1.info("------------------------------------------------------------");
 
 			logger1.info("Click on'Couchbase Lite' tab");
-			WebElement eleme = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", eleme);
+			WebElement k = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", k);
 			Thread.sleep(2000); 
 			
 			Thread.sleep(2000);
@@ -380,7 +380,7 @@ try {
 			
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Txts = driver.findElement(By.xpath("//*[@id=\\\"global-content\\\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/div/div[2]"));
+			WebElement Txts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/div/div[2]"));
 			String err = Txts.getText();
 			Assert.assertEquals(err, "Must contain 2-50 characters.");
 					
@@ -2116,7 +2116,7 @@ try {
 	            throw e;
 	        }
 	        }
-	@Test (priority=1)
+	@Test (priority=7)
 	public static void NegativeCountry() throws Exception {
 	logger1 = extent.createTest("downloads_Country_Negative");
             
