@@ -25,17 +25,13 @@ public class Downloads extends WebCapabilities{
 		try {
 			
 			Thread.sleep(2000);
-			logger1.info("Click on mobile tab");
-			click("dTab_Xpath");
+			logger1.info("Click on'Couchbase Lite' tab");
+			WebElement element = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+			Thread.sleep(2000); 
+			
 			Thread.sleep(2000);
-			
-            JavascriptExecutor jsed = (JavascriptExecutor) driver;
-			jsed.executeScript("window.scrollBy(0,150)", "up");
-			
-			/*Thread.sleep(2000);
-			logger1.info("Click on Popup Cancel button ");
-			click("dPopupCancel_Xpath");
-			Thread.sleep(2000); */
+			click("dplusbutton_Xpath");
 			
 			Thread.sleep(2000);
 			logger1.info("Downloads Button is selected");
@@ -70,7 +66,7 @@ public class Downloads extends WebCapabilities{
 			Thread.sleep(2000);
 			
 			logger1.info("Country 'Afghanistan' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[4]/div/div/div/div/form/div[6]/span/span")).sendKeys("Afghanistan");
+			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/span")).sendKeys("Afghanistan");
 			
 			
 			logger1.info("Agreement checkbox has been selected");
@@ -78,13 +74,16 @@ public class Downloads extends WebCapabilities{
 			Thread.sleep(2000);
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
-			click("dButton_Xpath");
+			click("dtryitfree_Xpath");
 			Thread.sleep(3000);
 			
 			logger1.info("checking the redirection");
 			String url = driver.getCurrentUrl();
 			Assert.assertEquals(url, "https://www.couchbase.com/downloads/thankyou/enterprise?product=couchbase-lite&version=2.7.0&platform=swift&addon=false&beta=false" );
-					
+			
+			Thread.sleep(2000);
+			click("dButton_Xpath");
+			Thread.sleep(5000);
 		}
 		catch(Exception e) {
 			logger1.fail(e);                           

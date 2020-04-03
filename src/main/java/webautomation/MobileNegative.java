@@ -68,6 +68,7 @@ public class MobileNegative extends WebCapabilities {
 			
 			jsed.executeScript("window.scrollBy(0,100)", "up");
 		
+			logger1.info("License agreement has been clicked");
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 				
@@ -139,6 +140,7 @@ public class MobileNegative extends WebCapabilities {
 			
 			j.executeScript("window.scrollBy(0,100)", "up");
 		
+			logger1.info("License agreement has been clicked");
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 				
@@ -211,6 +213,7 @@ public class MobileNegative extends WebCapabilities {
 			
 			j.executeScript("window.scrollBy(0,100)", "up");
 		
+			logger1.info("License agreement has been clicked");
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 				
@@ -283,6 +286,7 @@ public class MobileNegative extends WebCapabilities {
 			
 			j.executeScript("window.scrollBy(0,100)", "up");
 		
+			logger1.info("License agreement has been clicked");
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 				
@@ -355,6 +359,7 @@ public class MobileNegative extends WebCapabilities {
 			
 			j.executeScript("window.scrollBy(0,100)", "up");
 		
+			logger1.info("License agreement has been clicked");
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 				
@@ -417,6 +422,7 @@ public class MobileNegative extends WebCapabilities {
 			
 			kj.executeScript("window.scrollBy(0,100)", "up");
 		
+			logger1.info("License agreement has been clicked");
 			JavascriptExecutor jx = (JavascriptExecutor)driver;
 			jx.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 				
@@ -478,6 +484,7 @@ public class MobileNegative extends WebCapabilities {
 			
 			jk.executeScript("window.scrollBy(0,100)", "up");
 		
+			logger1.info("License agreement has been clicked");
 			JavascriptExecutor exec = (JavascriptExecutor)driver;
 			exec.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 				
@@ -539,6 +546,7 @@ public class MobileNegative extends WebCapabilities {
 				
 				k.executeScript("window.scrollBy(0,100)", "up");
 			
+				logger1.info("License agreement has been clicked");
 				JavascriptExecutor execu = (JavascriptExecutor)driver;
 				execu.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 					
@@ -602,6 +610,7 @@ public class MobileNegative extends WebCapabilities {
 				
 				java.executeScript("window.scrollBy(0,100)", "up");
 			
+				logger1.info("License agreement has been clicked");
 				JavascriptExecutor execut = (JavascriptExecutor)driver;
 				execut.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 					
@@ -664,6 +673,7 @@ JavascriptExecutor javas = (JavascriptExecutor) driver;
 				
 				javas.executeScript("window.scrollBy(0,100)", "up");
 			
+				logger1.info("License agreement has been clicked");
 				JavascriptExecutor executo = (JavascriptExecutor)driver;
 				executo.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 					
@@ -727,6 +737,7 @@ JavascriptExecutor javas = (JavascriptExecutor) driver;
 				
 				javasc.executeScript("window.scrollBy(0,100)", "up");
 			
+				logger1.info("License agreement has been clicked");
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 					
@@ -790,6 +801,7 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 				
 				javascr.executeScript("window.scrollBy(0,100)", "up");
 			
+				logger1.info("License agreement has been clicked");
 				JavascriptExecutor jsexecutor = (JavascriptExecutor)driver;
 				jsexecutor.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 					
@@ -862,6 +874,7 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 			
 			j.executeScript("window.scrollBy(0,100)", "up");
 		
+			logger1.info("License agreement has been clicked");
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 				
@@ -924,6 +937,7 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 				
 				jk.executeScript("window.scrollBy(0,100)", "up");
 			
+				logger1.info("License agreement has been clicked");
 				JavascriptExecutor js = (JavascriptExecutor)driver;
 				js.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 					
@@ -986,6 +1000,7 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 				
 				kj.executeScript("window.scrollBy(0,100)", "up");
 			
+				logger1.info("License agreement has been clicked");
 				JavascriptExecutor jsex = (JavascriptExecutor)driver;
 				jsex.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 					
@@ -1048,6 +1063,7 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 				
 				java.executeScript("window.scrollBy(0,100)", "up");
 			
+				logger1.info("License agreement has been clicked");
 				JavascriptExecutor jscsex = (JavascriptExecutor)driver;
 				jscsex.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 					
@@ -1123,6 +1139,7 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 			
 			j.executeScript("window.scrollBy(0,100)", "up");
 		
+			logger1.info("License agreement has been clicked");
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 				
@@ -1251,6 +1268,7 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 					
 					javascript.executeScript("window.scrollBy(0,100)", "up");
 				
+					logger1.info("License agreement has been clicked");
 					JavascriptExecutor jex = (JavascriptExecutor)driver;
 					jex.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 						
@@ -1373,6 +1391,7 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 							
 							javascriptex.executeScript("window.scrollBy(0,100)", "up");
 						
+							logger1.info("License agreement has been clicked");
 							JavascriptExecutor x = (JavascriptExecutor)driver;
 							ex.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 								
@@ -1438,6 +1457,7 @@ JavascriptExecutor javascriptexec = (JavascriptExecutor) driver;
 							
 							javascriptexec.executeScript("window.scrollBy(0,100)", "up");
 						
+							logger1.info("License agreement has been clicked");
 							JavascriptExecutor xe = (JavascriptExecutor)driver;
 							xe.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 								
@@ -1577,6 +1597,7 @@ JavascriptExecutor javascriptexecutor = (JavascriptExecutor) driver;
 			
 			j.executeScript("window.scrollBy(0,100)", "up");
 		
+			logger1.info("License agreement has been clicked");
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("document.getElementsByName('termsandConditions')[0].click()");
 				

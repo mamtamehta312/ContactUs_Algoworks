@@ -5,12 +5,12 @@
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="2011645" started-at="2020-04-02T11:40:33Z" finished-at="2020-04-02T12:14:04Z">
+  <suite name="Suite" duration-ms="2128259" started-at="2020-04-03T11:21:26Z" finished-at="2020-04-03T11:56:54Z">
     <groups>
     </groups>
-    <test name="Testcases" duration-ms="2011645" started-at="2020-04-02T11:40:33Z" finished-at="2020-04-02T12:14:04Z">
+    <test name="Testcases" duration-ms="2128259" started-at="2020-04-03T11:21:26Z" finished-at="2020-04-03T11:56:54Z">
       <class name="webautomation.FormFilling">
-        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.FormFilling@1794d431]" name="LaunchBrowser" is-config="true" duration-ms="28692" started-at="2020-04-02T17:10:04Z" finished-at="2020-04-02T17:10:33Z">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.FormFilling@1794d431]" name="LaunchBrowser" is-config="true" duration-ms="13911" started-at="2020-04-03T16:51:12Z" finished-at="2020-04-03T16:51:26Z">
           <params>
             <param index="0">
               <value>
@@ -21,19 +21,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:webautomation.FormFilling@1794d431]" name="createReport" is-config="true" duration-ms="179" started-at="2020-04-02T17:10:33Z" finished-at="2020-04-02T17:10:33Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:webautomation.FormFilling@1794d431]" name="createReport" is-config="true" duration-ms="167" started-at="2020-04-03T16:51:26Z" finished-at="2020-04-03T16:51:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:webautomation.FormFilling@1794d431]" name="validLogin" duration-ms="35061" started-at="2020-04-02T17:10:33Z" finished-at="2020-04-02T17:11:08Z">
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:webautomation.FormFilling@1794d431]" name="validLogin" duration-ms="35541" started-at="2020-04-03T16:51:26Z" finished-at="2020-04-03T16:52:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:webautomation.FormFilling@1794d431]" name="flush" is-config="true" duration-ms="486" started-at="2020-04-02T17:44:04Z" finished-at="2020-04-02T17:44:04Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:webautomation.FormFilling@1794d431]" name="flush" is-config="true" duration-ms="447" started-at="2020-04-03T17:26:54Z" finished-at="2020-04-03T17:26:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webautomation.FormFilling@1794d431]" name="closeApplication" is-config="true" duration-ms="140" started-at="2020-04-02T17:44:04Z" finished-at="2020-04-02T17:44:05Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webautomation.FormFilling@1794d431]" name="closeApplication" is-config="true" duration-ms="148" started-at="2020-04-03T17:26:54Z" finished-at="2020-04-03T17:26:54Z">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>
@@ -42,47 +42,47 @@
         </test-method> <!-- closeApplication -->
       </class> <!-- webautomation.FormFilling -->
       <class name="webautomation.FormFillingNegative">
-        <test-method status="PASS" signature="init()[pri:0, instance:webautomation.FormFillingNegative@42e26948]" name="init" is-config="true" duration-ms="6702" started-at="2020-04-02T17:11:08Z" finished-at="2020-04-02T17:11:15Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:webautomation.FormFillingNegative@42e26948]" name="init" is-config="true" duration-ms="4778" started-at="2020-04-03T16:52:02Z" finished-at="2020-04-03T16:52:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="NegativeFirstName()[pri:1, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeFirstName" duration-ms="242388" started-at="2020-04-02T17:11:15Z" finished-at="2020-04-02T17:15:17Z">
+        <test-method status="PASS" signature="NegativeFirstName()[pri:1, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeFirstName" duration-ms="245132" started-at="2020-04-03T16:52:07Z" finished-at="2020-04-03T16:56:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeFirstName -->
-        <test-method status="PASS" signature="NegativeLastName()[pri:2, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeLastName" duration-ms="256826" started-at="2020-04-02T17:15:17Z" finished-at="2020-04-02T17:19:34Z">
+        <test-method status="PASS" signature="NegativeLastName()[pri:2, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeLastName" duration-ms="260605" started-at="2020-04-03T16:56:12Z" finished-at="2020-04-03T17:00:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeLastName -->
-        <test-method status="PASS" signature="NegativePhoneNumber()[pri:3, instance:webautomation.FormFillingNegative@42e26948]" name="NegativePhoneNumber" duration-ms="259849" started-at="2020-04-02T17:19:34Z" finished-at="2020-04-02T17:23:54Z">
+        <test-method status="PASS" signature="NegativePhoneNumber()[pri:3, instance:webautomation.FormFillingNegative@42e26948]" name="NegativePhoneNumber" duration-ms="261611" started-at="2020-04-03T17:00:32Z" finished-at="2020-04-03T17:04:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativePhoneNumber -->
-        <test-method status="PASS" signature="NegativeEmail()[pri:4, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeEmail" duration-ms="253981" started-at="2020-04-02T17:23:54Z" finished-at="2020-04-02T17:28:08Z">
+        <test-method status="PASS" signature="NegativeEmail()[pri:4, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeEmail" duration-ms="280614" started-at="2020-04-03T17:04:54Z" finished-at="2020-04-03T17:09:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeEmail -->
-        <test-method status="PASS" signature="NegativeCompany()[pri:5, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeCompany" duration-ms="177360" started-at="2020-04-02T17:28:08Z" finished-at="2020-04-02T17:31:05Z">
+        <test-method status="PASS" signature="NegativeCompany()[pri:5, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeCompany" duration-ms="172995" started-at="2020-04-03T17:09:34Z" finished-at="2020-04-03T17:12:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeCompany -->
-        <test-method status="PASS" signature="NegativeJobTitle()[pri:6, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeJobTitle" duration-ms="263991" started-at="2020-04-02T17:31:05Z" finished-at="2020-04-02T17:35:29Z">
+        <test-method status="PASS" signature="NegativeJobTitle()[pri:6, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeJobTitle" duration-ms="273659" started-at="2020-04-03T17:12:27Z" finished-at="2020-04-03T17:17:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeJobTitle -->
-        <test-method status="PASS" signature="NegativeCountry()[pri:7, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeCountry" duration-ms="128543" started-at="2020-04-02T17:35:29Z" finished-at="2020-04-02T17:37:38Z">
+        <test-method status="PASS" signature="NegativeCountry()[pri:7, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeCountry" duration-ms="132070" started-at="2020-04-03T17:17:01Z" finished-at="2020-04-03T17:19:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeCountry -->
-        <test-method status="PASS" signature="NegativeCity()[pri:8, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeCity" duration-ms="259003" started-at="2020-04-02T17:37:38Z" finished-at="2020-04-02T17:41:57Z">
+        <test-method status="PASS" signature="NegativeCity()[pri:8, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeCity" duration-ms="287403" started-at="2020-04-03T17:19:13Z" finished-at="2020-04-03T17:24:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeCity -->
-        <test-method status="PASS" signature="NegativeReasonforInquiry()[pri:9, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeReasonforInquiry" duration-ms="42795" started-at="2020-04-02T17:41:57Z" finished-at="2020-04-02T17:42:40Z">
+        <test-method status="PASS" signature="NegativeReasonforInquiry()[pri:9, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeReasonforInquiry" duration-ms="47130" started-at="2020-04-03T17:24:01Z" finished-at="2020-04-03T17:24:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeReasonforInquiry -->
-        <test-method status="PASS" signature="NegativeGDPRCountry()[pri:10, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeGDPRCountry" duration-ms="84412" started-at="2020-04-02T17:42:40Z" finished-at="2020-04-02T17:44:04Z">
+        <test-method status="PASS" signature="NegativeGDPRCountry()[pri:10, instance:webautomation.FormFillingNegative@42e26948]" name="NegativeGDPRCountry" duration-ms="126028" started-at="2020-04-03T17:24:48Z" finished-at="2020-04-03T17:26:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeGDPRCountry -->
