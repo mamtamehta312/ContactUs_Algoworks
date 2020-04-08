@@ -4,11 +4,14 @@
 <parameter name="browser"  value="chrome"/>
 	<test thread-count="10" name="Testcases" verbose="2">
 		<classes>
+		
 			<class name="mobileautomation.FormFilling" />
 			<class name="mobileautomation.ContactForm"/>
-			<!-- <class name="mobileautomation.Downloads"/> -->
+			 <class name="mobileautomation.Downloads"/> 
 			<class name="mobileautomation.Mobile"/>
-		
+
+			
+
 		</classes>
 	</test>	
 </suite> <!-- Suite -->
