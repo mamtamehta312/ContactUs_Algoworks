@@ -59,7 +59,7 @@ public class AndroidCapabilities {
 		System.out.println("browser is " + browser);
 		if (browser.equalsIgnoreCase("Chrome")) {
 
-			capabilities.setCapability("deviceName", "Emulator-5554 Pixel_2_API_29");
+			capabilities.setCapability("deviceName", "Emulator-5554 Pixel_XL_API_29");
 			// ,ce011821740e3c530c
 			capabilities.setCapability(CapabilityType.VERSION, "8.0");
 			capabilities.setCapability("platformName", "Android");
@@ -70,7 +70,7 @@ public class AndroidCapabilities {
 			 * capabilities.setCapability("autoAcceptAlerts", "true");
 			 */
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Poonam\\Downloads\\New folder\\chromedriver_win32\\chromedriver.exe");
-			capabilities.setCapability("chromedriverExecutable", "C:\\seleniumdrivers\\chromedriver1.exe");
+			capabilities.setCapability("chromedriverExecutable", "/home/riya/Documents/chromedriver_linux64/chromedriver");
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		}
 

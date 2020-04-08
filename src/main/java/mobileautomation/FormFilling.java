@@ -53,16 +53,11 @@ public class FormFilling extends AndroidCapabilities {
 			jse.executeScript("window.scrollBy(0,1500)", "up");
 
 			Thread.sleep(2000);
-			logger1.info(
-					"First name 'Bob' is typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[1]/div[1]/div/input'");
+			logger1.info("First name 'Form' is typed in textbox");
 			type("fFirstName_Xpath", "fFirstName");
 			
-		
-
 			Thread.sleep(2000);
-
-			logger1.info(
-					"Last name 'Jackson' is typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[1]/div[2]/div/input'");
+			logger1.info("Last name 'Testing' is typed in textbox");
 			type("fLastName_Xpath", "fLastName");
 
 			Thread.sleep(2000);
@@ -78,14 +73,12 @@ public class FormFilling extends AndroidCapabilities {
 			// ----------------------------------------------------------------------------------------------
 
 			Thread.sleep(2000);
-			logger1.info(
-					"Area code+phone is '9899928177' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[2]/div[2]/div/label'");
+			logger1.info("Area code+phone is '9899928177' given in textbox");
 			type("fPhoneNumber_Xpath", "fPhoneNumber");
 			
 		
 			Thread.sleep(2000);
-			logger1.info(
-					"Business Email Address 'Bob.Jackson@gmail.com' typed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[3]'");
+			logger1.info("Business Email Address 'poonam.gupta@algoworks.com' typed in textbox ");
 			type("fBusinessEmailAddress_Xpath", "fBusinessEmailAddress");
 			
 			
@@ -96,13 +89,11 @@ public class FormFilling extends AndroidCapabilities {
 			// ---------------------------------------------------------------------------------------------------
 
 			Thread.sleep(2000);
-			logger1.info(
-					"Company 'Algoworks' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[4]/input'");
+			logger1.info("Company 'Algoworks' given in textbox");
 			type("fCompany_Xpath", "fCompany");
 
 			Thread.sleep(2000);
-			logger1.info(
-					"Job Title 'Software Test Engineer' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[5]/input'");
+			logger1.info("Job Title 'Automation QA' given in textbox");
 			type("fJobTitle_Xpath", "fJobTitle");
 
 			// --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -110,8 +101,7 @@ public class FormFilling extends AndroidCapabilities {
 			JavascriptExecutor jse2 = (JavascriptExecutor) driver;
 			jse2.executeScript("window.scrollBy(0,100)", "up");
 
-			logger1.info(
-					"Country name 'United Kingdom' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[6]/span/span'");
+			logger1.info("Country name 'United Kingdom' given in textbox");
 			WebElement s1 = findElement("fCountry2_Xpath");
 			Select jobType1 = new Select(s1);
 			Thread.sleep(2000);
@@ -120,12 +110,11 @@ public class FormFilling extends AndroidCapabilities {
 			// ----------------------------------------------------------------------------------------------------------------
 
 			Thread.sleep(2000);
-			logger1.info(
-					"City name 'Noida' given in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[9]/input'");
+			logger1.info("City name 'Noida' given in textbox");
 			type("fCity_Xpath", "fCity");
 
 			Thread.sleep(2000);
-			logger1.info("'Reason for inquiry' is given in textbox '//*[@id='contactUsReasonforInquiry']'");
+			logger1.info("'Reason for inquiry' is given in textbox'");
 			WebElement s3 = findElement("fJobInquiry_Xpath");
 			Select jobType3 = new Select(s3);
 			Thread.sleep(2000);
@@ -134,8 +123,7 @@ public class FormFilling extends AndroidCapabilities {
 			jse2.executeScript("window.scrollBy(0,100)", "up");
 
 			Thread.sleep(2000);
-			logger1.info(
-					"Message is displayed in textbox '//*[@id=global-content]/div[3]/div[1]/section/div/form/div[9]/input'");
+			logger1.info("Message is displayed in textbox");
 			type("fMessage_Xpath", "fMessage");
 
 			jse2.executeScript("window.scrollBy(0,300)", "up");
@@ -154,15 +142,16 @@ public class FormFilling extends AndroidCapabilities {
 				jsexec.executeScript("arguments[0].click();", button);			
 			
 			jse2.executeScript("window.scrollBy(0, -800)", "down");
-			Thread.sleep(8000);
-
-			logger1.pass("Testcase is Passed");
+			
 
 		} catch (Exception e) {
 			logger1.fail(e);
 			captureScreenShots("ErrorScreenshot.png");
 			throw e;
 		}
+		Thread.sleep(8000);
+
+		logger1.pass("Testcase FormFilling is Passed");
 	}
 
 	public static void setAttribute(WebElement element, String attName, String attValue) {
