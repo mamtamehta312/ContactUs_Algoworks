@@ -4,20 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="mobileautomation.Downloads">
-        <methods>
-          <include name="flush"/>
-          <include name="createReport"/>
-          <include name="downloads"/>
-          <include name="downloadNext"/>
-          <include name="setUp"/>
-          <include name="closeApplication"/>
-        </methods>
-      </class> <!-- mobileautomation.Downloads -->
       <class name="mobileautomation.DownloadsNegative">
         <methods>
-          <include name="downloadNext"/>
-          <include name="downloadFirstFormNegative"/>
+          <include name="downloadFirstNameNegative"/>
+          <include name="downloadLastNameNegative"/>
+          <include name="downloadEmailNegative"/>
+          <include name="downloadPhoneNumberNegative"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- mobileautomation.DownloadsNegative -->
     </classes>
