@@ -14,10 +14,6 @@
 <class name="webautomation.FormFillingNegative"/>
  <class name="webautomation.DownloadsNegative"/>
   <class name="webautomation.MobileNegative"/>
- 
-  
-  
-      
 	   </classes>
 	</test>
 
