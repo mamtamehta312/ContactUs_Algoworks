@@ -116,7 +116,7 @@ public class ContactForm extends AndroidCapabilities{
 			type("cPhoneNumber_Xpath", "cPhoneNumber");
 			
 			Thread.sleep(2000);
-			logger1.info("Business Email Address 'poona.gupta@algoworks.com' typed in textbox");
+			logger1.info("Business Email Address 'poonam.gupta@algoworks.com' typed in textbox");
 			type("cBusinessEmailAddress_Xpath","cBusinessEmailAddress");
 			
 			
