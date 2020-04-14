@@ -85,8 +85,7 @@ public class Mobile extends WebCapabilities{
 			
 			logger1.info("checking the redirection");
 			String url = driver.getCurrentUrl();
-			Assert.assertEquals(url, "https://www.couchbase.com/downloads/campaign-enterprise?product=couchbase-lite&version=2.7.0" );
-					
+			Assert.assertEquals(url, "https://www.couchbase.com/downloads/campaign-enterprise?product=couchbase-lite&version=2.7.0&platform=android&addon=false&beta=false" );
 			
 			
 			/*WebDriverWait wait1 = new WebDriverWait(driver, 300);
