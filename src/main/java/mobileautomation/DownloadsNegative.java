@@ -2710,7 +2710,7 @@ catch (Exception e) {
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();     */
+		    driver.switchTo().defaultContent();   */  
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2767,10 +2767,7 @@ catch (Exception e) {
 			logger1.info("Job Title 'Automation QA' has been entered to the Jobtitle field");
 			type("dJobTitle_Xpath","dJobTitle");
 			Thread.sleep(2000);
-			
-			logger1.info("Country ' ' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys(" ");
-			
+		
 			
 			logger1.info("Agreement checkbox has been selected");
 			click("dCheckbox_Xpath");
@@ -2792,7 +2789,7 @@ catch (Exception e) {
 			
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TextBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/div"));
+			WebElement TextBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/div"));
 			String err = TextBoxCont.getText();
 			Assert.assertEquals(err, "Please select your country from the dropdown.");
 					
@@ -2869,13 +2866,14 @@ catch (Exception e) {
 			
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TextBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/div"));
+			WebElement TextBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/div"));
 			String errors = TextBoxContent.getText();
 			Assert.assertEquals(errors, "Please select your state from the dropdown.");
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
-			logger1.info("------------------------------------------------------------");
+			logger1.info("------------------------------------------------------------");    
+			
 			
 			Thread.sleep(2000);
 			logger1.info("Click on'Couchbase Lite' tab");
@@ -2923,7 +2921,7 @@ catch (Exception e) {
 			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys("United States");
 			
 			logger1.info("State 'Alabama' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/span")).sendKeys("Alabama");
+			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/select")).sendKeys("Alabama");
 			
 			logger1.info("Agreement checkbox has been selected");
 			click("dCheckbox_Xpath");
@@ -2999,7 +2997,7 @@ catch (Exception e) {
 			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys("United States");
 			
 			logger1.info("State 'Alabama' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/span")).sendKeys("Alabama");
+			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/select")).sendKeys("Alabama");
 			
 			logger1.info("State 'Noida' has been selected");
 			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[9]/input")).sendKeys("Noida");
@@ -3240,7 +3238,7 @@ catch (Exception e) {
 			
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement T = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[8]/div"));
+			WebElement T = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[8]/span/div"));
 			String ex = T.getText();
 			Assert.assertEquals(ex, "Please select your province.");
 					
@@ -3295,7 +3293,7 @@ catch (Exception e) {
 			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys("CANADA");
 			
 			logger1.info("Province 'Alberta' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[8]/span/span")).sendKeys("Alberta");
+			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[8]/span/select")).sendKeys("Alberta");
 			
 			logger1.info("License Agreement checkbox is clicked");
 			driver.findElement(By.xpath("//*[@id=\"termsandConditions\"]")).click();
@@ -3371,7 +3369,7 @@ catch (Exception e) {
 			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys("CANADA");
 			
 			logger1.info("Province 'Alberta' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[8]/span/span")).sendKeys("Alberta");
+			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[8]/span/select")).sendKeys("Alberta");
 			
 			logger1.info("Privacy Policy checkbox is clicked");
 			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[1]/div/div[1]/input")).click();
