@@ -59,8 +59,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement val1 = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement val1 = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select valueType1 = new Select(val1);
 			Thread.sleep(2000);
 			valueType1.selectByValue("United States");
