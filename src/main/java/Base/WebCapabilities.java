@@ -14,6 +14,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -57,6 +59,12 @@ public class WebCapabilities {
 				 driver = new ChromeDriver();
 			} else if (browser.equalsIgnoreCase("Safari")) {
 				 driver = new SafariDriver();
+			}
+			else if (browser.equalsIgnoreCase("Firefox")) {
+				  System.setProperty("webdriver.gecko.driver", "/home/riya/Downloads/geckodriver_linux64/geckodriver");
+				  DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+				  capabilities.setCapability("marionette",true);
+				  driver= new FirefoxDriver(capabilities);
 			}
 
 		}
