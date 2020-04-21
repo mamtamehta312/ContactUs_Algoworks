@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="Firefox"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="mobileautomation.FormFillingNegative">
+      <class name="webautomation.Downloads">
         <methods>
-          <include name="flush"/>
-          <include name="createReport"/>
-          <include name="formFillingPhonenumberNegative"/>
-          <include name="formFillingfirstnameNegative"/>
-          <include name="init"/>
-          <include name="formFillinglastnameNegative"/>
-          <include name="setUp"/>
-          <include name="closeApplication"/>
+          <include name="downloadNext"/>
         </methods>
-      </class> <!-- mobileautomation.FormFillingNegative -->
+      </class> <!-- webautomation.Downloads -->
+      <class name="webautomation.FormFilling">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="createReport"/>
+          <include name="LaunchBrowser"/>
+          <include name="flush"/>
+        </methods>
+      </class> <!-- webautomation.FormFilling -->
+      <class name="webautomation.ContactForm">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- webautomation.ContactForm -->
+      <class name="webautomation.Mobile">
+        <methods>
+          <include name="mobileNext"/>
+          <include name="mobile"/>
+        </methods>
+      </class> <!-- webautomation.Mobile -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->
