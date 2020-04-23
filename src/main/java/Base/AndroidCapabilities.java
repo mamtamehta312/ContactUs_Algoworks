@@ -75,7 +75,7 @@ public class AndroidCapabilities {
 		}
 
 		else if (browser.equalsIgnoreCase("Safari")) {
-			{
+			
 				capabilities.setCapability("deviceName", "iPhone 8");
 				capabilities.setCapability("udid", "9A52883B-9C65-45D6-9B37-2C2EA815C48F");
 				capabilities.setCapability("platformName", "ios");
@@ -85,7 +85,19 @@ public class AndroidCapabilities {
 				capabilities.setCapability("platformVersion", "12.2");
 			    driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
-			}
+		
+		}
+		else if (browser.equalsIgnoreCase("Firefox")) {
+			
+			capabilities.setCapability("deviceName", "Emulator-5556 Pixel_2_API_29");
+			// ,ce011821740e3c530c
+			capabilities.setCapability(CapabilityType.VERSION, "10.0");
+			capabilities.setCapability("platformName", "Android");
+			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Firefox");
+			capabilities.setCapability("Emulator", "true");	
+			
+			capabilities.setCapability("webdriver.gecko.driver", "/home/riya/Downloads/geckodriver_linux64/geckodriver");
+			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		}
 		//System.out.println("helloo");
 		driver.get(properties.getProperty("url"));
