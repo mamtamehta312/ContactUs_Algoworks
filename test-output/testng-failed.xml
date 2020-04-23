@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="browser" value="Firefox"/>
+  <parameter name="browser" value="chrome"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="webautomation.Downloads">
+      <class name="mobileautomation.FormFillingNegative">
         <methods>
-          <include name="downloadNext"/>
-        </methods>
-      </class> <!-- webautomation.Downloads -->
-      <class name="webautomation.FormFilling">
-        <methods>
-          <include name="closeApplication"/>
-          <include name="createReport"/>
-          <include name="LaunchBrowser"/>
           <include name="flush"/>
-        </methods>
-      </class> <!-- webautomation.FormFilling -->
-      <class name="webautomation.ContactForm">
-        <methods>
+          <include name="formFillingCompanyNegative"/>
+          <include name="formFillingEmailNegative"/>
+          <include name="createReport"/>
+          <include name="formFillingCountryNegative"/>
+          <include name="formFillingJobTitleNegative"/>
+          <include name="formFillingPhonenumberNegative"/>
+          <include name="formFillingfirstnameNegative"/>
           <include name="init"/>
+          <include name="formFillinglastnameNegative"/>
+          <include name="setUp"/>
+          <include name="closeApplication"/>
         </methods>
-      </class> <!-- webautomation.ContactForm -->
-      <class name="webautomation.Mobile">
-        <methods>
-          <include name="mobileNext"/>
-          <include name="mobile"/>
-        </methods>
-      </class> <!-- webautomation.Mobile -->
+      </class> <!-- mobileautomation.FormFillingNegative -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

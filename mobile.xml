@@ -10,6 +10,7 @@
 			<class name="mobileautomation.Mobile"/>
 			<class name="mobileautomation.DownloadsNegative"/>
 			<class name="mobileautomation.ContactFormNegative"/>
+			<class name="mobileautomation.FormFillingNegative" />	
 		
 		</classes>
 	</test>	

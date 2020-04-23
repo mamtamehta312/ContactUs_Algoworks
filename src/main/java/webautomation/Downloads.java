@@ -79,7 +79,7 @@ public class Downloads extends WebCapabilities{
 			
 			logger1.info("checking the redirection");
 			String url = driver.getCurrentUrl();
-			Assert.assertEquals(url, "https://www.couchbase.com/downloads/thankyou/enterprise?product=couchbase-lite&version=2.7.0&platform=swift&addon=false&beta=false" );
+			Assert.assertEquals(url, "https://www.couchbase.com/downloads/thankyou/enterprise?product=couchbase-lite&version=2.7.1&platform=swift&addon=false&beta=false" );
 			
 			Thread.sleep(2000);
 			click("dButton_Xpath");

@@ -1,18 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite">
-<parameter name="browser"  value="Firefox"/>
+<parameter name="browser"  value="Chrome"/>
 	<test thread-count="1" name="Testcases" verbose="2">
 	<classes>
 	
-   <class name="webautomation.FormFilling"/>
+ <class name="webautomation.FormFilling"/>
 		 <class name="webautomation.linkpageflow"/>
 	     <class name="webautomation.ContactForm"/>
          <class name="webautomation.Downloads"/>
          <class name="webautomation.Mobile"/>
-         <class name="webautomation.ContactFormNegative"/>
-<class name="webautomation.FormFillingNegative"/>
- <class name="webautomation.DownloadsNegative"/>
+         <class name="webautomation.ContactFormNegativeNew"/>
+<class name="webautomation.FormFillingNegativeNew"/>
+ <class name="webautomation.DownloadsNegativeNew"/>
   <class name="webautomation.MobileNegative"/>
 
 	   </classes>
