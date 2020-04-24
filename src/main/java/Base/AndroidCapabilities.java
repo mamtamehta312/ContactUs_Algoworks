@@ -96,8 +96,9 @@ public class AndroidCapabilities {
 			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Firefox");
 			capabilities.setCapability("Emulator", "true");	
 			
-			capabilities.setCapability("webdriver.gecko.driver", "/home/riya/Downloads/geckodriver_linux64/geckodriver");
+		capabilities.setCapability("webdriver.gecko.driver", "/home/riya/Downloads/geckodriver_linux64/geckodriver");
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		
 		}
 		//System.out.println("helloo");
 		driver.get(properties.getProperty("url"));
