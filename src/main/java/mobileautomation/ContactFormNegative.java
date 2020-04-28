@@ -113,7 +113,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Boxes = driver.findElement(
 					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String bugs = Boxes.getText();
-			Assert.assertEquals(bugs, "Must contain 2-50 characters.");
+			Assert.assertEquals(bugs, "Must contain 2-50 alphabetic characters.");
 
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -579,7 +579,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 	@Test(priority = 2)
 	public static void ContactFormLastNameNegative() throws Exception {
-		logger1 = extent.createTest("contactForm_FirstName_negative");
+		logger1 = extent.createTest("contactForm_LastName_negative");
 		try {
 			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("window.scrollBy(0,100)", "up");

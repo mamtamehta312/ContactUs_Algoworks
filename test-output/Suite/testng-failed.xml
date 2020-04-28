@@ -4,22 +4,22 @@
   <parameter name="browser" value="chrome"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="mobileautomation.FormFillingNegative">
+      <class name="mobileautomation.ContactFormNegative">
         <methods>
+          <include name="ContactFormPhoneNumberNegative"/>
           <include name="flush"/>
-          <include name="formFillingCompanyNegative"/>
-          <include name="formFillingEmailNegative"/>
+          <include name="ContactFormJobTitleNegative"/>
+          <include name="ContactFormCountryNegative"/>
           <include name="createReport"/>
-          <include name="formFillingCountryNegative"/>
-          <include name="formFillingJobTitleNegative"/>
-          <include name="formFillingPhonenumberNegative"/>
-          <include name="formFillingfirstnameNegative"/>
           <include name="init"/>
-          <include name="formFillinglastnameNegative"/>
+          <include name="ContactFormLastNameNegative"/>
+          <include name="ContactFormCompanyNegative"/>
+          <include name="ContactFormEmailNegative"/>
+          <include name="ContactFormFirstNameNegative"/>
           <include name="setUp"/>
           <include name="closeApplication"/>
         </methods>
-      </class> <!-- mobileautomation.FormFillingNegative -->
+      </class> <!-- mobileautomation.ContactFormNegative -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->
