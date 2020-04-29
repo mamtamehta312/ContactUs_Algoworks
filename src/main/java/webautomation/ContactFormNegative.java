@@ -91,7 +91,7 @@ public class ContactFormNegative extends WebCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Must contain 2-50 characters.");
+			Assert.assertEquals(present, "Must contain 2-50 alphabetic characters .");
 			
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
