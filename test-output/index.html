@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 7 failed,   </span>
+                    <span class="method-stats">8 methods, 7 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobileautomation.ContactFormNegative" hash-for-method="ContactFormCityNegative">ContactFormCityNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobileautomation.ContactFormNegative" hash-for-method="ContactFormCompanyNegative">ContactFormCompanyNegative</a> <!-- method navigator-link -->
@@ -113,11 +118,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobileautomation.ContactFormNegative" hash-for-method="ContactFormEmailNegative">ContactFormEmailNegative</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobileautomation.ContactFormNegative" hash-for-method="ContactFormFirstNameNegative">ContactFormFirstNameNegative</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,6 +137,20 @@
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobileautomation.ContactFormNegative" hash-for-method="ContactFormFirstNameNegative">ContactFormFirstNameNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
                 </ul>
               </div> <!-- suite-section-content -->
             </div> <!-- result-section -->
@@ -155,17 +169,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ContactFormCompanyNegative">
-                  </a> <!-- ContactFormCompanyNegative -->
-                  <span class="method-name">ContactFormCompanyNegative</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: chrome not reachable
+                  <a name="ContactFormCityNegative">
+                  </a> <!-- ContactFormCityNegative -->
+                  <span class="method-name">ContactFormCityNegative</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input&quot;}
   (Session info: chrome=74.0.3729.185)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Linux 4.15.0-1079-oem x86_64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;riya-Latitude-3400&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-1079-oem&apos;, java.version: &apos;1.8.0_242&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {Emulator: true, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., databaseEnabled: false, desired: {Emulator: true, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., deviceName: Emulator-5554 Pixel_XL_API_29, platformName: android, version: 8.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 84, takesScreenshot: true, version: 8.0, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
+Session ID: 56a3d408-004d-4363-ad09-530dfdb88b35
+*** Element info: {Using=xpath, value=//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -179,8 +195,93 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
-	at mobileautomation.ContactFormNegative.ContactFormCompanyNegative(ContactFormNegative.java:2237)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Base.AndroidCapabilities.type(AndroidCapabilities.java:129)
+	at mobileautomation.ContactFormNegative.ContactFormCityNegative(ContactFormNegative.java:3425)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ContactFormCompanyNegative">
+                  </a> <!-- ContactFormCompanyNegative -->
+                  <span class="method-name">ContactFormCompanyNegative</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input&quot;}
+  (Session info: chrome=74.0.3729.185)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Linux 4.15.0-1079-oem x86_64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;riya-Latitude-3400&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-1079-oem&apos;, java.version: &apos;1.8.0_242&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {Emulator: true, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., databaseEnabled: false, desired: {Emulator: true, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., deviceName: Emulator-5554 Pixel_XL_API_29, platformName: android, version: 8.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 84, takesScreenshot: true, version: 8.0, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 56a3d408-004d-4363-ad09-530dfdb88b35
+*** Element info: {Using=xpath, value=//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Base.AndroidCapabilities.type(AndroidCapabilities.java:129)
+	at mobileautomation.ContactFormNegative.ContactFormCompanyNegative(ContactFormNegative.java:2243)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -215,14 +316,16 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
                   <a name="ContactFormCountryNegative">
                   </a> <!-- ContactFormCountryNegative -->
                   <span class="method-name">ContactFormCountryNegative</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input&quot;}
   (Session info: chrome=74.0.3729.185)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Linux 4.15.0-1079-oem x86_64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;riya-Latitude-3400&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-1079-oem&apos;, java.version: &apos;1.8.0_242&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {Emulator: true, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., databaseEnabled: false, desired: {Emulator: true, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., deviceName: Emulator-5554 Pixel_XL_API_29, platformName: android, version: 8.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 84, takesScreenshot: true, version: 8.0, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
+Session ID: 56a3d408-004d-4363-ad09-530dfdb88b35
+*** Element info: {Using=xpath, value=//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -236,8 +339,21 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
-	at mobileautomation.ContactFormNegative.ContactFormCountryNegative(ContactFormNegative.java:3157)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Base.AndroidCapabilities.type(AndroidCapabilities.java:129)
+	at mobileautomation.ContactFormNegative.ContactFormCountryNegative(ContactFormNegative.java:3165)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -272,14 +388,16 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
                   <a name="ContactFormEmailNegative">
                   </a> <!-- ContactFormEmailNegative -->
                   <span class="method-name">ContactFormEmailNegative</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input&quot;}
   (Session info: chrome=74.0.3729.185)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Linux 4.15.0-1079-oem x86_64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;riya-Latitude-3400&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-1079-oem&apos;, java.version: &apos;1.8.0_242&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {Emulator: true, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., databaseEnabled: false, desired: {Emulator: true, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., deviceName: Emulator-5554 Pixel_XL_API_29, platformName: android, version: 8.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 84, takesScreenshot: true, version: 8.0, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
+Session ID: 56a3d408-004d-4363-ad09-530dfdb88b35
+*** Element info: {Using=xpath, value=//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -293,65 +411,21 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
-	at mobileautomation.ContactFormNegative.ContactFormEmailNegative(ContactFormNegative.java:1687)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ContactFormFirstNameNegative">
-                  </a> <!-- ContactFormFirstNameNegative -->
-                  <span class="method-name">ContactFormFirstNameNegative</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: chrome not reachable
-  (Session info: chrome=74.0.3729.185)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Linux 4.15.0-1079-oem x86_64)
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;riya-Latitude-3400&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-1079-oem&apos;, java.version: &apos;1.8.0_242&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {Emulator: true, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., databaseEnabled: false, desired: {Emulator: true, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., deviceName: Emulator-5554 Pixel_XL_API_29, platformName: android, version: 8.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 84, takesScreenshot: true, version: 8.0, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
-	at mobileautomation.ContactFormNegative.ContactFormFirstNameNegative(ContactFormNegative.java:32)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Base.AndroidCapabilities.type(AndroidCapabilities.java:129)
+	at mobileautomation.ContactFormNegative.ContactFormEmailNegative(ContactFormNegative.java:1693)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -386,14 +460,16 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
                   <a name="ContactFormJobTitleNegative">
                   </a> <!-- ContactFormJobTitleNegative -->
                   <span class="method-name">ContactFormJobTitleNegative</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input&quot;}
   (Session info: chrome=74.0.3729.185)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Linux 4.15.0-1079-oem x86_64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;riya-Latitude-3400&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-1079-oem&apos;, java.version: &apos;1.8.0_242&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {Emulator: true, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., databaseEnabled: false, desired: {Emulator: true, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., deviceName: Emulator-5554 Pixel_XL_API_29, platformName: android, version: 8.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 84, takesScreenshot: true, version: 8.0, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
+Session ID: 56a3d408-004d-4363-ad09-530dfdb88b35
+*** Element info: {Using=xpath, value=//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -407,8 +483,21 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
-	at mobileautomation.ContactFormNegative.ContactFormJobTitleNegative(ContactFormNegative.java:2607)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Base.AndroidCapabilities.type(AndroidCapabilities.java:129)
+	at mobileautomation.ContactFormNegative.ContactFormJobTitleNegative(ContactFormNegative.java:2615)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -443,14 +532,16 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
                   <a name="ContactFormLastNameNegative">
                   </a> <!-- ContactFormLastNameNegative -->
                   <span class="method-name">ContactFormLastNameNegative</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div/span/div/div[1]/button/img&quot;}
   (Session info: chrome=74.0.3729.185)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Linux 4.15.0-1079-oem x86_64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;riya-Latitude-3400&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-1079-oem&apos;, java.version: &apos;1.8.0_242&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {Emulator: true, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., databaseEnabled: false, desired: {Emulator: true, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., deviceName: Emulator-5554 Pixel_XL_API_29, platformName: android, version: 8.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 84, takesScreenshot: true, version: 8.0, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
+Session ID: 56a3d408-004d-4363-ad09-530dfdb88b35
+*** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div/span/div/div[1]/button/img}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -464,8 +555,21 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
-	at mobileautomation.ContactFormNegative.ContactFormLastNameNegative(ContactFormNegative.java:585)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Base.AndroidCapabilities.click(AndroidCapabilities.java:144)
+	at mobileautomation.ContactFormNegative.ContactFormLastNameNegative(ContactFormNegative.java:653)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -500,14 +604,16 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
                   <a name="ContactFormPhoneNumberNegative">
                   </a> <!-- ContactFormPhoneNumberNegative -->
                   <span class="method-name">ContactFormPhoneNumberNegative</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input&quot;}
   (Session info: chrome=74.0.3729.185)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Linux 4.15.0-1079-oem x86_64)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;riya-Latitude-3400&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-1079-oem&apos;, java.version: &apos;1.8.0_242&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {Emulator: true, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., databaseEnabled: false, desired: {Emulator: true, browserName: Chrome, chromedriverExecutable: /home/riya/Documents/chrome..., deviceName: Emulator-5554 Pixel_XL_API_29, platformName: android, version: 8.0}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 10, statBarHeight: 84, takesScreenshot: true, version: 8.0, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
+Session ID: 56a3d408-004d-4363-ad09-530dfdb88b35
+*** Element info: {Using=xpath, value=//*[@id=&quot;global-content&quot;]/div/div[2]/section/div/form/div[1]/div[1]/div/input}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -521,8 +627,21 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
-	at mobileautomation.ContactFormNegative.ContactFormPhoneNumberNegative(ContactFormNegative.java:1137)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Base.AndroidCapabilities.type(AndroidCapabilities.java:129)
+	at mobileautomation.ContactFormNegative.ContactFormPhoneNumberNegative(ContactFormNegative.java:1143)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -554,6 +673,21 @@ Session ID: 9bbc8c01-cc4b-4114-a65e-d36beb4c0372
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mobileautomation.ContactFormNegative</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ContactFormFirstNameNegative">
+                  </a> <!-- ContactFormFirstNameNegative -->
+                  <span class="method-name">ContactFormFirstNameNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -607,40 +741,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ContactFormFirstNameNegative')
 data.setCell(0, 2, 'mobileautomation.ContactFormNegative')
-data.setCell(0, 3, 101);
+data.setCell(0, 3, 326626);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ContactFormJobTitleNegative')
+data.setCell(1, 1, 'ContactFormLastNameNegative')
 data.setCell(1, 2, 'mobileautomation.ContactFormNegative')
-data.setCell(1, 3, 63);
+data.setCell(1, 3, 78175);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ContactFormPhoneNumberNegative')
+data.setCell(2, 1, 'ContactFormEmailNegative')
 data.setCell(2, 2, 'mobileautomation.ContactFormNegative')
-data.setCell(2, 3, 52);
+data.setCell(2, 3, 32182);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ContactFormEmailNegative')
+data.setCell(3, 1, 'ContactFormCityNegative')
 data.setCell(3, 2, 'mobileautomation.ContactFormNegative')
-data.setCell(3, 3, 39);
+data.setCell(3, 3, 32175);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ContactFormLastNameNegative')
+data.setCell(4, 1, 'ContactFormPhoneNumberNegative')
 data.setCell(4, 2, 'mobileautomation.ContactFormNegative')
-data.setCell(4, 3, 32);
+data.setCell(4, 3, 32155);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ContactFormCountryNegative')
+data.setCell(5, 1, 'ContactFormCompanyNegative')
 data.setCell(5, 2, 'mobileautomation.ContactFormNegative')
-data.setCell(5, 3, 30);
+data.setCell(5, 3, 32154);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'ContactFormCompanyNegative')
+data.setCell(6, 1, 'ContactFormCountryNegative')
 data.setCell(6, 2, 'mobileautomation.ContactFormNegative')
-data.setCell(6, 3, 27);
+data.setCell(6, 3, 32149);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ContactFormJobTitleNegative')
+data.setCell(7, 2, 'mobileautomation.ContactFormNegative')
+data.setCell(7, 3, 32148);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 344 ms</span>
+              <span class="suite-total-time">Total running time: 9 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -673,61 +811,65 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">createReport</span>
-                <span class="method-start">22049 ms</span>
+                <span class="method-start">22053 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">22171 ms</span>
+                <span class="method-start">22301 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">ContactFormFirstNameNegative</span>
-                <span class="method-start">28318 ms</span>
+                <span class="method-start">26969 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ContactFormLastNameNegative</span>
-                <span class="method-start">28428 ms</span>
+                <span class="method-start">353603 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ContactFormPhoneNumberNegative</span>
-                <span class="method-start">28466 ms</span>
+                <span class="method-start">431814 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ContactFormEmailNegative</span>
-                <span class="method-start">28531 ms</span>
+                <span class="method-start">463976 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ContactFormCompanyNegative</span>
-                <span class="method-start">28574 ms</span>
+                <span class="method-start">496169 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ContactFormJobTitleNegative</span>
-                <span class="method-start">28606 ms</span>
+                <span class="method-start">528328 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ContactFormCountryNegative</span>
-                <span class="method-start">28675 ms</span>
+                <span class="method-start">560481 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ContactFormCityNegative</span>
+                <span class="method-start">592634 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">flush</span>
-                <span class="method-start">28709 ms</span>
+                <span class="method-start">624813 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">29399 ms</span>
+                <span class="method-start">625730 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

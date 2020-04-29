@@ -20,7 +20,7 @@ public class MobileNegative extends AndroidCapabilities {
 		driver.navigate().to(properties.getProperty("mMobile_Url"));
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 1)
 	public static void mobilefirstname() throws Exception {
 		logger1 = extent.createTest("mobile_firstname_negative");
 		try {
@@ -1047,7 +1047,7 @@ public class MobileNegative extends AndroidCapabilities {
 		}
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 7)
 	public static void Countrynegative() throws Exception {
 		logger1 = extent.createTest("mobile_Country_negative");
 		try {
@@ -1055,123 +1055,122 @@ public class MobileNegative extends AndroidCapabilities {
 			JavascriptExecutor jsed = (JavascriptExecutor) driver;
 			jsed.executeScript("window.scrollBy(0,1000)", "up");
 
+			
+			  Thread.sleep(2000);
+			  logger1.info("First Name 'Form' has been entered into the text field");
+			  type("mFirstName_Xpath","mName");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Last Name 'Testing' has been entered into the text field");
+			  type("mLastName_Xpath","mLastName");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Company 'Algoworks' has been entered into the text field");
+			  type("mCompany_Xpath","mCompany");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Role 'Automation QA' has been entered into the text field");
+			  type("mRole_Xpath","mRole");
+			  
+			  Thread.sleep(2000); logger1.
+			  info("Email 'poonam.gupta@algoworks.com' has been entered into the text field"
+			  ); type("mEmail_Xpath","mEmail");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Phone '1(866)648-7575' has been entered into the field");
+			  type("mPhoneNumber_Xpath","mNumber");
+			  
+			  Thread.sleep(2000); logger1.info("Country 'France' has been selected");
+			  MobileElement selectEle =
+			  driver.findElement(By.xpath("//*[@id=\'Country\']")); Select ele = new
+			  Select(selectEle); ele.selectByVisibleText("France");
+			  
+			  jsed.executeScript("window.scrollBy(0,100)", "up");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("City 'Paris' has been entered into the field");
+			  type("mCity_Xpath","mCity");
+			  
+			  jsed.executeScript("window.scrollBy(0,100)", "up");
+			  
+			  jsed.executeScript(
+			  "document.getElementsByName('termsandConditions')[0].click()");
 			/*
 			 * Thread.sleep(2000);
-			 * logger1.info("First Name 'Form' has been entered into the text field");
-			 * type("mFirstName_Xpath","mName");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("Last Name 'Testing' has been entered into the text field");
-			 * type("mLastName_Xpath","mLastName");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("Company 'Algoworks' has been entered into the text field");
-			 * type("mCompany_Xpath","mCompany");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("Role 'Automation QA' has been entered into the text field");
-			 * type("mRole_Xpath","mRole");
-			 * 
-			 * Thread.sleep(2000); logger1.
-			 * info("Email 'poonam.gupta@algoworks.com' has been entered into the text field"
-			 * ); type("mEmail_Xpath","mEmail");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("Phone '1(866)648-7575' has been entered into the field");
-			 * type("mPhoneNumber_Xpath","mNumber");
-			 * 
-			 * Thread.sleep(2000); logger1.info("Country 'France' has been selected");
-			 * MobileElement selectEle =
-			 * driver.findElement(By.xpath("//*[@id=\'Country\']")); Select ele = new
-			 * Select(selectEle); ele.selectByVisibleText("France");
-			 * 
-			 * jsed.executeScript("window.scrollBy(0,100)", "up");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("City 'Paris' has been entered into the field");
-			 * type("mCity_Xpath","mCity");
-			 * 
-			 * jsed.executeScript("window.scrollBy(0,100)", "up");
-			 * 
-			 * jsed.executeScript(
-			 * "document.getElementsByName('termsandConditions')[0].click()");
-			 * 
-			 * Thread.sleep(2000);
 			 * logger1.info("Checkbox 'privacy policy' has been checked");
 			 * jsed.executeScript(
 			 * "document.getElementsByName('Double_Opt_in_Compliant__c')[0].click()");
-			 * 
-			 * 
-			 * Thread.sleep(2000); logger1.info("'Download Now' button is pressed");
-			 * click("mButtonnew_Xpath");
-			 * 
-			 * Thread.sleep(5000); logger1.info("Checked error text on submission");
-			 * WebElement TxtBox = driver.findElement(By.xpath(
-			 * "//*[@id=\"mktoForm_2768\"]/div[12]/div[1]/div[2]/div[3]/div[2]")); String
-			 * presents = TxtBox.getText(); Assert.assertEquals(presents,
-			 * "This field is required.");
-			 * 
-			 * Thread.sleep(2000); driver.navigate().refresh();
-			 * logger1.info("------------------------------------------------------------");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("First Name 'Form' has been entered into the text field");
-			 * type("mFirstName_Xpath","mName");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("Last Name 'Testing' has been entered into the text field");
-			 * type("mLastName_Xpath","mLastName");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("Company 'Algoworks' has been entered into the text field");
-			 * type("mCompany_Xpath","mCompany");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("Role 'Automation QA' has been entered into the text field");
-			 * type("mRole_Xpath","mRole");
-			 * 
-			 * Thread.sleep(2000); logger1.
-			 * info("Email 'poonam.gupta@algoworks.com' has been entered into the text field"
-			 * ); type("mEmail_Xpath","mEmail");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("Phone '1(866)648-7575' has been entered into the field");
-			 * type("mPhoneNumber_Xpath","mNumber");
-			 * 
-			 * Thread.sleep(2000); logger1.info("Country 'France' has been selected");
-			 * MobileElement CountryValue =
-			 * driver.findElement(By.xpath("//*[@id=\'Country\']")); Select CValueType = new
-			 * Select(CountryValue); CValueType.selectByVisibleText("France");
-			 * 
-			 * jsed.executeScript("window.scrollBy(0,100)", "up");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("City 'Paris' has been entered into the field");
-			 * type("mCity_Xpath","mCity");
-			 * 
-			 * jsed.executeScript("window.scrollBy(0,100)", "up");
-			 * 
-			 * // jsed.executeScript(
-			 * "document.getElementsByName('termsandConditions')[0].click()");
-			 * 
-			 * Thread.sleep(2000);
-			 * logger1.info("Checkbox 'privacy policy' has been checked");
-			 * jsed.executeScript(
-			 * "document.getElementsByName('Double_Opt_in_Compliant__c')[0].click()");
-			 * 
-			 * 
-			 * Thread.sleep(2000); logger1.info("'Download Now' button is pressed");
-			 * click("mButtonnew_Xpath");
-			 * 
-			 * Thread.sleep(5000); logger1.info("Checked error text on submission");
-			 * WebElement TextBox = driver.findElement(By.xpath(
-			 * "//*[@id=\"mktoForm_2768\"]/div[10]/div[1]/div[2]/div[3]/div[2]")); String
-			 * present = TextBox.getText(); Assert.assertEquals(present,
-			 * "This field is required.");
-			 * 
-			 * Thread.sleep(2000); driver.navigate().refresh();
-			 * logger1.info("------------------------------------------------------------");
 			 */
+			  
+			  Thread.sleep(2000); logger1.info("'Download Now' button is pressed");
+			  click("mButtonnew_Xpath");
+			  
+			  Thread.sleep(5000); logger1.info("Checked error text on submission");
+			  WebElement TxtBox = driver.findElement(By.xpath(
+			  "//*[@id=\"mktoForm_2768\"]/div[12]/div[1]/div[2]/div[3]/div[2]")); String
+			  presents = TxtBox.getText(); Assert.assertEquals(presents,
+			  "This field is required.");
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("First Name 'Form' has been entered into the text field");
+			  type("mFirstName_Xpath","mName");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Last Name 'Testing' has been entered into the text field");
+			  type("mLastName_Xpath","mLastName");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Company 'Algoworks' has been entered into the text field");
+			  type("mCompany_Xpath","mCompany");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Role 'Automation QA' has been entered into the text field");
+			  type("mRole_Xpath","mRole");
+			  
+			  Thread.sleep(2000); logger1.
+			  info("Email 'poonam.gupta@algoworks.com' has been entered into the text field"
+			  ); type("mEmail_Xpath","mEmail");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Phone '1(866)648-7575' has been entered into the field");
+			  type("mPhoneNumber_Xpath","mNumber");
+			  
+			  Thread.sleep(2000); logger1.info("Country 'France' has been selected");
+			  MobileElement CountryValue =
+			  driver.findElement(By.xpath("//*[@id=\'Country\']")); Select CValueType = new
+			  Select(CountryValue); CValueType.selectByVisibleText("France");
+			  
+			  jsed.executeScript("window.scrollBy(0,100)", "up");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("City 'Paris' has been entered into the field");
+			  type("mCity_Xpath","mCity");
+			  
+			  jsed.executeScript("window.scrollBy(0,100)", "up");
+			  
+			  // jsed.executeScript("document.getElementsByName('termsandConditions')[0].click()");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Checkbox 'privacy policy' has been checked");
+			  jsed.executeScript(
+			  "document.getElementsByName('Double_Opt_in_Compliant__c')[0].click()");
+			  
+			  
+			  Thread.sleep(2000); logger1.info("'Download Now' button is pressed");
+			  click("mButtonnew_Xpath");
+			  
+			  Thread.sleep(5000); logger1.info("Checked error text on submission");
+			  WebElement TextBox = driver.findElement(By.xpath(
+			  "//*[@id=\"mktoForm_2768\"]/div[10]/div[1]/div[2]/div[3]/div[2]")); String
+			  present = TextBox.getText(); Assert.assertEquals(present,
+			  "This field is required.");
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			 
 			Thread.sleep(2000);
 			logger1.info("First Name 'Form' has been entered into the text field");
 			type("mFirstName_Xpath", "mName");
@@ -1359,8 +1358,202 @@ public class MobileNegative extends AndroidCapabilities {
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
+			
+			Thread.sleep(2000);
+			logger1.info("First Name 'Form' has been entered into the text field");
+			type("mFirstName_Xpath", "mName");
+
+			Thread.sleep(2000);
+			logger1.info("Last Name 'Testing' has been entered into the text field");
+			type("mLastName_Xpath", "mLastName");
+
+			Thread.sleep(2000);
+			logger1.info("Company 'Algoworks' has been entered into the text field");
+			type("mCompany_Xpath", "mCompany");
+
+			Thread.sleep(2000);
+			logger1.info("Role 'Automation QA' has been entered into the text field");
+			type("mRole_Xpath", "mRole");
+
+			Thread.sleep(2000);
+			logger1.info("Email 'poonam.gupta@algoworks.com' has been entered into the text field");
+			type("mEmail_Xpath", "mEmail");
+
+			Thread.sleep(2000);
+			logger1.info("Phone '1(866)648-7575' has been entered into the field");
+			type("mPhoneNumber_Xpath", "mNumber");
+
+			Thread.sleep(2000);
+			logger1.info("Country 'United States' has been selected");
+			MobileElement CountryV = driver.findElement(By.xpath("//*[@id=\'Country\']"));
+			Select CValue = new Select(CountryV);
+			CValue.selectByVisibleText("United States");
+
+			jsed.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("State 'Alabama' has been entered into the field");
+			type("mState_Xpath", "mState");
+
+			Thread.sleep(2000);
+			logger1.info("City 'Paris' has been entered into the field");
+			type("mCity_Xpath", "mCity");
+
+			jsed.executeScript("window.scrollBy(0,100)", "up");
+
+		//	jsed.executeScript("document.getElementsByName('termsandConditions')[0].click()");
+
+			Thread.sleep(2000);
+			logger1.info("'Download Now' button is pressed");
+			click("mButtonnew_Xpath");
+
+			Thread.sleep(5000);
+			logger1.info("Checked error text on submission");
+			WebElement TextB = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[10]/div[1]/div[2]/div[3]/div[2]"));
+			String pre = TextB.getText();
+			Assert.assertEquals(pre, "This field is required.");
+
+			Thread.sleep(2000);
+			driver.navigate().refresh();
+			logger1.info("------------------------------------------------------------");
+			
+			Thread.sleep(2000);
+			logger1.info("First Name 'Form' has been entered into the text field");
+			type("mFirstName_Xpath", "mName");
+
+			Thread.sleep(2000);
+			logger1.info("Last Name 'Testing' has been entered into the text field");
+			type("mLastName_Xpath", "mLastName");
+
+			Thread.sleep(2000);
+			logger1.info("Company 'Algoworks' has been entered into the text field");
+			type("mCompany_Xpath", "mCompany");
+
+			Thread.sleep(2000);
+			logger1.info("Role 'Automation QA' has been entered into the text field");
+			type("mRole_Xpath", "mRole");
+
+			Thread.sleep(2000);
+			logger1.info("Email 'poonam.gupta@algoworks.com' has been entered into the text field");
+			type("mEmail_Xpath", "mEmail");
+
+			Thread.sleep(2000);
+			logger1.info("Phone '1(866)648-7575' has been entered into the field");
+			type("mPhoneNumber_Xpath", "mNumber");
+
+			Thread.sleep(2000);
+			logger1.info("Country 'United States' has been selected");
+			MobileElement Country = driver.findElement(By.xpath("//*[@id=\'Country\']"));
+			Select CValu = new Select(Country);
+			CValu.selectByVisibleText("United States");
+
+			jsed.executeScript("window.scrollBy(0,100)", "up");
+
+			/*
+			 * Thread.sleep(2000);
+			 * logger1.info("State 'Alabama' has been entered into the field");
+			 * type("mState_Xpath", "mState");
+			 */
+			Thread.sleep(2000);
+			logger1.info("City 'Paris' has been entered into the field");
+			type("mCity_Xpath", "mCity");
+
+			jsed.executeScript("window.scrollBy(0,100)", "up");
+
+			jsed.executeScript("document.getElementsByName('termsandConditions')[0].click()");
+
+			Thread.sleep(2000);
+			logger1.info("'Download Now' button is pressed");
+			click("mButtonnew_Xpath");
+
+			Thread.sleep(5000);
+			logger1.info("Checked error text on submission");
+			WebElement Text = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[8]/div[1]/div[2]/div[2]/div[2]"));
+			String pr = Text.getText();
+			Assert.assertEquals(pr, "This field is required.");
+
+			Thread.sleep(2000);
+			driver.navigate().refresh();
+			logger1.info("------------------------------------------------------------");		
 		}
 
+		catch (Exception e) {
+			logger1.fail(e);
+			throw e;
+		}
+	}
+	@Test(priority = 8)
+	public static void Citynegative() throws Exception {
+		logger1 = extent.createTest("mobile_City_negative");
+		try {
+
+			JavascriptExecutor jsed = (JavascriptExecutor) driver;
+			jsed.executeScript("window.scrollBy(0,1000)", "up");
+
+			
+			  Thread.sleep(2000);
+			  logger1.info("First Name 'Form' has been entered into the text field");
+			  type("mFirstName_Xpath","mName");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Last Name 'Testing' has been entered into the text field");
+			  type("mLastName_Xpath","mLastName");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Company 'Algoworks' has been entered into the text field");
+			  type("mCompany_Xpath","mCompany");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Role 'Automation QA' has been entered into the text field");
+			  type("mRole_Xpath","mRole");
+			  
+			  Thread.sleep(2000); logger1.
+			  info("Email 'poonam.gupta@algoworks.com' has been entered into the text field"
+			  ); type("mEmail_Xpath","mEmail");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Phone '1(866)648-7575' has been entered into the field");
+			  type("mPhoneNumber_Xpath","mNumber");
+			  
+			  Thread.sleep(2000); logger1.info("Country 'France' has been selected");
+			  MobileElement selectEle =
+			  driver.findElement(By.xpath("//*[@id=\'Country\']")); Select ele = new
+			  Select(selectEle); ele.selectByVisibleText("France");
+			  
+			  jsed.executeScript("window.scrollBy(0,100)", "up");
+			  
+			/*
+			 * Thread.sleep(2000);
+			 * logger1.info("City 'Paris' has been entered into the field");
+			 * type("mCity_Xpath","mCity");
+			 */
+			  
+			  jsed.executeScript("window.scrollBy(0,100)", "up");
+			  
+			  jsed.executeScript(
+			  "document.getElementsByName('termsandConditions')[0].click()");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Checkbox 'privacy policy' has been checked");
+			  jsed.executeScript(
+			  "document.getElementsByName('Double_Opt_in_Compliant__c')[0].click()");
+			  
+			  
+			  Thread.sleep(2000); logger1.info("'Download Now' button is pressed");
+			  click("mButtonnew_Xpath");
+			  
+			  Thread.sleep(2000);
+				logger1.info("Checked error text on submission");
+				WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[9]/div[1]/div[2]/div[2]/div[2]"));
+				String presents = TxtBox.getText();
+				Assert.assertEquals(presents, "This field is required.");
+						
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			  
+			  
+		}
 		catch (Exception e) {
 			logger1.fail(e);
 			throw e;
