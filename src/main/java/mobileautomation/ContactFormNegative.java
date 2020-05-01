@@ -24,7 +24,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 		driver.navigate().to(properties.getProperty("ContactForm_url"));
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 7)
 	public static void ContactFormFirstNameNegative() throws Exception {
 		logger1 = extent.createTest("contactForm_FirstName_negative");
 		try {
@@ -648,7 +648,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			/*
 			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget")))); //
+			 * findElement(By.id("drift-widget")))); // //
 			 * driver.switchTo().frame("drift-widget");
 			 * 
 			 * Thread.sleep(2000); click("dPopupClose_Xpath");
@@ -1200,14 +1200,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
-			// driver.switchTo().frame("drift-widget");
-
-			Thread.sleep(2000);
-			click("dPopupClose_Xpath");
-
-			driver.switchTo().defaultContent();
-
+			/*
+			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			 * findElement(By.id("drift-widget")))); //
+			 * driver.switchTo().frame("drift-widget");
+			 * 
+			 * Thread.sleep(2000); click("dPopupClose_Xpath");
+			 * 
+			 * driver.switchTo().defaultContent();
+			 */
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement button = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -1749,15 +1750,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 			Thread.sleep(2000);
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
-
-			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
-			// driver.switchTo().frame("drift-widget");
-
-			Thread.sleep(2000);
-			click("dPopupClose_Xpath");
-
-			driver.switchTo().defaultContent();
-
+			/*
+			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			 * findElement(By.id("drift-widget")))); //
+			 * driver.switchTo().frame("drift-widget");
+			 * 
+			 * Thread.sleep(2000); click("dPopupClose_Xpath");
+			 * 
+			 * driver.switchTo().defaultContent();
+			 */
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement button = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -2672,14 +2673,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
-			// driver.switchTo().frame("drift-widget");
-
-			Thread.sleep(2000);
-			click("dPopupClose_Xpath");
-
-			driver.switchTo().defaultContent();
-
+			/*
+			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			 * findElement(By.id("drift-widget")))); //
+			 * driver.switchTo().frame("drift-widget");
+			 * 
+			 * Thread.sleep(2000); click("dPopupClose_Xpath");
+			 * 
+			 * driver.switchTo().defaultContent();
+			 */
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement button = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3154,7 +3156,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 		}
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 1)
 	public static void ContactFormCountryNegative() throws Exception {
 		logger1 = extent.createTest("contactForm_Country_negative");
 		try {
@@ -3187,14 +3189,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("Job Title 'Automation QA' given in textbox");
 			type("cJobTitle_Xpath", "cJobTitle");
 
-			/*
-			 * Thread.sleep(2000); logger1.info("Country 'United States' is selected");
-			 * MobileElement val1 = driver .findElement(By.xpath(
-			 * "/html/body/main/div/div[2]/section/div/form/div[6]/span/select")); Select
-			 * valueType1 = new Select(val1); Thread.sleep(2000);
-			 * valueType1.selectByValue("United States");
-			 * jse.executeScript("window.scrollBy(0,100)", "up");
-			 */
+			
 			/*
 			 * Thread.sleep(2000); logger1.info("State 'Alabama' is selected");
 			 * MobileElement val2 = driver.findElement( By.xpath(
@@ -3221,66 +3216,69 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement button = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
 			button.click();
 
-			jse.executeScript("window.scrollBy(0, -800)", "down");
+			jse.executeScript("window.scrollBy(0, -400)", "down");
 			Thread.sleep(2000);
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[6]/div"));
-			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Please select your country from the dropdown.");
+			WebElement BC = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[6]/span/div"));
+			String gift = BC.getText();
+			Assert.assertEquals(gift, "Please select your country from the dropdown.");
 			
-
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
-			
-			  Thread.sleep(2000); logger1.info("First name 'Form' is typed in textbox");
-			  type("cFirstName_Xpath", "cFirstName");
-			  
-			  Thread.sleep(2000); logger1.info("Last name 'Testing' is typed in textbox");
-			  type("cLastName_Xpath", "cLastName");
-			  jse.executeScript("window.scrollBy(0,100)", "up");
-			  
-			  Thread.sleep(2000);
-			  logger1.info("Area code+phone is '9899928177' given in textbox");
-			  type("cPhoneNumber_Xpath", "cPhoneNumber");
-			  
-			  Thread.sleep(2000); logger1.
-			  info("Business Email Address 'poonam.gupta@algoworks.com' typed in textbox");
-			  type("cBusinessEmailAddress_Xpath","cBusinessEmailAddress");
-			  
-			  
-			  Thread.sleep(2000); logger1.info("Company 'Algoworks' given in textbox");
-			  type("cCompany_Xpath", "cCompany");
-			  
-			  Thread.sleep(2000);
-			  logger1.info("Job Title 'Automation QA' given in textbox");
-			  type("cJobTitle_Xpath", "cJobTitle");
-			  
-			  Thread.sleep(2000); logger1.info("Country 'United States' is selected");
-			  MobileElement CountryValue = driver.findElement(By.xpath(
-			  "/html/body/main/div/div[2]/section/div/form/div[6]/span/select")); Select
-			  CValueType = new Select(CountryValue); Thread.sleep(2000);
-			  CValueType.selectByValue("United States");
-			  jse.executeScript("window.scrollBy(0,100)", "up");
-			  
+
+			Thread.sleep(2000);
+			logger1.info("First name 'Form' is typed in textbox");
+			type("cFirstName_Xpath", "cFirstName");
+
+			Thread.sleep(2000);
+			logger1.info("Last name 'Testing' is typed in textbox");
+			type("cLastName_Xpath", "cLastName");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("Area code+phone is '9899928177' given in textbox");
+			type("cPhoneNumber_Xpath", "cPhoneNumber");
+
+			Thread.sleep(2000);
+			logger1.info("Business Email Address 'poonam.gupta@algoworks.com' typed in textbox");
+			type("cBusinessEmailAddress_Xpath", "cBusinessEmailAddress");
+
+			Thread.sleep(2000);
+			logger1.info("Company 'Algoworks' given in textbox");
+			type("cCompany_Xpath", "cCompany");
+
+			Thread.sleep(2000);
+			logger1.info("Job Title 'Automation QA' given in textbox");
+			type("cJobTitle_Xpath", "cJobTitle");
+
+			Thread.sleep(2000);
+			logger1.info("Country 'United States' is selected");
+			MobileElement CountryValue = driver
+					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			Select CValueType = new Select(CountryValue);
+			Thread.sleep(2000);
+			CValueType.selectByValue("United States");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
 			/*
 			 * Thread.sleep(2000); logger1.info("State 'Alabama' is selected");
 			 * MobileElement valueess = driver.findElement(By.xpath(
@@ -3289,42 +3287,42 @@ public class ContactFormNegative extends AndroidCapabilities {
 			 * valueee.selectByValue("AL"); jse.executeScript("window.scrollBy(0,100)",
 			 * "up");
 			 */
-			  
-			  
-			  Thread.sleep(2000); logger1.info("City name 'Noida' given in textbox");
-			  type("cCity_Xpath", "cCity"); jse.executeScript("window.scrollBy(0,100)",
-			  "up");
-			  
-			  Thread.sleep(2000); logger1.info("Partner Inquiry is selected");
-			  MobileElement ContactReason =
-			  driver.findElement(By.xpath("//*[@id=\'contactUsReasonforInquiry\']"));
-			  Select CReasonType = new Select(ContactReason);
-			  CReasonType.selectByVisibleText("Partner Inquiry");
-			  jse.executeScript("window.scrollBy(0,100)", "up");
-			  jse.executeScript("window.scrollBy(0,100)", "up");
-			  
-			  
-			  Thread.sleep(2000); logger1.info("optional message is written");
-			  type("cMessage_Xpath", "cMessage");
-			  
-			  
-			  Thread.sleep(10000); logger1.info("Contact Us button is selected");
-			  WebElement buttons
-			  =driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
-			  buttons.click();
-			  
-			  
-			  jse.executeScript("window.scrollBy(0, -800)", "down"); Thread.sleep(2000);
-			  
-			  Thread.sleep(2000); logger1.info("Checked error text on submission");
-			  WebElement Box = driver.findElement(By.xpath(
-			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/div"));
-			  String bug = Box.getText(); Assert.assertEquals(bug,
-			  "Please select your state from the dropdown.");
-			  
-			  Thread.sleep(2000); driver.navigate().refresh();
-			  logger1.info("------------------------------------------------------------");
-			 
+
+			Thread.sleep(2000);
+			logger1.info("City name 'Noida' given in textbox");
+			type("cCity_Xpath", "cCity");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("Partner Inquiry is selected");
+			MobileElement ContactReason = driver.findElement(By.xpath("//*[@id=\'contactUsReasonforInquiry\']"));
+			Select CReasonType = new Select(ContactReason);
+			CReasonType.selectByVisibleText("Partner Inquiry");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("optional message is written");
+			type("cMessage_Xpath", "cMessage");
+
+			Thread.sleep(10000);
+			logger1.info("Contact Us button is selected");
+			WebElement buttons = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
+			buttons.click();
+
+			jse.executeScript("window.scrollBy(0, -800)", "down");
+			Thread.sleep(2000);
+
+			Thread.sleep(2000);
+			logger1.info("Checked error text on submission");
+			WebElement Box = driver
+					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/div"));
+			String bug = Box.getText();
+			Assert.assertEquals(bug, "Please select your state from the dropdown.");
+
+			Thread.sleep(2000);
+			driver.navigate().refresh();
+			logger1.info("------------------------------------------------------------");
 
 			Thread.sleep(2000);
 			logger1.info("First name 'Form' is typed in textbox");
@@ -3387,8 +3385,10 @@ public class ContactFormNegative extends AndroidCapabilities {
 			type("cMessage_Xpath", "cMessage");
 
 			logger1.info("Privacy policy checkbox has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[12]/div/div/div[1]/input")).click();
-			
+			driver.findElement(
+					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[12]/div/div/div[1]/input"))
+					.click();
+
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement butto = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3400,7 +3400,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
 			WebElement Text = driver
-					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[8]/div"));
+					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[8]/span/div"));
 			String error = Text.getText();
 			Assert.assertEquals(error, "Please select your province.");
 
@@ -3408,12 +3408,12 @@ public class ContactFormNegative extends AndroidCapabilities {
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
 
-			
 		} catch (Exception e) {
 			logger1.fail(e);
 			throw e;
 		}
 	}
+
 	@Test(priority = 8)
 	public static void ContactFormCityNegative() throws Exception {
 		logger1 = extent.createTest("contactForm_City_negative");
@@ -3447,22 +3447,23 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("Job Title 'Automation QA' given in textbox");
 			type("cJobTitle_Xpath", "cJobTitle");
 
-			
-			  Thread.sleep(2000); logger1.info("Country 'United States' is selected");
-			  MobileElement val1 = driver .findElement(By.xpath(
-			  "/html/body/main/div/div[2]/section/div/form/div[6]/span/select")); Select
-			  valueType1 = new Select(val1); Thread.sleep(2000);
-			  valueType1.selectByValue("United States");
-			  jse.executeScript("window.scrollBy(0,100)", "up");
-			 
-			
-			  Thread.sleep(2000); logger1.info("State 'Alabama' is selected");
-			  MobileElement val2 = driver.findElement( By.xpath(
-			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select")
-			  ); Select valueType2 = new Select(val2); Thread.sleep(2000);
-			  valueType2.selectByValue("AL"); jse.executeScript("window.scrollBy(0,100)",
-			  "up");
-			 
+			Thread.sleep(2000);
+			logger1.info("Country 'United States' is selected");
+			MobileElement val1 = driver
+					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			Select valueType1 = new Select(val1);
+			Thread.sleep(2000);
+			valueType1.selectByValue("United States");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("State 'Alabama' is selected");
+			MobileElement val2 = driver.findElement(
+					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			Select valueType2 = new Select(val2);
+			Thread.sleep(2000);
+			valueType2.selectByValue("AL");
+			jse.executeScript("window.scrollBy(0,100)", "up");
 
 			Thread.sleep(2000);
 			logger1.info("City name 'N' given in textbox");
@@ -3480,8 +3481,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 			Thread.sleep(2000);
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
-
-
+			
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement button = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3492,14 +3492,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
+			WebElement TxtBoxContent = driver
+					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String present = TxtBoxContent.getText();
 			Assert.assertEquals(present, "Must contain 2-50 alphabetic characters .");
-		
+
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
-			
+
 			Thread.sleep(2000);
 			logger1.info("First name 'Form' is typed in textbox");
 			type("cFirstName_Xpath", "cFirstName");
@@ -3525,22 +3526,23 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("Job Title 'Automation QA' given in textbox");
 			type("cJobTitle_Xpath", "cJobTitle");
 
-			
-			  Thread.sleep(2000); logger1.info("Country 'United States' is selected");
-			  MobileElement CountryValue = driver .findElement(By.xpath(
-			  "/html/body/main/div/div[2]/section/div/form/div[6]/span/select")); Select
-			  CValueType = new Select(CountryValue); Thread.sleep(2000);
-			  CValueType.selectByValue("United States");
-			  jse.executeScript("window.scrollBy(0,100)", "up");
-			 
-			
-			  Thread.sleep(2000); logger1.info("State 'Alabama' is selected");
-			  MobileElement StateValue = driver.findElement( By.xpath(
-			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select")
-			  ); Select SValueType = new Select(StateValue); Thread.sleep(2000);
-			  SValueType.selectByValue("AL"); jse.executeScript("window.scrollBy(0,100)",
-			  "up");
-			 
+			Thread.sleep(2000);
+			logger1.info("Country 'United States' is selected");
+			MobileElement CountryValue = driver
+					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			Select CValueType = new Select(CountryValue);
+			Thread.sleep(2000);
+			CValueType.selectByValue("United States");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("State 'Alabama' is selected");
+			MobileElement StateValue = driver.findElement(
+					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			Select SValueType = new Select(StateValue);
+			Thread.sleep(2000);
+			SValueType.selectByValue("AL");
+			jse.executeScript("window.scrollBy(0,100)", "up");
 
 			Thread.sleep(2000);
 			logger1.info("City name '@@' given in textbox");
@@ -3559,7 +3561,6 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement buttons = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3570,14 +3571,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TxtBoxContents = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
+			WebElement TxtBoxContents = driver
+					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String presents = TxtBoxContents.getText();
 			Assert.assertEquals(presents, "Must contain 2-50 alphabetic characters .");
-		
+
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
-			
+
 			Thread.sleep(2000);
 			logger1.info("First name 'Form' is typed in textbox");
 			type("cFirstName_Xpath", "cFirstName");
@@ -3603,22 +3605,23 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("Job Title 'Automation QA' given in textbox");
 			type("cJobTitle_Xpath", "cJobTitle");
 
-			
-			  Thread.sleep(2000); logger1.info("Country 'United States' is selected");
-			  MobileElement CountryValu = driver .findElement(By.xpath(
-			  "/html/body/main/div/div[2]/section/div/form/div[6]/span/select")); Select
-			  CValueTyp = new Select(CountryValu); Thread.sleep(2000);
-			  CValueTyp.selectByValue("United States");
-			  jse.executeScript("window.scrollBy(0,100)", "up");
-			 
-			
-			  Thread.sleep(2000); logger1.info("State 'Alabama' is selected");
-			  MobileElement StateValu = driver.findElement( By.xpath(
-			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select")
-			  ); Select SValueTyp = new Select(StateValu); Thread.sleep(2000);
-			  SValueTyp.selectByValue("AL"); jse.executeScript("window.scrollBy(0,100)",
-			  "up");
-			 
+			Thread.sleep(2000);
+			logger1.info("Country 'United States' is selected");
+			MobileElement CountryValu = driver
+					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			Select CValueTyp = new Select(CountryValu);
+			Thread.sleep(2000);
+			CValueTyp.selectByValue("United States");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("State 'Alabama' is selected");
+			MobileElement StateValu = driver.findElement(
+					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			Select SValueTyp = new Select(StateValu);
+			Thread.sleep(2000);
+			SValueTyp.selectByValue("AL");
+			jse.executeScript("window.scrollBy(0,100)", "up");
 
 			Thread.sleep(2000);
 			logger1.info("City name 'Noida!' given in textbox");
@@ -3637,7 +3640,6 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement butto = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3648,14 +3650,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TxtBoxConten = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
+			WebElement TxtBoxConten = driver
+					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String presen = TxtBoxConten.getText();
 			Assert.assertEquals(presen, "Must contain 2-50 alphabetic characters .");
-		
+
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
-			
+
 			Thread.sleep(2000);
 			logger1.info("First name 'Form' is typed in textbox");
 			type("cFirstName_Xpath", "cFirstName");
@@ -3681,22 +3684,23 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("Job Title 'Automation QA' given in textbox");
 			type("cJobTitle_Xpath", "cJobTitle");
 
-			
-			  Thread.sleep(2000); logger1.info("Country 'United States' is selected");
-			  MobileElement CountryVal = driver .findElement(By.xpath(
-			  "/html/body/main/div/div[2]/section/div/form/div[6]/span/select")); Select
-			  CValueTy = new Select(CountryVal); Thread.sleep(2000);
-			  CValueTy.selectByValue("United States");
-			  jse.executeScript("window.scrollBy(0,100)", "up");
-			 
-			
-			  Thread.sleep(2000); logger1.info("State 'Alabama' is selected");
-			  MobileElement StateVal = driver.findElement( By.xpath(
-			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select")
-			  ); Select SValueTy = new Select(StateVal); Thread.sleep(2000);
-			  SValueTy.selectByValue("AL"); jse.executeScript("window.scrollBy(0,100)",
-			  "up");
-			 
+			Thread.sleep(2000);
+			logger1.info("Country 'United States' is selected");
+			MobileElement CountryVal = driver
+					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			Select CValueTy = new Select(CountryVal);
+			Thread.sleep(2000);
+			CValueTy.selectByValue("United States");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("State 'Alabama' is selected");
+			MobileElement StateVal = driver.findElement(
+					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			Select SValueTy = new Select(StateVal);
+			Thread.sleep(2000);
+			SValueTy.selectByValue("AL");
+			jse.executeScript("window.scrollBy(0,100)", "up");
 
 			Thread.sleep(2000);
 			logger1.info("City name '12345' given in textbox");
@@ -3715,7 +3719,6 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement butt = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3726,14 +3729,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TxtBoxConte = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
+			WebElement TxtBoxConte = driver
+					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String prese = TxtBoxConte.getText();
 			Assert.assertEquals(prese, "Must contain 2-50 alphabetic characters .");
-		
+
 			Thread.sleep(2000);
 			driver.navigate().refresh();
-			logger1.info("------------------------------------------------------------");	
-			
+			logger1.info("------------------------------------------------------------");
+
 			Thread.sleep(2000);
 			logger1.info("First name 'Form' is typed in textbox");
 			type("cFirstName_Xpath", "cFirstName");
@@ -3759,22 +3763,24 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("Job Title 'Automation QA' given in textbox");
 			type("cJobTitle_Xpath", "cJobTitle");
 
-			
-			  Thread.sleep(2000); logger1.info("Country 'United States' is selected");
-			  MobileElement CountryVa = driver .findElement(By.xpath(
-			  "/html/body/main/div/div[2]/section/div/form/div[6]/span/select")); Select
-			  CValueT = new Select(CountryVa); Thread.sleep(2000);
-			  CValueT.selectByValue("United States");
-			  jse.executeScript("window.scrollBy(0,100)", "up");
-			 
-			
-			  Thread.sleep(2000); logger1.info("State 'Alabama' is selected");
-			  MobileElement StateVa = driver.findElement( By.xpath(
-			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select")
-			  ); Select SValueT= new Select(StateVa); Thread.sleep(2000);
-			  SValueT.selectByValue("AL"); jse.executeScript("window.scrollBy(0,100)",
-			  "up");
-			
+			Thread.sleep(2000);
+			logger1.info("Country 'United States' is selected");
+			MobileElement CountryVa = driver
+					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			Select CValueT = new Select(CountryVa);
+			Thread.sleep(2000);
+			CValueT.selectByValue("United States");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("State 'Alabama' is selected");
+			MobileElement StateVa = driver.findElement(
+					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			Select SValueT = new Select(StateVa);
+			Thread.sleep(2000);
+			SValueT.selectByValue("AL");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
 			Thread.sleep(2000);
 			logger1.info("City name ' ' given in textbox");
 			type("cCityBlank_Xpath", "cCityBlank");
@@ -3792,7 +3798,6 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement but = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3803,14 +3808,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TxtBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
+			WebElement TxtBoxCont = driver
+					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String pres = TxtBoxCont.getText();
 			Assert.assertEquals(pres, "Must contain 2-50 alphabetic characters .");
-		
+
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
-			
 
 			Thread.sleep(2000);
 			logger1.info("First name 'Form' is typed in textbox");
@@ -3837,22 +3842,24 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("Job Title 'Automation QA' given in textbox");
 			type("cJobTitle_Xpath", "cJobTitle");
 
-			
-			  Thread.sleep(2000); logger1.info("Country 'United States' is selected");
-			  MobileElement CountryV = driver .findElement(By.xpath(
-			  "/html/body/main/div/div[2]/section/div/form/div[6]/span/select")); Select
-			  CValue = new Select(CountryV); Thread.sleep(2000);
-			  CValue.selectByValue("United States");
-			  jse.executeScript("window.scrollBy(0,100)", "up");
-			 
-			
-			  Thread.sleep(2000); logger1.info("State 'Alabama' is selected");
-			  MobileElement StateV = driver.findElement( By.xpath(
-			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select")
-			  ); Select SValue= new Select(StateV); Thread.sleep(2000);
-			  SValue.selectByValue("AL"); jse.executeScript("window.scrollBy(0,100)",
-			  "up");
-			
+			Thread.sleep(2000);
+			logger1.info("Country 'United States' is selected");
+			MobileElement CountryV = driver
+					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			Select CValue = new Select(CountryV);
+			Thread.sleep(2000);
+			CValue.selectByValue("United States");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("State 'Alabama' is selected");
+			MobileElement StateV = driver.findElement(
+					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			Select SValue = new Select(StateV);
+			Thread.sleep(2000);
+			SValue.selectByValue("AL");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
 			Thread.sleep(2000);
 			logger1.info("City name 'Noida1234' given in textbox");
 			type("cCityAlphdigit_Xpath", "cCityAlphdigit");
@@ -3870,7 +3877,6 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement bu = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3881,15 +3887,279 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TxtBoxCon = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
+			WebElement TxtBoxCon = driver
+					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String pre = TxtBoxCon.getText();
 			Assert.assertEquals(pre, "Must contain 2-50 alphabetic characters .");
-		
+
 			Thread.sleep(2000);
 			driver.navigate().refresh();
-			logger1.info("------------------------------------------------------------");			
+			logger1.info("------------------------------------------------------------");
+		} catch (Exception e) {
+			logger1.fail(e);
+			throw e;
 		}
-		catch (Exception e) {
+	}
+
+	@Test(priority = 9)
+	public static void ContactFormReasonforinquiryNegative() throws Exception {
+		logger1 = extent.createTest("contactForm_Reasonforinquiry_negative");
+		try {
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("window.scrollBy(0,100)", "up");
+			WebDriverWait wait = new WebDriverWait(driver, 30);
+
+			Thread.sleep(2000);
+			logger1.info("First name 'Form' is typed in textbox");
+			type("cFirstName_Xpath", "cFirstName");
+
+			Thread.sleep(2000);
+			logger1.info("Last name 'Testing' is typed in textbox");
+			type("cLastName_Xpath", "cLastName");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("Area code+phone is '9899928177' given in textbox");
+			type("cPhoneNumber_Xpath", "cPhoneNumber");
+
+			Thread.sleep(2000);
+			logger1.info("Business Email Address 'poonam.gupta@algoworks.com' typed in textbox");
+			type("cBusinessEmailAddress_Xpath", "cBusinessEmailAddress");
+
+			Thread.sleep(2000);
+			logger1.info("Company 'Algoworks' given in textbox");
+			type("cCompany_Xpath", "cCompany");
+
+			Thread.sleep(2000);
+			logger1.info("Job Title 'Automation QA' given in textbox");
+			type("cJobTitle_Xpath", "cJobTitle");
+
+			Thread.sleep(2000);
+			logger1.info("Country 'United States' is selected");
+			MobileElement val1 = driver
+					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			Select valueType1 = new Select(val1);
+			Thread.sleep(2000);
+			valueType1.selectByValue("United States");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("State 'Alabama' is selected");
+			MobileElement val2 = driver.findElement(
+					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			Select valueType2 = new Select(val2);
+			Thread.sleep(2000);
+			valueType2.selectByValue("AL");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("City name 'Noida' given in textbox");
+			type("cCity_Xpath", "cCity");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			/*
+			 * Thread.sleep(2000); logger1.info("Partner Inquiry is selected");
+			 * MobileElement val4 =
+			 * driver.findElement(By.xpath("//*[@id=\'contactUsReasonforInquiry\']"));
+			 * Select valueType3 = new Select(val4);
+			 * valueType3.selectByVisibleText("Partner Inquiry");
+			 * jse.executeScript("window.scrollBy(0,100)", "up");
+			 * jse.executeScript("window.scrollBy(0,100)", "up");
+			 */
+			
+			Thread.sleep(3000);
+			logger1.info("' ' is selected");
+			driver.findElement(By.xpath("//*[@id=\"contactUsReasonforInquiry\"]")).sendKeys(" ");
+		
+
+			Thread.sleep(2000);
+			logger1.info("optional message is written");
+			type("cMessage_Xpath", "cMessage");
+
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			// driver.switchTo().frame("drift-widget");
+
+			Thread.sleep(2000);
+			click("dPopupClose_Xpath");
+
+			driver.switchTo().defaultContent();
+			
+			Thread.sleep(10000);
+			logger1.info("Contact Us button is selected");
+			WebElement button = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
+			button.click();
+
+			jse.executeScript("window.scrollBy(0, -800)", "down");
+			Thread.sleep(2000);
+
+			Thread.sleep(2000);
+			logger1.info("Checked error text on submission");
+			WebElement TxtBoxContent = driver
+					.findElement(By.xpath("//*[@id=\"contactUsReasonforInquirySelectBoxItContainer\"]/div"));
+			String present = TxtBoxContent.getText();
+			Assert.assertEquals(present, "Please select an option from the dropdown menu.");
+
+			Thread.sleep(2000);
+			driver.navigate().refresh();
+			logger1.info("------------------------------------------------------------");
+		} catch (Exception e) {
+			logger1.fail(e);
+			throw e;
+		}
+	}
+
+	@Test(priority = 10)
+	public static void ContactFormGDPRCountryNegative() throws Exception {
+		logger1 = extent.createTest("contactForm_GDPRCountry_negative");
+		try {
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("window.scrollBy(0,100)", "up");
+			WebDriverWait wait = new WebDriverWait(driver, 30);
+
+			
+			  Thread.sleep(2000); logger1.info("First name 'Form' is typed in textbox");
+			  type("cFirstName_Xpath", "cFirstName");
+			  
+			  Thread.sleep(2000); logger1.info("Last name 'Testing' is typed in textbox");
+			  type("cLastName_Xpath", "cLastName");
+			  jse.executeScript("window.scrollBy(0,100)", "up");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Area code+phone is '9899928177' given in textbox");
+			  type("cPhoneNumber_Xpath", "cPhoneNumber");
+			  
+			  Thread.sleep(2000); logger1.
+			  info("Business Email Address 'poonam.gupta@algoworks.com' typed in textbox");
+			  type("cBusinessEmailAddress_Xpath", "cBusinessEmailAddress");
+			  
+			  Thread.sleep(2000); logger1.info("Company 'Algoworks' given in textbox");
+			  type("cCompany_Xpath", "cCompany");
+			  
+			  Thread.sleep(2000);
+			  logger1.info("Job Title 'Automation QA' given in textbox");
+			  type("cJobTitle_Xpath", "cJobTitle");
+			  
+			  
+			  
+			  Thread.sleep(2000); logger1.info("Country 'United Kingdom' is selected");
+			  MobileElement val1 = driver .findElement(By.xpath(
+			  "/html/body/main/div/div[2]/section/div/form/div[6]/span/select")); Select
+			  valueType1 = new Select(val1); Thread.sleep(2000);
+			  valueType1.selectByValue("United Kingdom");
+			  jse.executeScript("window.scrollBy(0,100)", "up");
+			  
+			  
+			  
+			  Thread.sleep(2000); logger1.info("City name 'Noida' given in textbox");
+			  type("cCity_Xpath", "cCity"); jse.executeScript("window.scrollBy(0,100)",
+			  "up");
+			  
+			  Thread.sleep(2000); logger1.info("Partner Inquiry is selected");
+			  MobileElement val4 =
+			  driver.findElement(By.xpath("//*[@id=\'contactUsReasonforInquiry\']"));
+			  Select valueType3 = new Select(val4);
+			  valueType3.selectByVisibleText("Partner Inquiry");
+			  jse.executeScript("window.scrollBy(0,100)", "up");
+			  jse.executeScript("window.scrollBy(0,100)", "up");
+			  
+			  Thread.sleep(2000); logger1.info("optional message is written");
+			  type("cMessage_Xpath", "cMessage");
+			  
+			
+			  
+			  Thread.sleep(10000); logger1.info("Contact Us button is selected");
+			  WebElement button =
+			  driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
+			  button.click();
+			  
+			  jse.executeScript("window.scrollBy(0, -800)", "down"); Thread.sleep(2000);
+			  
+			  Thread.sleep(2000); logger1.info("Checked error text on submission");
+			  WebElement TxtBoxContent = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[12]/div/div/div[2]/div"
+			  )); String present = TxtBoxContent.getText(); Assert.assertEquals(present,
+			  "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy"
+			  );
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			 
+			
+			Thread.sleep(2000);
+			logger1.info("First name 'Form' is typed in textbox");
+			type("cFirstName_Xpath", "cFirstName");
+
+			Thread.sleep(2000);
+			logger1.info("Last name 'Testing' is typed in textbox");
+			type("cLastName_Xpath", "cLastName");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("Area code+phone is '9899928177' given in textbox");
+			type("cPhoneNumber_Xpath", "cPhoneNumber");
+
+			Thread.sleep(2000);
+			logger1.info("Business Email Address 'poonam.gupta@algoworks.com' typed in textbox");
+			type("cBusinessEmailAddress_Xpath", "cBusinessEmailAddress");
+
+			Thread.sleep(2000);
+			logger1.info("Company 'Algoworks' given in textbox");
+			type("cCompany_Xpath", "cCompany");
+
+			Thread.sleep(2000);
+			logger1.info("Job Title 'Automation QA' given in textbox");
+			type("cJobTitle_Xpath", "cJobTitle");
+
+			
+			  
+			  Thread.sleep(2000); logger1.info("Country 'France' is selected");
+			  MobileElement val = driver .findElement(By.xpath(
+			  "/html/body/main/div/div[2]/section/div/form/div[6]/span/select")); Select
+			  valueType = new Select(val); Thread.sleep(2000);
+			  valueType.selectByValue("France");
+			  jse.executeScript("window.scrollBy(0,100)", "up");
+			  
+			
+
+			Thread.sleep(2000);
+			logger1.info("City name 'Noida' given in textbox");
+			type("cCity_Xpath", "cCity");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("Partner Inquiry is selected");
+			MobileElement va = driver.findElement(By.xpath("//*[@id=\'contactUsReasonforInquiry\']"));
+			Select valueTyp = new Select(va);
+			valueTyp.selectByVisibleText("Partner Inquiry");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+			jse.executeScript("window.scrollBy(0,100)", "up");
+
+			Thread.sleep(2000);
+			logger1.info("optional message is written");
+			type("cMessage_Xpath", "cMessage");
+
+			Thread.sleep(10000);
+			logger1.info("Contact Us button is selected");
+			WebElement buttons = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
+			buttons.click();
+
+			jse.executeScript("window.scrollBy(0, -800)", "down");
+			
+			
+			Thread.sleep(2000);
+			logger1.info("Checked error text on submission");
+			 
+			 WebElement TxtBoxContents = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[12]/div/div/div[2]/div"
+			  )); String presents = TxtBoxContents.getText(); Assert.assertEquals(presents,
+			  "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy"
+			  );
+			Thread.sleep(2000);
+			driver.navigate().refresh();
+			logger1.info("------------------------------------------------------------");	
+
+		
+		} catch (Exception e) {
 			logger1.fail(e);
 			throw e;
 		}
