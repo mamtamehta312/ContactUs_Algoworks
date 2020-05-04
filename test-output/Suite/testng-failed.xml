@@ -4,20 +4,16 @@
   <parameter name="browser" value="Chrome"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="webautomation.FormFillingNegativeNew">
+      <class name="webautomation.ContactFormNegativeNew">
         <methods>
           <include name="closeApplication"/>
-          <include name="NegativeCity"/>
-          <include name="createReport"/>
-          <include name="NegativeReasonforInquiry"/>
-          <include name="NegativeCountry"/>
-          <include name="LaunchBrowser"/>
-          <include name="NegativeGDPRCountry"/>
-          <include name="NegativeJobTitle"/>
           <include name="init"/>
+          <include name="contactformCountrynegative"/>
+          <include name="createReport"/>
+          <include name="LaunchBrowser"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- webautomation.FormFillingNegativeNew -->
+      </class> <!-- webautomation.ContactFormNegativeNew -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

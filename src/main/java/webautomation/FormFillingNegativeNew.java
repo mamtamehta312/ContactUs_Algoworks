@@ -25,7 +25,7 @@ public class FormFillingNegativeNew extends WebCapabilities {
 		driver.navigate().to(properties.getProperty("form_url"));
 	}
 
-	@Test(priority=6)
+	@Test(priority=1)
 	public static void NegativeFirstName() throws Exception {
 		logger1 = extent.createTest("formFilling_firstname_negative");
 		try {
@@ -2310,7 +2310,7 @@ public class FormFillingNegativeNew extends WebCapabilities {
 			}
 		}
 		
-		@Test(priority=1)
+		@Test(priority=6)
 		public static void NegativeJobTitle() throws Exception {
 			logger1 = extent.createTest("formFilling_JobTitle_negative");
 			try {

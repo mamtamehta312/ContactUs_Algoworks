@@ -99,7 +99,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/div/div[2]"));
 			String pre = Text.getText();
-			Assert.assertEquals(pre, "Must contain 2-50 characters.");
+			String expectedValues= properties.getProperty("d_msg");
+			Assert.assertEquals(pre, expectedValues);
+				
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -175,8 +177,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TextBox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/div/div[2]"));
 			String present = TextBox.getText();
-			Assert.assertEquals(present, "Must contain 2-50 characters.");
-					
+			String expectedValue= properties.getProperty("d_msg");
+			Assert.assertEquals(present, expectedValue);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -251,8 +254,10 @@ public class DownloadsNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/div/div[2]"));
 			String error = TextBoxContent.getText();
-			Assert.assertEquals(error, "Must contain 2-50 characters.");
-					
+			String expectedValu= properties.getProperty("d_msg");
+			Assert.assertEquals(error, expectedValu);
+			
+
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -327,8 +332,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/div/div[2]"));
 			String errors = TextBoxCont.getText();
-			Assert.assertEquals(errors, "Must contain 2-50 characters.");
-					
+			String expectedVal= properties.getProperty("d_msg");
+			Assert.assertEquals(errors, expectedVal);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -403,8 +409,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxCon = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/div/div[2]"));
 			String erro = TextBoxCon.getText();
-			Assert.assertEquals(erro, "Must contain 2-50 characters.");
-					
+			String expectedVa= properties.getProperty("d_msg");
+			Assert.assertEquals(erro, expectedVa);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -479,7 +486,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxCo = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[1]/div/div[2]"));
 			String err = TextBoxCo.getText();
-			Assert.assertEquals(err, "Must contain 2-50 characters.");
+			String expectedV= properties.getProperty("d_msg");
+			Assert.assertEquals(err, expectedV);
+			
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -566,8 +575,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 		logger1.info("Checked error text on submission");
 		WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]"));
 		String pre = Text.getText();
-		Assert.assertEquals(pre, "Must contain 2-50 characters.");
-				
+		String expectedValues= properties.getProperty("d_msg");
+		Assert.assertEquals(pre, expectedValues);
+			
 		Thread.sleep(2000);
 		driver.navigate().refresh();
 		logger1.info("------------------------------------------------------------");
@@ -642,8 +652,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 		logger1.info("Checked error text on submission");
 		WebElement TextBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]"));
 		String present = TextBoxContent.getText();
-		Assert.assertEquals(present, "Must contain 2-50 characters.");
-				
+		String expectedValue= properties.getProperty("d_msg");
+		Assert.assertEquals(present, expectedValue);
+		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
 		logger1.info("------------------------------------------------------------");
@@ -718,8 +729,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TextBox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]"));
 			String error = TextBox.getText();
-			Assert.assertEquals(error, "Must contain 2-50 characters.");
-					
+			String expectedValu= properties.getProperty("d_msg");
+			Assert.assertEquals(error, expectedValu);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -794,8 +806,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxes = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]"));
 			String errors = TextBoxes.getText();
-			Assert.assertEquals(errors, "Must contain 2-50 characters.");
-					
+			String expectedVal= properties.getProperty("d_msg");
+			Assert.assertEquals(errors, expectedVal);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -870,8 +883,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 				logger1.info("Checked error text on submission");
 				WebElement Texts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]"));
 				String err = Texts.getText();
-				Assert.assertEquals(err, "Must contain 2-50 characters.");
-						
+				String expectedVa= properties.getProperty("d_msg");
+				Assert.assertEquals(err, expectedVa);
+							
 				Thread.sleep(2000);
 				driver.navigate().refresh();
 				logger1.info("------------------------------------------------------------");
@@ -946,8 +960,9 @@ public class DownloadsNegative extends AndroidCapabilities {
 					logger1.info("Checked error text on submission");
 					WebElement Tex = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[1]/div[2]/div/div[2]"));
 					String erro = Tex.getText();
-					Assert.assertEquals(erro, "Must contain 2-50 characters.");
-							
+					String expectedV= properties.getProperty("d_msg");
+					Assert.assertEquals(erro, expectedV);
+						
 					Thread.sleep(2000);
 					driver.navigate().refresh();
 					logger1.info("------------------------------------------------------------");
@@ -1032,8 +1047,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
 			String pre = Text.getText();
-			Assert.assertEquals(pre, "Must contain numerical characters.");
-					
+			String expectedValues= properties.getProperty("d_phonemsg");
+			Assert.assertEquals(pre, expectedValues);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1108,8 +1124,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Texts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
 			String present = Texts.getText();
-			Assert.assertEquals(present, "Must contain numerical characters.");
-					
+			String expectedValue= properties.getProperty("d_phonemsg");
+			Assert.assertEquals(present, expectedValue);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1184,8 +1201,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Tex = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
 			String presents = Tex.getText();
-			Assert.assertEquals(presents, "Must contain numerical characters.");
-					
+			String expectedValu= properties.getProperty("d_phonemsg");
+			Assert.assertEquals(presents, expectedValu);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1260,8 +1278,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement T = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
 			String errors = T.getText();
-			Assert.assertEquals(errors, "Must contain numerical characters.");
-					
+			String expectedVal= properties.getProperty("d_phonemsg");
+			Assert.assertEquals(errors, expectedVal);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1337,8 +1356,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Tbox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
 			String error = Tbox.getText();
-			Assert.assertEquals(error, "Must contain numerical characters.");
-					
+			String expectedVa= properties.getProperty("d_phonemsg");
+			Assert.assertEquals(error, expectedVa);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1413,7 +1433,8 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Tboxes = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
 			String err = Tboxes.getText();
-			Assert.assertEquals(err, "Must contain numerical characters.");
+			String expectedV= properties.getProperty("d_phonemsg");
+			Assert.assertEquals(err, expectedV);
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1499,8 +1520,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[3]/div[2]"));
 			String pre = Text.getText();
-			Assert.assertEquals(pre, "Please enter a valid email address (2-50 characters).");
-					
+			String expectedValues= properties.getProperty("d_emailmsg");
+			Assert.assertEquals(pre, expectedValues);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1573,7 +1595,8 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Texts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[3]/div[2]"));
 			String present = Texts.getText();
-			Assert.assertEquals(present, "Please enter a valid email address (2-50 characters).");
+			String expectedValue= properties.getProperty("d_emailmsg");
+			Assert.assertEquals(present, expectedValue);
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1647,7 +1670,8 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[3]/div[2]"));
 			String error = TextBoxContent.getText();
-			Assert.assertEquals(error, "Please enter a valid email address (2-50 characters).");
+			String expectedValu= properties.getProperty("d_emailmsg");
+			Assert.assertEquals(error, expectedValu);
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1721,8 +1745,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[3]/div[2]"));
 			String errors = TextBoxCont.getText();
-			Assert.assertEquals(errors, "Please enter a valid email address (2-50 characters).");
-					
+			String expectedVal= properties.getProperty("d_emailmsg");
+			Assert.assertEquals(errors, expectedVal);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1795,8 +1820,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxCon = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[3]/div[2]"));
 			String err = TextBoxCon.getText();
-			Assert.assertEquals(err, "Please enter a valid email address (2-50 characters).");
-					
+			String expectedVa= properties.getProperty("d_emailmsg");
+			Assert.assertEquals(err, expectedVa);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1869,7 +1895,8 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxC = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[3]/div[2]"));
 			String er = TextBoxC.getText();
-			Assert.assertEquals(er, "Please enter a valid email address (2-50 characters).");
+			String expectedV= properties.getProperty("d_emailmsg");
+			Assert.assertEquals(er, expectedV);
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1955,7 +1982,8 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[4]/div[2]"));
 			String pre = Text.getText();
-			Assert.assertEquals(pre, "Must contain 2-50 characters.");
+			String expectedValues= properties.getProperty("d_msg");
+			Assert.assertEquals(pre, expectedValues);
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -2031,8 +2059,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Texts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[4]/div[2]"));
 			String present = Texts.getText();
-			Assert.assertEquals(present, "Must contain 2-50 characters.");
-					
+			String expectedValue= properties.getProperty("d_msg");
+			Assert.assertEquals(present, expectedValue);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2106,7 +2135,8 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Tex = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[4]/div[2]"));
 			String presents = Tex.getText();
-			Assert.assertEquals(presents, "Must contain 2-50 characters.");
+			String expectedValu= properties.getProperty("d_msg");
+			Assert.assertEquals(presents, expectedValu);
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -2180,8 +2210,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement T = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[4]/div[2]"));
 			String error = T.getText();
-			Assert.assertEquals(error, "Must contain 2-50 characters.");
-					
+			String expectedVal= properties.getProperty("d_msg");
+			Assert.assertEquals(error, expectedVal);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2267,7 +2298,8 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[5]/div[2]"));
 			String pre = Text.getText();
-			Assert.assertEquals(pre, "Must contain 2-50 characters.");
+			String expectedVa= properties.getProperty("d_msg");
+			Assert.assertEquals(pre, expectedVa);
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -2341,8 +2373,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Texts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[5]/div[2]"));
 			String present = Texts.getText();
-			Assert.assertEquals(present, "Must contain 2-50 characters.");
-					
+			String expectedV= properties.getProperty("d_msg");
+			Assert.assertEquals(present, expectedV);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2415,8 +2448,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[5]/div[2]"));
 			String error = TextBox.getText();
-			Assert.assertEquals(error, "Must contain 2-50 characters.");
-					
+			String expected= properties.getProperty("d_msg");
+			Assert.assertEquals(error, expected);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2489,7 +2523,8 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxes = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[5]/div[2]"));
 			String errors = TextBoxes.getText();
-			Assert.assertEquals(errors, "Must contain 2-50 characters.");
+			String expecte= properties.getProperty("d_msg");
+			Assert.assertEquals(errors, expecte);
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -2563,8 +2598,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[5]/div[2]"));
 			String erro = TextBoxContent.getText();
-			Assert.assertEquals(erro, "Must contain 2-50 characters.");
-					
+			String expect= properties.getProperty("d_msg");
+			Assert.assertEquals(erro, expect);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2637,8 +2673,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[5]/div[2]"));
 			String err = TextBoxCont.getText();
-			Assert.assertEquals(err, "Must contain 2-50 characters.");
-					
+			String expec= properties.getProperty("d_msg");
+			Assert.assertEquals(err, expec);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2720,8 +2757,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[2]/div[2]/div"));
 			String pre = Text.getText();
-			Assert.assertEquals(pre, "Please indicate that you have read and agree to the License Agreement");
-					
+			String expectedValues= properties.getProperty("d_lisence");
+			Assert.assertEquals(pre, expectedValues);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2791,8 +2829,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/div"));
 			String err = TextBoxCont.getText();
-			Assert.assertEquals(err, "Please select your country from the dropdown.");
-					
+			String expectedValue= properties.getProperty("f_countrymsg");
+			Assert.assertEquals(err, expectedValue);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2868,8 +2907,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/div"));
 			String errors = TextBoxContent.getText();
-			Assert.assertEquals(errors, "Please select your state from the dropdown.");
-					
+			String expectedValu= properties.getProperty("f_statemsg");
+			Assert.assertEquals(errors, expectedValu);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");    
@@ -2945,8 +2985,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxConten = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[9]/div[2]"));
 			String error = TextBoxConten.getText();
-			Assert.assertEquals(error, "Must contain 2-50 characters.");
-					
+			String expectedVal= properties.getProperty("d_msg");
+			Assert.assertEquals(error, expectedVal);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3020,8 +3061,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxCo = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[2]/div[2]/div"));
 			String erro = TextBoxCo.getText();
-			Assert.assertEquals(erro, "Please indicate that you have read and agree to the License Agreement");
-					
+			String expectedVa= properties.getProperty("d_lisence");
+			Assert.assertEquals(erro, expectedVa);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3092,8 +3134,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement TextBoxC = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[2]/div[2]/div"));
 			String er = TextBoxC.getText();
-			Assert.assertEquals(er, "Please indicate that you have read and agree to the License Agreement");
-					
+			String expectedV= properties.getProperty("d_lisence");
+			Assert.assertEquals(er, expectedV);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3164,8 +3207,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Textss = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[1]/div/div[2]/div"));
 			String e = Textss.getText();
-			Assert.assertEquals(e, "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy");
-					
+			String expected= properties.getProperty("f_ppmsg");
+			Assert.assertEquals(e, expected);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3240,8 +3284,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement T = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[8]/span/div"));
 			String ex = T.getText();
-			Assert.assertEquals(ex, "Please select your province.");
-					
+			String expecte= properties.getProperty("f_provincemsg");
+			Assert.assertEquals(ex, expecte);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3316,8 +3361,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Box = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[1]/div/div[2]/div"));
 			String bug = Box.getText();
-			Assert.assertEquals(bug, "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy");
-					
+			String expect= properties.getProperty("f_ppmsg");
+			Assert.assertEquals(bug, expect);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3393,8 +3439,9 @@ catch (Exception e) {
 			logger1.info("Checked error text on submission");
 			WebElement Boxes = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[2]/div[2]/div"));
 			String bugs = Boxes.getText();
-			Assert.assertEquals(bugs, "Please indicate that you have read and agree to the License Agreement");
-					
+			String expec= properties.getProperty("d_lisence");
+			Assert.assertEquals(bugs, expec);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");

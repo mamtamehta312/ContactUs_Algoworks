@@ -59,8 +59,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement val1 = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement val1 = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select valueType1 = new Select(val1);
 			Thread.sleep(2000);
 			valueType1.selectByValue("United States");
@@ -68,8 +67,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement val2 = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement val2 = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select valueType2 = new Select(val2);
 			Thread.sleep(2000);
 			valueType2.selectByValue("AL");
@@ -111,11 +109,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TxtBoxContent = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
+			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValues= properties.getProperty("f_msg");
+			Assert.assertEquals(present, expectedValues);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -147,8 +145,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement val01 = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement val01 = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select valueType01 = new Select(val01);
 			Thread.sleep(2000);
 			valueType01.selectByValue("United States");
@@ -156,8 +153,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement val02 = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement val02 = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select valueType02 = new Select(val02);
 			Thread.sleep(2000);
 			valueType02.selectByValue("AL");
@@ -201,11 +197,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Box = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
+			WebElement Box = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String bug = Box.getText();
-			Assert.assertEquals(bug, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValue= properties.getProperty("f_msg");
+			Assert.assertEquals(bug, expectedValue);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -237,8 +233,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement val = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement val = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select valueType = new Select(val);
 			Thread.sleep(2000);
 			valueType.selectByValue("United States");
@@ -246,8 +241,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement vall = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement vall = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select valueTypee = new Select(vall);
 			Thread.sleep(2000);
 			valueTypee.selectByValue("AL");
@@ -291,11 +285,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement B = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
+			WebElement B = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String error = B.getText();
-			Assert.assertEquals(error, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValu= properties.getProperty("f_msg");
+			Assert.assertEquals(error, expectedValu);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -327,8 +321,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement CountryValue = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement CountryValue = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select CountryValueType = new Select(CountryValue);
 			Thread.sleep(2000);
 			CountryValueType.selectByValue("United States");
@@ -336,8 +329,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement StateValue = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement StateValue = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select StateValueType = new Select(StateValue);
 			Thread.sleep(2000);
 			StateValueType.selectByValue("AL");
@@ -381,11 +373,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Text = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
+			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String errors = Text.getText();
-			Assert.assertEquals(errors, "Must contain 2-50 alphabetic characters .");
-
+			String expectedVal= properties.getProperty("f_msg");
+			Assert.assertEquals(errors, expectedVal);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -417,8 +409,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement CountryValu = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement CountryValu = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select CountryValueTyp = new Select(CountryValu);
 			Thread.sleep(2000);
 			CountryValueTyp.selectByValue("United States");
@@ -426,8 +417,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement StateValu = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement StateValu = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select StateValueTyp = new Select(StateValu);
 			Thread.sleep(2000);
 			StateValueTyp.selectByValue("AL");
@@ -471,11 +461,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Texts = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
+			WebElement Texts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String erro = Texts.getText();
-			Assert.assertEquals(erro, "Must contain 2-50 alphabetic characters .");
-
+			String expectedVa= properties.getProperty("f_msg");
+			Assert.assertEquals(erro, expectedVa);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -507,8 +497,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement CountryVal = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement CountryVal = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select CountryValueTy = new Select(CountryVal);
 			Thread.sleep(2000);
 			CountryValueTy.selectByValue("United States");
@@ -516,8 +505,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement StateVal = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement StateVal = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select StateValueTy = new Select(StateVal);
 			Thread.sleep(2000);
 			StateValueTy.selectByValue("AL");
@@ -561,11 +549,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Tex = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
+			WebElement Tex = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String err = Tex.getText();
-			Assert.assertEquals(err, "Must contain 2-50 alphabetic characters .");
-
+			String expectedV= properties.getProperty("f_msg");
+			Assert.assertEquals(err, expectedV);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -613,8 +601,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement val1 = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement val1 = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select valueType1 = new Select(val1);
 			Thread.sleep(2000);
 			valueType1.selectByValue("United States");
@@ -622,8 +609,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement val2 = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement val2 = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select valueType2 = new Select(val2);
 			Thread.sleep(2000);
 			valueType2.selectByValue("AL");
@@ -666,11 +652,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Boxes = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
+			WebElement Boxes = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String bugs = Boxes.getText();
-			Assert.assertEquals(bugs, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValues= properties.getProperty("f_msg");
+			Assert.assertEquals(bugs, expectedValues);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -702,8 +688,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement CountryValue = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement CountryValue = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select CountryValueType = new Select(CountryValue);
 			Thread.sleep(2000);
 			CountryValueType.selectByValue("United States");
@@ -711,8 +696,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement StateValue = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement StateValue = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select StateValueType = new Select(StateValue);
 			Thread.sleep(2000);
 			StateValueType.selectByValue("AL");
@@ -756,11 +740,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement B = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
+			WebElement B = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String bug = B.getText();
-			Assert.assertEquals(bug, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValue= properties.getProperty("f_msg");
+			Assert.assertEquals(bug, expectedValue);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -792,8 +776,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement CountryValu = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement CountryValu = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select CountryValueTyp = new Select(CountryValu);
 			Thread.sleep(2000);
 			CountryValueTyp.selectByValue("United States");
@@ -801,8 +784,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement StateValu = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement StateValu = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select StateValueTyp = new Select(StateValu);
 			Thread.sleep(2000);
 			StateValueTyp.selectByValue("AL");
@@ -846,11 +828,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TextBoxContent = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
+			WebElement TextBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String error = TextBoxContent.getText();
-			Assert.assertEquals(error, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValu= properties.getProperty("f_msg");
+			Assert.assertEquals(error, expectedValu);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -882,8 +864,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement CountryVal = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement CountryVal = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select CountryValueTy = new Select(CountryVal);
 			Thread.sleep(2000);
 			CountryValueTy.selectByValue("United States");
@@ -891,8 +872,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement StateVal = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement StateVal = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select StateValueTy = new Select(StateVal);
 			Thread.sleep(2000);
 			StateValueTy.selectByValue("AL");
@@ -936,11 +916,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TextBoxConten = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
+			WebElement TextBoxConten = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String errors = TextBoxConten.getText();
-			Assert.assertEquals(errors, "Must contain 2-50 alphabetic characters .");
-
+			String expectedVal= properties.getProperty("f_msg");
+			Assert.assertEquals(errors, expectedVal);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -972,8 +952,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement CountryVa = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement CountryVa = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select CountryValueT = new Select(CountryVa);
 			Thread.sleep(2000);
 			CountryValueT.selectByValue("United States");
@@ -981,8 +960,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement StateVa = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement StateVa = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select StateValueT = new Select(StateVa);
 			Thread.sleep(2000);
 			StateValueT.selectByValue("AL");
@@ -1026,11 +1004,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TextBoxConte = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
+			WebElement TextBoxConte = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String errorss = TextBoxConte.getText();
-			Assert.assertEquals(errorss, "Must contain 2-50 alphabetic characters .");
-
+			String expectedVa= properties.getProperty("f_msg");
+			Assert.assertEquals(errorss, expectedVa);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1062,8 +1040,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement CountryV = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement CountryV = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select CType = new Select(CountryV);
 			Thread.sleep(2000);
 			CType.selectByValue("United States");
@@ -1071,8 +1048,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement StateV = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement StateV = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select SValue = new Select(StateV);
 			Thread.sleep(2000);
 			SValue.selectByValue("AL");
@@ -1116,11 +1092,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TextBoxCont = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
+			WebElement TextBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String erro = TextBoxCont.getText();
-			Assert.assertEquals(erro, "Must contain 2-50 alphabetic characters .");
-
+			String expectedV= properties.getProperty("f_msg");
+			Assert.assertEquals(erro, expectedV);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1222,8 +1198,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Boxes = driver.findElement(
 					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div/div/div[2]"));
 			String bugs = Boxes.getText();
-			Assert.assertEquals(bugs, "Must contain 7-15 numerical characters.");
-
+			String expectedValues= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(bugs, expectedValues);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1255,8 +1232,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement val01 = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement val01 = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select valueType01 = new Select(val01);
 			Thread.sleep(2000);
 			valueType01.selectByValue("United States");
@@ -1264,8 +1240,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement val03 = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement val03 = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select valueType02 = new Select(val03);
 			Thread.sleep(2000);
 			valueType02.selectByValue("AL");
@@ -1309,11 +1284,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Box = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div/div/div[2]"));
+			WebElement Box = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div/div/div[2]"));
 			String bug = Box.getText();
-			Assert.assertEquals(bug, "Must contain 7-15 numerical characters.");
-
+			String expectedValue= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(bug, expectedValue);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1345,8 +1320,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Country 'United States' is selected");
-			MobileElement val02 = driver
-					.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
+			MobileElement val02 = driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/form/div[6]/span/select"));
 			Select valueType11 = new Select(val02);
 			Thread.sleep(2000);
 			valueType11.selectByValue("United States");
@@ -1354,8 +1328,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("State 'Alabama' is selected");
-			MobileElement val04 = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
+			MobileElement val04 = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/select"));
 			Select valueType03 = new Select(val04);
 			Thread.sleep(2000);
 			valueType03.selectByValue("AL");
@@ -1399,11 +1372,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement B = driver.findElement(
-					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div/div/div[2]"));
+			WebElement B = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div/div/div[2]"));
 			String error = B.getText();
-			Assert.assertEquals(error, "Must contain 7-15 numerical characters.");
-
+			String expectedValu= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(error, expectedValu);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1492,8 +1465,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Text = driver.findElement(
 					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div/div/div[2]"));
 			String erro = Text.getText();
-			Assert.assertEquals(erro, "Must contain 7-15 numerical characters.");
-
+			String expectedVal= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(erro, expectedVal);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1582,8 +1556,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Texts = driver.findElement(
 					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div/div/div[2]"));
 			String err = Texts.getText();
-			Assert.assertEquals(err, "Must contain 7-15 numerical characters.");
-
+			String expectedVa= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(err, expectedVa);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1672,8 +1647,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Textss = driver.findElement(
 					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div/div/div[2]"));
 			String er = Textss.getText();
-			Assert.assertEquals(er, "Must contain 7-15 numerical characters.");
-
+			String expectedV= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(er, expectedV);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1772,8 +1748,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Boxes = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[3]/div[2]"));
 			String bugs = Boxes.getText();
-			Assert.assertEquals(bugs, "Please enter a valid email address (2-50 characters).");
-
+			String expectedValues= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(bugs, expectedValues);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1862,8 +1839,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Box = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[3]/div[2]"));
 			String bug = Box.getText();
-			Assert.assertEquals(bug, "Please enter a valid email address (2-50 characters).");
-
+			String expectedValue= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(bug, expectedValue);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1952,8 +1930,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TextBox = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[3]/div[2]"));
 			String error = TextBox.getText();
-			Assert.assertEquals(error, "Please enter a valid email address (2-50 characters).");
-
+			String expectedValu= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(error, expectedValu);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2042,8 +2021,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TextBoxes = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[3]/div[2]"));
 			String errors = TextBoxes.getText();
-			Assert.assertEquals(errors, "Please enter a valid email address (2-50 characters).");
-
+			String expectedVal= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(errors, expectedVal);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2132,8 +2112,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Text = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[3]/div[2]"));
 			String erro = Text.getText();
-			Assert.assertEquals(erro, "Please enter a valid email address (2-50 characters).");
-
+			String expectedVa= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(erro, expectedVa);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2222,8 +2203,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement T = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[3]/div[2]"));
 			String err = T.getText();
-			Assert.assertEquals(err, "Please enter a valid email address (2-50 characters).");
-
+			String expectedV= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(err, expectedV);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2324,8 +2306,10 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Boxes = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[4]/div[2]"));
 			String bugs = Boxes.getText();
-			Assert.assertEquals(bugs, "Must contain 2-50 characters with atleast 1 albhabetic character.");
-
+			String expectedValues= properties.getProperty("f_companymsg");
+			Assert.assertEquals(bugs, expectedValues);
+			
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2414,8 +2398,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Box = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[4]/div[2]"));
 			String bug = Box.getText();
-			Assert.assertEquals(bug, "Must contain 2-50 characters with atleast 1 albhabetic character.");
-
+			String expectedValue= properties.getProperty("f_companymsg");
+			Assert.assertEquals(bug, expectedValue);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2504,8 +2489,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Text = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[4]/div[2]"));
 			String errors = Text.getText();
-			Assert.assertEquals(errors, "Must contain 2-50 characters with atleast 1 albhabetic character.");
-
+			String expectedValu= properties.getProperty("f_companymsg");
+			Assert.assertEquals(errors, expectedValu);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2594,8 +2580,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Texts = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[4]/div[2]"));
 			String error = Texts.getText();
-			Assert.assertEquals(error, "Must contain 2-50 characters with atleast 1 albhabetic character.");
-
+			String expectedVal= properties.getProperty("f_companymsg");
+			Assert.assertEquals(error, expectedVal);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2695,8 +2682,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Boxes = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[5]/div[2]"));
 			String bugs = Boxes.getText();
-			Assert.assertEquals(bugs, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValues= properties.getProperty("f_msg");
+			Assert.assertEquals(bugs, expectedValues);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2785,8 +2773,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Box = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[5]/div[2]"));
 			String bug = Box.getText();
-			Assert.assertEquals(bug, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValue= properties.getProperty("f_msg");
+			Assert.assertEquals(bug, expectedValue);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2875,8 +2864,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TextBox = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[5]/div[2]"));
 			String error = TextBox.getText();
-			Assert.assertEquals(error, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValu= properties.getProperty("f_msg");
+			Assert.assertEquals(error, expectedValu);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -2962,11 +2952,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement TextBo = driver
-					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[5]/div[2]"));
+			WebElement TextBo = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[5]/div[2]"));
 			String erro = TextBo.getText();
-			Assert.assertEquals(erro, "Must contain 2-50 alphabetic characters .");
-
+			String expectedVal= properties.getProperty("f_msg");
+			Assert.assertEquals(erro, expectedVal);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3055,8 +3045,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TextB = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[5]/div[2]"));
 			String err = TextB.getText();
-			Assert.assertEquals(err, "Must contain 2-50 alphabetic characters .");
-
+			String expectedVa= properties.getProperty("f_msg");
+			Assert.assertEquals(err, expectedVa);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3145,8 +3136,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Tex = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[5]/div[2]"));
 			String er = Tex.getText();
-			Assert.assertEquals(er, "Must contain 2-50 alphabetic characters .");
-
+			String expectedV= properties.getProperty("f_msg");
+			Assert.assertEquals(er, expectedV);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3239,7 +3231,8 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement BC = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[6]/span/div"));
 			String gift = BC.getText();
-			Assert.assertEquals(gift, "Please select your country from the dropdown.");
+			String expectedValues= properties.getProperty("f_countrymsg");
+			Assert.assertEquals(gift, expectedValues);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -3315,11 +3308,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Box = driver
-					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/div"));
+			WebElement Box = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/div"));
 			String bug = Box.getText();
-			Assert.assertEquals(bug, "Please select your state from the dropdown.");
-
+			String expectedValue= properties.getProperty("f_statemsg");
+			Assert.assertEquals(bug, expectedValue);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3402,7 +3395,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement Text = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[8]/span/div"));
 			String error = Text.getText();
-			Assert.assertEquals(error, "Please select your province.");
+			String expectedValu= properties.getProperty("f_provincemsg");
+			Assert.assertEquals(error, expectedValu);
+			
 
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -3495,8 +3490,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TxtBoxContent = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValues= properties.getProperty("f_msg");
+			Assert.assertEquals(present, expectedValues);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3574,8 +3570,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TxtBoxContents = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String presents = TxtBoxContents.getText();
-			Assert.assertEquals(presents, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValue= properties.getProperty("f_msg");
+			Assert.assertEquals(presents, expectedValue);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3653,8 +3650,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TxtBoxConten = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String presen = TxtBoxConten.getText();
-			Assert.assertEquals(presen, "Must contain 2-50 alphabetic characters .");
-
+			String expectedValu= properties.getProperty("f_msg");
+			Assert.assertEquals(presen, expectedValu);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3732,8 +3730,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TxtBoxConte = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String prese = TxtBoxConte.getText();
-			Assert.assertEquals(prese, "Must contain 2-50 alphabetic characters .");
-
+			String expectedVal= properties.getProperty("f_msg");
+			Assert.assertEquals(prese, expectedVal);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3811,7 +3810,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TxtBoxCont = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String pres = TxtBoxCont.getText();
-			Assert.assertEquals(pres, "Must contain 2-50 alphabetic characters .");
+			String expectedVa= properties.getProperty("f_msg");
+			Assert.assertEquals(pres, expectedVa);
+			
 
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -3890,8 +3891,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TxtBoxCon = driver
 					.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[9]/div[2]"));
 			String pre = TxtBoxCon.getText();
-			Assert.assertEquals(pre, "Must contain 2-50 alphabetic characters .");
-
+			String expectedV= properties.getProperty("f_msg");
+			Assert.assertEquals(pre, expectedV);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -3997,8 +3999,9 @@ public class ContactFormNegative extends AndroidCapabilities {
 			WebElement TxtBoxContent = driver
 					.findElement(By.xpath("//*[@id=\"contactUsReasonforInquirySelectBoxItContainer\"]/div"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Please select an option from the dropdown menu.");
-
+			String expectedV= properties.getProperty("f_reasonmsg");
+			Assert.assertEquals(present, expectedV);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -4077,10 +4080,11 @@ public class ContactFormNegative extends AndroidCapabilities {
 			  Thread.sleep(2000); logger1.info("Checked error text on submission");
 			  WebElement TxtBoxContent = driver.findElement(By.xpath(
 			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[12]/div/div/div[2]/div"
-			  )); String present = TxtBoxContent.getText(); Assert.assertEquals(present,
-			  "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy"
-			  );
-			  
+			  )); 
+			  String present = TxtBoxContent.getText();
+			  String expectedValues= properties.getProperty("f_ppmsg");
+				Assert.assertEquals(present, expectedValues);
+				
 			  Thread.sleep(2000); driver.navigate().refresh();
 			  logger1.info("------------------------------------------------------------");
 			 
@@ -4151,9 +4155,10 @@ public class ContactFormNegative extends AndroidCapabilities {
 			 
 			 WebElement TxtBoxContents = driver.findElement(By.xpath(
 			  "//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[12]/div/div/div[2]/div"
-			  )); String presents = TxtBoxContents.getText(); Assert.assertEquals(presents,
-			  "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy"
-			  );
+			  )); String presents = TxtBoxContents.getText(); 
+			  String expectedValue= properties.getProperty("f_ppmsg");
+				Assert.assertEquals(presents, expectedValue);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");	

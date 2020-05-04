@@ -4,9 +4,8 @@
 <parameter name="browser"  value="Chrome"/>
 	<test thread-count="1" name="Testcases" verbose="2">
 	<classes>
- 
-   
-<class name="webautomation.FormFilling"/>
+
+ <class name="webautomation.FormFilling"/>
 		 <class name="webautomation.linkpageflow"/>
 	     <class name="webautomation.ContactForm"/>
          <class name="webautomation.Downloads"/>
@@ -15,8 +14,6 @@
 <class name="webautomation.FormFillingNegativeNew"/>
  <class name="webautomation.DownloadsNegativeNew"/>
   <class name="webautomation.MobileNegative"/>
-
- 
 
 	   </classes>
 	</test>

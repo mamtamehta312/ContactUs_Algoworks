@@ -84,8 +84,9 @@ public class MobileNegative extends WebCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[1]/div[1]/div[2]/div[2]/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "This field is required.");
-					
+			String expectedValues= properties.getProperty("m_msg");
+			Assert.assertEquals(present, expectedValues);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -156,8 +157,9 @@ public class MobileNegative extends WebCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[2]/div[1]/div[2]/div[2]/div[2]"));
 			String presents = TxtBox.getText();
-			Assert.assertEquals(presents, "This field is required.");
-					
+			String expectedValues= properties.getProperty("m_msg");
+			Assert.assertEquals(presents, expectedValues);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -229,8 +231,9 @@ public class MobileNegative extends WebCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[3]/div[1]/div[2]/div[2]/div[2]"));
 			String presents = TxtBox.getText();
-			Assert.assertEquals(presents, "This field is required.");
-					
+			String expectedValues= properties.getProperty("m_msg");
+			Assert.assertEquals(presents, expectedValues);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -302,8 +305,9 @@ public class MobileNegative extends WebCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[4]/div[1]/div[2]/div[2]/div[2]"));
 			String presents = TxtBox.getText();
-			Assert.assertEquals(presents, "This field is required.");
-					
+			String expectedValues= properties.getProperty("m_msg");
+			Assert.assertEquals(presents, expectedValues);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -438,8 +442,9 @@ public class MobileNegative extends WebCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[5]/div[1]/div[2]/div[2]/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Please enter a valid email address.");
-					
+			String expectedValues= properties.getProperty("m_emailmsg");
+			Assert.assertEquals(present, expectedValues);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -500,8 +505,9 @@ public class MobileNegative extends WebCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement Txt = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[5]/div[1]/div[2]/div[2]/div[2]"));
 			String error = Txt.getText();
-			Assert.assertEquals(error, "Please enter a valid email address.");
-					
+			String expectedValue= properties.getProperty("m_emailmsg");
+			Assert.assertEquals(error, expectedValue);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -626,7 +632,8 @@ public class MobileNegative extends WebCapabilities {
 				logger1.info("Checked error text on submission");
 				WebElement Texts = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[5]/div[1]/div[2]/div[2]/div[2]"));
 				String err = Texts.getText();
-				Assert.assertEquals(err, "Please enter a valid email address.");
+				String expectedValu= properties.getProperty("m_emailmsg");
+				Assert.assertEquals(err, expectedValu);
 						
 				Thread.sleep(2000);
 				driver.navigate().refresh();
@@ -817,8 +824,9 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 				logger1.info("Checked error text on submission");
 				WebElement gettingtextvalue = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[5]/div[1]/div[2]/div[2]/div[2]"));
 				String bug = gettingtextvalue.getText();
-				Assert.assertEquals(bug, "Must be Business email.");
-						
+				String expectedVal= properties.getProperty("m_emsg");
+				Assert.assertEquals(bug, expectedVal);
+							
 				Thread.sleep(2000);
 				driver.navigate().refresh();
 				logger1.info("------------------------------------------------------------");
@@ -1155,7 +1163,8 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 			logger1.info("Checked error text on submission");
 			WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[8]/div[1]/div[2]/div[2]/div[2]"));
 			String presents = TxtBox.getText();
-			Assert.assertEquals(presents, "This field is required.");
+			String expectedValues= properties.getProperty("m_msg");
+			Assert.assertEquals(presents, expectedValues);
 					
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1220,7 +1229,8 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 				logger1.info("Checked error text on submission");
 				WebElement Txt = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[10]/div[1]/div[2]/div[3]/div[2]"));
 				String present = Txt.getText();
-				Assert.assertEquals(present, "This field is required.");
+				String expectedValue= properties.getProperty("m_msg");
+				Assert.assertEquals(present, expectedValue);
 						
 				Thread.sleep(2000);
 				driver.navigate().refresh();
@@ -1284,7 +1294,8 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 					logger1.info("Checked error text on submission");
 					WebElement Text = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[12]/div[1]/div[2]/div[3]/div[2]"));
 					String error = Text.getText();
-					Assert.assertEquals(error, "This field is required.");
+					String expectedValu= properties.getProperty("m_msg");
+					Assert.assertEquals(error, expectedValu);
 							
 					Thread.sleep(2000);
 					driver.navigate().refresh();
@@ -1345,7 +1356,8 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 						logger1.info("Checked error text on submission");
 						WebElement Texts = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[10]/div[1]/div[2]/div[3]/div[2]"));
 						String errors = Texts.getText();
-						Assert.assertEquals(errors, "This field is required.");
+						String expectedVal= properties.getProperty("m_msg");
+						Assert.assertEquals(errors, expectedVal);
 								
 						Thread.sleep(2000);
 						driver.navigate().refresh();
@@ -1407,7 +1419,8 @@ JavascriptExecutor javascr = (JavascriptExecutor) driver;
 							logger1.info("Checked error text on submission");
 							WebElement T = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[8]/div[1]/div[2]/div[2]/div[2]"));
 							String err = T.getText();
-							Assert.assertEquals(err, "This field is required.");
+							String expectedVa= properties.getProperty("m_msg");
+							Assert.assertEquals(err, expectedVa);
 									
 							Thread.sleep(2000);
 							driver.navigate().refresh();
@@ -1473,8 +1486,9 @@ JavascriptExecutor javascriptexec = (JavascriptExecutor) driver;
 							logger1.info("Checked error text on submission");
 							WebElement To = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[12]/div[1]/div[2]/div[3]/div[2]"));
 							String erro = To.getText();
-							Assert.assertEquals(erro, "This field is required.");
-									
+							String expectedV= properties.getProperty("m_msg");
+							Assert.assertEquals(erro, expectedV);
+								
 							Thread.sleep(2000);
 							driver.navigate().refresh();
 							logger1.info("------------------------------------------------------------");
@@ -1538,8 +1552,9 @@ JavascriptExecutor javascriptexecutor = (JavascriptExecutor) driver;
 							logger1.info("Checked error text on submission");
 							WebElement message = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[10]/div[1]/div[2]/div[3]/div[2]"));
 							String bug = message.getText();
-							Assert.assertEquals(bug, "This field is required.");
-									
+							String expected= properties.getProperty("m_msg");
+							Assert.assertEquals(bug, expected);
+								
 							Thread.sleep(2000);
 							driver.navigate().refresh();
 							logger1.info("------------------------------------------------------------");
@@ -1613,15 +1628,16 @@ JavascriptExecutor javascriptexecutor = (JavascriptExecutor) driver;
 			logger1.info("Checked error text on submission");
 			WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[9]/div[1]/div[2]/div[2]/div[2]"));
 			String presents = TxtBox.getText();
-			Assert.assertEquals(presents, "This field is required.");
-					
+			String expected= properties.getProperty("m_msg");
+			Assert.assertEquals(presents, expected);
+						
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
 			}
 			catch(Exception e) {
 				logger1.fail(e);                           
-				throw e;
+				throw e;	
 			}
 	
 		Thread.sleep(5000);
