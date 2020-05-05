@@ -79,6 +79,7 @@ public class WebCapabilities {
 		driver.manage().window().maximize();
 
 	}
+	//@Parameters("Language")
 
 	protected static Properties properties;
 

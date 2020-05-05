@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="Chrome"/>
   <test name="Testcases(failed)">
     <classes>
-      <class name="mobileautomation.ContactFormNegative">
+      <class name="webautomation.ContactFormNegativeNew">
         <methods>
-          <include name="ContactFormPhoneNumberNegative"/>
-          <include name="ContactFormReasonforinquiryNegative"/>
-          <include name="ContactFormJobTitleNegative"/>
-          <include name="createReport"/>
+          <include name="closeApplication"/>
           <include name="init"/>
-          <include name="ContactFormCompanyNegative"/>
-          <include name="ContactFormFirstNameNegative"/>
-          <include name="setUp"/>
-          <include name="ContactFormCountryNegative"/>
-          <include name="ContactFormCityNegative"/>
-          <include name="ContactFormGDPRCountryNegative"/>
-          <include name="ContactFormLastNameNegative"/>
-          <include name="ContactFormEmailNegative"/>
+          <include name="contactformCountrynegative"/>
+          <include name="createReport"/>
+          <include name="LaunchBrowser"/>
+          <include name="flush"/>
         </methods>
-      </class> <!-- mobileautomation.ContactFormNegative -->
+      </class> <!-- webautomation.ContactFormNegativeNew -->
     </classes>
   </test> <!-- Testcases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

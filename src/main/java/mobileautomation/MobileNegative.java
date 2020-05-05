@@ -81,8 +81,9 @@ public class MobileNegative extends AndroidCapabilities {
 			WebElement TxtBoxContent = driver
 					.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[1]/div[1]/div[2]/div[2]/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "This field is required.");
-
+			String expectedValues= properties.getProperty("m_msg");
+			Assert.assertEquals(present, expectedValues);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -154,8 +155,9 @@ public class MobileNegative extends AndroidCapabilities {
 			WebElement TxtBoxContent = driver
 					.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[2]/div[1]/div[2]/div[2]/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "This field is required.");
-
+			String expectedValues= properties.getProperty("m_msg");
+			Assert.assertEquals(present, expectedValues);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -227,8 +229,9 @@ public class MobileNegative extends AndroidCapabilities {
 			WebElement TxtBoxContent = driver
 					.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[3]/div[1]/div[2]/div[2]/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "This field is required.");
-
+			String expectedValues= properties.getProperty("m_msg");
+			Assert.assertEquals(present, expectedValues);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -300,8 +303,9 @@ public class MobileNegative extends AndroidCapabilities {
 			WebElement TxtBoxContent = driver
 					.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[4]/div[1]/div[2]/div[2]/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "This field is required.");
-
+			String expectedValues= properties.getProperty("m_msg");
+			Assert.assertEquals(present, expectedValues);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -491,8 +495,9 @@ public class MobileNegative extends AndroidCapabilities {
 			WebElement TxtBoxContents = driver
 					.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[5]/div[1]/div[2]/div[2]/div[2]"));
 			String presen = TxtBoxContents.getText();
-			Assert.assertEquals(presen, "Please enter a valid email address.");
-
+			String expectedValue= properties.getProperty("m_emailmsg");
+			Assert.assertEquals(presen, expectedValue);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -609,8 +614,9 @@ public class MobileNegative extends AndroidCapabilities {
 			WebElement TxtBoxCont = driver
 					.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[5]/div[1]/div[2]/div[2]/div[2]"));
 			String pres = TxtBoxCont.getText();
-			Assert.assertEquals(pres, "Please enter a valid email address.");
-
+			String expectedValu= properties.getProperty("m_emailmsg");
+			Assert.assertEquals(pres, expectedValu);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -786,8 +792,9 @@ public class MobileNegative extends AndroidCapabilities {
 			WebElement TxtBoxC = driver
 					.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[5]/div[1]/div[2]/div[2]/div[2]"));
 			String p = TxtBoxC.getText();
-			Assert.assertEquals(p, "Must be Business email.");
-
+			String expectedVal= properties.getProperty("m_emsg");
+			Assert.assertEquals(p, expectedVal);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1108,9 +1115,10 @@ public class MobileNegative extends AndroidCapabilities {
 			  Thread.sleep(5000); logger1.info("Checked error text on submission");
 			  WebElement TxtBox = driver.findElement(By.xpath(
 			  "//*[@id=\"mktoForm_2768\"]/div[12]/div[1]/div[2]/div[3]/div[2]")); String
-			  presents = TxtBox.getText(); Assert.assertEquals(presents,
-			  "This field is required.");
-			  
+			  presents = TxtBox.getText();
+				String expectedValues= properties.getProperty("m_msg");
+				Assert.assertEquals(presents, expectedValues);
+				
 			  Thread.sleep(2000); driver.navigate().refresh();
 			  logger1.info("------------------------------------------------------------");
 			  
@@ -1165,9 +1173,10 @@ public class MobileNegative extends AndroidCapabilities {
 			  Thread.sleep(5000); logger1.info("Checked error text on submission");
 			  WebElement TextBox = driver.findElement(By.xpath(
 			  "//*[@id=\"mktoForm_2768\"]/div[10]/div[1]/div[2]/div[3]/div[2]")); String
-			  present = TextBox.getText(); Assert.assertEquals(present,
-			  "This field is required.");
-			  
+			  present = TextBox.getText(); 
+			  String expectedValue= properties.getProperty("m_msg");
+				Assert.assertEquals(present, expectedValue);
+				
 			  Thread.sleep(2000); driver.navigate().refresh();
 			  logger1.info("------------------------------------------------------------");
 			 
@@ -1224,8 +1233,9 @@ public class MobileNegative extends AndroidCapabilities {
 			WebElement TextBoxes = driver
 					.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[8]/div[1]/div[2]/div[2]/div[2]"));
 			String presen = TextBoxes.getText();
-			Assert.assertEquals(presen, "This field is required.");
-
+			 String expectedValu= properties.getProperty("m_msg");
+				Assert.assertEquals(presen, expectedValu);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1287,8 +1297,9 @@ public class MobileNegative extends AndroidCapabilities {
 			WebElement TextBoxe = driver
 					.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[10]/div[1]/div[2]/div[3]/div[2]"));
 			String prese = TextBoxe.getText();
-			Assert.assertEquals(prese, "This field is required.");
-
+			 String expectedVal= properties.getProperty("m_msg");
+				Assert.assertEquals(prese, expectedVal);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1353,8 +1364,9 @@ public class MobileNegative extends AndroidCapabilities {
 			WebElement TextBo = driver
 					.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[12]/div[1]/div[2]/div[3]/div[2]"));
 			String pres = TextBo.getText();
-			Assert.assertEquals(pres, "This field is required.");
-
+			 String expectedVa= properties.getProperty("m_msg");
+				Assert.assertEquals(pres, expectedVa);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1411,8 +1423,9 @@ public class MobileNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TextB = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[10]/div[1]/div[2]/div[3]/div[2]"));
 			String pre = TextB.getText();
-			Assert.assertEquals(pre, "This field is required.");
-
+			 String expectedV= properties.getProperty("m_msg");
+				Assert.assertEquals(pre, expectedV);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -1470,8 +1483,9 @@ public class MobileNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement Text = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[8]/div[1]/div[2]/div[2]/div[2]"));
 			String pr = Text.getText();
-			Assert.assertEquals(pr, "This field is required.");
-
+			 String expected= properties.getProperty("m_msg");
+				Assert.assertEquals(pr, expected);
+			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");		
@@ -1546,8 +1560,9 @@ public class MobileNegative extends AndroidCapabilities {
 				logger1.info("Checked error text on submission");
 				WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"mktoForm_2768\"]/div[9]/div[1]/div[2]/div[2]/div[2]"));
 				String presents = TxtBox.getText();
-				Assert.assertEquals(presents, "This field is required.");
-						
+				 String expected= properties.getProperty("m_msg");
+					Assert.assertEquals(presents, expected);
+					
 			  
 			  Thread.sleep(2000); driver.navigate().refresh();
 			  logger1.info("------------------------------------------------------------");

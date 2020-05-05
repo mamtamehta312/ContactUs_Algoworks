@@ -118,8 +118,9 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Must contain 2-50 alphabetic characters .");
-			
+			String expectedValues= properties.getProperty("f_msg");
+			Assert.assertEquals(present, expectedValues);
+				
 			Thread.sleep(2000);
 			driver.navigate().refresh();
 			logger1.info("------------------------------------------------------------");
@@ -194,7 +195,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String presen = TxtBox.getText();
-			Assert.assertEquals(presen, "Must contain 2-50 alphabetic characters .");
+			String expectedValue= properties.getProperty("f_msg");
+			Assert.assertEquals(presen, expectedValue);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -346,7 +348,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String pres = Text.getText();
-			Assert.assertEquals(pres, "Must contain 2-50 alphabetic characters ..");
+			String expectedValu= properties.getProperty("f_msg");
+			Assert.assertEquals(pres, expectedValu);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -422,7 +425,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement Texts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String pre = Texts.getText();
-			Assert.assertEquals(pre, "Must contain 2-50 alphabetic characters .");
+			String expectedVal= properties.getProperty("f_msg");
+			Assert.assertEquals(pre, expectedVal);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -498,7 +502,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement T = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[1]/div/div[2]"));
 			String pr = T.getText();
-			Assert.assertEquals(pr, "Must contain 2-50 alphabetic characters .");
+			String expectedVa= properties.getProperty("f_msg");
+			Assert.assertEquals(pr, expectedVa);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -588,7 +593,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Must contain 2-50 alphabetic characters .");
+			String expectedValues= properties.getProperty("f_msg");
+			Assert.assertEquals(present, expectedValues);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -664,7 +670,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String presen = TxtBox.getText();
-			Assert.assertEquals(presen, "Must contain 2-50 alphabetic characters .");
+			String expectedValue= properties.getProperty("f_msg");
+			Assert.assertEquals(presen, expectedValue);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -740,7 +747,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBo = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String prese = TxtBo.getText();
-			Assert.assertEquals(prese, "Must contain 2-50 alphabetic characters .");
+			String expectedValu= properties.getProperty("f_msg");
+			Assert.assertEquals(prese, expectedValu);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -816,7 +824,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtB = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String pres = TxtB.getText();
-			Assert.assertEquals(pres, "Must contain 2-50 alphabetic characters .");
+			String expectedVal= properties.getProperty("f_msg");
+			Assert.assertEquals(pres, expectedVal);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -892,7 +901,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement Txt = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String pre = Txt.getText();
-			Assert.assertEquals(pre, "Must contain 2-50 alphabetic characters .");
+			String expectedVa= properties.getProperty("f_msg");
+			Assert.assertEquals(pre, expectedVa);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -968,7 +978,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[1]/div[2]/div/div[2]"));
 			String pr = Text.getText();
-			Assert.assertEquals(pr, "Must contain 2-50 alphabetic characters .");
+			String expectedV= properties.getProperty("f_msg");
+			Assert.assertEquals(pr, expectedV);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1057,7 +1068,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div/div/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Must contain 7-15 numerical characters.");
+			String expectedValues= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(present, expectedValues);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1132,7 +1144,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div/div/div[2]"));
 			String presen = TxtBoxCont.getText();
-			Assert.assertEquals(presen, "Must contain 7-15 numerical characters.");
+			String expectedValue= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(presen, expectedValue);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1207,7 +1220,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxCon = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div/div/div[2]"));
 			String prese = TxtBoxCon.getText();
-			Assert.assertEquals(prese, "Must contain 7-15 numerical characters.");
+			String expectedValu= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(prese, expectedValu);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1282,7 +1296,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxCo = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div/div/div[2]"));
 			String pres = TxtBoxCo.getText();
-			Assert.assertEquals(pres, "Must contain 7-15 numerical characters.");
+			String expectedVal= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(pres, expectedVal);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1357,7 +1372,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxC = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div/div/div[2]"));
 			String pre = TxtBoxC.getText();
-			Assert.assertEquals(pre, "Must contain 7-15 numerical characters.");
+			String expectedVa= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(pre, expectedVa);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1432,7 +1448,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[2]/div/div/div[2]"));
 			String pr = TxtBox.getText();
-			Assert.assertEquals(pr, "Must contain 7-15 numerical characters.");
+			String expectedV= properties.getProperty("f_phonemsg");
+			Assert.assertEquals(pr, expectedV);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1522,7 +1539,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[3]/div[2]"));
 			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Please enter a valid email address (2-50 characters).");
+			String expectedValues= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(present, expectedValues);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1598,7 +1616,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxConten = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[3]/div[2]"));
 			String presen = TxtBoxConten.getText();
-			Assert.assertEquals(presen, "Please enter a valid email address (2-50 characters).");
+			String expectedValue= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(presen, expectedValue);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1674,7 +1693,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxConte = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[3]/div[2]"));
 			String prese = TxtBoxConte.getText();
-			Assert.assertEquals(prese, "Please enter a valid email address (2-50 characters).");
+			String expectedValu= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(prese, expectedValu);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1750,7 +1770,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[3]/div[2]"));
 			String pres = TxtBoxCont.getText();
-			Assert.assertEquals(pres, "Please enter a valid email address (2-50 characters).");
+			String expectedVal= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(pres, expectedVal);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1826,7 +1847,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxCon = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[3]/div[2]"));
 			String pre = TxtBoxCon.getText();
-			Assert.assertEquals(pre, "Please enter a valid email address (2-50 characters).");
+			String expectedVa= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(pre, expectedVa);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1902,7 +1924,8 @@ public class FormFillingNegative extends AndroidCapabilities {
 			logger1.info("Checked error text on submission");
 			WebElement TxtBoxCo = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[3]/div[2]"));
 			String pr = TxtBoxCo.getText();
-			Assert.assertEquals(pr, "Please enter a valid email address (2-50 characters).");
+			String expectedV= properties.getProperty("f_emailmsg");
+			Assert.assertEquals(pr, expectedV);
 			
 			Thread.sleep(2000);
 			driver.navigate().refresh();
@@ -1993,7 +2016,8 @@ public static void formFillingCompanyNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[4]/div[2]"));
 		String present = TxtBoxContent.getText();
-		Assert.assertEquals(present, "Must contain 2-50 characters with atleast 1 albhabetic character.");
+		String expectedValues= properties.getProperty("f_companymsg");
+		Assert.assertEquals(present, expectedValues);
 		
 		
 		Thread.sleep(2000);
@@ -2070,7 +2094,8 @@ public static void formFillingCompanyNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxContents = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[4]/div[2]"));
 		String presents = TxtBoxContents.getText();
-		Assert.assertEquals(presents, "Must contain 2-50 characters with atleast 1 albhabetic character.");
+		String expectedValue= properties.getProperty("f_companymsg");
+		Assert.assertEquals(presents, expectedValue);
 		
 		
 		Thread.sleep(2000);
@@ -2147,8 +2172,8 @@ public static void formFillingCompanyNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxConten = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[4]/div[2]"));
 		String presen = TxtBoxConten.getText();
-		Assert.assertEquals(presen, "Must contain 2-50 characters with atleast 1 albhabetic character.");
-		
+		String expectedValu= properties.getProperty("f_companymsg");
+		Assert.assertEquals(presen, expectedValu);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -2224,8 +2249,8 @@ public static void formFillingCompanyNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxConte = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[4]/div[2]"));
 		String prese = TxtBoxConte.getText();
-		Assert.assertEquals(prese, "Must contain 2-50 characters with atleast 1 albhabetic character.");
-		
+		String expectedVal= properties.getProperty("f_companymsg");
+		Assert.assertEquals(prese, expectedVal);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -2315,7 +2340,8 @@ public static void formFillingJobTitleNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[5]/div[2]"));
 		String present = TxtBoxContent.getText();
-		Assert.assertEquals(present, "Must contain 2-50 alphabetic characters .");
+		String expectedValues= properties.getProperty("f_msg");
+		Assert.assertEquals(present, expectedValues);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -2391,7 +2417,8 @@ public static void formFillingJobTitleNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxContents = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[5]/div[2]"));
 		String presents = TxtBoxContents.getText();
-		Assert.assertEquals(presents, "Must contain 2-50 alphabetic characters .");
+		String expectedValue= properties.getProperty("f_msg");
+		Assert.assertEquals(presents, expectedValue);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -2467,7 +2494,8 @@ public static void formFillingJobTitleNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxConten = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[5]/div[2]"));
 		String presen = TxtBoxConten.getText();
-		Assert.assertEquals(presen, "Must contain 2-50 alphabetic characters .");
+		String expectedValu= properties.getProperty("f_msg");
+		Assert.assertEquals(presen, expectedValu);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -2543,7 +2571,8 @@ public static void formFillingJobTitleNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxConte = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[5]/div[2]"));
 		String prese = TxtBoxConte.getText();
-		Assert.assertEquals(prese, "Must contain 2-50 alphabetic characters .");
+		String expectedVal= properties.getProperty("f_msg");
+		Assert.assertEquals(prese, expectedVal);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -2619,7 +2648,8 @@ public static void formFillingJobTitleNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[5]/div[2]"));
 		String pres = TxtBoxCont.getText();
-		Assert.assertEquals(pres, "Must contain 2-50 alphabetic characters .");
+		String expectedVa= properties.getProperty("f_msg");
+		Assert.assertEquals(pres, expectedVa);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -2695,7 +2725,8 @@ public static void formFillingJobTitleNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxCon = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[5]/div[2]"));
 		String pre = TxtBoxCon.getText();
-		Assert.assertEquals(pre, "Must contain 2-50 alphabetic characters .");
+		String expectedV= properties.getProperty("f_msg");
+		Assert.assertEquals(pre, expectedV);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -2791,7 +2822,8 @@ public static void formFillingCountryNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[6]/span/div"));
 		String present = TxtBoxContent.getText();
-		Assert.assertEquals(present, "Please select your country from the dropdown.");
+		String expectedValues= properties.getProperty("f_countrymsg");
+		Assert.assertEquals(present, expectedValues);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -2869,7 +2901,8 @@ public static void formFillingCountryNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxContents = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[7]/span/div"));
 		String presents = TxtBoxContents.getText();
-		Assert.assertEquals(presents, "Please select your state from the dropdown.");
+		String expectedValue= properties.getProperty("f_statemsg");
+		Assert.assertEquals(presents, expectedValue);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -2947,7 +2980,8 @@ public static void formFillingCountryNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxConten = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[7]/span/div"));
 		String presen = TxtBoxConten.getText();
-		Assert.assertEquals(presen, "Please select your state from the dropdown.");
+		String expectedValu= properties.getProperty("f_statemsg");
+		Assert.assertEquals(presen, expectedValu);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -3047,7 +3081,8 @@ public static void formFillingCityNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxContents = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
 		String presents = TxtBoxContents.getText();
-		Assert.assertEquals(presents, "Must contain 2-50 alphabetic characters .");
+		String expectedValues= properties.getProperty("f_msg");
+		Assert.assertEquals(presents, expectedValues);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -3131,7 +3166,8 @@ public static void formFillingCityNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxConten = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
 		String presen = TxtBoxConten.getText();
-		Assert.assertEquals(presen, "Must contain 2-50 alphabetic characters .");
+		String expectedValue= properties.getProperty("f_msg");
+		Assert.assertEquals(presen, expectedValue);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -3215,7 +3251,8 @@ public static void formFillingCityNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxConte = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
 		String prese = TxtBoxConte.getText();
-		Assert.assertEquals(prese, "Must contain 2-50 alphabetic characters .");
+		String expectedValu= properties.getProperty("f_msg");
+		Assert.assertEquals(prese, expectedValu);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -3299,7 +3336,8 @@ public static void formFillingCityNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
 		String pres = TxtBoxCont.getText();
-		Assert.assertEquals(pres, "Must contain 2-50 alphabetic characters .");
+		String expectedVal= properties.getProperty("f_msg");
+		Assert.assertEquals(pres, expectedVal);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -3383,7 +3421,8 @@ public static void formFillingCityNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxCon = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
 		String pre = TxtBoxCon.getText();
-		Assert.assertEquals(pre, "Must contain 2-50 alphabetic characters .");
+		String expectedVa= properties.getProperty("f_msg");
+		Assert.assertEquals(pre, expectedVa);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -3468,7 +3507,8 @@ public static void formFillingCityNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxCo = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[9]/div[2]"));
 		String pr = TxtBoxCo.getText();
-		Assert.assertEquals(pr, "Must contain 2-50 alphabetic characters .");
+		String expectedV= properties.getProperty("f_msg");
+		Assert.assertEquals(pr, expectedV);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -3564,7 +3604,8 @@ public static void formFillingGDPRNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxContents = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[12]/div/div/div[2]/div"));
 		String presents = TxtBoxContents.getText();
-		Assert.assertEquals(presents, "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy");
+		String expectedValues= properties.getProperty("f_ppmsg");
+		Assert.assertEquals(presents, expectedValues);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
@@ -3644,7 +3685,8 @@ public static void formFillingGDPRNegative() throws Exception {
 		logger1.info("Checked error text on submission");
 		WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[12]/div/div/div[2]/div"));
 		String present = TxtBoxContent.getText();
-		Assert.assertEquals(present, "Please indicate that you have read and agree to the Terms, Conditions and Privacy Policy");
+		String expectedValu= properties.getProperty("f_ppmsg");
+		Assert.assertEquals(present, expectedValu);
 		
 		Thread.sleep(2000);
 		driver.navigate().refresh();
