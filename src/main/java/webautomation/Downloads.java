@@ -17,19 +17,34 @@ public class Downloads extends WebCapabilities{
 	@BeforeClass
 	public void downloadNext() {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.navigate().to(properties.getProperty("Downloads_url"));
-	}
+		if( getPropertyValue("urltype").equalsIgnoreCase("first")) {
+			driver.navigate().to(properties.getProperty("Downloads_url"));	
+		}
+		//else if(getPropertyValue("urltype").equalsIgnoreCase("second")) {
+		else {
+		driver.navigate().to(properties.getProperty("Downloads2_url"));
+		}
+		}
+		
 	@Test
 	public static void downloads() throws Exception {
 		logger1 = extent.createTest("downloads");
 		try {
 			
 			Thread.sleep(2000);
-			logger1.info("Click on'Couchbase Lite' tab");
-			WebElement element = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-			Thread.sleep(2000); 
+			if( getPropertyValue("language").equalsIgnoreCase("english")) {
 			
+			  logger1.info("Click on'Couchbase Lite' tab");
+			  WebElement element =driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+			  ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
+			 }
+			
+			else  {
+				logger1.info("Click on'Couchbase Lite' tab");
+				  WebElement element2 =driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/div[3]/div[1]/div[1]"));
+				  ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element2);
+					  }
+	
 			Thread.sleep(2000);
 			click("dplusbutton_Xpath");
 			
@@ -46,8 +61,6 @@ public class Downloads extends WebCapabilities{
 			type("dLastName_Xpath", "dLastName");
 			Thread.sleep(2000);
 			
-			//logger1.info("Country 'United States/Canada (+1)' is selected");
-			//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[4]/div/div/div/div/form/div[2]/div[1]/div/span/span")).sendKeys("United States/Canada (+1)");
 			
 			logger1.info("Phone number with area code is entered into the AREA CODE + PHONE field");
 			type("dPhoneNumber_Xpath","dNumber");
@@ -66,8 +79,8 @@ public class Downloads extends WebCapabilities{
 			Thread.sleep(2000);
 			
 			logger1.info("Country 'Afghanistan' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/span")).sendKeys("Afghanistan");
-			
+			type("dCountryy_Xpath","dCountryy");
+			Thread.sleep(2000);
 			
 			logger1.info("Agreement checkbox has been selected");
 			click("dCheckbox_Xpath");
@@ -77,13 +90,66 @@ public class Downloads extends WebCapabilities{
 			click("dtryitfree_Xpath");
 			Thread.sleep(3000);
 			
-			logger1.info("checking the redirection");
-			String url = driver.getCurrentUrl();
-			Assert.assertEquals(url, "https://www.couchbase.com/downloads/thankyou/enterprise?product=couchbase-lite&version=2.7.1&platform=swift&addon=false&beta=false" );
+			if( getPropertyValue("language").equalsIgnoreCase("english")) {
 			
-			Thread.sleep(2000);
-			click("dButton_Xpath");
-			Thread.sleep(5000);
+			  logger1.info("checking the redirection"); 
+			  String url_e =driver.getCurrentUrl();
+			  String expectedval = properties.getProperty("url_m");
+				Assert.assertEquals(url_e, expectedval);
+			  Thread.sleep(2000);
+				click("dButton_Xpath");
+				Thread.sleep(5000);
+			}
+			
+			else {
+				logger1.info("checking the redirection"); 
+				  String url =driver.getCurrentUrl();
+				  String expectedvalue = properties.getProperty("urlmsg");
+					Assert.assertEquals(url, expectedvalue);
+				  Thread.sleep(2000);
+					click("dButton_Xpath");
+					Thread.sleep(5000);
+			
+					driver.navigate().back();
+					
+					logger1.info("Click on'Couchbase Lite' tab");
+					  WebElement element =driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/div[3]/div[1]/div[1]"));
+					  ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
+					  
+					  Thread.sleep(2000);
+						click("dplusbutton_Xpath");
+						
+						 Thread.sleep(2000);
+						 click("dDropdown_Xpath");
+						 
+						 Thread.sleep(2000);
+						 click("dSelectObjective-c_Xpath");
+						 
+						 JavascriptExecutor js = (JavascriptExecutor) driver;
+				            js.executeScript("window.scrollBy(0,350)", "down");
+						 
+						 Thread.sleep(3000);
+						 click("dVersion_Xpath");
+						 
+						 Thread.sleep(4000);
+						 click("dSelect2.6.4_Xpath");
+						 
+						 
+						 Thread.sleep(2000);
+							logger1.info("Downloads Button is selected");
+							click("dDownloadsButton2.6.4_Xpath");
+							Thread.sleep(2000);  
+							
+							logger1.info("checking the redirection"); 
+							  String url2 =driver.getCurrentUrl();
+							  String expectedvalues = properties.getProperty("urlmsg2");
+								Assert.assertEquals(url2, expectedvalues);
+							  Thread.sleep(2000);
+								click("dButton_Xpath");
+								Thread.sleep(5000);					
+						 	 	 
+			}
+			
 		}
 		catch(Exception e) {
 			logger1.fail(e);                           
