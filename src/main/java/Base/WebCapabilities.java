@@ -51,14 +51,10 @@ public class WebCapabilities {
 	public static ExtentReports extent;
 	public static ExtentTest logger1;
 
-	
-	//@Parameters("browser")
+
 	@Parameters("browser")
-
-
-
 	@BeforeSuite
-	public static void LaunchBrowser(@Optional("abc") String browser) throws FileNotFoundException {
+	public static void LaunchBrowser( String browser) throws FileNotFoundException {
 		{
 			
 			System.out.println("browser is "+browser);
@@ -91,38 +87,23 @@ public class WebCapabilities {
 	static { 
 		properties = new Properties();
 		 
-		  try { 
+		
+		try { 
 	 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//main//resources//Properties//Web_OR.properties"); 
 			properties.load(fis);
-			  
-			 if( getPropertyValue("language").equalsIgnoreCase("german"))
-			 {
-		FileInputStream fis2= new FileInputStream(
-				  System.getProperty("user.dir") 
-				  +"//src//main//resources//Properties//German_OR.properties");
-			properties.load(fis2);
-	 		}else if( getPropertyValue("language").equalsIgnoreCase("french"))
-			 {
-		FileInputStream fis3= new FileInputStream(
-				  System.getProperty("user.dir") 
-				  +"//src//main//resources//Properties//French_OR.properties");
-			properties.load(fis3);
-	 		}
-	 		else if( getPropertyValue("language").equalsIgnoreCase("english"))
-	 		{
-	 			FileInputStream fis4= new FileInputStream(
-	 					  System.getProperty("user.dir") 
-	 					  +"//src//main//resources//Properties//Web_OR.properties");
-	 				properties.load(fis4);	
-	 		}
-		  }
-
-	 
+			
+			String var = getPropertyValue("language");
+			
+			FileInputStream fis2= new FileInputStream(
+					  System.getProperty("user.dir") 
+					  +"//src//main//resources//Properties//"+var+"_OR.properties");
+				properties.load(fis2);
+			
+		}
+	
 		catch (IOException e) { 
 			e.printStackTrace();
 			}
-		}
-	
 	
 	 /* protected static Properties properties;
 	  
@@ -133,7 +114,7 @@ public class WebCapabilities {
 	  
 	  }
 	 */
-
+	}
 
 	public static String getObject(String Data) throws IOException {
 		String data = properties.getProperty(Data);
