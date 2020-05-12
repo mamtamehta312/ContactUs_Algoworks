@@ -4,7 +4,6 @@
 <parameter name="browser"  value="chrome"/>
 	<test thread-count="10" name="Testcases" verbose="2">
 		<classes>
-		
 		<class name="mobileautomation.FormFilling" />
 			<class name="mobileautomation.ContactForm"/>
 			 <class name="mobileautomation.Downloads"/>
@@ -13,7 +12,6 @@
 			<class name="mobileautomation.ContactFormNegative"/>
 			<class name="mobileautomation.FormFillingNegative" />
 			<class name="mobileautomation.MobileNegative" />
-	
 
 		</classes>
 	</test>	

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="695143" started-at="2020-05-04T08:51:34Z" finished-at="2020-05-04T09:03:10Z">
+  <suite name="Suite" duration-ms="74781" started-at="2020-05-08T10:47:23Z" finished-at="2020-05-08T10:48:37Z">
     <groups>
     </groups>
-    <test name="Testcases" duration-ms="695143" started-at="2020-05-04T08:51:34Z" finished-at="2020-05-04T09:03:10Z">
-      <class name="webautomation.MobileNegative">
-        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.MobileNegative@39c0f4a]" name="LaunchBrowser" is-config="true" duration-ms="25892" started-at="2020-05-04T14:21:08Z" finished-at="2020-05-04T14:21:34Z">
+    <test name="Testcases" duration-ms="74781" started-at="2020-05-08T10:47:23Z" finished-at="2020-05-08T10:48:37Z">
+      <class name="webautomation.Downloads">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.Downloads@7d9d1a19]" name="LaunchBrowser" is-config="true" duration-ms="9113" started-at="2020-05-08T16:17:14Z" finished-at="2020-05-08T16:17:23Z">
           <params>
             <param index="0">
               <value>
@@ -21,58 +21,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:webautomation.MobileNegative@39c0f4a]" name="createReport" is-config="true" duration-ms="1440" started-at="2020-05-04T14:21:35Z" finished-at="2020-05-04T14:21:36Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:webautomation.Downloads@7d9d1a19]" name="createReport" is-config="true" duration-ms="164" started-at="2020-05-08T16:17:23Z" finished-at="2020-05-08T16:17:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="mobileNext()[pri:0, instance:webautomation.MobileNegative@39c0f4a]" name="mobileNext" is-config="true" duration-ms="13701" started-at="2020-05-04T14:21:36Z" finished-at="2020-05-04T14:21:50Z">
+        <test-method status="PASS" signature="downloadNext()[pri:0, instance:webautomation.Downloads@7d9d1a19]" name="downloadNext" is-config="true" duration-ms="3290" started-at="2020-05-08T16:17:23Z" finished-at="2020-05-08T16:17:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mobileNext -->
-        <test-method status="PASS" signature="Firstnamenegative()[pri:1, instance:webautomation.MobileNegative@39c0f4a]" name="Firstnamenegative" duration-ms="27074" started-at="2020-05-04T14:21:50Z" finished-at="2020-05-04T14:22:17Z">
+        </test-method> <!-- downloadNext -->
+        <test-method status="PASS" signature="downloads()[pri:0, instance:webautomation.Downloads@7d9d1a19]" name="downloads" duration-ms="71062" started-at="2020-05-08T16:17:26Z" finished-at="2020-05-08T16:18:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Firstnamenegative -->
-        <test-method status="PASS" signature="LastNamenegative()[pri:2, instance:webautomation.MobileNegative@39c0f4a]" name="LastNamenegative" duration-ms="26697" started-at="2020-05-04T14:22:17Z" finished-at="2020-05-04T14:22:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LastNamenegative -->
-        <test-method status="PASS" signature="Companynegative()[pri:3, instance:webautomation.MobileNegative@39c0f4a]" name="Companynegative" duration-ms="30772" started-at="2020-05-04T14:22:44Z" finished-at="2020-05-04T14:23:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Companynegative -->
-        <test-method status="PASS" signature="JobTitlenegative()[pri:4, instance:webautomation.MobileNegative@39c0f4a]" name="JobTitlenegative" duration-ms="25968" started-at="2020-05-04T14:23:15Z" finished-at="2020-05-04T14:23:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JobTitlenegative -->
-        <test-method status="PASS" signature="Emailnegative()[pri:5, instance:webautomation.MobileNegative@39c0f4a]" name="Emailnegative" duration-ms="226467" started-at="2020-05-04T14:23:41Z" finished-at="2020-05-04T14:27:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Emailnegative -->
-        <test-method status="PASS" signature="PhoneNumbernegative()[pri:6, instance:webautomation.MobileNegative@39c0f4a]" name="PhoneNumbernegative" duration-ms="110443" started-at="2020-05-04T14:27:27Z" finished-at="2020-05-04T14:29:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PhoneNumbernegative -->
-        <test-method status="PASS" signature="Countrynegative()[pri:7, instance:webautomation.MobileNegative@39c0f4a]" name="Countrynegative" duration-ms="200646" started-at="2020-05-04T14:29:18Z" finished-at="2020-05-04T14:32:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Countrynegative -->
-        <test-method status="PASS" signature="Citynegative()[pri:8, instance:webautomation.MobileNegative@39c0f4a]" name="Citynegative" duration-ms="30224" started-at="2020-05-04T14:32:38Z" finished-at="2020-05-04T14:33:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Citynegative -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:webautomation.MobileNegative@39c0f4a]" name="flush" is-config="true" duration-ms="899" started-at="2020-05-04T14:33:09Z" finished-at="2020-05-04T14:33:10Z">
+        </test-method> <!-- downloads -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:webautomation.Downloads@7d9d1a19]" name="flush" is-config="true" duration-ms="240" started-at="2020-05-08T16:18:37Z" finished-at="2020-05-08T16:18:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webautomation.MobileNegative@39c0f4a]" name="closeApplication" is-config="true" duration-ms="1714" started-at="2020-05-04T14:33:10Z" finished-at="2020-05-04T14:33:11Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webautomation.Downloads@7d9d1a19]" name="closeApplication" is-config="true" duration-ms="91" started-at="2020-05-08T16:18:37Z" finished-at="2020-05-08T16:18:38Z">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- webautomation.MobileNegative -->
+      </class> <!-- webautomation.Downloads -->
     </test> <!-- Testcases -->
   </suite> <!-- Suite -->
 </testng-results>

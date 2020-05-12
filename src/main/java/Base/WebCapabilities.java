@@ -3,6 +3,7 @@ package Base;
 import java.awt.Dimension;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Properties;
@@ -50,10 +51,10 @@ public class WebCapabilities {
 	public static ExtentReports extent;
 	public static ExtentTest logger1;
 
-	
+
 	@Parameters("browser")
 	@BeforeSuite
-	public static void LaunchBrowser(@Optional("abc") String browser) {
+	public static void LaunchBrowser( String browser) throws FileNotFoundException {
 		{
 			
 			System.out.println("browser is "+browser);
@@ -72,28 +73,47 @@ public class WebCapabilities {
 				desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
 				 driver = new FirefoxDriver(options);
 			}
-
-		}
+			
+		
+			}
+	
 
 		driver.get(properties.getProperty("form_url"));
 		driver.manage().window().maximize();
 
 	}
-	//@Parameters("Language")
 
 	protected static Properties properties;
-
-	static {
+	static { 
 		properties = new Properties();
-		FileInputStream fis;
-		try {
-			fis = new FileInputStream(
-					System.getProperty("user.dir") + "//src//main//resources//Properties//Web_OR.properties");
+		 
+		
+		try { 
+	 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//main//resources//Properties//Web_OR.properties"); 
 			properties.load(fis);
-		} catch (IOException e) {
-			e.printStackTrace();
+			
+			String var = getPropertyValue("language");
+			
+			FileInputStream fis2= new FileInputStream(
+					  System.getProperty("user.dir") 
+					  +"//src//main//resources//Properties//"+var+"_OR.properties");
+				properties.load(fis2);
+			
 		}
-
+	
+		catch (IOException e) { 
+			e.printStackTrace();
+			}
+	
+	 /* protected static Properties properties;
+	  
+	  static { properties = new Properties(); FileInputStream fis; try { fis = new
+	  FileInputStream( System.getProperty("user.dir") +
+	  "//src//main//resources//Properties//Web_OR.properties");
+	  properties.load(fis); } catch (IOException e) { e.printStackTrace(); }
+	  
+	  }
+	 */
 	}
 
 	public static String getObject(String Data) throws IOException {
@@ -118,9 +138,9 @@ public class WebCapabilities {
 		} else if (Locator.endsWith("_ID")) {
 			driver.findElement(By.id(properties.getProperty(Locator))).click();
 			// driver.findElementByAccessibilityId(properties.getProperty(Locator)).click();
-
 		}
-	}
+		}
+		
 
 	public static String getPropertyValue(String key) {
 
