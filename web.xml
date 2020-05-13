@@ -6,7 +6,8 @@
 	<test thread-count="1" name="Testcases" verbose="2">
 	<classes>
 
- <class name="webautomation.Downloads"/>
+ <class name="webautomation.FormFilling"/>
+<class name="webautomation.FormFillingNegativeNew"/>
 
 
 	   </classes>

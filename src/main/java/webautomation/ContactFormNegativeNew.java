@@ -25,12 +25,14 @@ public class ContactFormNegativeNew extends WebCapabilities {
 		driver.navigate().to(properties.getProperty("ContactForm_url"));
 	}
 	
-	@Test(priority=7)
+	@Test(priority=1)
 	  public static void contactformfirstnamenegative() throws Exception {
 		driver.navigate().refresh();
 		logger1 = extent.createTest("contactform_negative_firstname");
 		try {
 
+			WebDriverWait wait=new WebDriverWait(driver, 30);
+			
 			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("window.scrollBy(0,400)", "up");
 
@@ -78,6 +80,14 @@ public class ContactFormNegativeNew extends WebCapabilities {
 			Thread.sleep(2000);
 			logger1.info("Message 'Type your inquiry here' is entered in textarea");
 			type("cMessage_Xpath","cMessage");
+			
+			 wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+					  findElement(By.id("drift-widget"))));
+					  //driver.switchTo().frame("drift-widget");
+					  
+					  Thread.sleep(2000); click("dPopupClose_Xpath");
+					  
+					  driver.switchTo().defaultContent();
 			
 			Thread.sleep(2000);
 			logger1.info("Contact Us button is selected");
@@ -2302,7 +2312,7 @@ public class ContactFormNegativeNew extends WebCapabilities {
 						}
 					}
 						
-						@Test(priority=1)
+						@Test(priority=7)
 						  public static void contactformCountrynegative() throws Exception {
 							driver.navigate().refresh();
 							logger1 = extent.createTest("contactform_negative_Country");

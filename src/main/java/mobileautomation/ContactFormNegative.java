@@ -24,7 +24,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 		driver.navigate().to(properties.getProperty("ContactForm_url"));
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 1)
 	public static void ContactFormFirstNameNegative() throws Exception {
 		logger1 = extent.createTest("contactForm_FirstName_negative");
 		try {
@@ -176,16 +176,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -264,16 +264,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -352,16 +352,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -440,16 +440,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -528,16 +528,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -632,15 +632,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget")))); // //
-			 * driver.switchTo().frame("drift-widget");
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget")))); 
+			
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -719,16 +718,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -807,16 +806,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -895,16 +894,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -983,16 +982,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -1071,16 +1070,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -1176,15 +1175,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget")))); //
-			 * driver.switchTo().frame("drift-widget");
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement button = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -1263,16 +1262,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -1351,16 +1350,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -1441,16 +1440,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -1532,16 +1531,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -1623,16 +1622,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -1726,15 +1725,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 			Thread.sleep(2000);
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget")))); //
-			 * driver.switchTo().frame("drift-widget");
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			 
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement button = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -1815,16 +1814,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -1906,16 +1905,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -1997,16 +1996,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -2088,16 +2087,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -2179,16 +2178,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -2283,15 +2282,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget")))); //
-			 * driver.switchTo().frame("drift-widget");
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			   
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -2374,16 +2372,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -2465,16 +2463,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			 
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -2556,16 +2552,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			 
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -2660,15 +2654,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget")))); //
-			 * driver.switchTo().frame("drift-widget");
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget")))); 
+			
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement button = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -2749,16 +2742,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -2840,16 +2831,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			 
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -2931,16 +2920,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			 
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -3021,16 +3008,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -3112,16 +3097,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
-			/*
-			 * wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
-			 * findElement(By.id("drift-widget"))));
-			 * //driver.switchTo().frame("drift-widget");
-			 * 
-			 * 
-			 * Thread.sleep(2000); click("dPopupClose_Xpath");
-			 * 
-			 * driver.switchTo().defaultContent();
-			 */
+			
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			 
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			 
 
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
@@ -3148,7 +3131,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 		}
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 7)
 	public static void ContactFormCountryNegative() throws Exception {
 		logger1 = extent.createTest("contactForm_Country_negative");
 		try {
@@ -3211,9 +3194,7 @@ public class ContactFormNegative extends AndroidCapabilities {
 			
 			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
 			  findElement(By.id("drift-widget"))));
-			  //driver.switchTo().frame("drift-widget");
-			  
-			  
+			
 			  Thread.sleep(2000); click("dPopupClose_Xpath");
 			  
 			  driver.switchTo().defaultContent();
@@ -3298,6 +3279,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
+
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			 
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement buttons = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3382,6 +3371,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 					By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[12]/div/div/div[1]/input"))
 					.click();
 
+			
+
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			  
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement butto = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3477,6 +3475,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 			
+
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			 
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement button = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3557,6 +3563,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
+
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			 
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement buttons = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3637,6 +3651,14 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
+
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement butto = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3717,6 +3739,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
+
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement butt = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3797,6 +3829,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
+
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement but = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -3878,6 +3920,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
+
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement bu = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));
@@ -4068,7 +4120,15 @@ public class ContactFormNegative extends AndroidCapabilities {
 			  Thread.sleep(2000); logger1.info("optional message is written");
 			  type("cMessage_Xpath", "cMessage");
 			  
-			
+
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
 			  
 			  Thread.sleep(10000); logger1.info("Contact Us button is selected");
 			  WebElement button =
@@ -4142,6 +4202,16 @@ public class ContactFormNegative extends AndroidCapabilities {
 			logger1.info("optional message is written");
 			type("cMessage_Xpath", "cMessage");
 
+
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			
 			Thread.sleep(10000);
 			logger1.info("Contact Us button is selected");
 			WebElement buttons = driver.findElement(By.xpath("//form[@name='enquiryform']//button"));

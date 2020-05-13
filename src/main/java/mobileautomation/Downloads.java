@@ -14,8 +14,10 @@ import org.testng.annotations.Test;
 import Base.AndroidCapabilities;
 import io.appium.java_client.MobileElement;
 
+
 public class Downloads extends AndroidCapabilities {
 
+	
 	@BeforeClass
 	public void downloadNext() {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

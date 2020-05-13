@@ -94,19 +94,30 @@ public class Downloads extends WebCapabilities{
 	 click("dDropdown_Xpath");
 	 }
 	 public void selectOS() throws InterruptedException{
-		 logger1.info("Select Objective-C option is selected");   
+		 logger1.info("Select Objective-C option ");   
 		 Thread.sleep(2000);
 		 click("dSelectObjective-c_Xpath");
 	 }
+	 public void selectOSNET() throws InterruptedException{
+		 logger1.info("Select .NET option is selected");   
+		 Thread.sleep(2000);
+		 click("dSelect.Net_Xpath");
+	 }
 	 public void Version() throws InterruptedException{
-		 logger1.info("Select Objective-C option is selected");   
+		 logger1.info("Click on version");   
 		 Thread.sleep(3000);
 		 click("dVersion_Xpath");
 	 }
 	 public void selectVersion() throws InterruptedException{
-		 logger1.info("Select Objective-C option is selected");   
+		 logger1.info("Select 2.6.4 version");   
 		 Thread.sleep(4000);
 		 click("dSelect2.6.4_Xpath");
+	 }
+	 
+	 public void selectVersionNew() throws InterruptedException{
+		 logger1.info("Select 2.6.0 version");   
+		 Thread.sleep(4000);
+		 click("dSelect2.6.0_Xpath");
 	 }
 	 public void Downloadnewbutton() throws InterruptedException{
 	 Thread.sleep(2000);
@@ -114,9 +125,46 @@ public class Downloads extends WebCapabilities{
 		click("dDownloadsButton2.6.4_Xpath");
 		Thread.sleep(2000); 
 	 }
+	 
+	 public void DownloadNewVersion() throws InterruptedException{
+		 Thread.sleep(2000);
+			logger1.info("Downloads Button is selected");
+			click("dDownloadsButton2.6.0_Xpath");
+			Thread.sleep(2000); 
+		 }
 	 public void scroll() throws InterruptedException{
 	 JavascriptExecutor js = (JavascriptExecutor) driver;
 	 js.executeScript("window.scrollBy(0,350)", "down");
+	 }
+	 public void checkingUrlLanguage2() throws InterruptedException{
+	 logger1.info("checking the redirection"); 
+	  String url2 =driver.getCurrentUrl();
+	  String expectedvalues = properties.getProperty("urlmsg2");
+		Assert.assertEquals(url2, expectedvalues);
+	 }
+	 public void checkingUrlEnglish() throws InterruptedException{
+			Thread.sleep(3000);
+			  logger1.info("checking the redirection"); 
+			  String url_e =driver.getCurrentUrl();
+			  String expectedval = properties.getProperty("url_m");
+				Assert.assertEquals(url_e, expectedval);
+	 }
+	 public void checkingUrlLanguage1() throws InterruptedException{
+	 logger1.info("checking the redirection"); 
+	  String url =driver.getCurrentUrl();
+	  String expectedvalue = properties.getProperty("urlmsg");
+		Assert.assertEquals(url, expectedvalue);
+}
+	 public void ScrollingToCouchbaseLiteTabLanguage() throws InterruptedException{
+	 logger1.info("Click on'Couchbase Lite' tab");
+	  WebElement element =driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/div[3]/div[1]/div[1]"));
+	  ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
+}
+	 public void ScrollingToCouchbaseLiteTab() throws InterruptedException{
+		 Thread.sleep(2000);
+	 logger1.info("Click on'Couchbase Lite' tab");
+	  WebElement element =driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+	  ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
 	 }
 	@Test
 	public static void downloads() throws Exception {
@@ -124,15 +172,11 @@ public class Downloads extends WebCapabilities{
 		try {
 			Thread.sleep(2000);
 			if( getPropertyValue("language").equalsIgnoreCase("english")) {
-			  logger1.info("Click on'Couchbase Lite' tab");
-			  WebElement element =driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
-			  ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
-			 }
+			d.ScrollingToCouchbaseLiteTab();
+			}
 			else {
-				logger1.info("Click on'Couchbase Lite' tab");
-				  WebElement element2 =driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/div[3]/div[1]/div[1]"));
-				  ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element2);
-			 }
+			d.ScrollingToCouchbaseLiteTabLanguage();
+			}
 	
 		d.clickPlusButton();
 		d.clickDownloadButton();
@@ -147,39 +191,32 @@ public class Downloads extends WebCapabilities{
 		d.Submit();
 			
 			if( getPropertyValue("language").equalsIgnoreCase("english")) {
-				Thread.sleep(3000);
-			  logger1.info("checking the redirection"); 
-			  String url_e =driver.getCurrentUrl();
-			  String expectedval = properties.getProperty("url_m");
-				Assert.assertEquals(url_e, expectedval);
+				d.checkingUrlEnglish();
 			  d.Dbutton();
 			}
 			else {
-				Thread.sleep(5000);
-				logger1.info("checking the redirection"); 
-				  String url =driver.getCurrentUrl();
-				  String expectedvalue = properties.getProperty("urlmsg");
-					Assert.assertEquals(url, expectedvalue);
+				    d.checkingUrlLanguage1();
 					 d.Dbutton();
 					driver.navigate().back();
-					
-					logger1.info("Click on'Couchbase Lite' tab");
-					  WebElement element =driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/div[3]/div[1]/div[1]"));
-					  ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
-					  
+					d.ScrollingToCouchbaseLiteTabLanguage();
 				d.clickPlusButton();
 				d.dropdown();
 				d.selectOS();
 				d.scroll();
 				d.Version();
 				d.selectVersion();
-				d.Downloadnewbutton();
-							
-				logger1.info("checking the redirection"); 
-    			  String url2 =driver.getCurrentUrl();
-    			  String expectedvalues = properties.getProperty("urlmsg2");
-	    			Assert.assertEquals(url2, expectedvalues);
-					 d.Dbutton();						 	 	 
+				d.Downloadnewbutton();			
+				d.checkingUrlLanguage2();
+				d.Dbutton();
+				driver.navigate().back();
+				d.ScrollingToCouchbaseLiteTabLanguage();
+				d.clickPlusButton();
+				d.dropdown();
+				d.selectOSNET();
+				d.scroll();
+				d.Version();
+				d.selectVersionNew();
+				d.DownloadNewVersion();
 			           }
 		}
 		catch(Exception e) {
