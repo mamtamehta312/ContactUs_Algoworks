@@ -12,7 +12,6 @@
 			<class name="mobileautomation.ContactFormNegative"/>
 			<class name="mobileautomation.FormFillingNegative" />
 			<class name="mobileautomation.MobileNegative" />
-
 		</classes>
 	</test>	
 </suite> <!-- Suite -->

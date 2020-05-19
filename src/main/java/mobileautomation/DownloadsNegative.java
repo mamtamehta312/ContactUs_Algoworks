@@ -161,13 +161,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 			
 			jse.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();                  */
+		    driver.switchTo().defaultContent();                  
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -238,13 +238,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 			
 			js.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();           */
+		    driver.switchTo().defaultContent();           
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -316,13 +316,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 			
 			j.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();     */
+		    driver.switchTo().defaultContent();     
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -393,13 +393,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 			
 			jx.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();         */
+		    driver.switchTo().defaultContent();         
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -470,13 +470,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 			
 			jxe.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();            */
+		    driver.switchTo().defaultContent();            
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -559,13 +559,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 		
 		jsed.executeScript("window.scrollBy(0,800)", "up");
 		
-	/*	wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 		//driver.switchTo().frame("drift-widget");
 	
 		Thread.sleep(2000);
 		click("dPopupClose_Xpath"); 
 		
-	    driver.switchTo().defaultContent();   */
+	    driver.switchTo().defaultContent();   
 		
 		logger1.info("Button 'Try It Free Now' has been clicked");
 		click("dtryitfree_Xpath");
@@ -636,13 +636,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 		
 		jse.executeScript("window.scrollBy(0,800)", "up");
 		
-	/*	wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 		//driver.switchTo().frame("drift-widget");
 	
 		Thread.sleep(2000);
 		click("dPopupClose_Xpath"); 
 		
-	    driver.switchTo().defaultContent();    */
+	    driver.switchTo().defaultContent();    
 		
 		logger1.info("Button 'Try It Free Now' has been clicked");
 		click("dtryitfree_Xpath");
@@ -713,13 +713,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 			
 			js.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -790,13 +790,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 			
 			j.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();        */
+		    driver.switchTo().defaultContent();        
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -867,13 +867,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 				
 				jex.executeScript("window.scrollBy(0,800)", "up");
 				
-	/*			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+				wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 				//driver.switchTo().frame("drift-widget");
 			
 				Thread.sleep(2000);
 				click("dPopupClose_Xpath"); 
 				
-			    driver.switchTo().defaultContent();    */
+			    driver.switchTo().defaultContent();    
 				
 				logger1.info("Button 'Try It Free Now' has been clicked");
 				click("dtryitfree_Xpath");
@@ -944,13 +944,13 @@ public class DownloadsNegative extends AndroidCapabilities {
 					
 					jexe.executeScript("window.scrollBy(0,800)", "up");
 					
-			/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+				wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 					//driver.switchTo().frame("drift-widget");
 				
 					Thread.sleep(2000);
 					click("dPopupClose_Xpath"); 
 					
-				    driver.switchTo().defaultContent();  */
+				    driver.switchTo().defaultContent();  
 					
 					logger1.info("Button 'Try It Free Now' has been clicked");
 					click("dtryitfree_Xpath");
@@ -1031,13 +1031,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-		/*	wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();     */
+		    driver.switchTo().defaultContent();     
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1045,7 +1045,7 @@ catch (Exception e) {
 			
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
+			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[3]"));
 			String pre = Text.getText();
 			String expectedValues= properties.getProperty("d_phonemsg");
 			Assert.assertEquals(pre, expectedValues);
@@ -1108,13 +1108,13 @@ catch (Exception e) {
 			
 			jse.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();      */
+		    driver.switchTo().defaultContent();      
 		    
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1122,7 +1122,7 @@ catch (Exception e) {
 			
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Texts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
+			WebElement Texts = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[3]"));
 			String present = Texts.getText();
 			String expectedValue= properties.getProperty("d_phonemsg");
 			Assert.assertEquals(present, expectedValue);
@@ -1185,13 +1185,13 @@ catch (Exception e) {
 			
 			js.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 		    
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1199,7 +1199,7 @@ catch (Exception e) {
 			
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Tex = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
+			WebElement Tex = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[3]"));
 			String presents = Tex.getText();
 			String expectedValu= properties.getProperty("d_phonemsg");
 			Assert.assertEquals(presents, expectedValu);
@@ -1262,13 +1262,13 @@ catch (Exception e) {
 			
 			j.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();       */
+		    driver.switchTo().defaultContent();       
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1276,7 +1276,7 @@ catch (Exception e) {
 			
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement T = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
+			WebElement T = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[3]"));
 			String errors = T.getText();
 			String expectedVal= properties.getProperty("d_phonemsg");
 			Assert.assertEquals(errors, expectedVal);
@@ -1340,13 +1340,13 @@ catch (Exception e) {
 			jx.executeScript("window.scrollBy(0,800)", "up");
 			
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();      */
+		    driver.switchTo().defaultContent();      
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1354,7 +1354,7 @@ catch (Exception e) {
 			
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Tbox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
+			WebElement Tbox = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[3]"));
 			String error = Tbox.getText();
 			String expectedVa= properties.getProperty("d_phonemsg");
 			Assert.assertEquals(error, expectedVa);
@@ -1417,13 +1417,13 @@ catch (Exception e) {
 			
 			jex.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();      */
+		    driver.switchTo().defaultContent();      
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1431,7 +1431,7 @@ catch (Exception e) {
 			
 			Thread.sleep(2000);
 			logger1.info("Checked error text on submission");
-			WebElement Tboxes = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[2]"));
+			WebElement Tboxes = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[2]/div/div/div[3]"));
 			String err = Tboxes.getText();
 			String expectedV= properties.getProperty("d_phonemsg");
 			Assert.assertEquals(err, expectedV);
@@ -1504,13 +1504,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();     */
+		    driver.switchTo().defaultContent();     
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1579,13 +1579,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1654,13 +1654,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1729,13 +1729,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1804,13 +1804,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();   */
+		    driver.switchTo().defaultContent();   
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1879,13 +1879,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -1966,13 +1966,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();   */
+		    driver.switchTo().defaultContent();   
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2043,13 +2043,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();  */
+		    driver.switchTo().defaultContent();  
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2119,13 +2119,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-		/*	wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();     */
+		    driver.switchTo().defaultContent();     
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2194,13 +2194,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();   */
+		    driver.switchTo().defaultContent();   
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2282,13 +2282,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2357,13 +2357,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();   */
+		    driver.switchTo().defaultContent();   
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2432,13 +2432,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();   */
+		    driver.switchTo().defaultContent();   
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2507,13 +2507,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2582,13 +2582,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2657,13 +2657,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-/*			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();     */
+		    driver.switchTo().defaultContent();     
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -2694,527 +2694,484 @@ catch (Exception e) {
 			WebDriverWait wait=new WebDriverWait(driver, 30);
 			JavascriptExecutor jsed = (JavascriptExecutor) driver;
 			
-			Thread.sleep(2000);
-			logger1.info("Click on'Couchbase Lite' tab");
-			WebElement element = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-			Thread.sleep(2000); 
 			
-			Thread.sleep(2000);
-			click("dplusbutton_Xpath");
-			
-			Thread.sleep(2000);
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-		
-			
-			Thread.sleep(4000);
-			logger1.info("Downloads Button is selected");
-			click("dgetButton_Xpath");
-			Thread.sleep(2000);
-			
-			logger1.info("First name 'Form' is typed in textbox");
-			type("dFirstName_Xpath","dName");
-			Thread.sleep(2000);
-			
-			logger1.info("Last name 'Testing' is typed in textbox");
-			type("dLastName_Xpath", "dLastName");
-			Thread.sleep(2000);
-			
-			logger1.info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field");
-			type("dPhoneNumber_Xpath","dNumber");
-			Thread.sleep(2000);
-			
-			logger1.info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field");
-			type("dEmail_Xpath","dEmail");
-			Thread.sleep(2000);
-			
-			logger1.info("Company name 'Algoworks' is selected");
-			type("dCompany_Xpath","dCompany");
-			Thread.sleep(2000);
-			
-			logger1.info("Job Title 'Automation' has been entered to the Jobtitle field");
-			type("dJobTitle_Xpath","dJobTitle");
-			Thread.sleep(2000);
-			
-			logger1.info("Country 'Afghanistan' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys("Afghanistan");
-			
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
-			//driver.switchTo().frame("drift-widget");
-		
-			Thread.sleep(2000);
-			click("dPopupClose_Xpath"); 
-			
-		    driver.switchTo().defaultContent();   */  
-			
-			logger1.info("Button 'Try It Free Now' has been clicked");
-			click("dtryitfree_Xpath");
-			Thread.sleep(3000);
-			
-			Thread.sleep(2000);
-			logger1.info("Checked error text on submission");
-			WebElement Text = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[2]/div[2]/div"));
-			String pre = Text.getText();
-			String expectedValues= properties.getProperty("d_lisence");
-			Assert.assertEquals(pre, expectedValues);
-				
-			Thread.sleep(2000);
-			driver.navigate().refresh();
-			logger1.info("------------------------------------------------------------");
-			
-			Thread.sleep(2000);
-			logger1.info("Click on'Couchbase Lite' tab");
-			WebElement ele = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", ele);
-			Thread.sleep(2000); 
-			
-			Thread.sleep(2000);
-			click("dplusbutton_Xpath");
-			
-			Thread.sleep(2000);
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-		
-			
-			Thread.sleep(4000);
-			logger1.info("Downloads Button is selected");
-			click("dgetButton_Xpath");
-			Thread.sleep(2000);
-			
-			logger1.info("First name 'Form' is typed in textbox");
-			type("dFirstName_Xpath","dName");
-			Thread.sleep(2000);
-			
-			logger1.info("Last name 'Testing' is typed in textbox");
-			type("dLastName_Xpath", "dLastName");
-			Thread.sleep(2000);
-			
-			logger1.info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field");
-			type("dPhoneNumber_Xpath","dNumber");
-			Thread.sleep(2000);
-			
-			logger1.info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field");
-			type("dEmail_Xpath","dEmail");
-			Thread.sleep(2000);
-			
-			logger1.info("Company name 'Algoworks' is selected");
-			type("dCompany_Xpath","dCompany");
-			Thread.sleep(2000);
-			
-			logger1.info("Job Title 'Automation QA' has been entered to the Jobtitle field");
-			type("dJobTitle_Xpath","dJobTitle");
-			Thread.sleep(2000);
-		
-			
-			logger1.info("Agreement checkbox has been selected");
-			click("dCheckbox_Xpath");
-			Thread.sleep(2000);
-			
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-			
-		/*	wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
-			//driver.switchTo().frame("drift-widget");
-		
-			Thread.sleep(2000);
-			click("dPopupClose_Xpath"); 
-			
-		    driver.switchTo().defaultContent();  */
-			
-			logger1.info("Button 'Try It Free Now' has been clicked");
-			click("dtryitfree_Xpath");
-			Thread.sleep(3000);
-			
-			Thread.sleep(2000);
-			logger1.info("Checked error text on submission");
-			WebElement TextBoxCont = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/div"));
-			String err = TextBoxCont.getText();
-			String expectedValue= properties.getProperty("f_countrymsg");
-			Assert.assertEquals(err, expectedValue);
-						
-			Thread.sleep(2000);
-			driver.navigate().refresh();
-			logger1.info("------------------------------------------------------------");
-			
-			Thread.sleep(2000);
-			logger1.info("Click on'Couchbase Lite' tab");
-			WebElement elemen = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", elemen);
-			Thread.sleep(2000); 
-			
-			Thread.sleep(2000);
-			click("dplusbutton_Xpath");
-			
-			Thread.sleep(2000);
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-		
-			
-			Thread.sleep(4000);
-			logger1.info("Downloads Button is selected");
-			click("dgetButton_Xpath");
-			Thread.sleep(2000);
-			
-			logger1.info("First name 'Form' is typed in textbox");
-			type("dFirstName_Xpath","dName");
-			Thread.sleep(2000);
-			
-			logger1.info("Last name 'Testing' is typed in textbox");
-			type("dLastName_Xpath", "dLastName");
-			Thread.sleep(2000);
-			
-			logger1.info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field");
-			type("dPhoneNumber_Xpath","dNumber");
-			Thread.sleep(2000);
-			
-			logger1.info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field");
-			type("dEmail_Xpath","dEmail");
-			Thread.sleep(2000);
-			
-			logger1.info("Company name 'Algoworks' is selected");
-			type("dCompany_Xpath","dCompany");
-			Thread.sleep(2000);
-			
-			logger1.info("Job Title 'Automation QA' has been entered to the Jobtitle field");
-			type("dJobTitle_Xpath","dJobTitle");
-			Thread.sleep(2000);
-			
-			logger1.info("Country 'United States' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys("United States");
-			
-			logger1.info("City 'Noida' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[9]/input")).sendKeys("Noida");
-			
-			
-			logger1.info("Agreement checkbox has been selected");
-			click("dCheckbox_Xpath");
-			Thread.sleep(2000);
-			
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
-			//driver.switchTo().frame("drift-widget");
-		
-			Thread.sleep(2000);
-			click("dPopupClose_Xpath"); 
-			
-		    driver.switchTo().defaultContent();    */
-			
-			logger1.info("Button 'Try It Free Now' has been clicked");
-			click("dtryitfree_Xpath");
-			Thread.sleep(3000);
-			
-			Thread.sleep(2000);
-			logger1.info("Checked error text on submission");
-			WebElement TextBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/div"));
-			String errors = TextBoxContent.getText();
-			String expectedValu= properties.getProperty("f_statemsg");
-			Assert.assertEquals(errors, expectedValu);
-						
-			Thread.sleep(2000);
-			driver.navigate().refresh();
-			logger1.info("------------------------------------------------------------");    
-			
-			
-			Thread.sleep(2000);
-			logger1.info("Click on'Couchbase Lite' tab");
-			WebElement eleme = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", eleme);
-			Thread.sleep(2000); 
-			
-			Thread.sleep(2000);
-			click("dplusbutton_Xpath");
-			
-			Thread.sleep(2000);
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-		
-			
-			Thread.sleep(4000);
-			logger1.info("Downloads Button is selected");
-			click("dgetButton_Xpath");
-			Thread.sleep(2000);
-			
-			logger1.info("First name 'Form' is typed in textbox");
-			type("dFirstName_Xpath","dName");
-			Thread.sleep(2000);
-			
-			logger1.info("Last name 'Testing' is typed in textbox");
-			type("dLastName_Xpath", "dLastName");
-			Thread.sleep(2000);
-			
-			logger1.info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field");
-			type("dPhoneNumber_Xpath","dNumber");
-			Thread.sleep(2000);
-			
-			logger1.info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field");
-			type("dEmail_Xpath","dEmail");
-			Thread.sleep(2000);
-			
-			logger1.info("Company name 'Algoworks' is selected");
-			type("dCompany_Xpath","dCompany");
-			Thread.sleep(2000);
-			
-			logger1.info("Job Title 'Automation QA' has been entered to the Jobtitle field");
-			type("dJobTitle_Xpath","dJobTitle");
-			Thread.sleep(2000);
-			
-			logger1.info("Country 'United States' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys("United States");
-			
-			logger1.info("State 'Alabama' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/select")).sendKeys("Alabama");
-			
-			logger1.info("Agreement checkbox has been selected");
-			click("dCheckbox_Xpath");
-			Thread.sleep(2000);
-			
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
-			//driver.switchTo().frame("drift-widget");
-		
-			Thread.sleep(2000);
-			click("dPopupClose_Xpath"); 
-			
-		    driver.switchTo().defaultContent();        */
-			
-			logger1.info("Button 'Try It Free Now' has been clicked");
-			click("dtryitfree_Xpath");
-			Thread.sleep(3000);
-			
-			Thread.sleep(2000);
-			logger1.info("Checked error text on submission");
-			WebElement TextBoxConten = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[9]/div[2]"));
-			String error = TextBoxConten.getText();
-			String expectedVal= properties.getProperty("d_msg");
-			Assert.assertEquals(error, expectedVal);
-						
-			Thread.sleep(2000);
-			driver.navigate().refresh();
-			logger1.info("------------------------------------------------------------");
-			
-			Thread.sleep(2000);
-			logger1.info("Click on'Couchbase Lite' tab");
-			WebElement elem = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", elem);
-			Thread.sleep(2000); 
-			
-			Thread.sleep(2000);
-			click("dplusbutton_Xpath");
-			
-			Thread.sleep(2000);
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-		
-			
-			Thread.sleep(4000);
-			logger1.info("Downloads Button is selected");
-			click("dgetButton_Xpath");
-			Thread.sleep(2000);
-			
-			logger1.info("First name 'Form' is typed in textbox");
-			type("dFirstName_Xpath","dName");
-			Thread.sleep(2000);
-			
-			logger1.info("Last name 'Testing' is typed in textbox");
-			type("dLastName_Xpath", "dLastName");
-			Thread.sleep(2000);
-			
-			logger1.info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field");
-			type("dPhoneNumber_Xpath","dNumber");
-			Thread.sleep(2000);
-			
-			logger1.info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field");
-			type("dEmail_Xpath","dEmail");
-			Thread.sleep(2000);
-			
-			logger1.info("Company name 'Algoworks' is selected");
-			type("dCompany_Xpath","dCompany");
-			Thread.sleep(2000);
-			
-			logger1.info("Job Title 'Automation QA' has been entered to the Jobtitle field");
-			type("dJobTitle_Xpath","dJobTitle");
-			Thread.sleep(2000);
-			
-			logger1.info("Country 'United States' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys("United States");
-			
-			logger1.info("State 'Alabama' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/select")).sendKeys("Alabama");
-			
-			logger1.info("State 'Noida' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[9]/input")).sendKeys("Noida");
-			
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
-			//driver.switchTo().frame("drift-widget");
-		
-			Thread.sleep(2000);
-			click("dPopupClose_Xpath"); 
-			
-		    driver.switchTo().defaultContent();   */
-			
-			logger1.info("Button 'Try It Free Now' has been clicked");
-			click("dtryitfree_Xpath");
-			Thread.sleep(3000);
-			
-			Thread.sleep(2000);
-			logger1.info("Checked error text on submission");
-			WebElement TextBoxCo = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[2]/div[2]/div"));
-			String erro = TextBoxCo.getText();
-			String expectedVa= properties.getProperty("d_lisence");
-			Assert.assertEquals(erro, expectedVa);
-						
-			Thread.sleep(2000);
-			driver.navigate().refresh();
-			logger1.info("------------------------------------------------------------");
-			
-			Thread.sleep(2000);
-			logger1.info("Click on'Couchbase Lite' tab");
-			WebElement el = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", el);
-			Thread.sleep(2000); 
-			
-			Thread.sleep(2000);
-			click("dplusbutton_Xpath");
-			
-			Thread.sleep(2000);
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-		
-			
-			Thread.sleep(4000);
-			logger1.info("Downloads Button is selected");
-			click("dgetButton_Xpath");
-			Thread.sleep(2000);
-			
-			logger1.info("First name 'Form' is typed in textbox");
-			type("dFirstName_Xpath","dName");
-			Thread.sleep(2000);
-			
-			logger1.info("Last name 'Testing' is typed in textbox");
-			type("dLastName_Xpath", "dLastName");
-			Thread.sleep(2000);
-			
-			logger1.info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field");
-			type("dPhoneNumber_Xpath","dNumber");
-			Thread.sleep(2000);
-			
-			logger1.info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field");
-			type("dEmail_Xpath","dEmail");
-			Thread.sleep(2000);
-			
-			logger1.info("Company name 'Algoworks' is selected");
-			type("dCompany_Xpath","dCompany");
-			Thread.sleep(2000);
-			
-			logger1.info("Job Title 'Automation QA' has been entered to the Jobtitle field");
-			type("dJobTitle_Xpath","dJobTitle");
-			Thread.sleep(2000);
-			
-			logger1.info("Country 'United Kingdom' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys("United Kingdom");
-			
-			logger1.info("Privacy Policy checkbox is clicked");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[1]/div/div[1]/input")).click();
-			
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
-			//driver.switchTo().frame("drift-widget");
-		
-			Thread.sleep(2000);
-			click("dPopupClose_Xpath"); 
-			
-		    driver.switchTo().defaultContent();       */
-			
-			logger1.info("Button 'Try It Free Now' has been clicked");
-			click("dtryitfree_Xpath");
-			Thread.sleep(3000);
-			
-			Thread.sleep(2000);
-			logger1.info("Checked error text on submission");
-			WebElement TextBoxC = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[2]/div[2]/div"));
-			String er = TextBoxC.getText();
-			String expectedV= properties.getProperty("d_lisence");
-			Assert.assertEquals(er, expectedV);
-						
-			Thread.sleep(2000);
-			driver.navigate().refresh();
-			logger1.info("------------------------------------------------------------");
-			
-			Thread.sleep(2000);
-			logger1.info("Click on'Couchbase Lite' tab");
-			WebElement ent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
-			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", ent);
-			Thread.sleep(2000); 
-			
-			Thread.sleep(2000);
-			click("dplusbutton_Xpath");
-			
-			Thread.sleep(2000);
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-		
-			
-			Thread.sleep(4000);
-			logger1.info("Downloads Button is selected");
-			click("dgetButton_Xpath");
-			Thread.sleep(2000);
-			
-			logger1.info("First name 'Form' is typed in textbox");
-			type("dFirstName_Xpath","dName");
-			Thread.sleep(2000);
-			
-			logger1.info("Last name 'Testing' is typed in textbox");
-			type("dLastName_Xpath", "dLastName");
-			Thread.sleep(2000);
-			
-			logger1.info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field");
-			type("dPhoneNumber_Xpath","dNumber");
-			Thread.sleep(2000);
-			
-			logger1.info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field");
-			type("dEmail_Xpath","dEmail");
-			Thread.sleep(2000);
-			
-			logger1.info("Company name 'Algoworks' is selected");
-			type("dCompany_Xpath","dCompany");
-			Thread.sleep(2000);
-			
-			logger1.info("Job Title 'Automation QA' has been entered to the Jobtitle field");
-			type("dJobTitle_Xpath","dJobTitle");
-			Thread.sleep(2000);
-			
-			logger1.info("Country 'United Kingdom' has been selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select")).sendKeys("United Kingdom");
-			
-			logger1.info("License Agreement checkbox is clicked");
-			driver.findElement(By.xpath("//*[@id=\"termsandConditions\"]")).click();
-			
-			jsed.executeScript("window.scrollBy(0,800)", "up");
-			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
-			//driver.switchTo().frame("drift-widget");
-		
-			Thread.sleep(2000);
-			click("dPopupClose_Xpath"); 
-			
-		    driver.switchTo().defaultContent();         */
-			
-			logger1.info("Button 'Try It Free Now' has been clicked");
-			click("dtryitfree_Xpath");
-			Thread.sleep(3000);
-			
-			Thread.sleep(2000);
-			logger1.info("Checked error text on submission");
-			WebElement Textss = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[1]/div/div[2]/div"));
-			String e = Textss.getText();
-			String expected= properties.getProperty("f_ppmsg");
-			Assert.assertEquals(e, expected);
-						
-			Thread.sleep(2000);
-			driver.navigate().refresh();
-			logger1.info("------------------------------------------------------------");
-			
-			
+			  Thread.sleep(2000); logger1.info("Click on'Couchbase Lite' tab"); WebElement
+			  element = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+			  ((JavascriptExecutor)
+			  driver).executeScript("arguments[0].scrollIntoView(true);", element);
+			  Thread.sleep(2000);
+			  
+			  Thread.sleep(2000); click("dplusbutton_Xpath");
+			  
+			  Thread.sleep(2000); jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  
+			  Thread.sleep(4000); logger1.info("Downloads Button is selected");
+			  click("dgetButton_Xpath"); Thread.sleep(2000);
+			  
+			  logger1.info("First name 'Form' is typed in textbox");
+			  type("dFirstName_Xpath","dName"); Thread.sleep(2000);
+			  
+			  logger1.info("Last name 'Testing' is typed in textbox");
+			  type("dLastName_Xpath", "dLastName"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field"
+			  ); type("dPhoneNumber_Xpath","dNumber"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field"
+			  ); type("dEmail_Xpath","dEmail"); Thread.sleep(2000);
+			  
+			  logger1.info("Company name 'Algoworks' is selected");
+			  type("dCompany_Xpath","dCompany"); Thread.sleep(2000);
+			  
+			  logger1.info("Job Title 'Automation' has been entered to the Jobtitle field"
+			  ); type("dJobTitle_Xpath","dJobTitle"); Thread.sleep(2000);
+			  
+			  logger1.info("Country 'Afghanistan' has been selected");
+			  driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select"
+			  )).sendKeys("Afghanistan");
+			  
+			  jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			  
+			  logger1.info("Button 'Try It Free Now' has been clicked");
+			  click("dtryitfree_Xpath"); Thread.sleep(3000);
+			  
+			  Thread.sleep(2000); logger1.info("Checked error text on submission");
+			  WebElement Text = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[2]/div[2]/div"
+			  )); String pre = Text.getText(); String expectedValues=
+			  properties.getProperty("d_lisence"); Assert.assertEquals(pre,
+			  expectedValues);
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			  
+			  Thread.sleep(2000); logger1.info("Click on'Couchbase Lite' tab"); WebElement
+			  ele = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+			  ((JavascriptExecutor)
+			  driver).executeScript("arguments[0].scrollIntoView(true);", ele);
+			  Thread.sleep(2000);
+			  
+			  Thread.sleep(2000); click("dplusbutton_Xpath");
+			  
+			  Thread.sleep(2000); jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  
+			  Thread.sleep(4000); logger1.info("Downloads Button is selected");
+			  click("dgetButton_Xpath"); Thread.sleep(2000);
+			  
+			  logger1.info("First name 'Form' is typed in textbox");
+			  type("dFirstName_Xpath","dName"); Thread.sleep(2000);
+			  
+			  logger1.info("Last name 'Testing' is typed in textbox");
+			  type("dLastName_Xpath", "dLastName"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field"
+			  ); type("dPhoneNumber_Xpath","dNumber"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field"
+			  ); type("dEmail_Xpath","dEmail"); Thread.sleep(2000);
+			  
+			  logger1.info("Company name 'Algoworks' is selected");
+			  type("dCompany_Xpath","dCompany"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Job Title 'Automation QA' has been entered to the Jobtitle field");
+			  type("dJobTitle_Xpath","dJobTitle"); Thread.sleep(2000);
+			  
+			  
+			  logger1.info("Agreement checkbox has been selected");
+			  click("dCheckbox_Xpath"); Thread.sleep(2000);
+			  
+			  jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			  
+			  logger1.info("Button 'Try It Free Now' has been clicked");
+			  click("dtryitfree_Xpath"); Thread.sleep(3000);
+			  
+			  Thread.sleep(2000); logger1.info("Checked error text on submission");
+			  WebElement TextBoxCont = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/div"
+			  )); String err = TextBoxCont.getText(); String expectedValue=
+			  properties.getProperty("f_countrymsg"); Assert.assertEquals(err,
+			  expectedValue);
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			  
+			  Thread.sleep(2000); logger1.info("Click on'Couchbase Lite' tab"); WebElement
+			  elemen = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+			  ((JavascriptExecutor)
+			  driver).executeScript("arguments[0].scrollIntoView(true);", elemen);
+			  Thread.sleep(2000);
+			  
+			  Thread.sleep(2000); click("dplusbutton_Xpath");
+			  
+			  Thread.sleep(2000); jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  
+			  Thread.sleep(4000); logger1.info("Downloads Button is selected");
+			  click("dgetButton_Xpath"); Thread.sleep(2000);
+			  
+			  logger1.info("First name 'Form' is typed in textbox");
+			  type("dFirstName_Xpath","dName"); Thread.sleep(2000);
+			  
+			  logger1.info("Last name 'Testing' is typed in textbox");
+			  type("dLastName_Xpath", "dLastName"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field"
+			  ); type("dPhoneNumber_Xpath","dNumber"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field"
+			  ); type("dEmail_Xpath","dEmail"); Thread.sleep(2000);
+			  
+			  logger1.info("Company name 'Algoworks' is selected");
+			  type("dCompany_Xpath","dCompany"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Job Title 'Automation QA' has been entered to the Jobtitle field");
+			  type("dJobTitle_Xpath","dJobTitle"); Thread.sleep(2000);
+			  
+			  logger1.info("Country 'United States' has been selected");
+			  driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select"
+			  )).sendKeys("United States");
+			  
+			  logger1.info("City 'Noida' has been selected"); driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[9]/input"
+			  )).sendKeys("Noida");
+			  
+			  
+			  logger1.info("Agreement checkbox has been selected");
+			  click("dCheckbox_Xpath"); Thread.sleep(2000);
+			  
+			  jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			  
+			  logger1.info("Button 'Try It Free Now' has been clicked");
+			  click("dtryitfree_Xpath"); Thread.sleep(3000);
+			  
+			  Thread.sleep(2000); logger1.info("Checked error text on submission");
+			  WebElement TextBoxContent = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/div"
+			  )); String errors = TextBoxContent.getText(); String expectedValu=
+			  properties.getProperty("f_statemsg"); Assert.assertEquals(errors,
+			  expectedValu);
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			  
+			  
+			  Thread.sleep(2000); logger1.info("Click on'Couchbase Lite' tab"); WebElement
+			  eleme = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+			  ((JavascriptExecutor)
+			  driver).executeScript("arguments[0].scrollIntoView(true);", eleme);
+			  Thread.sleep(2000);
+			  
+			  Thread.sleep(2000); click("dplusbutton_Xpath");
+			  
+			  Thread.sleep(2000); jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  
+			  Thread.sleep(4000); logger1.info("Downloads Button is selected");
+			  click("dgetButton_Xpath"); Thread.sleep(2000);
+			  
+			  logger1.info("First name 'Form' is typed in textbox");
+			  type("dFirstName_Xpath","dName"); Thread.sleep(2000);
+			  
+			  logger1.info("Last name 'Testing' is typed in textbox");
+			  type("dLastName_Xpath", "dLastName"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field"
+			  ); type("dPhoneNumber_Xpath","dNumber"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field"
+			  ); type("dEmail_Xpath","dEmail"); Thread.sleep(2000);
+			  
+			  logger1.info("Company name 'Algoworks' is selected");
+			  type("dCompany_Xpath","dCompany"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Job Title 'Automation QA' has been entered to the Jobtitle field");
+			  type("dJobTitle_Xpath","dJobTitle"); Thread.sleep(2000);
+			  
+			  logger1.info("Country 'United States' has been selected");
+			  driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select"
+			  )).sendKeys("United States");
+			  
+			  logger1.info("State 'Alabama' has been selected");
+			  driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/select"
+			  )).sendKeys("Alabama");
+			  
+			  logger1.info("Agreement checkbox has been selected");
+			  click("dCheckbox_Xpath"); Thread.sleep(2000);
+			  
+			  jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			  
+			  logger1.info("Button 'Try It Free Now' has been clicked");
+			  click("dtryitfree_Xpath"); Thread.sleep(3000);
+			  
+			  Thread.sleep(2000); logger1.info("Checked error text on submission");
+			  WebElement TextBoxConten = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[9]/div[2]"
+			  )); String error = TextBoxConten.getText(); String expectedVal=
+			  properties.getProperty("d_msg"); Assert.assertEquals(error, expectedVal);
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			  
+			  Thread.sleep(2000); logger1.info("Click on'Couchbase Lite' tab"); WebElement
+			  elem = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+			  ((JavascriptExecutor)
+			  driver).executeScript("arguments[0].scrollIntoView(true);", elem);
+			  Thread.sleep(2000);
+			  
+			  Thread.sleep(2000); click("dplusbutton_Xpath");
+			  
+			  Thread.sleep(2000); jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  
+			  Thread.sleep(4000); logger1.info("Downloads Button is selected");
+			  click("dgetButton_Xpath"); Thread.sleep(2000);
+			  
+			  logger1.info("First name 'Form' is typed in textbox");
+			  type("dFirstName_Xpath","dName"); Thread.sleep(2000);
+			  
+			  logger1.info("Last name 'Testing' is typed in textbox");
+			  type("dLastName_Xpath", "dLastName"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field"
+			  ); type("dPhoneNumber_Xpath","dNumber"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field"
+			  ); type("dEmail_Xpath","dEmail"); Thread.sleep(2000);
+			  
+			  logger1.info("Company name 'Algoworks' is selected");
+			  type("dCompany_Xpath","dCompany"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Job Title 'Automation QA' has been entered to the Jobtitle field");
+			  type("dJobTitle_Xpath","dJobTitle"); Thread.sleep(2000);
+			  
+			  logger1.info("Country 'United States' has been selected");
+			  driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select"
+			  )).sendKeys("United States");
+			  
+			  logger1.info("State 'Alabama' has been selected");
+			  driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[7]/span/select"
+			  )).sendKeys("Alabama");
+			  
+			  logger1.info("State 'Noida' has been selected"); driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[9]/input"
+			  )).sendKeys("Noida");
+			  
+			  jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			  
+			  logger1.info("Button 'Try It Free Now' has been clicked");
+			  click("dtryitfree_Xpath"); Thread.sleep(3000);
+			  
+			  Thread.sleep(2000); logger1.info("Checked error text on submission");
+			  WebElement TextBoxCo = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[2]/div[2]/div"
+			  )); String erro = TextBoxCo.getText(); String expectedVa=
+			  properties.getProperty("d_lisence"); Assert.assertEquals(erro, expectedVa);
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			  
+			  Thread.sleep(2000); logger1.info("Click on'Couchbase Lite' tab"); WebElement
+			  el = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+			  ((JavascriptExecutor)
+			  driver).executeScript("arguments[0].scrollIntoView(true);", el);
+			  Thread.sleep(2000);
+			  
+			  Thread.sleep(2000); click("dplusbutton_Xpath");
+			  
+			  Thread.sleep(2000); jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  
+			  Thread.sleep(4000); logger1.info("Downloads Button is selected");
+			  click("dgetButton_Xpath"); Thread.sleep(2000);
+			  
+			  logger1.info("First name 'Form' is typed in textbox");
+			  type("dFirstName_Xpath","dName"); Thread.sleep(2000);
+			  
+			  logger1.info("Last name 'Testing' is typed in textbox");
+			  type("dLastName_Xpath", "dLastName"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field"
+			  ); type("dPhoneNumber_Xpath","dNumber"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field"
+			  ); type("dEmail_Xpath","dEmail"); Thread.sleep(2000);
+			  
+			  logger1.info("Company name 'Algoworks' is selected");
+			  type("dCompany_Xpath","dCompany"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Job Title 'Automation QA' has been entered to the Jobtitle field");
+			  type("dJobTitle_Xpath","dJobTitle"); Thread.sleep(2000);
+			  
+			  logger1.info("Country 'United Kingdom' has been selected");
+			  driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select"
+			  )).sendKeys("United Kingdom");
+			  
+			  logger1.info("Privacy Policy checkbox is clicked");
+			  driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[1]/div/div[1]/input"
+			  )).click();
+			  
+			  jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			  
+			  logger1.info("Button 'Try It Free Now' has been clicked");
+			  click("dtryitfree_Xpath"); Thread.sleep(3000);
+			  
+			  Thread.sleep(2000); logger1.info("Checked error text on submission");
+			  WebElement TextBoxC = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[2]/div[2]/div"
+			  )); String er = TextBoxC.getText(); String expectedV=
+			  properties.getProperty("d_lisence"); Assert.assertEquals(er, expectedV);
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			  
+			  Thread.sleep(2000); logger1.info("Click on'Couchbase Lite' tab"); WebElement
+			  ent = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
+			  ((JavascriptExecutor)
+			  driver).executeScript("arguments[0].scrollIntoView(true);", ent);
+			  Thread.sleep(2000);
+			  
+			  Thread.sleep(2000); click("dplusbutton_Xpath");
+			  
+			  Thread.sleep(2000); jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  
+			  Thread.sleep(4000); logger1.info("Downloads Button is selected");
+			  click("dgetButton_Xpath"); Thread.sleep(2000);
+			  
+			  logger1.info("First name 'Form' is typed in textbox");
+			  type("dFirstName_Xpath","dName"); Thread.sleep(2000);
+			  
+			  logger1.info("Last name 'Testing' is typed in textbox");
+			  type("dLastName_Xpath", "dLastName"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Phone number '1866-648-7575' is entered into the AREA CODE + PHONE field"
+			  ); type("dPhoneNumber_Xpath","dNumber"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field"
+			  ); type("dEmail_Xpath","dEmail"); Thread.sleep(2000);
+			  
+			  logger1.info("Company name 'Algoworks' is selected");
+			  type("dCompany_Xpath","dCompany"); Thread.sleep(2000);
+			  
+			  logger1.
+			  info("Job Title 'Automation QA' has been entered to the Jobtitle field");
+			  type("dJobTitle_Xpath","dJobTitle"); Thread.sleep(2000);
+			  
+			  logger1.info("Country 'United Kingdom' has been selected");
+			  driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[6]/span/select"
+			  )).sendKeys("United Kingdom");
+			  
+			  logger1.info("License Agreement checkbox is clicked");
+			  driver.findElement(By.xpath("//*[@id=\"termsandConditions\"]")).click();
+			  
+			  jsed.executeScript("window.scrollBy(0,800)", "up");
+			  
+			  wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.
+			  findElement(By.id("drift-widget"))));
+			  //driver.switchTo().frame("drift-widget");
+			  
+			  Thread.sleep(2000); click("dPopupClose_Xpath");
+			  
+			  driver.switchTo().defaultContent();
+			  
+			  logger1.info("Button 'Try It Free Now' has been clicked");
+			  click("dtryitfree_Xpath"); Thread.sleep(3000);
+			  
+			  Thread.sleep(2000); logger1.info("Checked error text on submission");
+			  WebElement Textss = driver.findElement(By.xpath(
+			  "//*[@id=\"global-content\"]/div/div[2]/div[2]/div/div/div/div/form/div[10]/div[1]/div/div[2]/div"
+			  )); String e = Textss.getText(); String expected=
+			  properties.getProperty("f_ppmsg"); Assert.assertEquals(e, expected);
+			  
+			  Thread.sleep(2000); driver.navigate().refresh();
+			  logger1.info("------------------------------------------------------------");
+			  
+			 
 			Thread.sleep(2000);
 			logger1.info("Click on'Couchbase Lite' tab");
 			WebElement ents = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/h2"));
@@ -3268,13 +3225,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -3345,13 +3302,13 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();     */
+		    driver.switchTo().defaultContent();     
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
@@ -3422,14 +3379,14 @@ catch (Exception e) {
 			
 			jsed.executeScript("window.scrollBy(0,800)", "up");
 			
-	/*		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 			//driver.switchTo().frame("drift-widget");
 		
 			
 			Thread.sleep(2000);
 			click("dPopupClose_Xpath"); 
 			
-		    driver.switchTo().defaultContent();    */
+		    driver.switchTo().defaultContent();    
 			
 			logger1.info("Button 'Try It Free Now' has been clicked");
 			click("dtryitfree_Xpath");
