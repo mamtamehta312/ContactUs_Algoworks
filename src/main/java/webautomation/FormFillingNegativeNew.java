@@ -25,7 +25,7 @@ public class FormFillingNegativeNew extends WebCapabilities {
 		driver.navigate().to(properties.getProperty("form_url"));
 	}
 
-	@Test(priority=1)
+	@Test(priority=4)
 	public static void NegativeFirstName() throws Exception {
 		logger1 = extent.createTest("formFilling_firstname_negative");
 		try {
@@ -1477,7 +1477,7 @@ public class FormFillingNegativeNew extends WebCapabilities {
 				throw e;
 			}	
 		}
-		@Test(priority=4)
+		@Test(priority=1)
 		public static void NegativeEmail() throws Exception {
 			logger1 = extent.createTest("formFilling_email_negative");
 			try {
@@ -1509,7 +1509,7 @@ public class FormFillingNegativeNew extends WebCapabilities {
 				type("fBusinessEmailAddressFake_Xpath", "fBusinessEmailAddressFake");
 
 				
-				Thread.sleep(2000);
+				Thread.sleep(3000);
 				logger1.info("Company 'Algoworks' given in textbox ");
 				type("fCompany_Xpath", "fCompany");
 
@@ -1552,7 +1552,7 @@ public class FormFillingNegativeNew extends WebCapabilities {
 				JavascriptExecutor jsf = (JavascriptExecutor) driver;
 				jsf.executeScript("window.scrollBy(0,400)", "up");
 				
-				Thread.sleep(2000);
+				Thread.sleep(5000);
 				logger1.info("Checked error text on submission");
 				WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[3]/div[1]/section/div/form/div[3]/div[2]"));
 				String present = TxtBoxContent.getText();

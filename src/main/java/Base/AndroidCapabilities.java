@@ -17,6 +17,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
@@ -72,6 +75,7 @@ public class AndroidCapabilities {
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Poonam\\Downloads\\New folder\\chromedriver_win32\\chromedriver.exe");
 			capabilities.setCapability("chromedriverExecutable", "/home/riya/Documents/chromedriver_linux64/chromedriver");
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+			
 		}
 
 		else if (browser.equalsIgnoreCase("Safari")) {
@@ -96,26 +100,44 @@ public class AndroidCapabilities {
 			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Firefox");
 			capabilities.setCapability("Emulator", "true");	
 			
-		capabilities.setCapability("webdriver.gecko.driver", "/home/riya/Downloads/geckodriver_linux64/geckodriver");
+		capabilities.setCapability("geckodriverExecutable", "/home/riya/Downloads/geckodriver_linux64/geckodriver");
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		
+			
+//			System.setProperty("webdriver.gecko.driver","/home/riya/Downloads/geckodriver_linux64/geckodriver");
+//			File pathBinary = new File("/home/riya/Downloads/firefox/firefox");
+//			FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
+//			DesiredCapabilities desired = DesiredCapabilities.firefox();
+//			FirefoxOptions options = new FirefoxOptions();
+//			desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
+//			 driver = new FirefoxDriver(options);
+			
 		}
 		//System.out.println("helloo");
 		driver.get(properties.getProperty("url"));
 	}
 	
 
-protected static Properties properties;
-static {
-	properties = new Properties();
-	FileInputStream fis;
-	try {
-		fis = new FileInputStream(
-				System.getProperty("user.dir") + "//src//main//resources//Properties//Android_OR.properties");
-		properties.load(fis);   
-	}catch(IOException e) {
-		e.printStackTrace();
-	}
+	protected static Properties properties;
+	static {
+		properties = new Properties();
+
+		try {
+			FileInputStream fis = new FileInputStream(
+					System.getProperty("user.dir") + "//src//main//resources//Properties//Android_OR.properties");
+			properties.load(fis);
+
+			String var = getPropertyValue("language");
+
+			FileInputStream fis2 = new FileInputStream(
+					System.getProperty("user.dir") + "//src//main//resources//Properties//" + var + "_OR.properties");
+			properties.load(fis2);
+
+		}
+
+		catch (IOException e) {
+			e.printStackTrace();
+		}
 }
 
 	public static String getObject(String Data) throws IOException {

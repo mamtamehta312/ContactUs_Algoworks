@@ -132,6 +132,20 @@ public class CouchbaseServer extends WebCapabilities{
 				Thread.sleep(5000);
 		 }
 		 
+		 public void CSelectOS3() throws InterruptedException{
+			    Thread.sleep(3000);
+			    logger1.info("Red Hat 7 option is selected");
+			    click("cSelectRedHat7_Xpath");
+				Thread.sleep(5000);
+		 }
+		 
+		 public void CSelectOS4() throws InterruptedException{
+			    Thread.sleep(3000);
+			    logger1.info("Windows option is selected");
+			    click("cSelectWindows_Xpath");
+				Thread.sleep(5000);
+		 }
+		 
 		 public void CVersion() throws InterruptedException{
 			    Thread.sleep(3000);
 			    logger1.info("Dropdown to select Version is clicked");
@@ -145,7 +159,19 @@ public class CouchbaseServer extends WebCapabilities{
 			    click("cVersion2_Xpath");
 				Thread.sleep(5000);
 		 }
+		 public void CVersion3() throws InterruptedException{
+			    Thread.sleep(3000);
+			    logger1.info("Dropdown to select Version is clicked");
+			    click("cVersion3_Xpath");
+				Thread.sleep(5000);
+		 }
 		 
+		 public void CVersion4() throws InterruptedException{
+			    Thread.sleep(3000);
+			    logger1.info("Dropdown to select Version is clicked");
+			    click("cVersion4_Xpath");
+				Thread.sleep(5000);
+		 }
 		 
 		 public void CVersionSelect() throws InterruptedException{
 			    Thread.sleep(3000);
@@ -161,6 +187,20 @@ public class CouchbaseServer extends WebCapabilities{
 				Thread.sleep(5000);
 		 }
 		 
+		 public void CVersionSelect3() throws InterruptedException{
+			    Thread.sleep(3000);
+			    logger1.info("Select 6.0.2 Version is clicked");
+			    click("cVersion6.0.2_Xpath");
+				Thread.sleep(5000);
+		 }
+		 
+		 public void CVersionSelect4() throws InterruptedException{
+			    Thread.sleep(3000);
+			    logger1.info("Select 6.0.1 Version is clicked");
+			    click("cVersion6.0.1_Xpath");
+				Thread.sleep(5000);
+		 }
+		 
 		 public void CDownloadNewVersion() throws InterruptedException{
 			    Thread.sleep(3000);
 			    logger1.info("Download 6.0.4 Version");
@@ -170,8 +210,22 @@ public class CouchbaseServer extends WebCapabilities{
 		 
 		 public void CDownloadVersion2() throws InterruptedException{
 			    Thread.sleep(3000);
-			    logger1.info("Download 6.0.4 Version");
+			    logger1.info("Download 6.0.3 Version");
 			    click("cDownload6.0.3_Xpath");
+				Thread.sleep(5000);
+		 }
+		 
+		 public void CDownloadVersion3() throws InterruptedException{
+			    Thread.sleep(3000);
+			    logger1.info("Download 6.0.2 Version");
+			    click("cDownload6.0.2_Xpath");
+				Thread.sleep(5000);
+		 }
+		 
+		 public void CDownloadVersion4() throws InterruptedException{
+			    Thread.sleep(3000);
+			    logger1.info("Download 6.0.1 Version");
+			    click("cDownload6.0.1_Xpath");
 				Thread.sleep(5000);
 		 }
 		 
@@ -190,9 +244,25 @@ public class CouchbaseServer extends WebCapabilities{
 			  String expect = properties.getProperty("urlredhat");
 				Assert.assertEquals(url_3, expect);
 		}
+		 public void checkingUrl602() throws InterruptedException{
+			 Thread.sleep(3000);
+			 logger1.info("checking the redirection"); 
+			  String url_4 =driver.getCurrentUrl();
+			  String expect = properties.getProperty("urlredhat7");
+				Assert.assertEquals(url_4, expect);
+		}
+		 
+		 public void checkingUrl601() throws InterruptedException{
+			 Thread.sleep(3000);
+			 logger1.info("checking the redirection"); 
+			  String url_5 =driver.getCurrentUrl();
+			  String expect = properties.getProperty("urllast");
+				Assert.assertEquals(url_5, expect);
+		}
+		 
 		 
 		 @Test
-			public static void downloads() throws Exception {
+			public static void Server() throws Exception {
 				logger1 = extent.createTest("downloads");
 				try {
 					Thread.sleep(2000);
@@ -227,6 +297,25 @@ public class CouchbaseServer extends WebCapabilities{
 				    c.CDownloadVersion2();
 				    c.checkingUrl603();
 				    c.Cbuttonemail();
+				    driver.navigate().back();
+				    c.clickPlusButton();
+				    c.CDropdown();
+				    c.CSelectOS3();
+				    c.CVersion3();
+				    c.CVersionSelect3();
+				    c.CDownloadVersion3();
+				    c.checkingUrl602();
+				    c.Cbuttonemail();
+				    driver.navigate().back();
+				    c.clickPlusButton();
+				    c.CDropdown();
+				    c.CSelectOS4();
+				    c.CVersion4();
+				    c.CVersionSelect4();
+				    c.CDownloadVersion4();
+				    c.checkingUrl601();
+				    c.Cbuttonemail();
+				    
 				}
 				catch(Exception e) {
 		logger1.fail(e);                           

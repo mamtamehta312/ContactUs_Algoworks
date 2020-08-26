@@ -4,20 +4,26 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Base.WebCapabilities;
 
 
 
+
 public class ContactForm extends WebCapabilities {
+	
+	static ContactForm c= new ContactForm();
 	
 	@BeforeClass
 	public static void init() {
@@ -25,83 +31,113 @@ public class ContactForm extends WebCapabilities {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.navigate().to(properties.getProperty("ContactForm_url"));
 	}
-	
-	@Test
-	  public static void contactform() throws Exception {
-		logger1 = extent.createTest("contactform");
-		try {
 
-			JavascriptExecutor jse = (JavascriptExecutor) driver;
-			jse.executeScript("window.scrollBy(0,400)", "up");
-
+			public void FirstName() throws InterruptedException{
 			Thread.sleep(2000);
 			logger1.info("First name 'Form' is typed in textbox ");
 			type("cFirstName_Xpath", "cFirstName");
+			}
 			
+			public void LastName() throws InterruptedException{
 			Thread.sleep(2000);
 			logger1.info("Last name 'Testing' is typed in textbox");
 			type("cLastName_Xpath","cLastName");
+			}
 			
 			//Thread.sleep(2000);
 			//logger1.info("Country code '+91' for country 'UK (+44)' is selected");
 			//driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[2]/div[1]/div/span/span")).sendKeys("UK (+44)");
 			
+			public void PhoneNumber() throws InterruptedException{
 			Thread.sleep(2000);
 			logger1.info("PhoneNumber '9899928177' is typed in textbox");
 			type("cPhoneNumber_Xpath","cPhoneNumber");
+			}
 			
+			public void Email() throws InterruptedException{
 			Thread.sleep(2000);
 			logger1.info("Email 'poonam.gupta@algoworks.com' is typed in textbox");
 			type("cBusinessEmailAddress_Xpath","cBusinessEmailAddress");
+			}
 			
+			public void CompanyName() throws InterruptedException{
 			Thread.sleep(2000);
 			logger1.info("Company name 'Algoworks' is typed in textbox");
 			type("cCompany_Xpath","cCompany");
+			}
 			
-			Thread.sleep(2000);
-			logger1.info("JobTitle 'Automation QA' is typed in textbox");
-			type("cJobTitle_Xpath","cJobTitle");
+			public void jobTitle() throws InterruptedException{
+			    Thread.sleep(2000);
+			    logger1.info("Job Title field has been clicked");
+			    Actions a= new Actions(driver);
+				driver.findElement(By.xpath("//label[contains(text(),'Job Title')]/..//details")).click();
+				Thread.sleep(2000);
+				driver.findElement(By.xpath("//label[contains(text(),'Job Title')]/..//details")).click();
+				Thread.sleep(2000);
+				a.moveToElement(driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[1]/div[2]/div[2]/section/div[1]/form/div[1]/div[5]/div/div[1]/details/div/label[1]")))
+				.click();
+				a.build().perform();
+		 }
 			
-			Thread.sleep(2000);
-			logger1.info("Country 'United States' is selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[6]/span/span")).sendKeys("United States");
+			public void ReasonForInquiry() throws InterruptedException{
+			    Thread.sleep(2000);
+			    logger1.info("Reason for Inquiry field has been clicked");
+			    Actions a= new Actions(driver);
+				driver.findElement(By.xpath("//label[contains(text(),'Reason for Inquiry')]/..//details")).click();
+				Thread.sleep(2000);
+				driver.findElement(By.xpath("//label[contains(text(),'Reason for Inquiry')]/..//details")).click();
+				Thread.sleep(2000);
+				a.moveToElement(driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[1]/div[2]/div[2]/section/div[1]/form/div[1]/div[12]/div/div[1]/details/div/label[1]")))
+				.click();
+				a.build().perform();
+		 }
+			public void Message() throws InterruptedException{
+				Thread.sleep(2000);
+				logger1.info("Message is typed");
+				type("cMessage_Xpath","cMessage");
+			}
 			
-			Thread.sleep(2000);
-			logger1.info("State 'Alabama' is selected");
-			driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/form/div[7]/span/span")).sendKeys("Alabama");
 			
-			Thread.sleep(2000);
-			logger1.info("City 'Noida' is typed in textbox");
-			type("cCity_Xpath", "cCity");
-			
-			
-			Thread.sleep(3000);
-			logger1.info("Sales Inquiry is selected");
-			driver.findElement(By.xpath("//*[@id='contactUsReasonforInquirySelectBoxIt']")).sendKeys("Sales Inquiry");
-		
-			Thread.sleep(2000);
-			logger1.info("Message 'Type your inquiry here' is entered in textarea");
-			type("cMessage_Xpath","cMessage");
-			
-			Thread.sleep(2000);
+			public void ContactUs() throws InterruptedException{
+				Thread.sleep(2000);
 			logger1.info("Contact Us button is selected");
 			click("cContactUsButton_Xpath");
-			Thread.sleep(2000);
-			
-			JavascriptExecutor jss = (JavascriptExecutor) driver;
-			jss.executeScript("window.scrollTo(0, 0)");
+			Thread.sleep(5000);
+			}
+			public void Scrolly() throws InterruptedException{
+				Thread.sleep(2000);
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("window.scrollBy(0,400)", "up");
+			}
 
-			
-			Thread.sleep(2000);
-			logger1.info("Checked 'Thank you' text on submission");
-			WebElement TxtBoxContent = driver.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/p"));
-			String present = TxtBoxContent.getText();
-			Assert.assertEquals(present, "Thank you for your submission.\n" + 
-					"A Couchbase representative will contact you shortly.");
-
-			//boolean present = driver.findElement(By.xpath("/html/body/main/div[3]/div[1]/section/div/p/text()[1]"));
-			
-			
+			public void Scroll() throws InterruptedException{
+				Thread.sleep(2000);
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("window.scrollBy(0,800)", "up");
+			}
+			@Test
+			 @Parameters("browser")
+			 public static void contactform(String browser) throws Exception {
+				 logger1 = extent.createTest("contactform");
+				 try {
+					 Thread.sleep(2000);
+					 c.Scrolly();
+					 c.FirstName();
+					 c.LastName();
+					 c.Email();
+					 c.CompanyName();
+					 if(browser.equalsIgnoreCase("firefox")) {
+					 c.Scrolly();
+					 }
+					 c.jobTitle();
+					 c.PhoneNumber();
+					 c.ReasonForInquiry();
+					 c.Message();
+					 c.ContactUs();	
+					 
+					
+					 
+					 
 		} catch (Exception e) {
 			logger1.fail(e);
 			throw e;
