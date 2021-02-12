@@ -66,7 +66,6 @@ public class TestUtils  {
 			rlog.log(LogStatus.INFO, " Contact Us Button is Enabled !");
 			log.info(" Contact Us Button is Enabled !");
 			TestUtils.highLight(driver, bt);
-//            TestUtils.ExplicitelyWaitForVisibility(driver, bt,60);
 			Thread.sleep(3000);
 			rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Button_Highlight")));
 			bt.click();

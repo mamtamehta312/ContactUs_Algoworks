@@ -1,19 +1,15 @@
 package com.algoworks.contactUs.TestClass;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import com.algoworks.contactUs.PageObjects.BaseClass;
 import com.algoworks.contactUs.TestData.excelReader;
 import com.algoworks.contactUs.Utilities.TestUtils;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 public class ContactForm extends BaseClass {
 
-	//@Test(dataProvider = "ContactForm")                        
+	@Test(dataProvider = "ContactForm")                        
 	public void contactForm( String testName,String locType,String loc ,String scroll,String waitNeeded,String name,String email,String phone,String message,String expected_res) throws InterruptedException, IOException
 	{ 
 		driver.get(url);
@@ -23,7 +19,7 @@ public class ContactForm extends BaseClass {
 		TestUtils.submitDetails(driver, extent, rlog, log, name, email, phone, message, expected_res);	
 	}
 	
-	//@Test(dataProvider = "ServicesContactForm")
+	@Test(dataProvider = "ServicesContactForm")
 	public void servicesContactForm(String TestName , String service_locator ,String scroll_locator, String contact_locator , String exp_res,String waitNeeded) throws InterruptedException, IOException
 	{
 		
