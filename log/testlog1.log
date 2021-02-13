@@ -4279,3 +4279,17 @@
 2021-02-12 15:03:05,295 [main] INFO com.algoworks.contactUs - Screenshot captured for failed Test Case
 2021-02-12 15:18:20,155 [main] INFO com.algoworks.contactUs -  Contact Us Button is Displayed !
 2021-02-12 15:18:20,237 [main] INFO com.algoworks.contactUs -  Contact Us Button is Enabled !
+2021-02-12 21:29:46,215 [main] INFO com.algoworks.contactUs -  Contact Us Button is Displayed !
+2021-02-12 21:29:46,321 [main] INFO com.algoworks.contactUs -  Contact Us Button is Enabled !
+2021-02-12 21:29:55,715 [main] INFO com.algoworks.contactUs -  All Details entered Successfully !
+2021-02-12 21:30:02,682 [main] INFO com.algoworks.contactUs -  Test Case Passed Successfully  ! 
+2021-02-12 21:35:28,990 [main] INFO com.algoworks.contactUs -  Contact Us Button is Displayed !
+2021-02-12 21:35:29,166 [main] INFO com.algoworks.contactUs -  Contact Us Button is Enabled !
+2021-02-12 21:35:39,204 [main] INFO com.algoworks.contactUs -  All Details entered Successfully !
+2021-02-12 21:35:47,906 [main] INFO com.algoworks.contactUs -  Test Case Passed Successfully  ! 
+2021-02-12 21:42:23,300 [main] INFO com.algoworks.contactUs - TC_N_01_New User Testing with Random Scenario -- OOPS! Testcase has been  Failed
+2021-02-12 21:42:26,305 [main] INFO com.algoworks.contactUs - Screenshot captured for failed Test Case
+2021-02-12 21:43:18,632 [main] INFO com.algoworks.contactUs -  Contact Us Button is Displayed !
+2021-02-12 21:43:18,682 [main] INFO com.algoworks.contactUs -  Contact Us Button is Enabled !
+2021-02-12 21:43:31,259 [main] INFO com.algoworks.contactUs -  All Details entered Successfully !
+2021-02-12 21:43:42,205 [main] INFO com.algoworks.contactUs -  Test Case Passed Successfully  ! 

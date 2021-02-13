@@ -67,6 +67,10 @@ public class TestUtils  {
 			log.info(" Contact Us Button is Enabled !");
 			TestUtils.highLight(driver, bt);
 			Thread.sleep(3000);
+			if(!bt.isDisplayed())
+			{
+				TestUtils.ExplicitelyWaitForVisibility(driver, bt, 60);
+			}
 			rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Button_Highlight")));
 			bt.click();
 			Thread.sleep(2000);
@@ -197,15 +201,15 @@ public class TestUtils  {
 		return arr[0]+"_"+arr[1]+"_"+arr[2];
 		
 	}
-	public static void getNewUserTesting(WebDriver driver, String url,ExtentTest rlog,Logger log,ExtentReports extent) throws IOException, InterruptedException
+	public static void getNewUserTesting(String TestName,WebDriver driver, String url,ExtentTest rlog,Logger log,ExtentReports extent) throws IOException, InterruptedException
 	{
-		String TestName="TC_S_01_New User Testing with Random Scenario";
+		
+		 
 		 String  contact_locator= "//*[@id='menu-item-23882']/a/span";
 		 String scroll_locator ="";
 		
 		 driver.get(url);
-		 rlog=extent.startTest(TestName);
-		 rlog.setDescription(TestName);	
+		
 		 TestUtils.scrollByPixel(driver, "2800");
 		 WebElement wb= driver.findElement(By.xpath("//*[@id='social']/div/div[1]/div/a")); 
 		 TestUtils.highLight(driver, wb);
@@ -240,6 +244,7 @@ public class TestUtils  {
 		 TestUtils.contactButtonValidation(driver, TestName, "xpath", "y", contact_locator, scroll_locator, rlog, log);
 		 TestUtils.submitDetails(driver, extent, rlog, log, "Mamta Mehta", "mamta.mehta@algoworks.com", "7355532141", "Testing", "Thank You - Algoworks");
 			
+		 
 	}
 	
 	
