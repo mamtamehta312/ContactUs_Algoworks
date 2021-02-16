@@ -10,7 +10,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 public class ContactForm extends BaseClass {
 
-	//@Test(dataProvider = "ContactForm")                        
+	@Test(dataProvider = "ContactForm")                        
 	public void contactForm( String testName,String locType,String loc ,String scroll,String waitNeeded,String name,String email,String phone,String message,String expected_res) throws InterruptedException, IOException
 	{ 
 		driver.get(url);
@@ -33,7 +33,7 @@ public class ContactForm extends BaseClass {
 
 
 	}
-	@Test
+	//@Test
 	public void NewUserTesting() throws InterruptedException, IOException
 	{
 		String TestName="TC_N_01_New User Testing with Random Scenario";

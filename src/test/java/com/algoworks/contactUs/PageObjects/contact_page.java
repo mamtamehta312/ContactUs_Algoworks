@@ -6,17 +6,16 @@ import org.openqa.selenium.support.PageFactory;
 
 public class contact_page {
 
+	
 	@FindBy(id="name") WebElement name;
 	@FindBy(id="email") WebElement email;
 	@FindBy(id="phone") WebElement phone;
 	@FindBy(id="message") WebElement message;
 	@FindBy(xpath="//input[@type='submit']") WebElement submitButton;
 	
-	
-	
 	public contact_page(WebDriver driver)
 	{
-		
+	
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -39,6 +38,7 @@ public class contact_page {
 	public void clickSubmit()
 	{
 		submitButton.click();
+		
 	}
 	
 	

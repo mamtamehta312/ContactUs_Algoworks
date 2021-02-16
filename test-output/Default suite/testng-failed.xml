@@ -10,8 +10,8 @@
           <include name="onTestSkip"/>
           <include name="onTestSuccess"/>
           <include name="onTestStart"/>
-          <include name="NewUserTesting"/>
           <include name="onTestFailure"/>
+          <include name="contactForm" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.algoworks.contactUs.TestClass.ContactForm -->
     </classes>

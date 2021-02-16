@@ -9,8 +9,10 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.BeforeSuite;
+
 import com.algoworks.contactUs.Utilities.ReadConfig;
 import com.algoworks.contactUs.Utilities.TestUtils;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -52,7 +54,9 @@ public class BaseClass{
 	public void onTestStart(ITestResult result)
 	{   
 		 System.setProperty("webdriver.chrome.driver",driverPath);
+		//System.setProperty("webdriver.gecko.driver",driverPath);
 		driver = new ChromeDriver();
+	//	 driver= new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);

@@ -15,11 +15,18 @@ import org.testng.AssertJUnit;
 
 import java.io.File;
 import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
 import com.algoworks.contactUs.PageObjects.contact_page;
 import com.google.common.io.Files;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class TestUtils  {
 	
@@ -36,9 +43,10 @@ public class TestUtils  {
 		log.info(" All Details entered Successfully !");
 		rlog.log(LogStatus.INFO, " All Details entered Successfully !");
 		rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Form_Filled")));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		cp.clickSubmit();
-		Thread.sleep(4000);
+	    new WebDriverWait(driver, 60).until(ExpectedConditions.titleIs("Thank You - Algoworks"));
+	
 		Assert.assertEquals(driver.getTitle(),expected_res);  // verfify Result
 	}
 	
@@ -73,11 +81,13 @@ public class TestUtils  {
 			}
 			rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Button_Highlight")));
 			bt.click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			TestUtils.switch_driver_to_next_window(driver,"Contact Us - Algoworks");
+			new WebDriverWait(driver, 60).until(ExpectedConditions.titleIs("Contact Us - Algoworks"));
 			AssertJUnit.assertEquals(driver.getTitle(),"Contact Us - Algoworks");
 			rlog.log(LogStatus.INFO, " Contact Us Button clicked successfully !");
-		
+			log.info(" Contact Us Button Validated Successfully !");
+
 	
 		
 	}
@@ -139,6 +149,10 @@ public class TestUtils  {
 		File des= new File(desPath);
 		Files.copy(src, des);
 		return desPath;
+		
+	    
+		
+		
 	}
 	public static WebElement getWebElement(WebDriver driver,String locType,String waitNeeded,String loc)
 	{
