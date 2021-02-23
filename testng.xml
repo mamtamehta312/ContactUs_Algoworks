@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Suite">
-  <test thread-count="5" parallel="tests" name="Test">
+  <test thread-count="5" parallel="none" name="FirefoxBrowser">
+  <parameter name="browser" value="firefox" />
     <classes>
-  <!--    <class name="com.algoworks.contactUs.PageObjects.BaseClass"/>  -->
-      <class name="com.algoworks.contactUs.TestClass.contact_test"/>
-      <class name="com.algoworks.contactUs.TestClass.contact_btn_test"/>
+      <class name="com.algoworks.contactUs.TestClass.ContactForm"/>
+      
     </classes>
   </test> <!-- Test -->
+ 
 </suite> <!-- Suite -->

@@ -21,9 +21,13 @@ public class ReadConfig {
 		
 	}
 	
-	public String getDriverPath()
+	public String getChromeDriverPath()
 	{
-		return pr.getProperty("driverPath");
+		return pr.getProperty("chromeDriverPath");
+	}
+	public String getGeckoDriverPath()
+	{
+		return pr.getProperty("geckoDriverPath");
 	}
 
 	public String getUrl()
@@ -48,5 +52,6 @@ public class ReadConfig {
 	{
 		return pr.getProperty("contactFormUrl");
 	}
+	
 	
 }

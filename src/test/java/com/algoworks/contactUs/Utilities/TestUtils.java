@@ -5,32 +5,23 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.AssertJUnit;
-
 import java.io.File;
 import java.io.IOException;
-
-import javax.imageio.ImageIO;
-
 import com.algoworks.contactUs.PageObjects.contact_page;
 import com.google.common.io.Files;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
-public class TestUtils  {
+public class TestUtils extends Retry {
 	
-	public  static  void  submitDetails(WebDriver driver,ExtentReports extent,ExtentTest rlog,Logger log,String name,String email,String phone,String message,String expected_res) throws InterruptedException, IOException
+	public static    void  submitDetails(WebDriver driver,ExtentReports extent,ExtentTest rlog,Logger log,String name,String email,String phone,String message,String expected_res) throws InterruptedException, IOException
 	{
 		
 		contact_page  cp= new contact_page(driver);
@@ -42,15 +33,22 @@ public class TestUtils  {
 		cp.setMessage(message);  
 		log.info(" All Details entered Successfully !");
 		rlog.log(LogStatus.INFO, " All Details entered Successfully !");
-		rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Form_Filled")));
 		Thread.sleep(2000);
+		rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Form_Filled")));
 		cp.clickSubmit();
-	    new WebDriverWait(driver, 60).until(ExpectedConditions.titleIs("Thank You - Algoworks"));
 	
-		Assert.assertEquals(driver.getTitle(),expected_res);  // verfify Result
+		if(expected_res.equals("Thank You - Algoworks")) {
+        new WebDriverWait(driver, 20).until(ExpectedConditions.titleIs("Thank You - Algoworks"));
+        AssertJUnit.assertEquals(driver.getTitle(),expected_res);
+		}
+		else
+		{
+			AssertJUnit.assertEquals(driver.getTitle(),expected_res);
+		}
+		
 	}
 	
-	public static void contactButtonValidation(WebDriver driver,String testName,String locType,String waitNeeded,String loc,String scroll,ExtentTest rlog,Logger log ) throws InterruptedException, IOException
+	public static  void contactButtonValidation(WebDriver driver,String testName,String locType,String waitNeeded,String loc,String scroll,ExtentTest rlog,Logger log ) throws InterruptedException, IOException
 	{
 		
 		if(!scroll.equals(""))
@@ -79,9 +77,14 @@ public class TestUtils  {
 			{
 				TestUtils.ExplicitelyWaitForVisibility(driver, bt, 60);
 			}
+
 			rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Button_Highlight")));
+			if(!bt.isDisplayed())
+			{
+				TestUtils.ExplicitelyWaitForVisibility(driver, bt, 60);
+			}
 			bt.click();
-			Thread.sleep(3000);
+			
 			TestUtils.switch_driver_to_next_window(driver,"Contact Us - Algoworks");
 			new WebDriverWait(driver, 60).until(ExpectedConditions.titleIs("Contact Us - Algoworks"));
 			AssertJUnit.assertEquals(driver.getTitle(),"Contact Us - Algoworks");
@@ -143,9 +146,18 @@ public class TestUtils  {
 	
 	public static String shots(WebDriver driver,String name) throws IOException
 	{
+		
+		int count1=Retry.count;
+		String desPath="";
 		ReadConfig rd= new ReadConfig();
 		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String desPath= rd.getScreenshotPath()+name+".png";
+		if(count1<1) {
+		 desPath= rd.getScreenshotPath()+name+".png";
+		}
+		else
+		{
+			 desPath= rd.getScreenshotPath()+name+"_Retry_"+count1+".png";
+		}
 		File des= new File(desPath);
 		Files.copy(src, des);
 		return desPath;
@@ -195,10 +207,11 @@ public class TestUtils  {
 		
         WebElement services=driver.findElement(By.xpath(service_locator));
         TestUtils.highLight(driver, services);
-		Thread.sleep(3000);
+		;
 		
 		rlog.log(LogStatus.INFO," Services Highlighted !");
 		log.info(" Services Highlighted !");
+		
 		rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Services_Highlighted")));
 		
 		services.click();
@@ -229,13 +242,17 @@ public class TestUtils  {
 		 TestUtils.highLight(driver, wb);
 		 Thread.sleep(2000);
 		 rlog.log(LogStatus.INFO, " Learn More Button Highlighted !");
+		 log.info("Learn More Button Highlighted !");
 		 rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Learn_More_Highlighted")));
 		 
 		 Thread.sleep(1000);
 		 wb.click();
+		 
 		 TestUtils.switch_driver_to_next_window(driver, "A Complete Overview About Algoworks");
-		 Thread.sleep(2000);
 		 rlog.log(LogStatus.INFO, " Switch to Learn More Page Successfully !");
+		 log.info(" Switch to Learn More Page Successfully !");
+		 new WebDriverWait(driver, 60).until(ExpectedConditions.titleIs("A Complete Overview About Algoworks"));
+		 Thread.sleep(3000);
 		 rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Switched_Learn_More")));
 		 
 		
@@ -247,12 +264,15 @@ public class TestUtils  {
 		 TestUtils.switch_driver_to_next_window(driver, "Top Mobile App Development Company USA, India | Salesforce Consulting Company");
 		 
 		 rlog.log(LogStatus.INFO, " Switch Back to  Home Page Successfully !");
+		 log.info(" Switch Back to  Home Page Successfully !");
 		 rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Switched_Back_Home_Page")));
 		 
 		 TestUtils.scrollByPixel(driver, "-20000");
 
-		 Thread.sleep(2000);
+		 
 		 rlog.log(LogStatus.INFO, " Scrolled Up on Home Page Successfully !");
+		 log.info(" Scrolled Up on Home Page Successfully !");
+		 
 		 rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Home_Page")));
 		 
 		 TestUtils.contactButtonValidation(driver, TestName, "xpath", "y", contact_locator, scroll_locator, rlog, log);

@@ -11,7 +11,7 @@
           <include name="onTestSuccess"/>
           <include name="onTestStart"/>
           <include name="onTestFailure"/>
-          <include name="contactForm" invocation-numbers="0"/>
+          <include name="contactForm"/>
         </methods>
       </class> <!-- com.algoworks.contactUs.TestClass.ContactForm -->
     </classes>

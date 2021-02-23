@@ -4485,3 +4485,2015 @@
 2021-02-15 19:46:41,162 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
 2021-02-15 19:47:12,690 - com.algoworks.contactUs -INFO - TC_H_03_Middle_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
 2021-02-15 19:47:15,691 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 20:12:49,484 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-15 20:13:06,362 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 20:13:06,379 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 20:13:54,329 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 20:13:54,365 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 20:14:06,230 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 20:14:07,530 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 20:14:18,009 - com.algoworks.contactUs -INFO - TC_S_01_Services_Consulting_Contact_1 -- OOPS! Testcase has been  Failed
+2021-02-15 20:14:21,010 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 20:14:36,874 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-15 20:14:39,875 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 20:15:04,290 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 20:15:04,342 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 20:15:18,748 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 20:15:19,884 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 20:15:45,376 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-15 20:16:03,635 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 20:16:03,652 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 20:16:32,629 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 20:16:33,828 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 20:16:49,929 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-15 20:17:09,241 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 20:17:09,260 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 20:17:37,181 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 20:17:37,567 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 20:17:50,098 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-15 20:17:53,099 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 20:18:11,225 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 20:18:11,240 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 20:18:38,753 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 20:18:39,733 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 20:18:55,100 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-15 20:19:06,638 - com.algoworks.contactUs -INFO - TC_H_06_Middle_Contact_Us :Email_Validation ( Email without “@gmail.com” ) -- OOPS! Testcase has been  Failed
+2021-02-15 20:19:09,639 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 22:51:45,568 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-15 22:51:51,066 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-15 22:51:53,780 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-15 22:55:05,623 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 22:55:05,639 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 22:55:18,156 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 22:55:19,227 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 22:55:37,756 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-15 22:56:23,942 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 22:56:23,988 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 22:56:39,254 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 22:56:40,148 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 22:56:58,457 - com.algoworks.contactUs -INFO - TC_N_01_New User Testing with Random Scenario -- OOPS! Testcase has been  Failed
+2021-02-15 22:57:01,457 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 23:02:19,699 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-15 23:02:19,705 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-15 23:04:19,045 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:04:19,062 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:04:37,108 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:04:37,958 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 23:05:10,186 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-15 23:05:10,188 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-15 23:06:10,988 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:06:11,001 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:06:27,273 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:06:28,221 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 23:06:54,121 - com.algoworks.contactUs -INFO - TC_N_01_New User Testing with Random Scenario -- OOPS! Testcase has been  Failed
+2021-02-15 23:06:57,123 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 23:15:03,485 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:15:03,509 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:15:13,944 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:15:14,830 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 23:15:47,710 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-15 23:15:47,711 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-15 23:16:51,498 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:16:51,508 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:17:14,685 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:17:15,575 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 23:17:56,733 - com.algoworks.contactUs -INFO - TC_N_01_New User Testing with Random Scenario1 -- OOPS! Testcase has been  Failed
+2021-02-15 23:17:59,734 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 23:31:23,677 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:31:23,698 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:31:34,449 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:31:35,350 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 23:31:48,748 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-15 23:31:48,749 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-15 23:32:35,603 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:32:35,620 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:32:47,196 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:32:48,003 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 23:33:03,452 - com.algoworks.contactUs -INFO - TC_N_01_New User Testing with Random Scenario -- OOPS! Testcase has been  Failed
+2021-02-15 23:33:06,454 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 23:33:25,603 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:33:25,622 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:33:38,677 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:33:39,626 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 23:33:55,139 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-15 23:33:55,141 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-15 23:34:21,523 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:34:21,578 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:34:40,571 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:34:41,641 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 23:34:56,649 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-15 23:34:59,675 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 23:35:31,285 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-15 23:35:43,454 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:35:43,470 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:35:58,685 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:35:58,688 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-15 23:35:58,689 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-15 23:36:24,623 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-15 23:36:37,933 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:36:37,949 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:36:58,744 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:36:58,751 - com.algoworks.contactUs -INFO - TC_S_01_Services_Consulting_Contact_1 -- OOPS! Testcase has been  Failed
+2021-02-15 23:37:01,756 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 23:40:31,815 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:40:31,840 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:40:47,978 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:40:49,419 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 23:41:03,723 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-15 23:41:03,724 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-15 23:41:20,725 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:41:20,752 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:41:30,955 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:41:31,942 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-15 23:41:47,119 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-15 23:41:50,121 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-15 23:42:18,883 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-15 23:42:39,045 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-15 23:42:39,062 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-15 23:42:52,197 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-15 23:42:52,210 - com.algoworks.contactUs -INFO - TC_S_01_Services_Consulting_Contact_1 -- OOPS! Testcase has been  Failed
+2021-02-15 23:42:55,212 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 12:48:30,297 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 12:48:30,327 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 12:48:37,618 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 12:48:38,552 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 12:48:46,836 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-16 12:48:46,836 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 12:48:56,329 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 12:48:56,357 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 12:49:03,662 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 12:49:04,660 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 12:49:12,062 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-16 12:49:15,063 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 13:01:11,085 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:01:11,108 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:01:18,372 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:01:19,190 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 13:01:27,344 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-16 13:01:27,344 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:01:37,524 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:01:37,551 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:01:44,730 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:01:45,729 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 13:01:54,150 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-16 13:01:57,150 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 13:04:54,431 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:04:54,451 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:05:01,781 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:05:02,586 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 13:05:11,225 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-16 13:05:11,225 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:05:21,520 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:05:21,536 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:05:28,646 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:05:29,501 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 13:05:37,645 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-16 13:05:40,646 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 13:15:02,410 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:15:02,428 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:15:10,298 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:15:11,175 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 13:15:19,160 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-16 13:15:19,160 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:15:33,174 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:15:33,183 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:15:40,175 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:15:41,030 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 13:15:49,707 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-16 13:15:52,709 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 13:18:06,174 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:18:13,441 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:18:13,458 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:18:22,019 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:18:22,043 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-16 13:18:22,045 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:18:37,341 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:18:44,320 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:18:44,326 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:18:52,319 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:18:52,332 - com.algoworks.contactUs -INFO - TC_S_01_Services_Consulting_Contact_1 -- OOPS! Testcase has been  Failed
+2021-02-16 13:18:55,334 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 13:20:06,410 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:20:13,522 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:20:13,541 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:20:21,657 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:20:21,677 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-16 13:20:21,678 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:20:37,123 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:20:43,975 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:20:44,002 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:20:52,185 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:20:52,193 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-16 13:20:52,194 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:21:06,438 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:21:13,011 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:21:13,023 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:21:21,953 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:21:21,964 - com.algoworks.contactUs -INFO - TC_S_01_Services_Consulting_Contact_1 -- OOPS! Testcase has been  Failed
+2021-02-16 13:21:24,965 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 13:23:09,809 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:23:16,804 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:23:16,827 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:23:24,995 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:23:25,023 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-16 13:23:25,024 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:23:40,633 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:23:47,826 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:23:47,842 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:23:55,903 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:23:55,909 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-16 13:23:55,909 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:24:11,568 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:24:18,366 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:24:18,378 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:24:26,562 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:24:26,567 - com.algoworks.contactUs -INFO - TC_S_01_Services_Consulting_Contact_1 -- OOPS! Testcase has been  Failed
+2021-02-16 13:24:29,568 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 13:40:47,637 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:40:54,160 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:40:54,167 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:41:02,791 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:41:02,803 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-16 13:41:02,804 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:41:17,362 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:41:24,668 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:41:24,679 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:41:33,388 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:41:33,397 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-16 13:41:33,398 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:41:48,098 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 13:41:54,491 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:41:54,503 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:42:03,551 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:42:03,563 - com.algoworks.contactUs -INFO - TC_S_01_Services_Consulting_Contact_1 -- OOPS! Testcase has been  Failed
+2021-02-16 13:42:06,565 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 13:44:45,143 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:44:45,183 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:44:52,458 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:44:53,513 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 13:45:01,464 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-16 13:45:01,465 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:45:13,360 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:45:13,383 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:45:20,467 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:45:21,381 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 13:45:29,620 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-16 13:45:29,620 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 13:45:40,451 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 13:45:40,480 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 13:45:47,524 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 13:45:48,456 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 13:45:56,858 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-16 13:45:59,859 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 14:00:49,106 - com.algoworks.contactUs -INFO - Test1 - Test Case Skipped 
+2021-02-16 14:00:49,111 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 14:28:46,067 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 14:28:46,220 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 14:28:53,636 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 14:28:54,849 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 14:29:02,903 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-16 14:29:02,905 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 14:29:33,846 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 14:29:33,861 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 14:29:41,139 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 14:29:42,064 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 14:29:50,780 - com.algoworks.contactUs -INFO - TC_N_01_New User Testing with Random Scenario -- OOPS! Testcase has been  Failed
+2021-02-16 14:29:53,781 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 14:30:05,137 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 14:30:05,169 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 14:30:13,075 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 14:30:14,137 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 14:30:23,049 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-16 14:30:23,049 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 14:30:34,755 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 14:30:34,775 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 14:30:42,111 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 14:30:43,091 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 14:30:53,740 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-16 14:30:56,741 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 14:31:12,159 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 14:31:45,700 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-16 14:31:45,701 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 14:32:01,906 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 14:32:10,096 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 14:32:10,156 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 14:32:19,220 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 14:32:19,233 - com.algoworks.contactUs -INFO - TC_S_01_Services_Consulting_Contact_1 -- OOPS! Testcase has been  Failed
+2021-02-16 14:32:22,235 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 14:38:25,416 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 14:38:25,548 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 14:38:33,533 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 14:38:34,962 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 14:38:43,568 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-16 14:38:43,569 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 14:38:54,499 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 14:38:54,563 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 14:39:02,476 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 14:39:04,169 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-16 14:39:12,638 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-16 14:39:15,639 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-16 14:39:32,294 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 14:39:40,289 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 14:39:40,346 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 14:39:47,592 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 14:39:47,608 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-16 14:39:47,608 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-16 14:40:03,248 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-16 14:40:10,015 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-16 14:40:10,081 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-16 14:40:17,411 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-16 14:40:17,415 - com.algoworks.contactUs -INFO - TC_S_01_Services_Consulting_Contact_1 -- OOPS! Testcase has been  Failed
+2021-02-16 14:40:20,415 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 14:43:23,974 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 14:43:24,006 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 14:43:31,463 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 14:43:32,585 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 14:43:41,223 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-17 14:43:41,223 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 14:44:10,529 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 14:44:10,543 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 14:44:17,889 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 14:44:19,269 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 14:44:27,625 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-17 14:44:27,625 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 14:44:58,295 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 14:44:58,309 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 14:45:05,702 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 14:45:06,871 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 14:45:14,724 - com.algoworks.contactUs -INFO - TC_N_01_New User Testing with Random Scenario -- OOPS! Testcase has been  Failed
+2021-02-17 14:45:17,725 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 14:45:28,967 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 14:45:28,987 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 14:45:36,425 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 14:45:37,619 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 14:45:45,904 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 14:45:45,905 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 14:45:56,718 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 14:45:56,755 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 14:46:04,352 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 14:46:05,713 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 14:46:13,665 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 14:46:13,666 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 14:46:24,843 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 14:46:24,893 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 14:46:32,250 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 14:46:33,322 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 14:46:41,400 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 14:46:44,401 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 14:47:01,563 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 14:47:09,769 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 14:47:09,788 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 14:47:16,641 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 14:47:16,644 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-17 14:47:16,645 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 14:47:32,196 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 14:47:38,871 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 14:47:38,888 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 14:47:45,903 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 14:47:45,910 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-17 14:47:45,911 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 14:48:01,334 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 14:48:08,855 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 14:48:08,874 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 14:48:15,782 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 14:48:15,785 - com.algoworks.contactUs -INFO - TC_S_01_Services_Consulting_Contact_1 -- OOPS! Testcase has been  Failed
+2021-02-17 14:48:18,786 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 15:11:12,477 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:11:12,500 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:11:19,581 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:11:20,619 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 15:11:44,216 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 15:11:51,203 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:11:51,246 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:11:58,264 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:11:58,267 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 15:16:27,766 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:16:27,785 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:16:34,711 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:16:35,622 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 15:16:42,712 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 15:16:53,973 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:16:53,995 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:17:00,882 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:17:01,939 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 15:17:25,193 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 15:17:33,086 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:17:33,103 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:17:41,892 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:17:41,895 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 15:19:20,757 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:19:20,811 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:19:28,334 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:19:29,727 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 15:19:53,605 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 15:20:53,616 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:20:53,641 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:21:00,629 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:21:01,537 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 15:21:23,958 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 15:21:31,268 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:21:31,286 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:21:39,134 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:21:39,141 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 15:24:07,032 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:24:07,077 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:24:14,565 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:24:15,896 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 15:29:39,999 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:29:40,058 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:29:48,123 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:29:49,597 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 15:29:57,599 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 15:29:57,601 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 15:30:09,971 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:30:10,027 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:30:18,168 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:30:19,651 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 15:30:28,302 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 15:30:28,302 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 15:30:40,462 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 15:30:40,509 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 15:30:49,016 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 15:30:51,036 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 15:31:00,186 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 15:31:03,187 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 16:47:37,105 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 16:47:47,974 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 16:47:48,004 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 16:47:56,324 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 16:47:56,329 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 16:49:56,156 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 16:50:03,733 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 16:50:03,742 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 16:50:10,241 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 16:50:10,248 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 16:56:32,168 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 16:56:42,177 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 16:56:42,187 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 16:56:48,762 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 16:56:48,772 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 17:13:27,859 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:13:27,876 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:13:35,238 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:13:35,576 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:13:44,358 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 17:14:07,709 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:14:07,752 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:14:14,853 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:14:15,215 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:14:20,771 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 17:14:20,771 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 17:14:43,107 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:14:43,147 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:14:50,126 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:14:50,470 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:14:56,033 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 17:14:56,037 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 17:15:33,873 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:15:33,902 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:15:40,768 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:15:41,089 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:15:47,133 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 17:15:50,134 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 17:16:32,049 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 17:16:39,461 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:16:39,467 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:16:45,945 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:16:45,950 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 17:21:39,776 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:21:39,800 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:21:47,231 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:21:49,710 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:21:55,236 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 17:21:55,236 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 17:22:23,711 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:22:23,731 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:22:30,542 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:22:30,850 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:22:36,388 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 17:22:36,390 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 17:23:06,035 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:23:06,058 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:23:12,960 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:23:13,291 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:23:19,783 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 17:23:22,784 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 17:25:22,414 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:25:22,428 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:25:29,091 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:25:29,413 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:25:34,916 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 17:27:07,970 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 17:27:22,916 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:27:22,922 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:27:29,324 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:27:29,330 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 17:33:34,788 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 17:33:41,474 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:33:41,478 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:33:51,392 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:33:51,399 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 17:36:55,082 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 17:37:04,299 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:37:04,314 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:37:13,273 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:40:57,637 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 17:41:05,931 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:41:05,937 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:41:15,398 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:41:15,413 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 17:42:33,747 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:42:33,779 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:42:41,582 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:42:42,476 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:42:47,921 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 17:42:47,922 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 17:43:25,977 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:43:26,014 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:43:34,319 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:43:34,909 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:43:40,301 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 17:43:40,302 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 17:57:57,819 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:57:57,855 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:58:06,195 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:58:07,079 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:58:12,562 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 17:58:12,564 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 17:59:28,253 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 17:59:28,282 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 17:59:36,713 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 17:59:37,250 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 17:59:42,618 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 17:59:42,619 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 18:00:18,386 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:00:18,419 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:00:26,682 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:00:27,311 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:00:32,703 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 18:00:32,705 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 18:02:13,480 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:02:13,506 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:02:21,878 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:02:22,495 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:02:27,919 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 18:02:27,920 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 18:02:51,422 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:02:51,466 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:02:59,950 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:03:00,734 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:03:06,114 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 18:03:06,115 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 18:14:30,951 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:14:30,978 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:14:41,540 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:14:42,536 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:14:50,441 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 18:14:50,442 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 18:15:03,782 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:15:03,813 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:15:09,908 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 18:15:09,909 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 18:18:36,144 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:18:36,198 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:18:47,303 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:18:48,245 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:18:57,367 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 18:18:57,368 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 18:20:57,200 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:20:57,229 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:21:10,691 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:21:11,609 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:21:20,313 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 18:28:07,494 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-17 18:28:07,502 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 18:29:24,516 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:29:24,690 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:29:32,943 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:29:34,266 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:29:40,481 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 18:31:55,031 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:31:55,049 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:32:03,761 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:32:05,190 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:32:10,737 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 18:38:21,486 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:38:21,515 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:38:30,453 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:38:31,879 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:38:37,467 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 18:40:57,807 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:40:57,826 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:41:08,478 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:41:09,690 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:41:18,930 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 18:45:18,561 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-17 18:45:24,422 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-17 18:45:24,658 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-17 18:45:25,601 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:45:25,618 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:45:34,460 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:45:35,665 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:45:41,768 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 18:52:09,022 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-17 18:52:10,614 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-17 18:52:16,421 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-17 18:52:16,647 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-17 18:52:17,701 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:52:17,715 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:52:26,567 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:52:28,000 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:52:33,543 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 18:54:50,970 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-17 18:54:52,571 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-17 18:55:00,597 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-17 18:55:00,808 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-17 18:55:01,575 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:55:01,585 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:55:10,056 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:55:11,295 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:55:16,864 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 18:56:55,557 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-17 18:56:57,204 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-17 18:57:06,297 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-17 18:57:06,462 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-17 18:57:07,300 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:57:07,310 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:57:15,415 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:57:16,781 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:57:22,847 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 18:58:33,667 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-17 18:58:40,764 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-17 18:58:48,308 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-17 18:58:48,593 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-17 18:58:50,479 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 18:58:50,496 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 18:59:01,752 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 18:59:02,793 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 18:59:10,273 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 19:00:54,925 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-17 19:00:56,479 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-17 19:01:05,665 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-17 19:01:05,927 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-17 19:01:06,923 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 19:01:06,931 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 19:01:15,156 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 19:01:16,589 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 19:01:22,591 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 19:05:47,508 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 19:05:47,565 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 19:05:56,471 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 19:05:57,514 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 19:06:03,102 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 19:06:03,102 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 19:06:24,524 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 19:06:24,569 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 19:06:33,410 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 19:06:34,712 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 19:06:40,271 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 19:06:40,275 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 19:10:14,800 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 19:10:23,083 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 19:10:23,097 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 19:10:32,785 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 19:10:32,800 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 19:11:34,096 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 19:11:34,156 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 19:11:43,323 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 19:11:44,808 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 19:11:50,868 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 19:11:50,871 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 19:12:29,469 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 19:12:29,520 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 19:12:38,094 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 19:12:39,236 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 19:12:44,290 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 19:12:44,293 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 19:16:42,870 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 19:16:42,927 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 19:16:52,429 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 19:16:53,976 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 19:16:59,605 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 19:16:59,605 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 19:17:37,398 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 19:17:37,458 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 19:17:46,541 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 19:17:48,266 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 19:17:53,998 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 19:17:53,999 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 19:19:26,047 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 19:19:26,119 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 19:19:35,084 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 19:19:36,271 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 19:19:41,365 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 19:19:41,366 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 19:19:58,995 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 19:19:59,000 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 20:10:03,783 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:10:03,915 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:10:16,369 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:10:17,406 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:10:26,742 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 20:10:26,744 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 20:10:37,652 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:10:37,684 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:10:50,065 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:10:51,103 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:10:59,894 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 20:10:59,894 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 20:24:27,719 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:24:27,747 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:24:38,925 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:24:39,988 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:24:48,600 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 20:24:48,602 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 20:25:00,378 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:25:00,441 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:28:45,308 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:28:45,365 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:28:56,548 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:28:57,850 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:29:05,687 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 20:29:05,687 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 20:29:11,939 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 20:29:11,939 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 20:30:54,412 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:30:54,454 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:31:05,769 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:31:07,138 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:31:15,791 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 20:31:15,792 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 20:31:20,159 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 20:31:20,160 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 20:34:47,297 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:34:47,348 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:34:58,572 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:34:59,789 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:35:09,179 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 20:35:09,180 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 20:35:16,135 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 20:35:16,135 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 20:37:33,845 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:37:33,876 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:37:44,969 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:37:46,381 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:37:55,139 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 20:37:55,140 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 20:37:59,963 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 20:37:59,964 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 20:38:49,012 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:38:49,054 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:39:01,279 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:39:02,515 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:39:10,021 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 20:39:10,022 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 20:39:15,187 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 20:39:15,188 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 20:41:43,324 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-17 20:41:50,739 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-17 20:41:58,342 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-17 20:41:58,645 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-17 20:42:00,533 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:42:00,586 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:42:11,781 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:42:13,012 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:42:21,564 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 20:44:10,092 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:44:10,160 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:44:21,338 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:44:22,617 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:44:30,953 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 20:47:27,419 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:47:27,457 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:47:39,447 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:47:41,175 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:47:50,373 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 20:47:50,374 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 20:48:05,362 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:48:05,407 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:48:08,480 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 20:48:08,482 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 20:52:29,061 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 20:52:29,113 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 20:52:41,111 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 20:52:42,459 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 20:52:51,147 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 20:52:51,152 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 20:52:59,040 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 20:52:59,042 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 21:04:01,662 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 21:04:01,713 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 21:04:12,584 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 21:04:13,658 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 21:04:23,334 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 21:04:23,335 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 21:04:29,388 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 21:04:29,389 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 21:25:22,580 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 21:25:22,618 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 21:25:46,514 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 21:25:46,515 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 21:26:02,053 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 21:26:02,069 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 21:26:25,855 - com.algoworks.contactUs -INFO - TC_H_03_Middle_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 21:26:25,856 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 21:27:23,046 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 21:27:23,134 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 21:27:34,285 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 21:27:35,478 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 21:27:44,899 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 21:27:44,901 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 21:27:52,842 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 21:27:52,843 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 22:51:06,531 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 22:51:06,575 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 22:51:17,493 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 22:51:18,596 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 22:51:26,309 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 22:53:21,653 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 22:53:21,688 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 22:53:32,583 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 22:53:33,662 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 22:53:41,275 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 22:55:28,556 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 22:55:28,616 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 22:55:37,757 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 22:55:39,159 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 22:55:44,681 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 22:58:06,312 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 22:58:06,357 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 22:58:14,867 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 22:58:15,732 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 22:58:21,293 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 22:58:47,507 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 22:58:47,543 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 22:58:58,501 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 22:58:59,728 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 22:59:05,696 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 22:59:55,586 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 22:59:55,596 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:00:19,778 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 23:00:19,779 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 23:01:17,237 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:01:17,245 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:01:27,500 - com.algoworks.contactUs -INFO - TC_H_03_Middle_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 23:01:27,501 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 23:05:29,750 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:05:29,768 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:05:51,945 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:05:52,602 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:05:58,076 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:09:53,901 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-17 23:09:55,335 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-17 23:10:04,468 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-17 23:10:04,681 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-17 23:10:05,169 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:10:05,182 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:10:10,793 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:10:11,850 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:10:17,429 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:10:56,316 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:10:56,327 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:11:18,310 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:11:21,757 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:11:27,341 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:12:09,038 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:12:09,083 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:12:14,388 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:12:15,599 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:12:21,648 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 23:12:21,650 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 23:13:04,061 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:13:04,113 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:13:10,165 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:13:11,286 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:13:16,849 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 23:13:16,849 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 23:14:03,756 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:14:03,776 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:14:09,238 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:14:10,235 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:14:16,275 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:15:10,467 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 23:15:20,278 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:15:20,286 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:15:26,670 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:15:26,679 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:25:17,835 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-17 23:25:19,283 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-17 23:25:29,334 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-17 23:25:29,495 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-17 23:25:30,396 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:25:30,405 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:25:36,280 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:25:37,530 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:25:46,640 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:26:29,847 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:26:29,877 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:26:35,211 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:26:36,179 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:26:44,657 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 23:26:44,658 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 23:32:31,010 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:32:31,078 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:32:37,697 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:32:39,299 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:32:48,456 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 23:32:48,457 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 23:34:28,709 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:34:28,833 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:34:35,032 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:34:36,857 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:34:45,553 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 23:34:45,555 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 23:35:26,091 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:35:26,152 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:35:32,587 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:35:34,049 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:35:42,532 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 23:35:42,534 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 23:37:46,415 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:37:46,531 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:37:53,020 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:37:54,557 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:38:03,114 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 23:38:03,116 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 23:38:19,113 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 23:38:19,114 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 23:39:49,791 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:39:50,083 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:39:56,331 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:39:57,616 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:40:04,127 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 23:40:04,129 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 23:43:26,621 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:43:26,664 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:43:33,342 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:43:34,728 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:43:44,855 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-17 23:43:44,859 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-17 23:44:01,489 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-17 23:44:01,493 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-17 23:45:39,377 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:45:39,426 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:45:45,743 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:45:47,042 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:45:56,644 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:50:27,699 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-17 23:50:29,455 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-17 23:50:38,194 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-17 23:50:38,545 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-17 23:50:39,690 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:50:39,704 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:50:45,195 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:50:46,697 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:50:56,293 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:51:25,272 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:51:25,327 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:51:31,515 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:51:32,761 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:51:42,144 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:52:23,950 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:52:24,020 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:52:29,323 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:52:30,875 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:52:40,835 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:53:25,660 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:53:25,673 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:53:48,701 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:53:50,392 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-17 23:53:59,917 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:54:26,604 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 23:54:34,517 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:54:34,528 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:54:40,714 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:54:40,722 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:55:06,297 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 23:55:14,211 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:55:14,223 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:55:19,421 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:55:19,430 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-17 23:55:47,399 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-17 23:55:55,682 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-17 23:55:55,693 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-17 23:56:00,816 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-17 23:56:00,825 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:04:41,760 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-18 00:04:43,402 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-18 00:04:52,665 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-18 00:04:52,955 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-18 00:04:53,934 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:04:53,955 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:04:59,050 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:05:00,485 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:05:09,545 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:05:40,845 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:05:40,885 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:05:47,366 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:05:48,741 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:05:58,332 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:06:25,885 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:06:25,946 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:06:31,192 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:06:32,698 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:06:42,343 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:07:12,737 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:07:12,746 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:07:35,807 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:07:37,359 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:07:46,991 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:08:19,036 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:08:19,046 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:08:42,232 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:08:43,800 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:09:16,273 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 00:09:16,274 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 00:10:03,656 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:10:03,667 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:10:26,100 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:10:27,634 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:11:00,132 - com.algoworks.contactUs -INFO - TC_H_06_Middle_Contact_Us :Email_Validation ( Email without “@gmail.com” ) -- OOPS! Testcase has been  Failed
+2021-02-18 00:11:00,134 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 00:11:41,762 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:11:41,774 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:12:04,989 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:12:06,342 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:12:15,388 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 00:12:15,389 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 00:12:46,896 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:12:46,910 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:13:09,466 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:13:10,857 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:13:19,739 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 00:13:19,741 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 00:14:02,031 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 00:14:10,377 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:14:10,388 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:14:17,159 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:14:17,163 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:14:46,825 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 00:14:55,605 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:14:55,620 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:15:00,815 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:15:00,832 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:15:33,353 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 00:15:43,205 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:15:43,218 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:15:48,417 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:15:48,421 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:16:33,174 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 00:16:41,741 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:16:41,757 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:16:49,100 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:16:49,103 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:17:29,551 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 00:17:37,452 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:17:37,468 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:17:43,721 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:17:43,731 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:24:44,788 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:24:44,833 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:25:08,185 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:25:09,762 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:25:18,353 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:25:49,349 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:25:49,376 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:26:12,634 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:26:14,074 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:27:16,848 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 00:27:16,849 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 00:27:46,091 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:27:46,102 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:28:09,139 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:28:10,516 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:29:13,139 - com.algoworks.contactUs -INFO - TC_H_06_Middle_Contact_Us :Email_Validation ( Email without “@gmail.com” ) -- OOPS! Testcase has been  Failed
+2021-02-18 00:29:13,145 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 00:29:49,867 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 00:29:49,868 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 00:30:33,957 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:30:33,966 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:30:56,701 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:30:57,709 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:31:05,802 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 00:31:05,808 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 00:39:58,836 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:39:58,895 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:40:21,667 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:40:23,244 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:40:32,370 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:41:15,589 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:41:15,600 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:41:38,740 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:41:40,174 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:42:42,897 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 00:42:42,898 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 00:43:30,842 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:43:30,854 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:43:53,923 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:43:55,183 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:44:57,790 - com.algoworks.contactUs -INFO - TC_H_06_Middle_Contact_Us :Email_Validation ( Email without “@gmail.com” ) -- OOPS! Testcase has been  Failed
+2021-02-18 00:44:57,794 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 00:45:38,881 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:45:38,898 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:46:02,002 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:46:02,979 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:46:10,975 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 00:46:10,976 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 00:47:39,405 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 00:47:39,407 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 00:50:32,911 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:50:32,957 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:52:31,138 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:52:31,224 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:52:57,070 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:53:21,297 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:53:26,900 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:54:18,489 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:54:18,505 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:54:41,954 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:54:43,363 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:54:48,805 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 00:55:44,238 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:55:44,253 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:56:07,307 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:56:08,853 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:56:14,645 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 00:56:14,647 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 00:56:56,582 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 00:56:56,602 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 00:57:19,162 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 00:57:20,108 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 00:57:29,701 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 01:02:18,313 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 01:02:18,335 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 01:02:41,530 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 01:02:42,942 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 01:02:48,494 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 01:03:32,111 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 01:03:32,124 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 01:03:54,989 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 01:03:56,287 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 01:04:01,909 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 01:04:01,910 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 01:04:32,815 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 01:04:32,838 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 01:04:56,154 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 01:04:57,544 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 01:05:03,042 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 01:05:03,045 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 01:06:58,589 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 01:06:58,645 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 01:07:20,870 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 01:07:22,167 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 01:07:27,655 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 01:08:20,154 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 01:08:20,173 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 01:08:43,505 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 01:08:44,685 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 01:08:50,225 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 01:08:50,226 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 01:09:19,937 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 01:09:19,949 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 01:10:42,675 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 01:10:42,676 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 01:14:22,409 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 01:14:22,438 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 01:15:44,275 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 01:15:44,276 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 01:16:33,541 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 01:16:33,559 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 01:16:56,137 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 01:16:57,738 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 01:17:03,318 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 01:17:03,319 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 09:39:17,648 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-18 09:39:19,272 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-18 09:39:28,520 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-18 09:39:28,705 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-18 09:39:29,942 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:39:29,964 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:39:35,737 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:39:36,672 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 09:39:42,131 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-18 09:39:42,132 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 09:40:14,848 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-18 09:40:16,316 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-18 09:40:25,410 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-18 09:40:25,641 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-18 09:40:26,569 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:40:26,580 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:40:32,333 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:40:33,601 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 09:40:39,044 - com.algoworks.contactUs -INFO - TC_N_01_New User Testing with Random Scenario -- OOPS! Testcase has been  Failed
+2021-02-18 09:40:39,045 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 09:41:07,531 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:41:07,592 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:41:20,822 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:41:22,553 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 09:41:28,033 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 09:42:14,641 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:42:14,679 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:42:19,898 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:42:21,470 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 09:42:26,984 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 09:42:26,985 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 09:43:14,116 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:43:14,159 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:43:19,391 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:43:20,903 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 09:43:26,325 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 09:44:12,752 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:44:12,765 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:44:36,159 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:44:37,509 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 09:44:42,960 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 09:45:26,166 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:45:26,180 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:45:49,340 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:45:50,583 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 09:45:56,105 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 09:45:56,106 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 09:46:46,340 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:46:46,348 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:47:09,260 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:47:10,558 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 09:47:16,028 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 09:47:16,030 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 09:47:46,693 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 09:47:54,080 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:47:54,091 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:48:00,722 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:48:00,728 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 09:48:30,421 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 09:48:51,592 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:48:51,603 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:48:56,687 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:48:56,690 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 09:49:43,650 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 09:49:52,375 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:49:52,388 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:49:57,616 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:49:57,621 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 09:50:47,946 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 09:50:56,624 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:50:56,645 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:51:04,137 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:51:04,142 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 09:51:37,181 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 09:51:44,623 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 09:51:44,633 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 09:51:51,278 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 09:51:51,281 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 10:05:58,205 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-18 10:05:59,770 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-18 10:06:09,053 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-18 10:06:09,282 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-18 10:06:10,186 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:06:10,198 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:06:16,043 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:06:17,227 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:06:22,732 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-18 10:06:22,733 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:06:48,444 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-18 10:06:50,025 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-18 10:06:59,118 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-18 10:06:59,333 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-18 10:07:00,323 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:07:00,340 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:07:06,217 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:07:07,547 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:07:13,003 - com.algoworks.contactUs -INFO - TC_N_01_New User Testing with Random Scenario -- OOPS! Testcase has been  Failed
+2021-02-18 10:07:13,006 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 10:07:53,179 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:07:53,218 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:07:58,893 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:08:00,324 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:08:05,817 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:08:05,818 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:08:30,333 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:08:30,371 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:08:36,093 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:08:37,773 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:08:43,268 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 10:09:12,691 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:09:12,737 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:09:23,025 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:09:25,961 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:09:31,432 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:09:31,434 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:10:23,052 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:10:23,131 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:10:28,327 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:10:29,596 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:10:35,028 - com.algoworks.contactUs -INFO - TC_H_02_Footer_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-18 10:10:35,030 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 10:11:07,032 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:11:07,041 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:11:30,579 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:11:31,902 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:11:37,357 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:11:37,359 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:12:08,379 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:12:08,389 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:12:30,140 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:12:31,501 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:12:36,982 - com.algoworks.contactUs -INFO - TC_H_03_Middle_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-18 10:12:36,984 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 10:13:16,424 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:13:16,450 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:14:35,856 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:14:35,858 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:15:28,125 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:15:28,137 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:15:50,974 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:15:52,132 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:15:57,835 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 10:15:57,838 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 10:33:00,487 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-18 10:33:02,139 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-18 10:33:11,333 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-18 10:33:11,572 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-18 10:33:12,773 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:33:12,783 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:33:18,618 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:33:19,838 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:33:25,323 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 10:33:51,145 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:33:51,178 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:33:57,224 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:33:58,834 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:34:04,336 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 10:34:32,439 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:34:32,492 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:34:45,827 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:34:47,379 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:34:52,853 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 10:35:35,378 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:35:35,396 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:36:54,406 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:36:54,408 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:37:25,163 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:37:25,183 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:37:47,599 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:37:49,060 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:37:54,540 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 10:38:24,576 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:38:24,587 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:39:46,349 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:39:46,364 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:40:15,025 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:40:15,035 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:41:36,570 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 10:41:36,571 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 10:46:56,832 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-18 10:46:58,355 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-18 10:47:07,146 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-18 10:47:07,446 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-18 10:47:08,361 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:47:08,375 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:47:14,205 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:48:21,979 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:48:21,996 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:48:25,703 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:48:25,704 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:48:54,848 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:48:54,860 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:48:58,378 - com.algoworks.contactUs -INFO - TC_H_03_Middle_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-18 10:48:58,380 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 10:49:29,458 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:49:29,471 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:49:33,113 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:49:33,114 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:50:12,284 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:50:12,313 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:50:15,913 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 10:50:15,916 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 10:51:02,452 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:51:02,471 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:51:06,168 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:51:06,169 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:51:56,805 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:51:56,814 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:52:00,369 - com.algoworks.contactUs -INFO - TC_H_12_Middle_Contact_Us :Email_Validation ( Email without dot symbol ) -- OOPS! Testcase has been  Failed
+2021-02-18 10:52:00,369 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 10:55:11,825 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:55:11,851 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:55:14,744 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:55:14,745 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:56:38,876 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:56:38,890 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:57:59,611 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 10:57:59,613 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 10:58:28,517 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:58:28,526 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 10:58:50,993 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 10:58:52,401 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 10:58:57,880 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 10:59:41,410 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 10:59:41,420 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:00:03,198 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:00:04,399 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:00:09,859 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:00:55,870 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:00:55,980 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:01:16,820 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:01:18,003 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:01:23,430 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:06:00,944 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:06:00,968 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:06:21,451 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:06:22,752 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:06:28,258 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:06:28,259 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:06:55,495 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:06:55,505 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:07:17,436 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:07:18,615 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:07:24,097 - com.algoworks.contactUs -INFO - TC_H_03_Middle_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-18 11:07:24,097 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 11:07:53,902 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:07:53,914 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:08:16,127 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:08:17,258 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:08:22,715 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:08:22,716 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:08:52,581 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:08:52,592 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:09:14,567 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:09:15,460 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:09:20,914 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 11:09:20,914 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 11:11:07,993 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:11:07,993 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:11:36,644 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:11:36,654 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:11:59,053 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:12:00,475 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:12:05,965 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:18:54,073 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:18:54,092 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:19:17,613 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:19:18,907 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:19:25,380 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:20:53,348 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:20:53,398 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:21:02,605 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:21:03,883 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:21:10,383 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:21:53,954 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:21:54,023 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:21:58,309 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:21:59,579 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:22:06,101 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:22:55,284 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:22:55,293 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:24:16,916 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:24:16,917 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:25:12,454 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:25:12,486 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:25:48,215 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:25:49,357 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:25:55,870 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:26:27,476 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:26:27,485 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:26:49,468 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:26:50,610 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:26:57,125 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:26:57,125 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:27:28,320 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:27:28,331 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:27:50,537 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:27:51,865 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:27:58,431 - com.algoworks.contactUs -INFO - TC_H_04_Middle_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 11:27:58,432 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 11:28:29,810 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:28:29,824 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:28:51,772 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:28:53,332 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:30:00,017 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:30:00,018 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:30:42,593 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:30:42,610 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:31:04,263 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:31:05,949 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:32:12,579 - com.algoworks.contactUs -INFO - TC_H_07_Middle_Contact_Us :Email_Validation ( Email including “AT” instead of “@” ) -- OOPS! Testcase has been  Failed
+2021-02-18 11:32:12,582 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 11:42:24,572 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:42:24,687 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:42:30,190 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:42:31,686 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:42:38,223 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:43:06,037 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:43:06,094 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:43:10,431 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:43:12,184 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:43:18,755 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:43:43,916 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:43:43,978 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:43:49,700 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:43:51,449 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:43:57,935 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:44:22,613 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:44:22,688 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:44:28,238 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:44:29,809 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:44:36,319 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:44:36,320 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:45:24,616 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:45:24,670 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:45:30,260 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:45:31,745 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:45:38,275 - com.algoworks.contactUs -INFO - TC_H_04_Header_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 11:45:38,277 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 11:46:02,343 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:46:02,397 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:46:08,035 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:46:09,992 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:47:16,816 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:47:16,818 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:48:00,089 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:48:00,115 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:48:04,518 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:48:05,511 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:49:12,558 - com.algoworks.contactUs -INFO - TC_H_06_Header_Contact_Us :Email_Validation ( Email without “@gmail.com” ) -- OOPS! Testcase has been  Failed
+2021-02-18 11:49:12,562 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 11:49:57,132 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:49:57,224 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:50:02,337 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:50:03,880 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:50:08,378 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:50:08,379 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:51:14,202 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:51:14,273 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:51:19,983 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:51:21,348 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:51:26,858 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:51:26,945 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:51:36,863 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-18 11:51:36,865 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 11:54:48,749 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:54:48,776 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:54:53,196 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:54:54,321 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:55:00,251 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:55:40,406 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:55:40,424 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:55:44,327 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:55:45,249 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:55:51,145 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:56:17,167 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:56:17,177 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:56:21,548 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:56:22,415 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:56:27,777 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 11:57:03,495 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:57:03,524 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:57:07,776 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:57:08,509 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:57:13,952 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:57:13,952 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:57:37,264 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:57:37,290 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:57:41,621 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:57:42,419 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:57:47,837 - com.algoworks.contactUs -INFO - TC_H_04_Header_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 11:57:47,839 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 11:58:12,179 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:58:12,216 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:58:20,976 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:58:21,893 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:58:34,351 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 11:58:34,352 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 11:59:14,503 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 11:59:14,531 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 11:59:22,847 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 11:59:23,805 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 11:59:36,238 - com.algoworks.contactUs -INFO - TC_H_06_Header_Contact_Us :Email_Validation ( Email without “@gmail.com” ) -- OOPS! Testcase has been  Failed
+2021-02-18 11:59:36,240 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 13:30:03,099 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:30:03,130 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:30:05,265 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 13:30:05,265 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 13:30:15,087 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:30:15,126 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:30:25,683 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:30:25,775 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:30:35,762 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:30:36,682 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:30:56,144 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:30:56,148 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:31:04,612 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:31:05,151 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:32:05,304 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:32:05,337 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:32:14,665 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:32:15,563 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:32:28,138 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 13:32:28,139 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 13:32:53,541 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:32:53,564 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:32:58,295 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-18 13:32:58,295 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 13:35:13,041 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:35:13,062 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:35:22,449 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:35:23,315 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:35:29,709 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 13:35:29,710 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 13:37:35,119 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:37:35,145 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:37:43,399 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:37:43,929 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:37:56,401 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 13:43:17,509 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:43:17,539 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:43:26,566 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:43:27,344 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:43:34,803 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 13:43:34,803 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 13:45:00,183 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:45:00,232 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:45:08,232 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:45:09,180 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:45:19,711 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 13:45:19,712 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 13:46:04,386 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:46:04,459 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:46:13,001 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:46:13,925 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:46:24,388 - com.algoworks.contactUs -INFO - TC_H_01_Header_Contact_Us : All_Fields_Valid (All Required Fields are Valid) -- OOPS! Testcase has been  Failed
+2021-02-18 13:46:24,390 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 13:46:40,567 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 13:46:40,568 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 13:47:50,153 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:47:50,220 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:47:58,827 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:47:59,538 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:48:10,554 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 13:48:39,930 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:48:39,947 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:48:50,291 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:48:51,205 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:49:05,772 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 13:49:36,472 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:49:36,484 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:49:44,336 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:49:45,208 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:50:04,320 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 13:50:34,499 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:50:34,524 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:50:44,618 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:50:45,463 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:50:58,953 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 13:50:58,954 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 13:51:27,298 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:51:27,319 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:51:44,518 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:51:45,304 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:52:00,423 - com.algoworks.contactUs -INFO - TC_H_04_Header_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 13:52:00,427 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 13:52:44,310 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:52:44,341 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:52:53,409 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:52:54,232 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:53:16,818 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 13:53:16,819 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 13:53:53,626 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 13:53:53,658 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 13:54:03,682 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 13:54:04,599 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 13:54:27,238 - com.algoworks.contactUs -INFO - TC_H_06_Header_Contact_Us :Email_Validation ( Email without “@gmail.com” ) -- OOPS! Testcase has been  Failed
+2021-02-18 13:54:27,241 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 14:07:33,732 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:07:33,772 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:07:39,169 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:07:40,248 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:07:46,285 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 14:09:43,836 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-18 14:09:45,340 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-18 14:09:54,868 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-18 14:09:55,004 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-18 14:09:55,835 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:09:55,845 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:10:00,369 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:10:01,254 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:10:07,298 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 14:11:59,483 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-18 14:12:06,696 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:12:06,713 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:12:12,232 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:12:12,250 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 14:20:46,310 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:20:46,352 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:20:50,789 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:20:51,589 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:20:57,572 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 14:21:34,053 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:21:34,062 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:21:38,500 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:21:39,380 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:21:44,763 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 14:22:20,309 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:22:20,327 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:22:24,747 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:22:25,671 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:22:28,054 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 14:22:55,036 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:22:55,063 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:22:59,623 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:23:00,541 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:23:02,882 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 14:27:40,653 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:27:40,691 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:27:44,621 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:27:45,481 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:27:51,857 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 14:28:23,434 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:28:23,442 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:28:27,964 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:28:28,531 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:28:34,453 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-18 14:28:58,638 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:28:58,679 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:29:09,649 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:29:10,729 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:29:16,082 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-18 14:29:16,083 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-18 14:29:39,814 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:29:39,841 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:29:44,333 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:29:45,043 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:29:50,400 - com.algoworks.contactUs -INFO - TC_H_04_Header_Contact_Us : All_Fields_Null  (All Required Fields are Blank) -- OOPS! Testcase has been  Failed
+2021-02-18 14:29:50,401 - com.algoworks.contactUs -INFO - Screenshot captured for failed Test Case
+2021-02-18 14:30:16,654 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-18 14:30:16,676 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-18 14:30:27,686 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-18 14:30:28,666 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-18 14:30:34,006 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:34:49,103 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-22 11:34:55,402 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-22 11:35:02,822 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-22 11:35:03,004 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-22 11:35:04,682 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:35:04,695 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:35:10,527 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:35:11,094 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:35:18,474 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:35:33,501 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:35:33,517 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:35:40,529 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:35:41,135 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:35:48,855 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:36:01,630 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:36:01,648 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:36:07,318 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:36:08,052 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:36:14,945 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:36:27,918 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:36:27,931 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:36:34,292 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:36:35,009 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:36:42,064 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:36:55,993 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-22 11:37:02,635 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:37:02,646 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:37:09,629 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:37:09,632 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:41:28,512 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:41:28,541 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:41:35,160 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:41:36,262 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:41:44,006 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:44:46,862 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:44:46,877 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:45:10,435 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:45:11,114 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:45:18,601 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:46:49,147 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:46:49,160 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:47:10,622 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:47:11,398 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:47:17,815 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:50:45,561 - com.algoworks.contactUs -INFO - contactForm - Test Case Skipped 
+2021-02-22 11:50:45,569 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-22 11:53:11,773 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:53:11,900 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:53:32,848 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:53:34,032 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:53:40,159 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:56:00,437 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:56:00,451 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:56:22,502 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:56:23,742 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:56:29,798 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:57:04,183 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:57:04,214 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:57:09,022 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:57:10,159 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:57:16,216 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 11:57:48,173 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 11:57:48,205 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 11:57:52,856 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 11:57:53,676 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 11:57:59,744 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 15:57:31,344 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-22 15:57:34,242 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-22 15:57:34,243 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-22 15:57:52,379 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-22 15:58:05,361 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-22 15:58:13,554 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-22 15:58:14,139 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-22 15:58:15,308 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-22 15:58:16,695 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-22 15:58:16,855 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 15:58:16,876 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 15:58:24,020 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 15:58:24,861 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 15:58:25,490 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-22 15:58:25,593 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-22 15:58:26,216 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 15:58:26,226 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 15:58:30,266 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 15:58:31,417 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 15:58:33,462 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 15:58:38,485 - com.algoworks.contactUs -INFO - NewUserTesting - Test Case Skipped 
+2021-02-22 15:58:38,485 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-22 15:58:55,963 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 15:58:55,978 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 15:59:19,301 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 15:59:20,260 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 15:59:27,651 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 15:59:39,522 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 15:59:39,542 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 15:59:45,663 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 15:59:46,640 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 15:59:53,985 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:00:05,584 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:00:05,619 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:00:11,447 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:00:12,390 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 16:00:19,893 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:00:36,277 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-22 16:00:43,188 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:00:43,195 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:00:50,354 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:00:50,361 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:03:55,475 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-22 16:03:57,092 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-22 16:04:06,463 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-22 16:04:06,677 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-22 16:04:07,457 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:04:07,471 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:04:11,986 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:04:13,700 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 16:04:19,782 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:04:49,501 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:04:49,515 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:05:11,629 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:05:13,041 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 16:05:18,561 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:05:50,375 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:05:50,424 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:05:55,211 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:05:56,116 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 16:06:02,300 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:06:29,551 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:06:29,587 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:06:33,702 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:06:34,979 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 16:06:41,040 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:07:23,855 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-22 16:07:31,424 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:07:31,435 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:07:36,552 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:07:36,556 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:14:06,427 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-22 16:14:12,910 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-22 16:14:20,460 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-22 16:14:20,752 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-22 16:14:21,931 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:14:21,948 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:14:28,312 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:14:29,362 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 16:14:37,365 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:14:56,567 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:14:56,580 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:15:20,130 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:15:21,163 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 16:15:29,765 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:15:42,289 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:15:42,308 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:15:49,353 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:15:50,533 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 16:15:57,915 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:16:30,204 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:16:30,265 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:16:37,099 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:16:38,138 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 16:16:46,898 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 16:17:08,943 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-22 16:17:16,881 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 16:17:16,896 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 16:17:26,364 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 16:17:26,372 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 17:14:12,506 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-22 17:14:21,345 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-22 17:14:29,065 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-22 17:14:29,449 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-22 17:14:30,306 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 17:14:30,320 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 17:14:37,665 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 17:14:38,609 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 17:14:47,438 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 17:15:06,848 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 17:15:06,878 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 17:15:31,069 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 17:15:32,043 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 17:15:40,909 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 17:15:54,170 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 17:15:54,188 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 17:16:01,764 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 17:16:02,954 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 17:16:11,414 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 17:16:27,651 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 17:16:27,701 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 17:16:52,421 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 17:16:53,470 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 17:17:02,897 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 17:17:26,179 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-22 17:17:37,799 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 17:17:37,815 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 17:17:45,277 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 17:17:45,285 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 17:19:39,341 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-22 17:19:52,321 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-22 17:19:59,803 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-22 17:20:00,051 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-22 17:20:00,794 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 17:20:00,804 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 17:20:08,614 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 17:20:09,230 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 17:20:16,624 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 17:20:34,195 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 17:20:34,205 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 17:20:58,731 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 17:20:59,367 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 17:21:06,904 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 17:21:30,360 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 17:21:30,368 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 17:21:38,087 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 17:21:39,020 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 17:21:46,274 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 17:21:59,677 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 17:21:59,707 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 17:22:06,375 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 17:22:07,211 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 17:22:14,771 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 17:22:29,800 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-22 17:22:32,419 - com.algoworks.contactUs -INFO - servicesContactForm - Test Case Skipped 
+2021-02-22 17:22:32,420 - com.algoworks.contactUs -INFO - Screenshot captured for Skipped Test Case
+2021-02-22 19:43:31,883 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-22 19:43:33,464 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-22 19:43:42,994 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-22 19:43:43,173 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-22 19:43:43,905 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 19:43:43,914 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 19:43:49,513 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 19:43:50,305 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 19:43:56,499 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 19:44:33,882 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 19:44:33,901 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 19:44:54,760 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 19:44:55,609 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 19:45:01,015 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 19:45:25,761 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 19:45:25,792 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 19:45:31,176 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 19:45:31,945 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 19:45:37,861 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 19:46:03,609 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 19:46:03,624 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 19:46:11,479 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 19:46:12,184 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 19:46:17,564 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 19:46:51,917 - com.algoworks.contactUs -INFO -  Services Highlighted !
+2021-02-22 19:46:58,270 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 19:46:58,280 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 19:47:04,364 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 19:47:04,367 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 20:05:50,456 - com.algoworks.contactUs -INFO - TC_N_01_New User Testing with Random Scenario-- Test Case Started Successfully !
+2021-02-22 20:06:08,721 - com.algoworks.contactUs -INFO - Learn More Button Highlighted !
+2021-02-22 20:06:10,117 - com.algoworks.contactUs -INFO -  Switch to Learn More Page Successfully !
+2021-02-22 20:06:18,831 - com.algoworks.contactUs -INFO -  Switch Back to  Home Page Successfully !
+2021-02-22 20:06:18,994 - com.algoworks.contactUs -INFO -  Scrolled Up on Home Page Successfully !
+2021-02-22 20:06:19,422 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 20:06:19,428 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 20:06:24,669 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 20:06:25,505 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 20:06:31,432 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
+2021-02-22 20:07:05,633 - com.algoworks.contactUs -INFO - TC_H_02_Footer_Contact_Us : All_Fields_Valid (All Required Fields are Valid)-- Test Case Started Successfully !
+2021-02-22 20:07:05,867 - com.algoworks.contactUs -INFO -  Contact Us Button is Displayed !
+2021-02-22 20:07:05,906 - com.algoworks.contactUs -INFO -  Contact Us Button is Enabled !
+2021-02-22 20:07:11,334 - com.algoworks.contactUs -INFO -  Contact Us Button Validated Successfully !
+2021-02-22 20:07:12,523 - com.algoworks.contactUs -INFO -  All Details entered Successfully !
+2021-02-22 20:07:18,940 - com.algoworks.contactUs -INFO -  Test Case Passed Successfully  ! 
