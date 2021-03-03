@@ -3,16 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="mobileautomation.MobileNegative">
+      <class name="mobileautomation.DownloadsTest">
         <methods>
-          <include name="mobilelastname"/>
-          <include name="mobilecompany"/>
-          <include name="Emailnegative"/>
-          <include name="mobilefirstname"/>
-          <include name="mobileJobTitle"/>
+          <include name="downloads"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- mobileautomation.MobileNegative -->
+      </class> <!-- mobileautomation.DownloadsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

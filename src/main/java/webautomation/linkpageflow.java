@@ -135,7 +135,7 @@ Thread.sleep(2000);
 driver.get("https://best.wxyz.com/n1ql-development-combines-sql-and-json/");
 
 String TWEURL = driver.getCurrentUrl();
-Assert.assertEquals(TWEURL, "https://www.detroitnews7.com/n1ql-development-combines-sql-and-json" );
+Assert.assertEquals(TWEURL, "https://www.detroitnews7.com/n1ql-development-combines-sql-and-json/" );
 logger1.info("verified twelvth url successfully");
 System.out.println("successfully verified12");
 
@@ -278,7 +278,7 @@ Thread.sleep(2000);
 driver.get("https://best.wxyz.com/nosql-memcached-server-pros-and-cons-of-non-relational-databases/");
 
 String TSIXURL = driver.getCurrentUrl();
-Assert.assertEquals(TSIXURL, "https://www.detroitnews7.com/nosql-memcached-server-pros-and-cons-of-non-relational-databases" );
+Assert.assertEquals(TSIXURL, "https://www.detroitnews7.com/nosql-memcached-server-pros-and-cons-of-non-relational-databases/" );
 logger1.info("verified twentySixth url successfully");
 System.out.println("successfully verified26");
 
@@ -333,7 +333,7 @@ Thread.sleep(2000);
 driver.get("https://best.wxyz.com/understanding-memcached-python/");
 
 String THSEURL = driver.getCurrentUrl();
-Assert.assertEquals(THSEURL, "https://www.detroitnews7.com/understanding-memcached-python" );
+Assert.assertEquals(THSEURL, "https://www.detroitnews7.com/understanding-memcached-python/" );
 logger1.info("verified Thirtysecond url successfully");
 System.out.println("successfully verified32");
 

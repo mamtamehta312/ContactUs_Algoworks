@@ -7,7 +7,7 @@
       <class name="webautomation.Downloads">
         <methods>
           <include name="closeApplication"/>
-          <include name="downloads"/>
+          <include name="downloads" invocation-numbers="0"/>
           <include name="downloadNext"/>
           <include name="createReport"/>
           <include name="LaunchBrowser"/>

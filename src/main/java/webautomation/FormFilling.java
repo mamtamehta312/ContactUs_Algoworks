@@ -103,6 +103,14 @@ public class FormFilling extends WebCapabilities {
 		jse.executeScript("window.scrollBy(0,800)", "up");
 		}
 		
+		public void Checkbox() throws InterruptedException {
+			Thread.sleep(5000);
+			logger1.info("Agreement checkbox has been selected");
+			WebElement element = driver.findElement(By.xpath("/html/body/main/div[3]/div[1]/div[2]/div/section/div[1]/form/div[2]/div/div/div/input"));
+			Actions act = new Actions(driver);
+			act.moveToElement(element).click().build().perform();
+		}
+		
 	@Test
 	public static void validLogin() throws Exception {
 		logger1 = extent.createTest("formFilling");
@@ -118,6 +126,7 @@ public class FormFilling extends WebCapabilities {
 			f.PhoneNumber();
 			f.ReasonForInquiry();
 			f.Message();
+			f.Checkbox();
 			f.ContactUs();
 		}
 

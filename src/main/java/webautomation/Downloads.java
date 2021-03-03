@@ -76,18 +76,30 @@ public class Downloads extends WebCapabilities {
 	public void clickDownloadsButton() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Downloads Button is selected");
-		click("dDownloadssButton_Xpath");
+		click("dDownloadssButtonJava_Xpath");
+	}
+	
+	public void clickDownloadsButtonnn() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Downloads Button is selected");
+		click("dDownloadssButtonN_Xpath");
+	}
+	
+	public void clickDownloadsButtonSwift() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Downloads Button is selected");
+		click("dDownloadssButtonSwift_Xpath");
 	}
 
 	public void firstName() throws InterruptedException {
 		Thread.sleep(2000);
-		logger1.info("First name 'Form' is typed in textbox");
+		logger1.info("First name 'Sumit' is typed in textbox");
 		type("dFirstName_Xpath", "dName");
 	}
 
 	public void lastName() throws InterruptedException {
 		Thread.sleep(2000);
-		logger1.info("Last name 'Testing' is typed in textbox");
+		logger1.info("Last name 'Tomar' is typed in textbox");
 		type("dLastName_Xpath", "dLastName");
 	}
 
@@ -99,7 +111,7 @@ public class Downloads extends WebCapabilities {
 
 	public void Email() throws InterruptedException {
 		Thread.sleep(2000);
-		logger1.info("Business email id 'poonam.gupta@algoworks.com' has been entered to the email field");
+		logger1.info("Business email id 'sumit.tomar@algoworks.com' has been entered to the email field");
 		type("dEmail_Xpath", "dEmail");
 	}
 
@@ -186,6 +198,15 @@ public class Downloads extends WebCapabilities {
 		act.moveToElement(element).click().build().perform();
 	}
 
+	public void Checkbox2() throws InterruptedException {
+		Thread.sleep(5000);
+		logger1.info("Agreement checkbox has been selected");
+		WebElement element = driver.findElement(By.xpath("/html/body/main/div/div[2]/div[2]/div/div/div[2]/section/div[1]/form/div[2]/div[1]/div/div/input"));
+		Actions act = new Actions(driver);
+		act.moveToElement(element).click().build().perform();
+	}
+
+	
 	public void Submit() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Button 'Try It Free Now' has been clicked");
@@ -213,18 +234,52 @@ public class Downloads extends WebCapabilities {
 		click("dButtonServer650_Xpath");
 		Thread.sleep(5000);
 	}
+	
+	public void DbuttonServer70() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonServer70_Xpath");
+		Thread.sleep(5000);
+	}
 
 	public void DbuttonServer651() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonServer660_Xpath");
+		Thread.sleep(5000);
+	}
+	public void DbuttonServer700l() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonServer700l_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	public void DbuttonServer651n() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Download button has been clicked");
 		click("dButtonServer_Xpath");
 		Thread.sleep(5000);
 	}
 
-	public void DbuttonServer604() throws InterruptedException {
+	public void DbuttonServer660() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Download button has been clicked");
-		click("dButtonServer604_Xpath");
+		click("dButtonServer_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	public void DbuttonServerlangoption3() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonServerlangoption3_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	public void DbuttonServer660n() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonServer660_Xpath");
 		Thread.sleep(5000);
 	}
 
@@ -241,6 +296,13 @@ public class Downloads extends WebCapabilities {
 		click("dButtonKub201Lang_Xpath");
 		Thread.sleep(5000);
 	}
+	
+	public void DbuttonKubernetes203Langneww() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonKub203Langneww_Xpath");
+		Thread.sleep(5000);
+	}
 
 	public void DbuttonKubernetes200() throws InterruptedException {
 		Thread.sleep(2000);
@@ -249,10 +311,24 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(5000);
 	}
 	
+	public void DbuttonKubernetes203() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonKub203_Xpath");
+		Thread.sleep(5000);
+	}
+	
 	public void DbuttonKubernetes200Lang() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Download button has been clicked");
 		click("dButtonKub200Lang_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	public void DbuttonKubernetes202nLang() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonKub202nLang_Xpath");
 		Thread.sleep(5000);
 	}
 
@@ -263,6 +339,21 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(5000);
 	}
 	
+	public void DbuttonKubernetesnewed2011() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonKubnewed2011_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	
+	public void DbuttonKubernetes122n() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonKub122n_Xpath");
+		Thread.sleep(5000);
+	}
+	
 	
 	public void DbuttonRedHat201() throws InterruptedException {
 		Thread.sleep(2000);
@@ -270,18 +361,65 @@ public class Downloads extends WebCapabilities {
 		click("dButtonRedHat201_Xpath");
 		Thread.sleep(5000);
 	}
+	
+	public void DbuttonRedHat203newed() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonRedHat203newed_Xpath");
+		Thread.sleep(5000);
+	}
 
+	public void DbuttonRedHat201nnn() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonRedHat201n_Xpath");
+		Thread.sleep(5000);
+	}
+
+	
 	public void DbuttonRedHat200() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Download button has been clicked");
 		click("dButtonRedHat200_Xpath");
 		Thread.sleep(5000);
 	}
+	
+	public void DbuttonRedHat202newed() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonRedHat202newed_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	public void DbuttonRedHat203() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonRedHat203_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	
 
 	public void DbuttonRedHat122() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Download button has been clicked");
 		click("dButtonRedHat122_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	
+	public void DbuttonRedHat201newbutton() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonRedHat201newbutton_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	
+	public void DbuttonRedHat122n() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonRedHat122n_Xpath");
 		Thread.sleep(5000);
 	}
 
@@ -292,10 +430,31 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(5000);
 	}
 
-	public void DbuttonSyncG272() throws InterruptedException {
+	public void DbuttonSyncG274() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Download button has been clicked");
-		click("dButtonSyncG272_Xpath");
+		click("dButtonSyncG274_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	public void DbuttonSyncG280new() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonSyncG280new_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	
+	public void DbuttonSyncnew() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonSyncNew_Xpath");
+		Thread.sleep(5000);
+	}
+	public void DbuttonSyncnewgateway() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonSyncgatewayy_Xpath");
 		Thread.sleep(5000);
 	}
 
@@ -303,6 +462,13 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(2000);
 		logger1.info("Download button has been clicked");
 		click("dButtonSyncG271_Xpath");
+		Thread.sleep(5000);
+	}
+	
+	public void DbuttonSyncG274n() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Download button has been clicked");
+		click("dButtonSyncG274n_Xpath");
 		Thread.sleep(5000);
 	}
 
@@ -447,16 +613,34 @@ public class Downloads extends WebCapabilities {
 		click("dSelectRedHat6SyncGLang_Xpath");
 	}
 	
+	public void PlatformSyncGselectRedHat7Langnew() throws InterruptedException {
+		logger1.info("RedHat7 has been selected");
+		Thread.sleep(2000);
+		click("dSelectRedHat7SyncGLangnew_Xpath");
+	}
+	
 	public void PlatformSyncGselectRedHat7() throws InterruptedException {
 		logger1.info("RedHat7 has been selected");
 		Thread.sleep(2000);
 		click("dSelectRedHat7SyncG_Xpath");
 	}
 	
+	public void PlatformSyncGselectRedHat8() throws InterruptedException {
+		logger1.info("RedHat7 has been selected");
+		Thread.sleep(2000);
+		click("dSelectRedHat8SyncG_Xpath");
+	}
+	
 	public void PlatformSyncGselectRedHat7Lang() throws InterruptedException {
 		logger1.info("RedHat7 has been selected");
 		Thread.sleep(2000);
 		click("dSelectRedHat7SyncGLang_Xpath");
+	}
+	
+	public void PlatformSyncGselectRedHat8Langnew() throws InterruptedException {
+		logger1.info("RedHat8 has been selected");
+		Thread.sleep(2000);
+		click("dSelectRedHat8SyncGLangnew_Xpath");
 	}
 
 	public void PlatformSyncGselectWindows() throws InterruptedException {
@@ -474,17 +658,35 @@ public class Downloads extends WebCapabilities {
 	public void PlatformSelectionUbuntu1604() throws InterruptedException {
 		logger1.info("Ubuntu 16.04 has been selected");
 		Thread.sleep(2000);
-		WebElement et = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[1]/span/ul/li[2]"));
-		Actions ax = new Actions(driver);
-		ax.moveToElement(et).click().build().perform();
+		WebElement element = driver.findElement(By.xpath(
+				"//*[@id=\"couchbase-server-enterprise-osSelectBoxIt\"]"));
+//		Actions ax = new Actions(driver);
+//		ax.moveToElement(et).click().build().perform();
+		
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		 Thread.sleep(1000);
+		element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
 	}
 
 	public void PlatformSelectionUbuntu1604Lang() throws InterruptedException {
 		logger1.info("Ubuntu 16.04 has been selected");
 		Thread.sleep(2000);
 		WebElement et = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[1]/span/ul/li[2]"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[1]/span/ul/li[16]"));
 		Actions ax = new Actions(driver);
 		ax.moveToElement(et).click().build().perform();
 	}
@@ -492,10 +694,26 @@ public class Downloads extends WebCapabilities {
 	public void PlatformSelectionUbuntu1804() throws InterruptedException {
 		logger1.info("Ubuntu 18.04 has been selected");
 		Thread.sleep(2000);
-		WebElement et = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[1]/span/ul/li[1]"));
-		Actions ax = new Actions(driver);
-		ax.moveToElement(et).click().build().perform();
+		WebElement element = driver.findElement(By.xpath(
+				"//*[@id=\"couchbase-server-enterprise-osSelectBoxIt\"]"));
+
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		 Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_UP);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
 	}
 
 	public void PlatformSelectionUbuntu1804Lang() throws InterruptedException {
@@ -511,7 +729,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Red Hat has been selected");
 		Thread.sleep(2000);
 		WebElement et = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[1]/span/ul/li[3]"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[1]/span/ul/li[3]"));
 		Actions ax = new Actions(driver);
 		ax.moveToElement(et).click().build().perform();
 	}
@@ -529,18 +747,53 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Objective-C has been selected");
 		Thread.sleep(2000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[1]/span/ul/li[2]"));
+				"//*[@id=\"couchbase-lite-enterprise-osSelectBoxIt\"]"));
+//		Actions act = new Actions(driver);
+//		act.moveToElement(element).click().build().perform();
+		
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
+	}
+
+	public void PlatformSelectionSwift() throws InterruptedException {
+		logger1.info("Swift has been selected");
+		Thread.sleep(2000);
+		WebElement element = driver.findElement(By.xpath(
+				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[1]/span/ul/li[5]"));
 		Actions act = new Actions(driver);
 		act.moveToElement(element).click().build().perform();
 	}
 
+	
 	public void PlatformSelectionNet() throws InterruptedException {
 		logger1.info(".NET has been selected");
 		Thread.sleep(2000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[1]/span/ul/li[3]"));
-		Actions act = new Actions(driver);
-		act.moveToElement(element).click().build().perform();
+				"//*[@id=\"couchbase-lite-enterprise-osSelectBoxIt\"]"));
+//		Actions act = new Actions(driver);
+//		act.moveToElement(element).click().build().perform();
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     
+		    element.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
 	}
 
 	public void MouseHover() throws InterruptedException {
@@ -555,10 +808,24 @@ public class Downloads extends WebCapabilities {
 	public void PlatformSelectionAndroid() throws InterruptedException {
 		logger1.info("Android has been selected");
 		Thread.sleep(2000);
+//		WebElement element = driver.findElement(By.xpath(
+//				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[1]/span/ul/li[4]"));
+//		Actions act = new Actions(driver);
+//		act.moveToElement(element).pause(5000).click().build().perform();
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[1]/span/ul/li[4]"));
-		Actions act = new Actions(driver);
-		act.moveToElement(element).pause(5000).click().build().perform();
+				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[1]/span/span"));
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
+		
 	}
 
 	public void PlatformSelectionAndroidff() throws InterruptedException {
@@ -605,16 +872,26 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Java has been selected");
 		Thread.sleep(2000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[1]/span/ul/li[5]"));
-		Actions act = new Actions(driver);
-		act.moveToElement(element).click().build().perform();
+				"//*[@id=\"couchbase-lite-enterprise-osSelectBoxIt\"]"));
+//		Actions act = new Actions(driver);
+//		act.moveToElement(element).click().build().perform();
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
+		
 	}
 
 	public void Versionn() throws InterruptedException {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div"));
+				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[5]/div[2]/div/span/span"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -665,17 +942,18 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div"));
+				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
 	}
 	
+	
 	public void VersionSyncG3Lang() throws InterruptedException {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div/div[2]/div/div/div/div/div/div[4]/div[2]/div"));
+				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/span"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -826,7 +1104,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.0.1 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[1]"));
+				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[3]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -836,7 +1114,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.0.1 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[2]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[1]"));
+				"/html/body/main/div/div[2]/section/div/div[2]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[2]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -846,7 +1124,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.0.0 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[2]"));
+				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[3]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -856,7 +1134,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.0.0 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[2]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[2]"));
+				"/html/body/main/div/div[2]/section/div/div[2]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[3]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -865,11 +1143,34 @@ public class Downloads extends WebCapabilities {
 	public void VersionKub122() throws InterruptedException {
 		logger1.info("Version 1.2.2 is selected");
 		Thread.sleep(3000);
+//		WebElement element = driver.findElement(By.xpath(
+//				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[4]"));
+//		Actions acti = new Actions(driver);
+//		acti.moveToElement(element).click().build().perform();
+		
+//		WebElement element = driver.findElement(By.xpath(
+//				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[4]"));
+		
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[3]"));
-		Actions acti = new Actions(driver);
-		acti.moveToElement(element).click().build().perform();
-		Thread.sleep(2000);
+				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/span"));
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
+	
 	}
 	
 	public void VersionKub122Lang() throws InterruptedException {
@@ -886,7 +1187,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.0.1 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[1]"));
+				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[3]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -896,7 +1197,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.0.1 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[2]/div[2]/div[2]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[1]"));
+				"/html/body/main/div/div[2]/section/div/div[2]/div[2]/div[2]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[2]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -906,7 +1207,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.0.0 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[2]"));
+				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[3]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -916,7 +1217,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.0.0 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[2]/div[2]/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[2]"));
+				"/html/body/main/div/div[2]/section/div/div[2]/div[2]/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[3]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -925,11 +1226,29 @@ public class Downloads extends WebCapabilities {
 	public void VersionRedHat122() throws InterruptedException {
 		logger1.info("Version 1.2.2 is selected");
 		Thread.sleep(3000);
+//		WebElement element = driver.findElement(By.xpath(
+//				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[4]"));
+
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[3]"));
-		Actions acti = new Actions(driver);
-		acti.moveToElement(element).click().build().perform();
-		Thread.sleep(2000);
+				"/html/body/main/div/div[2]/section/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/span"));
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
+		
 	}
 	
 	public void VersionRedHat122Lang() throws InterruptedException {
@@ -946,7 +1265,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.7.3 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[1]"));
+				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[3]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -956,14 +1275,14 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.7.3 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[1]"));
+				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[3]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
 	}
 
 	public void VersionSyncG272() throws InterruptedException {
-		logger1.info("Version 2.7.2 is selected");
+		logger1.info("Version 2.7.4 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
 				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[2]"));
@@ -986,17 +1305,27 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.7.1 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[3]"));
-		Actions acti = new Actions(driver);
-		acti.moveToElement(element).click().build().perform();
+				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/span"));
+//		Actions acti = new Actions(driver);
+//		acti.moveToElement(element).click().build().perform();
+		Thread.sleep(1000);
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
 	}
 	
 	public void VersionSyncG271Lang() throws InterruptedException {
-		logger1.info("Version 2.7.1 is selected");
+		logger1.info("Version 2.7.4 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[3]"));
+				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[2]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1005,28 +1334,59 @@ public class Downloads extends WebCapabilities {
 	public void VersionSyncG270() throws InterruptedException {
 		logger1.info("Version 2.7.0 is selected");
 		Thread.sleep(3000);
+//		WebElement element = driver.findElement(By.xpath(
+//				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[6]/div[2]/div/span/ul/li[4]"));
+//		Actions acti = new Actions(driver);
+//		acti.moveToElement(element).click().build().perform();
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[6]/div[2]/div/span/ul/li[4]"));
-		Actions acti = new Actions(driver);
-		acti.moveToElement(element).click().build().perform();
-		Thread.sleep(2000);
+				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[6]/div[2]/div/span/span"));
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
+		
 	}
 
 	public void VersionSyncG261() throws InterruptedException {
 		logger1.info("Version 2.6.1 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[7]/div[2]/div/span/ul/li[5]"));
-		Actions acti = new Actions(driver);
-		acti.moveToElement(element).click().build().perform();
-		Thread.sleep(2000);
-	}
+				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[7]/div[2]/div/span/span"));
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
+			}
 
 	public void VersionServer1() throws InterruptedException {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[3]/div[2]/div"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1036,7 +1396,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[3]/div[2]/div"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[17]/div[2]/div"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1046,7 +1406,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1066,7 +1426,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[4]/div[2]/div"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1076,7 +1436,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[4]/div[2]/div"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/span"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1086,7 +1446,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.7.0 has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[2]"));
+				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[5]/div[2]/div/span/ul/li[3]"));
 		Actions act = new Actions(driver);
 		act.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1096,7 +1456,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 6.5.0 has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[2]"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[3]"));
 		Actions act = new Actions(driver);
 		act.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1106,7 +1466,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 6.5.0 has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[2]"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[17]/div[2]/div/span/ul/li[3]"));
 		Actions act = new Actions(driver);
 		act.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1116,7 +1476,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 6.5.1 has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[1]"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[5]"));
 		Actions act = new Actions(driver);
 		act.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1133,20 +1493,19 @@ public class Downloads extends WebCapabilities {
 	}
 
 	public void VersionServerSelect3() throws InterruptedException {
-		logger1.info("Version 6.0.4 has been clicked");
+		logger1.info("Version 6.6.0 has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[3]"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[1]"));
 		Actions act = new Actions(driver);
 		act.moveToElement(element).click().build().perform();
-		Thread.sleep(2000);
 	}
 
 	public void VersionServerSelect3Lang() throws InterruptedException {
-		logger1.info("Version 6.0.4 has been clicked");
+		logger1.info("Version 6.5.1 has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[3]"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[2]"));
 		Actions act = new Actions(driver);
 		act.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1156,7 +1515,7 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
 		WebElement elep = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div"));
+				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/span"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(elep).click().build().perform();
 		Thread.sleep(2000);
@@ -1165,20 +1524,47 @@ public class Downloads extends WebCapabilities {
 	public void VersionnThrd() throws InterruptedException {
 		logger1.info("Version 2.6.4 has been clicked");
 		Thread.sleep(3000);
-		WebElement eleme = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/ul/li[3]"));
-		Actions act = new Actions(driver);
-		act.moveToElement(eleme).click().build().perform();
+		WebElement element = driver.findElement(By.xpath(
+				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/span"));
+//		Actions act = new Actions(driver);
+//		act.moveToElement(eleme).click().build().perform();
+//		Thread.sleep(2000);
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+		Thread.sleep(1000);
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
 	}
 
 	public void VersionAndroid() throws InterruptedException {
-		logger1.info("Version dropdown has been clicked");
+		logger1.info("Version2.6.0 has been clicked");
 		Thread.sleep(3000);
-		WebElement eleA = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[5]/div[2]/div"));
-		Actions acti = new Actions(driver);
-		acti.moveToElement(eleA).click().build().perform();
+		WebElement element = driver.findElement(By.xpath(
+				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/span"));
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+		Thread.sleep(1000);
+		element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+	     element.sendKeys(Keys.ARROW_DOWN);
+	     Thread.sleep(1000);
+		    element.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
 	}
 
@@ -1205,15 +1591,15 @@ public class Downloads extends WebCapabilities {
 	}
 
 	public void selectOS() throws InterruptedException {
-		logger1.info("Select Objective-C option ");
+		logger1.info("Select Java option ");
 		Thread.sleep(2000);
-		click("dSelectObjective-c_Xpath");
+		click("dSelectJavaa_Xpath");
 	}
 
-	public void selectOSNET() throws InterruptedException {
-		logger1.info(".NET option is selected");
+	public void selectSwiftnew() throws InterruptedException {
+		logger1.info("Swift option is selected");
 		Thread.sleep(2000);
-		click("dSelect.Net_Xpath");
+		click("dSelectSwiftnew_Xpath");
 	}
 
 	public void selectOSJava() throws InterruptedException {
@@ -1247,15 +1633,15 @@ public class Downloads extends WebCapabilities {
 	}
 
 	public void selectVersion() throws InterruptedException {
-		logger1.info("Select 2.6.4 version");
+		logger1.info("Select 2.7.1 version");
 		Thread.sleep(4000);
-		click("dSelect2.6.4_Xpath");
+		click("dSelect2.7.1new_Xpath");
 	}
 
 	public void selectVersionNew() throws InterruptedException {
-		logger1.info("Select 2.6.0 version");
+		logger1.info("Select 2.7.0 version");
 		Thread.sleep(4000);
-		click("dSelect2.6.0_Xpath");
+		click("dSelect2.7.0new_Xpath");
 	}
 
 	public void selectVersions() throws InterruptedException {
@@ -1267,6 +1653,13 @@ public class Downloads extends WebCapabilities {
 	public void Downloadnewbutton() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Downloads Button is selected");
+		click("dDownloadsButton2.7.1new_Xpath");
+		Thread.sleep(2000);
+	}
+	
+	public void Downloadnewbutton1() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Downloads Button is selected");
 		click("dDownloadsButton2.6.4_Xpath");
 		Thread.sleep(2000);
 	}
@@ -1274,7 +1667,7 @@ public class Downloads extends WebCapabilities {
 	public void DownloadNewVersion() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Downloads Button is selected");
-		click("dDownloadsButton2.6.0_Xpath");
+		click("dDownloadsButton2.7.0new_Xpath");
 		Thread.sleep(2000);
 	}
 
@@ -1291,6 +1684,14 @@ public class Downloads extends WebCapabilities {
 		js.executeScript("window.scrollBy(0,350)", "down");
 	}
 
+	public void scrollup() throws InterruptedException {
+		Thread.sleep(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,-200)", "up");
+		
+	}
+
+	
 	public void scrolling() throws InterruptedException {
 		Thread.sleep(2000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -1352,6 +1753,14 @@ public class Downloads extends WebCapabilities {
 		String expectedval = properties.getProperty("url_2.6.4");
 		Assert.assertEquals(url_xx, expectedval);
 	}
+	
+	public void checkingUrlEnglish264n() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String url_xx = driver.getCurrentUrl();
+		String expectedval = properties.getProperty("url_2.6.4n");
+		Assert.assertEquals(url_xx, expectedval);
+	}
 
 	public void checkingUrlLanguage1() throws InterruptedException {
 		Thread.sleep(3000);
@@ -1368,7 +1777,23 @@ public class Downloads extends WebCapabilities {
 		String expectedvalue = properties.getProperty("url2.6.0");
 		Assert.assertEquals(urli, expectedvalue);
 	}
+	
+	public void checkingUrlAndr1() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String urli = driver.getCurrentUrl();
+		String expectedvalue = properties.getProperty("url2.8.1");
+		Assert.assertEquals(urli, expectedvalue);
+	}
 
+	public void checkingUrlnewnet() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String urli = driver.getCurrentUrl();
+		String expectedvalue = properties.getProperty("url2.8.3");
+		Assert.assertEquals(urli, expectedvalue);
+	}
+	
 	public void checkingUrlAndroid() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
@@ -1392,6 +1817,14 @@ public class Downloads extends WebCapabilities {
 		String expectedlink = properties.getProperty("url_server2");
 		Assert.assertEquals(link, expectedlink);
 	}
+	
+	public void checkingUrlServer70() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_servern1");
+		Assert.assertEquals(link, expectedlink);
+	}
 
 	public void checkingUrlServer651() throws InterruptedException {
 		Thread.sleep(3000);
@@ -1400,15 +1833,55 @@ public class Downloads extends WebCapabilities {
 		String expectedlink = properties.getProperty("url_server3");
 		Assert.assertEquals(link, expectedlink);
 	}
+	
+	
+	public void checkingUrlServer700l() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_server700l");
+		Assert.assertEquals(link, expectedlink);
+	}
+	public void checkingUrlServer651n() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_server3n");
+		Assert.assertEquals(link, expectedlink);
+	}
 
-	public void checkingUrlServer604() throws InterruptedException {
+	public void checkingUrlServer660() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
 		String expectedlink = properties.getProperty("url_server4");
 		Assert.assertEquals(link, expectedlink);
 	}
+	
+	public void checkingUrlServernewedition() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_servernewedition");
+		Assert.assertEquals(link, expectedlink);
+	}
 
+	public void checkingUrlServer660n() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_server4n");
+		Assert.assertEquals(link, expectedlink);
+	}
+
+	public void checkingUrlServer700n() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_server7000");
+		Assert.assertEquals(link, expectedlink);
+	}
+	
 	public void checkingUrlKubWindows201() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
@@ -1424,6 +1897,14 @@ public class Downloads extends WebCapabilities {
 		String expectedlink = properties.getProperty("url_KubWin201Lang");
 		Assert.assertEquals(link, expectedlink);
 	}
+	
+	public void checkingUrlKubWindows2033Lang() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_KubWin2033Lang");
+		Assert.assertEquals(link, expectedlink);
+	}
 
 	public void checkingUrlKubMac200() throws InterruptedException {
 		Thread.sleep(3000);
@@ -1433,11 +1914,28 @@ public class Downloads extends WebCapabilities {
 		Assert.assertEquals(link, expectedlink);
 	}
 	
+	public void checkingUrlKubMac203() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_KubMac203");
+		Assert.assertEquals(link, expectedlink);
+	}
+	
+	
 	public void checkingUrlKubMac200Lang() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
 		String expectedlink = properties.getProperty("url_KubMac200Lang");
+		Assert.assertEquals(link, expectedlink);
+	}
+	
+	public void checkingUrlKubMac202newedLang() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_KubMac202newedLang");
 		Assert.assertEquals(link, expectedlink);
 	}
 
@@ -1456,6 +1954,14 @@ public class Downloads extends WebCapabilities {
 		String expectedlink = properties.getProperty("url_KubLin122Lang");
 		Assert.assertEquals(link, expectedlink);
 	}
+	
+	public void checkingUrlKubLin2011Lang() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_KubLin2011Lang");
+		Assert.assertEquals(link, expectedlink);
+	}
 
 	public void checkingUrlRedHatWin201() throws InterruptedException {
 		Thread.sleep(3000);
@@ -1464,7 +1970,24 @@ public class Downloads extends WebCapabilities {
 		String expectedlink = properties.getProperty("url_RedHatWin201");
 		Assert.assertEquals(link, expectedlink);
 	}
+	
+	public void checkingUrlRedHatWin203newed() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_RedHatWin203newed");
+		Assert.assertEquals(link, expectedlink);
+	}
 
+	public void checkingUrlRedHatWin201nnn() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_RedHatWin201n");
+		Assert.assertEquals(link, expectedlink);
+	}
+
+	
 	public void checkingUrlRedHatMac200() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
@@ -1473,12 +1996,43 @@ public class Downloads extends WebCapabilities {
 		Assert.assertEquals(link, expectedlink);
 	}
 	
+	public void checkingUrlRedHatMac202newed() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_RedHatMac202newed");
+		Assert.assertEquals(link, expectedlink);
+	}
+	
+	public void checkingUrlRedHatMac203() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_RedHatMac203");
+		Assert.assertEquals(link, expectedlink);
+	}
 
 	public void checkingUrlRedHatLinux122() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
 		String expectedlink = properties.getProperty("url_RedHatLin122");
+		Assert.assertEquals(link, expectedlink);
+	}
+	
+	public void checkingUrlRedHatLinux201newed() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_RedHatLin201newed");
+		Assert.assertEquals(link, expectedlink);
+	}
+	
+	public void checkingUrlRedHatLinux122n() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_RedHatLin122n");
 		Assert.assertEquals(link, expectedlink);
 	}
 
@@ -1497,12 +2051,36 @@ public class Downloads extends WebCapabilities {
 		String expectedlink = properties.getProperty("url_SyncGRedHat272");
 		Assert.assertEquals(link, expectedlink);
 	}
-
-	public void checkingUrlSyncGRedHat7271() throws InterruptedException {
+	
+	public void checkingUrlSyncGRedHat7280new() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
-		String expectedlink = properties.getProperty("url_SyncGRedHat271");
+		String expectedlink = properties.getProperty("url_SyncGRedHat7new280");
+		Assert.assertEquals(link, expectedlink);
+	}
+
+	public void checkingUrlSyncGRedHat7272new() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_SyncGRedHat272new");
+		Assert.assertEquals(link, expectedlink);
+	}
+	
+	public void checkingUrlSyncGRedHat8280() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_SyncGRedHat8280");
+		Assert.assertEquals(link, expectedlink);
+	}
+	
+	public void checkingUrlSyncGRedHat8281() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		String expectedlink = properties.getProperty("url_SyncGRedHat8281");
 		Assert.assertEquals(link, expectedlink);
 	}
 
@@ -1541,7 +2119,7 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(2000);
 		logger1.info("Click on'Couchbase Lite' tab");
 		WebElement element = driver
-				.findElement(By.xpath("//*[@id=\"global-content\"]/div/div[2]/section/div/div[4]/div[1]/div[1]"));
+				.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[4]/div[1]/div[1]"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
@@ -1558,6 +2136,14 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Click on'Couchbase Kubernetes' tab");
 		WebElement element = driver
 				.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[3]/div[1]/div[1]"));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+	
+	public void ScrollingToCouchbaseKubernetesTabdbutton() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Click on'Couchbase Kubernetes' tab");
+		WebElement element = driver
+				.findElement(By.xpath("//*[@id=\"UI - DL - Button - Autonomous Operator 2.1.0 – Red Hat OpenShift\"]"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 	
@@ -1613,6 +2199,7 @@ public class Downloads extends WebCapabilities {
 		}
 		d.PhoneNumber();
 		d.scrollinform();
+		d.Checkbox2();
 		d.Checkbox();
 		d.Submit();
 
@@ -1628,73 +2215,58 @@ public class Downloads extends WebCapabilities {
 				d.ScrollingToCouchbaseLiteTab();
 				d.clickPlusButtonmain();
 				d.scroll();
-				d.clickDownloadsButton();
+				d.clickDownloadsButtonnn();
 			}
 
 			else {
 				d.ScrollingToCouchbaseLiteTabLanguage();
 				d.clickPlusButton();
+				d.scroll();
 				d.clickDownloadButton();
+				
 			}
 			d.TestForm();
 			if (getPropertyValue("language").equalsIgnoreCase("english")
 					&& getPropertyValue("urltype").equalsIgnoreCase("main")) {
-				d.checkingUrlEnglish();
-				driver.navigate().back();
+				d.checkingUrlnewnet();
+				driver.navigate().back();	
+				driver.navigate().refresh();
 				d.ScrollingToCouchbaseLiteTab();
+				Thread.sleep(3000);
+				d.scrollup();
 				d.clickPlusButtonmain();
-				d.scroll();
+				d.scrolly();
+				d.scrolly();
 				d.Platform();
 				d.PlatformSelectionObjectiveC();
 				d.Versionn();
 				d.VersionnSecnd();
 				d.dowloaddEnglish();
 				d.checkingUrlEnglish2();
-				// d.Dbutton();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseLiteTab();
+				Thread.sleep(2000);
+				driver.navigate().refresh();
+				d.scrollup();
 				d.clickPlusButtonmain();
-				d.scroll();
-				d.Platform();
-				d.PlatformSelectionNet();
+				d.scrolly();
 				d.Versionnextt();
 				d.VersionnThrd();
-				d.Downloadnewbutton();
-				d.checkingUrlEnglish264();
+				d.Downloadnewbutton1();
+				Thread.sleep(2000);
+				d.checkingUrlEnglish264n();
 				driver.navigate().back();
+				driver.navigate().refresh();
+//***************server******************
 
-				if (browser.equalsIgnoreCase("chrome")) {
-					d.ScrollingToCouchbaseLiteTab();
-					d.clickPlusButtonmain();
-					d.scroll();
-					d.Platform();
-					d.PlatformSelectionAndroid();
-					d.VersionAndroid();
-					d.VersionnFourth();
-					d.DownloadNewVersion();
-					d.checkingUrlAndr();
-
-					driver.navigate().back();
-					d.ScrollingToCouchbaseLiteTab();
-					d.clickPlusButtonmain();
-					d.scroll();
-					d.Platform();
-					d.PlatformSelectionJava();
-					d.clickDownloadsButton();
-					d.checkingUrlEJava();
-
-					driver.navigate().back();
-				}
 				driver.manage().deleteAllCookies();
 				d.ScrollingToCouchbaseServerTab();
-				d.Switchingtoframe();
 				d.PlatformServer();
 				d.PlatformSelectionUbuntu1604();
 				d.scrolly();
 				d.scrolly();
 				d.VersionServer1();
-				d.VersionServerSelect1();
-				d.DbuttonServer650();
+				d.DbuttonServer70();
 				d.firstName();
 				d.lastName();
 				d.Email();
@@ -1702,43 +2274,38 @@ public class Downloads extends WebCapabilities {
 				d.jobTitle();
 				d.PhoneNumber();
 				d.scrollinform();
+				d.Checkbox2();
 				d.Checkbox();
 				d.Submit();
-				d.checkingUrlServer650();
-				// d.Dbutton();
+				d.checkingUrlServer70();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseServerTab();
-				d.PlatformServer();
-				d.PlatformSelectionUbuntu1804();
+				Thread.sleep(2000);
 				d.scrolly();
-				// d.Switchingtoframe();
+				d.PlatformSelectionUbuntu1804();
+				Thread.sleep(2000);
 				d.VersionServer2();
 				d.VersionServerSelect2();
 				d.scrolly();
-				d.DbuttonServer651();
-				d.checkingUrlServer651();
-				// d.Dbutton();
+				d.DbuttonServer651n();
+				d.checkingUrlServer651n();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseServerTab();
 				d.scrolly();
-				d.PlatformServer();
-				d.PlatformSelectionUbuntuRedHat();
-				d.scrolly();
-				// d.Switchingtoframe();
-				d.VersionServer3();
-				d.VersionServerSelect3();
-				d.DbuttonServer604();
-				d.checkingUrlServer604();
-				// d.Dbutton();
+				d.DbuttonServer70();
+				d.checkingUrlServer700n();
 				driver.navigate().back();
 				driver.manage().deleteAllCookies();
-				d.ScrollingToCouchbaseKubernetesTab();
+				//**************kubernetes tab starts here******************************8
+			
+				d.ScrollingToCouchbaseKubernetesTab();			
 				d.clickPlusButtonKubernetes();
-				d.scroll();
+				d.scroll();			
 				d.PlatformKubernetes();
 				d.PlatformKubernetesselectWindows();
 				d.VersionKubernetes1();
 				d.VersionKub201();
+				Thread.sleep(2000);
 				d.DbuttonKubernetes201();
 				d.firstName();
 				d.lastName();
@@ -1747,21 +2314,18 @@ public class Downloads extends WebCapabilities {
 				d.jobTitle();
 				d.PhoneNumber();
 				d.scrollinform();
+				d.Checkbox2();
 				d.Checkbox();
 				d.Submit();
 				d.checkingUrlKubWindows201();
-				// d.Dbutton();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseKubernetesTab();
 				d.clickPlusButtonKubernetes();
 				d.scroll();
 				d.PlatformKubernetes();
 				d.PlatformKubernetesselectMacOS();
-				d.VersionKubernetes2();
-				d.VersionKub200();
-				d.DbuttonKubernetes200();
-				d.checkingUrlKubMac200();
-				// d.Dbutton();
+				d.DbuttonKubernetes203();
+				d.checkingUrlKubMac203();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseKubernetesTab();
 				d.clickPlusButtonKubernetes();
@@ -1770,11 +2334,11 @@ public class Downloads extends WebCapabilities {
 				d.PlatformKubernetesselectLinux();
 				d.VersionKubernetes3();
 				d.VersionKub122();
-				d.DbuttonKubernetes122();
+				d.DbuttonKubernetes122n();
 				d.checkingUrlKubLin122();
-				// d.Dbutton();
 				driver.navigate().back();
 				driver.manage().deleteAllCookies();
+				//****************kubernetes Red hat*************************
 				d.ScrollingToCouchbaseKubernetesTab();
 				d.clickPlusButtonKubernetes();
 				d.scrolling();
@@ -1784,7 +2348,7 @@ public class Downloads extends WebCapabilities {
 				d.PlatformKubRedHatselectWindows();
 				d.VersionKubRedHat1();
 				d.VersionRedHat201();
-				d.DbuttonRedHat201();
+				d.DbuttonRedHat201nnn();
 				d.firstName();
 				d.lastName();
 				d.Email();
@@ -1792,10 +2356,10 @@ public class Downloads extends WebCapabilities {
 				d.jobTitle();
 				d.PhoneNumber();
 				d.scrollinform();
+				d.Checkbox2();
 				d.Checkbox();
 				d.Submit();
-				d.checkingUrlRedHatWin201();
-				// d.Dbutton();
+				d.checkingUrlRedHatWin201nnn();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseKubernetesTab();
 				d.clickPlusButtonKubernetes();
@@ -1804,11 +2368,9 @@ public class Downloads extends WebCapabilities {
 				d.scrolly();
 				d.PlatformKubRedHat();
 				d.PlatformKubRedHatselectMac();
-				d.VersionKubRedHat2();
-				d.VersionRedHat200();
-				d.DbuttonRedHat200();
-				d.checkingUrlRedHatMac200();
-				// d.Dbutton();
+				Thread.sleep(2000);
+				d.DbuttonRedHat203();
+				d.checkingUrlRedHatMac203();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseKubernetesTab();
 				d.clickPlusButtonKubernetes();
@@ -1819,18 +2381,19 @@ public class Downloads extends WebCapabilities {
 				d.PlatformKubRedHatselectLinux();
 				d.VersionKubRedHat3();
 				d.VersionRedHat122();
-				d.DbuttonRedHat122();
-				d.checkingUrlRedHatLinux122();
-				// d.Dbutton();
+				d.DbuttonRedHat122n();
+				d.checkingUrlRedHatLinux122n();
 				driver.navigate().back();
 				driver.manage().deleteAllCookies();
+				//********************************Sync gateway******************
 				d.ScrollingToCouchbaseSyncGatewayTab();
 				d.clickPlusButtonSyncG();
-				d.scroll();
+				Thread.sleep(2000);
 				d.PlatformSyncG();
 				d.PlatformSyncGselectLinux();
 				d.VersionSyncG1();
 				d.VersionSyncG273();
+                d.scrolly();
 				d.DbuttonSyncG273();
 				d.firstName();
 				d.lastName();
@@ -1839,21 +2402,10 @@ public class Downloads extends WebCapabilities {
 				d.jobTitle();
 				d.PhoneNumber();
 				d.scrollinform();
+				d.Checkbox2();
 				d.Checkbox();
 				d.Submit();
 				d.checkingUrlSyncGLinux273();
-				// d.Dbutton();
-				driver.navigate().back();
-				d.ScrollingToCouchbaseSyncGatewayTab();
-				d.clickPlusButtonSyncG();
-				d.scroll();
-				d.PlatformSyncG();
-				d.PlatformSyncGselectRedHat6();
-				d.VersionSyncG2();
-				d.VersionSyncG272();
-				d.DbuttonSyncG272();
-				d.checkingUrlSyncGRedHat6272();
-				// d.Dbutton();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseSyncGatewayTab();
 				d.clickPlusButtonSyncG();
@@ -1861,42 +2413,28 @@ public class Downloads extends WebCapabilities {
 				d.PlatformSyncG();
 				d.PlatformSyncGselectRedHat7();
 				d.VersionSyncG3();
-				d.VersionSyncG271();
-				d.DbuttonSyncG271();
-				d.checkingUrlSyncGRedHat7271();
+				d.VersionSyncG272();
+				d.DbuttonSyncG274();
+				d.checkingUrlSyncGRedHat7272new();
 				// d.Dbutton();
 				driver.navigate().back();
-				if (browser.equalsIgnoreCase("chrome")) {
-					d.ScrollingToCouchbaseSyncGatewayTab();
-					d.clickPlusButtonSyncG();
-					d.scroll();
-					d.PlatformSyncG();
-					d.PlatformSyncGselectWindows();
-					d.VersionSyncG4();
-					d.VersionSyncG270();
-					d.DbuttonSyncG270();
-					d.checkingUrlSyncGWin270();
-					// d.Dbutton();
-					driver.navigate().back();
-					d.ScrollingToCouchbaseSyncGatewayTab();
-					d.clickPlusButtonSyncG();
-					d.scroll();
-					d.PlatformSyncG();
-					d.PlatformSyncGselectMac();
-
-					d.VersionSyncG5();
-					d.VersionSyncG261();
-					d.scrolly();
-					d.DbuttonSyncG261();
-					d.checkingUrlSyncGMac261();
-					// d.Dbutton();
-					driver.navigate().back();
-				}
+				d.ScrollingToCouchbaseSyncGatewayTab();
+				d.clickPlusButtonSyncG();
+				d.scroll();
+				d.PlatformSyncG();
+			d.PlatformSyncGselectRedHat8();
+			d.DbuttonSyncnew();
+			d.checkingUrlSyncGRedHat8280();
+			driver.navigate().back();
+			
+				
 			} else {// language based scenarios start from here
 
 				d.checkingUrlLanguage1();
 				driver.navigate().back();
+				Thread.sleep(2000);
 				d.ScrollingToCouchbaseLiteTabLanguage();
+				d.scrollup();
 				d.clickPlusButton();
 				d.dropdown();
 				d.selectOS();
@@ -1906,38 +2444,45 @@ public class Downloads extends WebCapabilities {
 				d.Downloadnewbutton();
 				d.checkingUrlLanguage2();
 				driver.navigate().back();
+				Thread.sleep(2000);
 				d.ScrollingToCouchbaseLiteTabLanguage();
 				d.clickPlusButton();
 				d.dropdown();
-				d.selectOSNET();
+				d.selectSwiftnew();
 				d.scroll();
 				d.VersionNew();
 				d.selectVersionNew();
 				d.DownloadNewVersion();
 				d.checkingUrlLanguage3();
 				driver.navigate().back();
-				d.ScrollingToCouchbaseLiteTabLanguage();
-				Thread.sleep(2000);
-				d.clickPlusButton();
-				d.dropdown();
-				d.selectOSAndroid();
-				d.VersionSelect();
-				d.selectVersions();
-				d.DownloadNewVersion2();
-				d.checkingUrlAndroid();
-				driver.navigate().back();
-				d.ScrollingToCouchbaseLiteTabLanguage();
-				d.clickPlusButton();
-				d.dropdown();
-				d.selectOSJava();
-				d.clickDownloadButton();
-				d.checkingUrlJava();
-				driver.navigate().back();
+				
+				
+				
+				
+				
+//				d.ScrollingToCouchbaseLiteTabLanguage();
+//				Thread.sleep(2000);
+//				d.clickPlusButton();
+//				d.dropdown();
+//				d.selectOSAndroid();
+//				d.VersionSelect();
+//				d.selectVersions();
+//				d.DownloadNewVersion2();
+//				d.checkingUrlAndroid();
+//				driver.navigate().back();
+//				d.ScrollingToCouchbaseLiteTabLanguage();
+//				d.clickPlusButton();
+//				d.dropdown();
+//				d.selectOSJava();
+//				d.clickDownloadButton();
+//				d.checkingUrlJava();
+//				driver.navigate().back();
 				driver.manage().deleteAllCookies();
 				// server tile's testing starts here
 				// ***********************************************
 
 				d.ScrollingToCouchbaseServerTab();
+				Thread.sleep(2000);
 				d.PlatformServer();
 				d.PlatformSelectionUbuntu1604Lang();
 				d.scrolly();
@@ -1951,36 +2496,40 @@ public class Downloads extends WebCapabilities {
 				d.PlatformServer();
 				d.PlatformSelectionUbuntu1804Lang();
 				d.scrolly();
-				d.VersionServer2Lang();
-				d.VersionServerSelect2Lang();
 				d.scrolly();
-				d.DbuttonServer651();
-				d.checkingUrlServer651();
+				d.DbuttonServer700l();
+				d.checkingUrlServer700l();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseServerTab();
 				d.scrolly();
-				d.PlatformServer();
-				d.PlatformSelectionUbuntuRedHatLang();
-				d.scrolly();
-				d.VersionServer3Lang();
-				d.VersionServerSelect3Lang();
-				d.DbuttonServer604();
-				d.checkingUrlServer604();
+				d.DbuttonServerlangoption3();
+				d.checkingUrlServernewedition();
 				driver.navigate().back();
 				driver.manage().deleteAllCookies();
 				// Kubernetes tile's testing starts here
 				// ***********************************************
+				
+				
 				d.ScrollingToCouchbaseKubernetesTabLang();
+//				if (getPropertyValue("language").equalsIgnoreCase("french"))
+//				{
+//			d.scrollup();
+//				}
+				Thread.sleep(2000);
 				d.clickPlusButtonKubernetesLang();
 				d.scroll();
+//				if (getPropertyValue("language").equalsIgnoreCase("french"))
+//				{
+//			d.scrolly();
+//				}
+//				
 				d.PlatformKubernetes();
 				d.PlatformKubernetesselectWindowsLang();
 				d.VersionKubernetes1Lang();
 				d.VersionKub201Lang();
-				d.DbuttonKubernetes201Lang();
+				d.DbuttonKubernetes203Langneww();
 				d.TestForm();
-				d.checkingUrlKubWindows201Lang();
-				
+				d.checkingUrlKubWindows2033Lang();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseKubernetesTabLang();
 				d.clickPlusButtonKubernetesLang();
@@ -1989,36 +2538,31 @@ public class Downloads extends WebCapabilities {
 				d.PlatformKubernetesselectMacOSLang();
 				d.VersionKubernetes2Lang();
 				d.VersionKub200Lang();
-				d.DbuttonKubernetes200Lang();
-				d.checkingUrlKubMac200Lang();
-				
+				d.DbuttonKubernetes202nLang();
+				d.checkingUrlKubMac202newedLang();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseKubernetesTabLang();
 				d.clickPlusButtonKubernetesLang();
 				d.scroll();
 				d.PlatformKubernetes();
 				d.PlatformKubernetesselectLinuxLang();
-				d.VersionKubernetes3Lang();
-				d.VersionKub122Lang();
-				d.DbuttonKubernetes122();
-				d.checkingUrlKubLin122Lang();
+				d.DbuttonKubernetesnewed2011();
+				d.checkingUrlKubLin2011Lang();
 				driver.navigate().back();
 				driver.manage().deleteAllCookies();
 				
-				//Kubernetes red hat testing startes here
+				//Kubernetes red hat testing starts here
 				
 				d.ScrollingToCouchbaseKubernetesTabLang();
+				Thread.sleep(2000);
 				d.clickPlusButtonKubernetesLang();
 				d.scrolling();
 				d.scrolly();
 				d.PlatformKubRedHat();
 				d.PlatformKubRedHatselectLinuxLang();
-				d.VersionKubRedHat3Lang();
-				d.VersionRedHat122Lang();
-				d.DbuttonRedHat122();
+				d.DbuttonRedHat201newbutton();
 				d.TestForm();
-				d.checkingUrlRedHatLinux122();
-				
+				d.checkingUrlRedHatLinux201newed();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseKubernetesTabLang();
 				d.clickPlusButtonKubernetesLang();
@@ -2028,8 +2572,9 @@ public class Downloads extends WebCapabilities {
 				d.PlatformKubRedHatselectWindowsLang();
 				d.VersionKubRedHat1Lang();
 				d.VersionRedHat201Lang();
-				d.DbuttonRedHat201();
-				d.checkingUrlRedHatWin201();
+			//	d.DbuttonRedHat201();
+				d.DbuttonRedHat203newed();
+				d.checkingUrlRedHatWin203newed();
 				
 				
 				driver.navigate().back();
@@ -2041,9 +2586,8 @@ public class Downloads extends WebCapabilities {
 				d.PlatformKubRedHatselectMacLang();
 				d.VersionKubRedHat2Lang();
 				d.VersionRedHat200Lang();
-				d.DbuttonRedHat200();
-				d.checkingUrlRedHatMac200();
-				
+				d.DbuttonRedHat202newed();
+				d.checkingUrlRedHatMac202newed();
 				driver.navigate().back();
 			    driver.manage().deleteAllCookies();
 				//Sync gateway starts here
@@ -2063,22 +2607,22 @@ public class Downloads extends WebCapabilities {
 				d.clickPlusButtonSyncGLang();
 				d.scroll();
 				d.PlatformSyncG();
-				d.PlatformSyncGselectRedHat6Lang();
-				d.VersionSyncG2Lang();
-				d.VersionSyncG272Lang();
-				d.DbuttonSyncG272();
-				d.checkingUrlSyncGRedHat6272();
+				d.PlatformSyncGselectRedHat7Langnew();
+//				d.VersionSyncG2Lang();
+//				d.VersionSyncG272Lang();
+				d.DbuttonSyncG280new();
+				d.checkingUrlSyncGRedHat7280new();
 			
 				driver.navigate().back();
 				d.ScrollingToCouchbaseSyncGatewayTabLang();
 				d.clickPlusButtonSyncGLang();
 				d.scroll();
 				d.PlatformSyncG();
-				d.PlatformSyncGselectRedHat7Lang();
+				d.PlatformSyncGselectRedHat8Langnew();
 				d.VersionSyncG3Lang();
 				d.VersionSyncG271Lang();
-				d.DbuttonSyncG271();
-				d.checkingUrlSyncGRedHat7271();
+				d.DbuttonSyncG274n();
+			//	d.checkingUrlSyncGRedHat7271();
 				
 				driver.navigate().back();
 			}	

@@ -76,6 +76,13 @@ public class DownloadsTest extends AndroidCapabilities {
 			logger1.info("Downloads Button is selected");
 			click("dDownloadssButton_Xpath");		
 	 }
+	 
+	 public void clickDownloadsButtonJava() throws InterruptedException{
+			Thread.sleep(2000);
+			logger1.info("Downloads Button is selected");
+			click("dDownloadssButtonJava_Xpath");		
+	 }
+	 
 	 public void firstName() throws InterruptedException{
 		    Thread.sleep(2000);
 			logger1.info("First name 'Form' is typed in textbox");
@@ -134,6 +141,15 @@ public class DownloadsTest extends AndroidCapabilities {
 		    Actions act= new Actions(driver);
 		    act.moveToElement(element).click().build().perform();
 	 }
+	 
+	 public void Checkbox2() throws InterruptedException{
+		    Thread.sleep(5000);
+		    logger1.info("Agreement checkbox has been selected");
+		    WebElement element=driver.findElement(By.xpath("/html/body/main/div/div[2]/div[2]/div/div/div[2]/section/div[1]/form/div[2]/div[1]/div/div/input"));
+		    Actions act= new Actions(driver);
+		    act.moveToElement(element).click().build().perform();
+	 }
+	 
 	 public void Submit() throws InterruptedException{
 		    Thread.sleep(2000);
 		    logger1.info("Button 'Try It Free Now' has been clicked");
@@ -341,11 +357,11 @@ public class DownloadsTest extends AndroidCapabilities {
 	 }
 	 
 	 public void PlatforLiteSelectNET() throws InterruptedException{
-		 logger1.info("Swift has been selected");   
+		 logger1.info(".NET has been selected");   
 	 Thread.sleep(2000);
 	
 	 Select dropdown = new Select(driver.findElement(By.id("couchbase-lite-enterprise-os")));  
-	 dropdown.selectByVisibleText(".NET");  
+	 dropdown.selectByIndex(4);  
 
 	 }
 	 
@@ -395,27 +411,27 @@ public class DownloadsTest extends AndroidCapabilities {
 		 logger1.info("RedHat6 has been selected");   
 	 Thread.sleep(2000);
 	 Select dropdown = new Select(driver.findElement(By.id("sync-gateway-enterprise-os")));  
-	 dropdown.selectByIndex(1);
+	 dropdown.selectByIndex(5);
 	 }
 	 public void PlatformSyncGselectRedHat7() throws InterruptedException{
 		 logger1.info("RedHat7 has been selected");   
 	 Thread.sleep(2000);
 	 Select dropdown = new Select(driver.findElement(By.id("sync-gateway-enterprise-os")));  
-	 dropdown.selectByIndex(2);
+	 dropdown.selectByIndex(1);
 	 }
 	 
 	 public void PlatformSyncGselectWindows() throws InterruptedException{
 		 logger1.info("Windows has been selected");   
 	 Thread.sleep(2000);
 	 Select dropdown = new Select(driver.findElement(By.id("sync-gateway-enterprise-os")));  
-	 dropdown.selectByIndex(4);
+	 dropdown.selectByIndex(3);
 	 }
 	 
 	 public void PlatformSyncGselectMac() throws InterruptedException{
 		 logger1.info("Mac has been selected");   
 	 Thread.sleep(2000);
 	 Select dropdown = new Select(driver.findElement(By.id("sync-gateway-enterprise-os")));  
-	 dropdown.selectByIndex(5);
+	 dropdown.selectByIndex(4);
 	 }
 	 
 	 public void PlatformSelectionUbuntu1604() throws InterruptedException{
@@ -444,7 +460,7 @@ public class DownloadsTest extends AndroidCapabilities {
 		 logger1.info("Objective-C has been selected");   
 	 Thread.sleep(2000);
 	 Select dropdown = new Select(driver.findElement(By.id("couchbase-lite-enterprise-os")));  
-	 dropdown.selectByVisibleText("Objective-C");  
+	 dropdown.selectByIndex(3);  
 	 
 	 }
 	 
@@ -469,7 +485,7 @@ public class DownloadsTest extends AndroidCapabilities {
 		 logger1.info("Android has been selected");   
 	 Thread.sleep(2000);
 	 Select dropdown = new Select(driver.findElement(By.id("couchbase-lite-enterprise-os")));  
-	 dropdown.selectByIndex(3); 
+	 dropdown.selectByIndex(0); 
 	 }
 	 
 	 public void PlatformSelectionAndroidff() throws InterruptedException{
@@ -512,16 +528,16 @@ public class DownloadsTest extends AndroidCapabilities {
 		 logger1.info("Java has been selected");   
 	 Thread.sleep(2000);
 	 Select dropdown = new Select(driver.findElement(By.id("couchbase-lite-enterprise-os")));  
-	 dropdown.selectByIndex(4); 
+	 dropdown.selectByIndex(1); 
 	 }
 	 
 	 public void Versionn() throws InterruptedException{
 		 logger1.info("Version dropdown has been clicked"); 
 		 logger1.info("2.7.0 has been clicked"); 
 	 Thread.sleep(2000);
-	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/select")));
+	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[5]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
-	 dropdown.selectByIndex(1);  
+	 dropdown.selectByIndex(2);  
 	 
 	 }
 	 
@@ -728,7 +744,7 @@ public class DownloadsTest extends AndroidCapabilities {
 	 Thread.sleep(3000);
 	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
-	 dropdown.selectByIndex(0);
+	 dropdown.selectByIndex(2);
 	 }
 	 
 	 public void VersionSyncG273Lang() throws InterruptedException{
@@ -742,9 +758,9 @@ public class DownloadsTest extends AndroidCapabilities {
 	 public void VersionSyncG272() throws InterruptedException{
 		 logger1.info("Version 2.7.2 is selected");   
 	 Thread.sleep(3000);
-	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/select")));
+	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[7]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
-	 dropdown.selectByIndex(1);
+	 dropdown.selectByIndex(2);
 	 }
 	 
 	 public void VersionSyncG272Lang() throws InterruptedException{
@@ -758,9 +774,9 @@ public class DownloadsTest extends AndroidCapabilities {
 	 public void VersionSyncG271() throws InterruptedException{
 		 logger1.info("Version 2.7.1 is selected");   
 	 Thread.sleep(3000);
-	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/select")));
+	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
-	 dropdown.selectByIndex(2);
+	 dropdown.selectByIndex(4);
 	 }
 	 
 	 public void VersionSyncG271Lang() throws InterruptedException{
@@ -774,17 +790,17 @@ public class DownloadsTest extends AndroidCapabilities {
 	 public void VersionSyncG270() throws InterruptedException{
 		 logger1.info("Version 2.7.0 is selected");   
 	 Thread.sleep(3000);
-	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[6]/div[2]/div/span/select")));
+	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[5]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
-	 dropdown.selectByIndex(3); 
+	 dropdown.selectByIndex(5); 
 	 }
 	 
 	 public void VersionSyncG261() throws InterruptedException{
 		 logger1.info("Version 2.6.1 is selected");   
 	 Thread.sleep(3000);
-	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[7]/div[2]/div/span/select")));
+	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[6]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
-	 dropdown.selectByIndex(4); 
+	 dropdown.selectByIndex(6); 
 
 	 }
 	 
@@ -827,7 +843,7 @@ public class DownloadsTest extends AndroidCapabilities {
 	 public void VersionServerSelect1() throws InterruptedException{
 		 logger1.info("Version 6.5.0 has been clicked");   
 	 Thread.sleep(3000);
-	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/select")));
+	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
 	 dropdown.selectByIndex(2);	 
 	 }
@@ -843,7 +859,7 @@ public class DownloadsTest extends AndroidCapabilities {
 	 public void VersionServerSelect2() throws InterruptedException{
 		 logger1.info("Version 6.5.1 has been clicked");   
 	 Thread.sleep(3000);
-	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/select")));
+	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
 	 dropdown.selectByIndex(1);
 	 }
@@ -859,7 +875,7 @@ public class DownloadsTest extends AndroidCapabilities {
 	 public void VersionServerSelect3() throws InterruptedException{
 		 logger1.info("Version 6.0.4 has been clicked");   
 	 Thread.sleep(3000);
-	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/select")));
+	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
 	 dropdown.selectByIndex(3); 
 	 }
@@ -876,9 +892,9 @@ public class DownloadsTest extends AndroidCapabilities {
 		 logger1.info("Version dropdown has been clicked"); 
 		 logger1.info("Version 2.6.4 has been clicked"); 
 	 Thread.sleep(2000);
-	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/select")));
+	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[6]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
-	 dropdown.selectByIndex(2); 
+	 dropdown.selectByIndex(3); 
 	 }
 	 
 	 public void VersionnThrd() throws InterruptedException{
@@ -914,9 +930,9 @@ public class DownloadsTest extends AndroidCapabilities {
 		 logger1.info("Version dropdown has been clicked"); 
 		 logger1.info("Version 2.6.0 has been selected"); 
 	 Thread.sleep(3000);
-	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[5]/div[2]/div/span/select")));
+	 Select dropdown = new Select(driver.findElement(By.xpath("/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/select")));
 	 Thread.sleep(2000);
-	 dropdown.selectByIndex(3);
+	 dropdown.selectByIndex(4);
 	
 	 }
 	 public void VersionnFourth() throws InterruptedException{
@@ -1357,6 +1373,7 @@ public class DownloadsTest extends AndroidCapabilities {
 				
 				 dt.PhoneNumber();
 				 dt.scrollinform();
+				 dt.Checkbox2();
 				 dt.Checkbox();
 				 dt.Submit();
 			 }
@@ -1386,6 +1403,7 @@ public class DownloadsTest extends AndroidCapabilities {
 						 Thread.sleep(2000);
 						// dt.Platform();
 						 dt.PlatforLiteSelectSwift();
+						 dt.Switchingtoframe();
 						 dt.clickDownloadsButton();
 					 }
 
@@ -1453,7 +1471,7 @@ public class DownloadsTest extends AndroidCapabilities {
 							 dt.scrolly();
 							 
 							 dt.PlatformSelectionJava();
-							 dt.clickDownloadsButton();
+							 dt.clickDownloadsButtonJava();
 							 dt.checkingUrlEJava();
 							 //	d.Dbutton();
 							 driver.navigate().back();
@@ -1461,7 +1479,6 @@ public class DownloadsTest extends AndroidCapabilities {
 						 driver.manage().deleteAllCookies();
 						 dt.ScrollingToCouchbaseServerTab();
 						 dt.scroll();
-						 dt.scrolly();
 						 dt.PlatformServer();
 						// dt.PlatformSelectionUbuntu1604();
 						// dt.scrolly();
@@ -1469,15 +1486,7 @@ public class DownloadsTest extends AndroidCapabilities {
 						 dt.scrolly();
 						 dt.VersionServerSelect1();
 						 dt.DbuttonServer650();
-						 dt.firstName();
-						 dt.lastName();
-						 dt.Email();
-						 dt.Company();
-						 dt.jobTitle();
-						 dt.PhoneNumber();
-						 dt.scrollinform();
-						 dt.Checkbox();
-						 dt.Submit();
+						 dt.test();
 						 dt.checkingUrlServer650();
 						 //	d.Dbutton();
 						 driver.navigate().back();
@@ -1515,15 +1524,7 @@ public class DownloadsTest extends AndroidCapabilities {
 						 dt.scrolly();
 						// dt.VersionKub201();
 						 dt.DbuttonKubernetes201();
-						 dt.firstName();
-						 dt.lastName();
-						 dt.Email();
-						 dt.Company();
-						 dt.jobTitle();
-						 dt.PhoneNumber();
-						 dt.scrollinform();
-						 dt.Checkbox();
-						 dt.Submit();
+						 dt.test();
 						 dt.checkingUrlKubWindows201();
 						 //	d.Dbutton();
 						 driver.navigate().back();
@@ -1563,15 +1564,7 @@ public class DownloadsTest extends AndroidCapabilities {
 						 dt.VersionRedHat201();
 						 dt.scrolly();
 						 dt.DbuttonRedHat201();
-						 dt.firstName();
-						 dt.lastName();
-						 dt.Email();
-						 dt.Company();
-						 dt.jobTitle();
-						 dt.PhoneNumber();
-						 dt.scrollinform();
-						 dt.Checkbox();
-						 dt.Submit();
+						dt.test();
 						 dt.checkingUrlRedHatWin201();
 						 //	d.Dbutton();
 						 driver.navigate().back();
@@ -1617,15 +1610,7 @@ public class DownloadsTest extends AndroidCapabilities {
 						 dt.VersionSyncG273();
 						 dt.scrolly();
 						 dt.DbuttonSyncG273();
-						 dt.firstName();
-						 dt.lastName();
-						 dt.Email();
-						 dt.Company();
-						 dt.jobTitle();
-						 dt.PhoneNumber();
-						 dt.scrollinform();
-						 dt.Checkbox();
-						 dt.Submit();
+						 dt.test();
 						 dt.checkingUrlSyncGLinux273();
 						 //		d.Dbutton();
 						 driver.navigate().back();
@@ -1674,7 +1659,6 @@ public class DownloadsTest extends AndroidCapabilities {
 							 dt.scroll();
 							// dt.PlatformSyncG();
 							 dt.PlatformSyncGselectMac();
-
 							// dt.VersionSyncG5();
 							 dt.VersionSyncG261();
 							 dt.scrolly();

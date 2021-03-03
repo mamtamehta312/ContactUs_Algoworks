@@ -34,13 +34,13 @@ public class ContactForm extends WebCapabilities {
 
 			public void FirstName() throws InterruptedException{
 			Thread.sleep(2000);
-			logger1.info("First name 'Form' is typed in textbox ");
+			logger1.info("First name 'Sumit' is typed in textbox ");
 			type("cFirstName_Xpath", "cFirstName");
 			}
 			
 			public void LastName() throws InterruptedException{
 			Thread.sleep(2000);
-			logger1.info("Last name 'Testing' is typed in textbox");
+			logger1.info("Last name 'Tomar' is typed in textbox");
 			type("cLastName_Xpath","cLastName");
 			}
 			
@@ -56,7 +56,7 @@ public class ContactForm extends WebCapabilities {
 			
 			public void Email() throws InterruptedException{
 			Thread.sleep(2000);
-			logger1.info("Email 'poonam.gupta@algoworks.com' is typed in textbox");
+			logger1.info("Email sumit.tomar@algoworks.com' is typed in textbox");
 			type("cBusinessEmailAddress_Xpath","cBusinessEmailAddress");
 			}
 			
@@ -69,27 +69,26 @@ public class ContactForm extends WebCapabilities {
 			public void jobTitle() throws InterruptedException{
 			    Thread.sleep(2000);
 			    logger1.info("Job Title field has been clicked");
-			    Actions a= new Actions(driver);
-				driver.findElement(By.xpath("//label[contains(text(),'Job Title')]/..//details")).click();
-				Thread.sleep(2000);
-				driver.findElement(By.xpath("//label[contains(text(),'Job Title')]/..//details")).click();
-				Thread.sleep(2000);
-				a.moveToElement(driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[1]/div[2]/div[2]/section/div[1]/form/div[1]/div[5]/div/div[1]/details/div/label[1]")))
-				.click();
-				a.build().perform();
+			driver.findElement(By.xpath("//*[@id=\"contactUsPageForm\"]/div[2]/section/div[1]/form/div[1]/div[4]/div/input")).sendKeys(Keys.chord(Keys.TAB,Keys.ENTER));
+			Thread.sleep(2000);
 		 }
 			
 			public void ReasonForInquiry() throws InterruptedException{
 			    Thread.sleep(2000);
 			    logger1.info("Reason for Inquiry field has been clicked");
-			    Actions a= new Actions(driver);
-				driver.findElement(By.xpath("//label[contains(text(),'Reason for Inquiry')]/..//details")).click();
+			    driver.findElement(By.xpath("//*[@id=\"contactUsPageForm\"]/div[2]/section/div[1]/form/div[1]/div[6]/div[1]/div/div[1]/input")).sendKeys(Keys.chord(Keys.TAB,Keys.TAB,Keys.ENTER));
 				Thread.sleep(2000);
-				driver.findElement(By.xpath("//label[contains(text(),'Reason for Inquiry')]/..//details")).click();
-				Thread.sleep(2000);
-				a.moveToElement(driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[1]/div[2]/div[2]/section/div[1]/form/div[1]/div[12]/div/div[1]/details/div/label[1]")))
-				.click();
-				a.build().perform();
+				
+				
+//			   
+//			    Actions a= new Actions(driver);
+//				driver.findElement(By.xpath("//label[contains(text(),'Reason for Inquiry')]/..//details")).click();
+//				Thread.sleep(2000);
+//				driver.findElement(By.xpath("//label[contains(text(),'Reason for Inquiry')]/..//details")).click();
+//				Thread.sleep(2000);
+//				a.moveToElement(driver.findElement(By.xpath("//*[@id=\"global-content\"]/div[1]/div[2]/div[2]/section/div[1]/form/div[1]/div[12]/div/div[1]/details/div/label[1]")))
+//				.click();
+//				a.build().perform();
 		 }
 			public void Message() throws InterruptedException{
 				Thread.sleep(2000);
@@ -109,11 +108,24 @@ public class ContactForm extends WebCapabilities {
 			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("window.scrollBy(0,400)", "up");
 			}
+			public void Scrolls() throws InterruptedException{
+				Thread.sleep(2000);
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("window.scrollBy(0,200)", "up");
+			}
 
 			public void Scroll() throws InterruptedException{
 				Thread.sleep(2000);
 			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			jse.executeScript("window.scrollBy(0,800)", "up");
+			}
+			
+			public void Checkbox() throws InterruptedException {
+				Thread.sleep(5000);
+				logger1.info("Agreement checkbox has been selected");
+				WebElement element = driver.findElement(By.xpath("/html/body/main/div[1]/div[2]/section/div[2]/section/div[1]/form/div[2]/div/div/div/input"));
+				Actions act = new Actions(driver);
+				act.moveToElement(element).click().build().perform();
 			}
 			@Test
 			 @Parameters("browser")
@@ -129,10 +141,13 @@ public class ContactForm extends WebCapabilities {
 					 if(browser.equalsIgnoreCase("firefox")) {
 					 c.Scrolly();
 					 }
+					 c.Scrolls();
 					 c.jobTitle();
 					 c.PhoneNumber();
 					 c.ReasonForInquiry();
+					 c.Scrolls();
 					 c.Message();
+					 c.Checkbox();
 					 c.ContactUs();	
 					 
 					
