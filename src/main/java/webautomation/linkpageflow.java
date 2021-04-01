@@ -1,4 +1,4 @@
-package webautomation;
+ package webautomation;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.testng.Assert;
@@ -186,6 +186,7 @@ Thread.sleep(2000);
 driver.get("https://best.abc15.com/benefits-of-using-cloud-servers/");
 
 String SEVENTEENURL = driver.getCurrentUrl();
+Thread.sleep(2000);
 Assert.assertEquals(SEVENTEENURL, "http://www.arizonanewssource.com/benefits-of-using-cloud-servers/" );
 logger1.info("verified seventeenth url successfully");
 System.out.println("successfully verified17");

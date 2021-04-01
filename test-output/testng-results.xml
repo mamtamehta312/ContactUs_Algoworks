@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="8" total="11" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="789429" started-at="2021-03-03T05:15:35Z" finished-at="2021-03-03T05:28:45Z">
+  <suite started-at="2021-04-01T17:17:29Z" name="Suite" finished-at="2021-04-01T17:35:53Z" duration-ms="1104369">
     <groups>
     </groups>
-    <test name="Testcases" duration-ms="789429" started-at="2021-03-03T05:15:35Z" finished-at="2021-03-03T05:28:45Z">
+    <test started-at="2021-04-01T17:17:29Z" name="Testcases" finished-at="2021-04-01T17:35:53Z" duration-ms="1104369">
       <class name="webautomation.Downloads">
-        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.Downloads@7e9a5fbe]" name="LaunchBrowser" is-config="true" duration-ms="9891" started-at="2021-03-03T10:45:26Z" finished-at="2021-03-03T10:45:35Z">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.Downloads@544fa968]" started-at="2021-04-01T13:17:19Z" name="LaunchBrowser" finished-at="2021-04-01T13:17:29Z" duration-ms="9852" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,15 +21,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="createReport()[pri:0, instance:webautomation.Downloads@7e9a5fbe]" name="createReport" is-config="true" duration-ms="315" started-at="2021-03-03T10:45:35Z" finished-at="2021-03-03T10:45:36Z">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:webautomation.Downloads@544fa968]" started-at="2021-04-01T13:17:29Z" name="createReport" finished-at="2021-04-01T13:17:32Z" duration-ms="2859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="downloadNext()[pri:0, instance:webautomation.Downloads@7e9a5fbe]" name="downloadNext" is-config="true" duration-ms="12967" started-at="2021-03-03T10:45:36Z" finished-at="2021-03-03T10:45:49Z">
+        <test-method is-config="true" signature="downloadNext()[pri:0, instance:webautomation.Downloads@544fa968]" started-at="2021-04-01T13:17:32Z" name="downloadNext" finished-at="2021-04-01T13:17:37Z" duration-ms="4869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadNext -->
-        <test-method status="PASS" signature="downloads(java.lang.String)[pri:0, instance:webautomation.Downloads@7e9a5fbe]" name="downloads" duration-ms="775700" started-at="2021-03-03T10:45:49Z" finished-at="2021-03-03T10:58:44Z">
+        <test-method signature="downloads(java.lang.String)[pri:0, instance:webautomation.Downloads@544fa968]" started-at="2021-04-01T13:17:37Z" name="downloads" finished-at="2021-04-01T13:31:14Z" duration-ms="816781" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,11 +40,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloads -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:webautomation.Downloads@7e9a5fbe]" name="flush" is-config="true" duration-ms="414" started-at="2021-03-03T10:58:44Z" finished-at="2021-03-03T10:58:45Z">
+        <test-method is-config="true" signature="flush()[pri:0, instance:webautomation.Downloads@544fa968]" started-at="2021-04-01T13:35:53Z" name="flush" finished-at="2021-04-01T13:35:53Z" duration-ms="489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:webautomation.Downloads@7e9a5fbe]" name="closeApplication" is-config="true" duration-ms="313" started-at="2021-03-03T10:58:45Z" finished-at="2021-03-03T10:58:45Z">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:webautomation.Downloads@544fa968]" started-at="2021-04-01T13:35:53Z" name="closeApplication" finished-at="2021-04-01T13:35:54Z" duration-ms="373" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>
@@ -52,6 +52,33 @@
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- webautomation.Downloads -->
+      <class name="webautomation.ContactForm">
+        <test-method is-config="true" signature="init()[pri:0, instance:webautomation.ContactForm@247bddad]" started-at="2021-04-01T13:31:14Z" name="init" finished-at="2021-04-01T13:31:15Z" duration-ms="1856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="contactform(java.lang.String)[pri:0, instance:webautomation.ContactForm@247bddad]" started-at="2021-04-01T13:31:15Z" name="contactform" finished-at="2021-04-01T13:32:00Z" duration-ms="44946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactform -->
+      </class> <!-- webautomation.ContactForm -->
+      <class name="webautomation.linkpageflow">
+        <test-method is-config="true" signature="check()[pri:0, instance:webautomation.linkpageflow@d35dea7]" started-at="2021-04-01T13:32:00Z" name="check" finished-at="2021-04-01T13:32:00Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+        <test-method signature="firsturl()[pri:1, instance:webautomation.linkpageflow@d35dea7]" started-at="2021-04-01T13:32:00Z" name="firsturl" finished-at="2021-04-01T13:35:53Z" duration-ms="232533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firsturl -->
+      </class> <!-- webautomation.linkpageflow -->
     </test> <!-- Testcases -->
   </suite> <!-- Suite -->
 </testng-results>

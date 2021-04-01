@@ -1,7 +1,6 @@
 package Base;
 
-import javax.annotation.PostConstruct;
-
+//import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,7 +14,7 @@ public class AmazonClient {
     @Value("${amazonProperties.secretKey}")
     private String secretKey;
 
-    @PostConstruct
+    //@PostConstruct
     private void initializeAmazon() {
     	System.out.println(accessKey);
     	System.out.println(secretKey);

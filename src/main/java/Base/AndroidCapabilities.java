@@ -73,7 +73,7 @@ public class AndroidCapabilities {
 			 * capabilities.setCapability("autoAcceptAlerts", "true");
 			 */
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Poonam\\Downloads\\New folder\\chromedriver_win32\\chromedriver.exe");
-			capabilities.setCapability("chromedriverExecutable", "/home/riya/Documents/chromedriver_linux64/chromedriver");
+			capabilities.setCapability("chromedriverExecutable", "./driver/chromedriver");
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 			
 		}
@@ -100,7 +100,7 @@ public class AndroidCapabilities {
 			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Firefox");
 			capabilities.setCapability("Emulator", "true");	
 			
-		capabilities.setCapability("geckodriverExecutable", "/home/riya/Downloads/geckodriver_linux64/geckodriver");
+		capabilities.setCapability("geckodriverExecutable", "./driver/geckodriver");
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		
 			

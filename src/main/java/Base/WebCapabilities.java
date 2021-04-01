@@ -1,19 +1,11 @@
 package Base;
-
-import java.awt.Dimension;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
-import java.time.Duration;
 import java.util.Properties;
-
-import javax.annotation.PostConstruct;
-
 import org.apache.commons.io.FileUtils;
-
-import org.aspectj.lang.annotation.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -23,47 +15,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import software.amazon.awssdk.http.SdkHttpClient;
 import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.springframework.beans.factory.annotation.Value;
 import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
-import software.amazon.awssdk.auth.credentials.AwsSessionCredentials;
-import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
-
-import software.amazon.awssdk.regions.Region;
-import software.amazon.awssdk.services.devicefarm.*;
-import software.amazon.awssdk.services.devicefarm.model.*;
-import java.net.URL;
-
-import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.http.apache.client.impl.ApacheHttpClientFactory;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-/**
- * @author Riya
- *
- */
 
 public class WebCapabilities {
-
-//	public static RemoteWebDriver driver;
 
 	public static ExtentHtmlReporter reporter;
 	public static ExtentReports extent;
@@ -79,20 +44,20 @@ public class WebCapabilities {
 				
 				System.out.println("browser is "+browser);
 				if (browser.equalsIgnoreCase("Chrome")) {
-			   System.setProperty("webdriver.chrome.driver", "/home/riya/Downloads/chromedriver_linux64/chromedriver");	
-					 driver = new ChromeDriver();
+			    System.setProperty("webdriver.chrome.driver", "./driver/chromedriver");	
+				driver = new ChromeDriver();
 					 
 				} else if (browser.equalsIgnoreCase("Safari")) {
 					 driver = new SafariDriver();
 				}
 				else if (browser.equalsIgnoreCase("Firefox")) {
-					System.setProperty("webdriver.gecko.driver","/home/riya/Downloads/geckodriver_linux64/geckodriver");
-					File pathBinary = new File("/home/riya/Downloads/firefox/firefox");
+					System.setProperty("webdriver.gecko.driver","./driver/geckodriver");
+					File pathBinary = new File("/usr/bin/firefox");
 					FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
 					DesiredCapabilities desired = DesiredCapabilities.firefox();
 					FirefoxOptions options = new FirefoxOptions();
-					desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
-					 driver = new FirefoxDriver(options);
+				    desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
+				    driver = new FirefoxDriver(options);
 				}
 				
 			
@@ -146,7 +111,7 @@ public class WebCapabilities {
 					System.getProperty("user.dir") + "//src//main//resources//Properties//Web_OR.properties");
 			properties.load(fis);
 
-			String var = getPropertyValue("language");
+			String var =  getPropertyValue("language");
 
 			FileInputStream fis2 = new FileInputStream(
 					System.getProperty("user.dir") + "//src//main//resources//Properties//" + var + "_OR.properties");

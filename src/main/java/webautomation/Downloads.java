@@ -70,6 +70,7 @@ public class Downloads extends WebCapabilities {
 	public void clickDownloadButton() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Downloads Button is selected");
+		Thread.sleep(4000);
 		click("dDownloadsButton_Xpath");
 	}
 
@@ -84,6 +85,17 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Downloads Button is selected");
 		click("dDownloadssButtonN_Xpath");
 	}
+	public void clickDownloadsButtonNew() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Downloads Button is selected");
+		click("dDownloadssButton_2.8.4_Xpath");
+	}
+	public void clickDownloadsButtonNew_285() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Downloads Button is selected");
+		click("dDownloadssButton_2.8.5_Xpath");
+	}
+	
 	
 	public void clickDownloadsButtonSwift() throws InterruptedException {
 		Thread.sleep(2000);
@@ -424,9 +436,19 @@ public class Downloads extends WebCapabilities {
 	}
 
 	public void DbuttonSyncG273() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		logger1.info("Download button has been clicked");
+		
 		click("dButtonSyncG273_Xpath");
+	
+		Thread.sleep(5000);
+	}
+	public void DbuttonSyncG282() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("Download button has been clicked");
+		
+		click("dButtonSyncG282_Xpath");
+	
 		Thread.sleep(5000);
 	}
 
@@ -626,7 +648,7 @@ public class Downloads extends WebCapabilities {
 	}
 	
 	public void PlatformSyncGselectRedHat8() throws InterruptedException {
-		logger1.info("RedHat7 has been selected");
+		logger1.info("RedHat8 has been selected");
 		Thread.sleep(2000);
 		click("dSelectRedHat8SyncG_Xpath");
 	}
@@ -744,7 +766,7 @@ public class Downloads extends WebCapabilities {
 	}
 
 	public void PlatformSelectionObjectiveC() throws InterruptedException {
-		logger1.info("Objective-C has been selected");
+		logger1.info("Objective-C-xcframework has been selected");
 		Thread.sleep(2000);
 		WebElement element = driver.findElement(By.xpath(
 				"//*[@id=\"couchbase-lite-enterprise-osSelectBoxIt\"]"));
@@ -1265,11 +1287,21 @@ public class Downloads extends WebCapabilities {
 		logger1.info("Version 2.7.3 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[3]"));
+				"//*[@id=\"sync-gateway-enterprise-versionSelectBoxIt\"]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
 	}
+	public void VersionSyncG282() throws InterruptedException {
+		logger1.info("Version 2.8.2 is selected");
+		Thread.sleep(3000);
+		WebElement element = driver.findElement(By.xpath(
+				"//*[@id=\"sync-gateway-enterprise-versionSelectBoxIt\"]"));
+		Actions acti = new Actions(driver);
+		acti.moveToElement(element).click().build().perform();
+		Thread.sleep(2000);
+	}
+	
 	
 	public void VersionSyncG273Lang() throws InterruptedException {
 		logger1.info("Version 2.7.3 is selected");
@@ -1281,11 +1313,11 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(2000);
 	}
 
-	public void VersionSyncG272() throws InterruptedException {
+	public void VersionSyncG274() throws InterruptedException {
 		logger1.info("Version 2.7.4 is selected");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[2]"));
+				"/html/body/main/div/div[2]/section/div/div[5]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div/span/ul/li[3]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1410,6 +1442,8 @@ public class Downloads extends WebCapabilities {
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
+		
+		
 	}
 
 	public void VersionServer2Lang() throws InterruptedException {
@@ -1435,22 +1469,40 @@ public class Downloads extends WebCapabilities {
 	public void VersionServer3Lang() throws InterruptedException {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
-		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/span"));
+		WebElement element = driver.findElement(By.id("UI - DL - Button - Couchbase Lite 2.8.4 Enterprise"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
 	}
 
 	public void VersionnSecnd() throws InterruptedException {
-		logger1.info("Version 2.7.0 has been clicked");
+		logger1.info("Version 2.8.4 has been clicked");
 		Thread.sleep(3000);
-		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[5]/div[2]/div/span/ul/li[3]"));
+//		WebElement element = driver.findElement(By.xpath(
+//				"//*[@id='couchbase-lite-enterprise-version']/option[1]"));
+//		Actions act = new Actions(driver);
+//		act.moveToElement(element).click().build().perform();
+////*[@id="global-content"]/div/div[2]/section/div/div[4]/div[2]/div[1]/div[2]/div/div/div/div/div/div[5]/div[2]	
+	List<WebElement> list=	driver.findElements(By.xpath("//*[@id='couchbase-lite-enterprise-versionSelectBoxItText']"));
+	
+	for(int i=1;i<=list.size();i++)
+	{
+		if(i==4)
+		{
+		WebElement element=	list.get(i);
 		Actions act = new Actions(driver);
 		act.moveToElement(element).click().build().perform();
+			break;
+		}
+	}
+	
+	System.out.println("version 2.8.4 selected");
 		Thread.sleep(2000);
 	}
+	
+	
+	
+	
 
 	public void VersionServerSelect1() throws InterruptedException {
 		logger1.info("Version 6.5.0 has been clicked");
@@ -1480,6 +1532,7 @@ public class Downloads extends WebCapabilities {
 		Actions act = new Actions(driver);
 		act.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
+		System.out.println("Couchbase Server Version is selected");
 	}
 
 	public void VersionServerSelect2Lang() throws InterruptedException {
@@ -1583,7 +1636,13 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(2000);
 		click("dDownloadEnglish2.7.0_Xpath");
 	}
-
+//dDownloadEnglish2.8.4_Xpath
+	public void dowloaddEnglish1() throws InterruptedException {
+		logger1.info("Dropdown has been clicked");
+		Thread.sleep(2000);
+		click("dDownloadEnglish2.8.4_Xpath");
+		System.out.println("download button 2.8.4 clicked");
+	}
 	public void dropdown() throws InterruptedException {
 		logger1.info("Dropdown has been clicked");
 		Thread.sleep(2000);
@@ -1745,6 +1804,14 @@ public class Downloads extends WebCapabilities {
 		String expectedval = properties.getProperty("url_en");
 		Assert.assertEquals(url_x, expectedval);
 	}
+	public void checkingUrlEnglish2_1() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String url_x = driver.getCurrentUrl();
+		String expectedval = properties.getProperty("url_en1");
+		Assert.assertEquals(url_x, expectedval);
+	}
+	//url_en1
 
 	public void checkingUrlEnglish264() throws InterruptedException {
 		Thread.sleep(3000);
@@ -1794,6 +1861,20 @@ public class Downloads extends WebCapabilities {
 		Assert.assertEquals(urli, expectedvalue);
 	}
 	
+	public void checkingUrlnewnet1() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String urli = driver.getCurrentUrl();
+		String expectedvalue = properties.getProperty("url2.8.4");
+		Assert.assertEquals(urli, expectedvalue);
+	}
+	public void checkingUrlnewnet_285() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String urli = driver.getCurrentUrl();
+		String expectedvalue = properties.getProperty("url2.8.5");
+		Assert.assertEquals(urli, expectedvalue);
+	}
 	public void checkingUrlAndroid() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
@@ -2032,6 +2113,7 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
+		Thread.sleep(3000);
 		String expectedlink = properties.getProperty("url_RedHatLin122n");
 		Assert.assertEquals(link, expectedlink);
 	}
@@ -2040,7 +2122,16 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
+		Thread.sleep(2000);
 		String expectedlink = properties.getProperty("url_SyncGLin273");
+		Assert.assertEquals(link, expectedlink);
+	}
+	public void checkingUrlSyncGLinux282() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String link = driver.getCurrentUrl();
+		Thread.sleep(2000);
+		String expectedlink = properties.getProperty("url_SyncGLin282");
 		Assert.assertEquals(link, expectedlink);
 	}
 
@@ -2048,6 +2139,7 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
+		Thread.sleep(2000);
 		String expectedlink = properties.getProperty("url_SyncGRedHat272");
 		Assert.assertEquals(link, expectedlink);
 	}
@@ -2056,15 +2148,16 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
+		Thread.sleep(2000);
 		String expectedlink = properties.getProperty("url_SyncGRedHat7new280");
 		Assert.assertEquals(link, expectedlink);
 	}
 
-	public void checkingUrlSyncGRedHat7272new() throws InterruptedException {
+	public void checkingUrlSyncGRedHat274new() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
-		String expectedlink = properties.getProperty("url_SyncGRedHat272new");
+		String expectedlink = properties.getProperty("url_SyncGRedHat274new");
 		Assert.assertEquals(link, expectedlink);
 	}
 	
@@ -2072,7 +2165,7 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
-		String expectedlink = properties.getProperty("url_SyncGRedHat8280");
+		String expectedlink = properties.getProperty("url_SyncGRedHat8282");
 		Assert.assertEquals(link, expectedlink);
 	}
 	
@@ -2080,6 +2173,7 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
+		Thread.sleep(2000);
 		String expectedlink = properties.getProperty("url_SyncGRedHat8281");
 		Assert.assertEquals(link, expectedlink);
 	}
@@ -2088,6 +2182,7 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
+		Thread.sleep(2000);
 		String expectedlink = properties.getProperty("url_SyncGWin270");
 		Assert.assertEquals(link, expectedlink);
 	}
@@ -2096,6 +2191,7 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
+		Thread.sleep(3000);
 		String expectedlink = properties.getProperty("url_SyncGMac261");
 		Assert.assertEquals(link, expectedlink);
 	}
@@ -2104,6 +2200,7 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String url_3 = driver.getCurrentUrl();
+		Thread.sleep(3000);
 		String expect = properties.getProperty("urlmsg3");
 		Assert.assertEquals(url_3, expect);
 	}
@@ -2172,14 +2269,13 @@ public class Downloads extends WebCapabilities {
 	}
 
 	public void Switchingtoframe() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(driver.findElement(By.id("drift-widget"))));
 
 		// driver.switchTo().frame("drift-widget");
 
 		Thread.sleep(2000);
 		click("dPopupClose_Xpath");
-
 		driver.switchTo().defaultContent();
 	}
 
@@ -2215,7 +2311,7 @@ public class Downloads extends WebCapabilities {
 				d.ScrollingToCouchbaseLiteTab();
 				d.clickPlusButtonmain();
 				d.scroll();
-				d.clickDownloadsButtonnn();
+				d.clickDownloadsButtonNew_285();
 			}
 
 			else {
@@ -2228,7 +2324,7 @@ public class Downloads extends WebCapabilities {
 			d.TestForm();
 			if (getPropertyValue("language").equalsIgnoreCase("english")
 					&& getPropertyValue("urltype").equalsIgnoreCase("main")) {
-				d.checkingUrlnewnet();
+				d.checkingUrlnewnet_285();
 				driver.navigate().back();	
 				driver.navigate().refresh();
 				d.ScrollingToCouchbaseLiteTab();
@@ -2241,8 +2337,8 @@ public class Downloads extends WebCapabilities {
 				d.PlatformSelectionObjectiveC();
 				d.Versionn();
 				d.VersionnSecnd();
-				d.dowloaddEnglish();
-				d.checkingUrlEnglish2();
+				d.dowloaddEnglish1();
+				d.checkingUrlEnglish2_1();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseLiteTab();
 				Thread.sleep(2000);
@@ -2385,6 +2481,7 @@ public class Downloads extends WebCapabilities {
 				d.checkingUrlRedHatLinux122n();
 				driver.navigate().back();
 				driver.manage().deleteAllCookies();
+				
 				//********************************Sync gateway******************
 				d.ScrollingToCouchbaseSyncGatewayTab();
 				d.clickPlusButtonSyncG();
@@ -2392,9 +2489,9 @@ public class Downloads extends WebCapabilities {
 				d.PlatformSyncG();
 				d.PlatformSyncGselectLinux();
 				d.VersionSyncG1();
-				d.VersionSyncG273();
+				d.VersionSyncG282();
                 d.scrolly();
-				d.DbuttonSyncG273();
+				d.DbuttonSyncG282();
 				d.firstName();
 				d.lastName();
 				d.Email();
@@ -2405,17 +2502,17 @@ public class Downloads extends WebCapabilities {
 				d.Checkbox2();
 				d.Checkbox();
 				d.Submit();
-				d.checkingUrlSyncGLinux273();
+				d.checkingUrlSyncGLinux282();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseSyncGatewayTab();
 				d.clickPlusButtonSyncG();
 				d.scroll();
 				d.PlatformSyncG();
 				d.PlatformSyncGselectRedHat7();
-				d.VersionSyncG3();
-				d.VersionSyncG272();
+				d.VersionSyncG3(); 
+				d.VersionSyncG274();
 				d.DbuttonSyncG274();
-				d.checkingUrlSyncGRedHat7272new();
+				d.checkingUrlSyncGRedHat274new();
 				// d.Dbutton();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseSyncGatewayTab();
@@ -2590,7 +2687,9 @@ public class Downloads extends WebCapabilities {
 				d.checkingUrlRedHatMac202newed();
 				driver.navigate().back();
 			    driver.manage().deleteAllCookies();
-				//Sync gateway starts here
+				
+			    //Sync gateway starts here
+			    
 				d.ScrollingToCouchbaseSyncGatewayTabLang();
 				d.clickPlusButtonSyncGLang();
 				d.scroll();

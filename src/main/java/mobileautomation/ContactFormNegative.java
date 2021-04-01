@@ -21,7 +21,8 @@ public class ContactFormNegative extends AndroidCapabilities {
 	public static void init() {
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.navigate().to(properties.getProperty("ContactForm_url"));
+	    driver.navigate().to(properties.getProperty("ContactForm_url"));
+	
 	}
 
 	@Test(priority = 1)
