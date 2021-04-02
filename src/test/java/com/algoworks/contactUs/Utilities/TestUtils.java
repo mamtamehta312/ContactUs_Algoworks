@@ -9,9 +9,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import java.io.File;
 import java.io.IOException;
+
+import com.algoworks.contactUs.PageObjects.CaseStudyPage;
 import com.algoworks.contactUs.PageObjects.contact_page;
 import com.google.common.io.Files;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -36,15 +39,17 @@ public class TestUtils extends Retry {
 		Thread.sleep(2000);
 		rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_Form_Filled")));
 		cp.clickSubmit();
-	
-		if(expected_res.equals("Thank You - Algoworks")) {
-        new WebDriverWait(driver, 20).until(ExpectedConditions.titleIs("Thank You - Algoworks"));
-        AssertJUnit.assertEquals(driver.getTitle(),expected_res);
-		}
-		else
-		{
-			AssertJUnit.assertEquals(driver.getTitle(),expected_res);
-		}
+		Thread.sleep(4000);
+		Assert.assertEquals(driver.getTitle(),expected_res);
+		
+//		if(expected_res.equals("Thank You - Algoworks")) {
+//        new WebDriverWait(driver, 20).until(ExpectedConditions.titleIs(expected_res));
+//        Assert.assertTrue(driver.getTitle().equals(expected_res));
+//		}
+//		else
+//		{
+//			Assert.assertTrue(driver.getTitle().equals(expected_res));
+//		}
 		
 	}
 	
@@ -62,17 +67,30 @@ public class TestUtils extends Retry {
 			}
 			
 		}
+		   Thread.sleep(2000);
 			WebElement	bt=TestUtils.getWebElement(driver, locType, waitNeeded, loc);
+			 Thread.sleep(3000);
 			boolean display= bt.isDisplayed();
 			AssertJUnit.assertEquals(display,true);
 			rlog.log(LogStatus.INFO," Contact Us Button is Displayed !");
 			log.info(" Contact Us Button is Displayed !");
+			 Thread.sleep(3000);
 			boolean enable= bt.isEnabled();
 			AssertJUnit.assertEquals(enable,true);
 			rlog.log(LogStatus.INFO, " Contact Us Button is Enabled !");
 			log.info(" Contact Us Button is Enabled !");
+			
+			if(testName.toLowerCase().contains("dellboomi") || testName.toLowerCase().contains("webmerge"))
+			{
+				moveCursorToElement(driver,bt);
+				rlog.log(LogStatus.INFO, " Contact Us Button Button Highlighed Successfully !");
+				log.info(" Contact Us Button Button Highlighed Successfully !");
+			}
+			else
+			{
 			TestUtils.highLight(driver, bt);
-			Thread.sleep(3000);
+			}
+			Thread.sleep(4000);
 			if(!bt.isDisplayed())
 			{
 				TestUtils.ExplicitelyWaitForVisibility(driver, bt, 60);
@@ -92,6 +110,12 @@ public class TestUtils extends Retry {
 			log.info(" Contact Us Button Validated Successfully !");
 
 	
+		
+	}
+	public static void moveCursorToElement(WebDriver driver,WebElement wb)
+	{
+		Actions	action=new Actions(driver);
+		action.moveToElement(wb).build().perform();
 		
 	}
 	
@@ -207,7 +231,6 @@ public class TestUtils extends Retry {
 		
         WebElement services=driver.findElement(By.xpath(service_locator));
         TestUtils.highLight(driver, services);
-		;
 		
 		rlog.log(LogStatus.INFO," Services Highlighted !");
 		log.info(" Services Highlighted !");
@@ -220,6 +243,9 @@ public class TestUtils extends Retry {
 		
 
 	}
+	
+	
+	
 	
 	public static String getScreenshotId(String testName)
 	{
@@ -281,5 +307,176 @@ public class TestUtils extends Retry {
 		 
 	}
 	
+	public static void TPContactFormValidation(WebDriver driver,ExtentTest rlog,Logger log,String turl,String scrollTPLocator,String algoLocator,String TestName , String scroll_locator, String contact_locator , String exp_res,String waitNeeded) throws InterruptedException, IOException
+	{
+  
+
+		rlog.log(LogStatus.INFO, "Website Opened  Successfully !");
+		
+		rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_TP_URL_Open")));
+		WebElement wb =null;
+		try {
+		
+		 wb = driver.findElement(By.xpath(algoLocator));
+		
+		}
+		catch(Exception e)
+		{
+			Thread.sleep(5000);
+			wb = driver.findElement(By.xpath(algoLocator));
+		}
+		
+		
+		if(scrollTPLocator!="")
+		{
+			
+		TestUtils.scrollByPixel(driver, scrollTPLocator);	
+		Thread.sleep(3000);
+		if(TestName.toLowerCase().contains("forcetalks"))
+		{
+			for(int i=0;i<=50;i++)
+			{
+				((JavascriptExecutor)driver).executeScript("window.scrollBy(0,200)", "");
+			
+			}
+			
+		}
+		TestUtils.highLight(driver, wb);
+		log.info("Window Scrolled up to Algowrks URL Successfully !");
+		rlog.log(LogStatus.INFO,  "Window Scrolled up to Algowrks URL Successfully !");
+		
+		rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_scrolled_To_AlgoElement")));
+		
+		}
+		
+		
+		if(TestName.contains("G2"))
+		{
+
+			WebElement wb1=  driver.findElement(By.xpath("//*[@id='leads-sticky-top']/div/div[1]/div[3]/div[1]/div[2]/a"));
+			((JavascriptExecutor)driver).executeScript("arguments[0].style.border='8px solid green'", wb1);
+			log.info("Show More Option Highlighted Successfully !");
+			rlog.log(LogStatus.INFO,  "Show More Option Highlighted Successfully !");
+			rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_show_more")));
+			 Actions	action=new Actions(driver);
+			 action.moveToElement(wb1).click().build().perform();
+			  wb1.click();
+		
+		}
+		Thread.sleep(5000);
+		if(algoLocator!="")
+		{
+			TestUtils.highLight(driver, wb);
+			log.info("Algoworks Website's Element Highlighed Successfully !");
+			rlog.log(LogStatus.INFO,  "Algoworks Website's Element Highlighed Successfully !");
+			
+			rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_highlight_algo_url")));
+			
+			
+			wb.click();
+			Thread.sleep(4000);
+			if(!algoLocator.contains("@id") ||TestName.toLowerCase().contains("clutchprofile")||TestName.toLowerCase().contains("clutchlisting")||TestName.toLowerCase().contains("manifest"))
+			{
+			TestUtils.switch_driver_to_next_window(driver, "Top Mobile App Development Company USA, India | Salesforce Consulting Company");
+			new WebDriverWait(driver, 60).until(ExpectedConditions.titleIs("Top Mobile App Development Company USA, India | Salesforce Consulting Company"));
+			}
+		
+			if(TestName.toLowerCase().contains("goodfirms"))
+			{
+				TestUtils.switch_driver_to_next_window(driver, "Mobile App Development Services | iOS | Android | Xamarin | Cross Platform");
+
+			}
+			if(TestName.toLowerCase().contains("bdcc"))
+			{
+				TestUtils.switch_driver_to_next_window(driver, "Best DevOps Consulting Companies:Services USA, 2021 - Algoworks");
+
+			}
+			if(TestName.toLowerCase().contains("forcetalks"))
+			{
+		
+				TestUtils.switch_driver_to_next_window(driver, "Best Salesforce Development Company: Salesforce Services | Algoworks");
+      
+			}
+			
+			
+			
+			log.info("Window Switched to Algowrks Website Successfully !");
+			rlog.log(LogStatus.INFO,  "Window Switched to Algowrks Website Successfully !");
+			rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_switch_algo_website")));
+			
+		}
+		
+	}
 	
-}
+	public static void CaseStudyFormValidation(WebDriver driver ,ExtentTest rlog,Logger log,String scrollLocator ,String case_study_locator) throws InterruptedException, IOException
+	{
+		Thread.sleep(2000);
+		rlog.log(LogStatus.INFO, " Algoworks Case Studies Page Opened !");
+	    log.info("Algoworks Case Studies Page Opened !");
+	    rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"algoworks_case_study_page")));
+		 
+		
+		TestUtils.scrollByPixel(driver, scrollLocator);
+		
+		TestUtils.highLight(driver, driver.findElement(By.xpath(case_study_locator)));
+		Thread.sleep(3000);
+		rlog.log(LogStatus.INFO, " Read More Button Highlighted !");
+	    log.info("Read More Button Highlighted !");
+	    rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"readmore_highlighed")));
+		 
+		
+		driver.findElement(By.xpath(case_study_locator)).click();
+		Thread.sleep(3000);
+		rlog.log(LogStatus.INFO, " Case Study Form Opened !");
+	    log.info("Case Study Form Opened !");
+	    rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_case_study_form_opened")));
+
+	}
+	
+		public static void submitCaseStudyDetails(WebDriver driver ,ExtentTest rlog,Logger log,String name,String company_name,String email,String phone,String checkbox_needed,String testing_type,String expected_result ) throws IOException, InterruptedException
+		{
+			CaseStudyPage  cs= new CaseStudyPage(driver);
+			cs.setName(name);
+			cs.setCompanyName(company_name);
+			cs.setEmail(email);
+			cs.setPhone(phone);
+			
+			rlog.log(LogStatus.INFO, " Case Study Form Filled !");
+		    log.info("Case Study Form Filled !");
+		   
+		    if(checkbox_needed.equals("y"))
+			{
+				rlog.log(LogStatus.INFO, " Checkbox checked !");
+			    log.info("Checkbox checked !");
+			    rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_form_filled(with_checkbox)")));
+				
+			}
+			else {
+			
+				cs.tickCheckbox();
+				Thread.sleep(2000);
+				rlog.log(LogStatus.INFO, " Checkbox not checked !");
+			    log.info("Checkbox  not  checked ! ");
+			    rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_form_filled(without_checkbox")));
+				
+			}
+		    
+			cs.clickSubmit();
+		    Thread.sleep(3000);
+		    rlog.log(LogStatus.INFO, " Case Study Form Submitted !");
+		    log.info("Case Study Form Submitted !");
+		    rlog.log(LogStatus.INFO, rlog.addScreenCapture( "."+TestUtils.shots(driver,TestUtils.getScreenshotId(rlog.getDescription())+"_case_study_form_submitted")));
+			Thread.sleep(3000);
+		    if(testing_type.equals("p"))
+			 {
+			new WebDriverWait(driver, 60).until(ExpectedConditions.titleIs("AppExchange App For Billing Service Provider - Algoworks"));
+		
+			 }
+
+			Assert.assertEquals(driver.getTitle(), expected_result);
+		}
+	}
+	
+	
+	
+

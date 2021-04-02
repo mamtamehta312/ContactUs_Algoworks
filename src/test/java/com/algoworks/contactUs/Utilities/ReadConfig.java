@@ -52,6 +52,10 @@ public class ReadConfig {
 	{
 		return pr.getProperty("contactFormUrl");
 	}
+	public  String getCaseStudyUrl()
+	{
+		return pr.getProperty("case_study_url");
+	}
 	
 	
 }

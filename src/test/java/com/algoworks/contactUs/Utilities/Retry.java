@@ -5,7 +5,7 @@ import org.testng.ITestResult;
 
 public class Retry implements IRetryAnalyzer {
 	
-	public static  int retryCount=1;
+	public static  int retryCount=0;
 	public static int count=0;
  
 	

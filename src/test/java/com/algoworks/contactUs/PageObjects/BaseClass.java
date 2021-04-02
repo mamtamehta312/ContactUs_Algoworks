@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
@@ -36,8 +37,13 @@ public class  BaseClass{
 	public  static String screenshotPath=null;
 	public static String contactFormUrl=rd.getContactFormUrl();
 	public contact_page cp=null;
-
-
+	
+	// case_study webpage Elements
+	
+    public static String case_study_url=rd.getCaseStudyUrl();
+   // public static CaseStudyPage case_study_page=null;
+   
+    
 	@BeforeSuite
 	public void setUp()
 	{
@@ -88,7 +94,7 @@ public class  BaseClass{
 		if(result.getStatus()==ITestResult.SUCCESS)
 		{
 			Retry.count=0;
-			log.info(" Test Case Passed Successfully  ! " );
+			log.info("Test Case Passed Successfully  ! " );
 			rlog.log(LogStatus.PASS, " Test Case Passed Successfully !");
 			try {
 				Thread.sleep(2000);
