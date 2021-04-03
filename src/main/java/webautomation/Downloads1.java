@@ -460,6 +460,10 @@ public class Downloads1 extends WebCapabilities {
 		Thread.sleep(5000);
 	}
 	
+	public void clickPlusButtonServer() throws InterruptedException {   
+		Thread.sleep(2000);
+		click("cplusbuttonServer_Xpath");
+	}
 	
 	public void DbuttonSyncnew() throws InterruptedException {
 		Thread.sleep(2000);
@@ -2341,44 +2345,51 @@ public class Downloads1 extends WebCapabilities {
 //				driver.navigate().back();
 //				driver.navigate().refresh();
 ////***************server******************
-//
-//				driver.manage().deleteAllCookies();
-//				d.ScrollingToCouchbaseServerTab();
-//				d.PlatformServer();
-//				d.PlatformSelectionUbuntu1604();
-//				d.scrolly();
-//				d.scrolly();
-//				d.VersionServer1();
-//				d.DbuttonServer70();
-//				d.firstName();
-//				d.lastName();
-//				d.Email();
-//				d.Company();
-//				d.jobTitle();
-//				d.PhoneNumber();
-//				d.scrollinform();
-//				d.Checkbox2();
-//				d.Checkbox();
-//				d.Submit();
-//				d.checkingUrlServer70();
-//				driver.navigate().back();
-//				d.ScrollingToCouchbaseServerTab();
-//				Thread.sleep(2000);
-//				d.scrolly();
-//				d.PlatformSelectionUbuntu1804();
-//				Thread.sleep(2000);
-//				d.VersionServer2();
-//				d.VersionServerSelect2();
-//				d.scrolly();
-//				d.DbuttonServer651n();
-//				d.checkingUrlServer651n();
-//				driver.navigate().back();
-//				d.ScrollingToCouchbaseServerTab();
-//				d.scrolly();
-//				d.DbuttonServer70();
-//				d.checkingUrlServer700n();
-//				driver.navigate().back();
-//				driver.manage().deleteAllCookies();
+
+				driver.manage().deleteAllCookies();
+				d.ScrollingToCouchbaseServerTab();
+				System.out.println("scrolled to couchbase server tab");
+				d.clickPlusButtonServer();
+				System.out.println("clicked to couchbase server tab");
+				d.PlatformServer();
+				System.out.println("platform dropdown clicked");
+				d.PlatformSelectionUbuntu1604();
+				System.out.println("platform ubuntu 1604 selected");
+				d.scrolly();
+				d.scrolly();
+				d.VersionServer1();
+				System.out.println("version dropdown clicked");
+				d.DbuttonServer70();
+				System.out.println("download button clicked");
+				d.firstName();
+				d.lastName();
+				d.Email();
+				d.Company();
+				d.jobTitle();
+				d.PhoneNumber();
+				d.scrollinform();
+				d.Checkbox2();
+				d.Checkbox();
+				d.Submit();
+				d.checkingUrlServer70();
+				driver.navigate().back();
+				d.ScrollingToCouchbaseServerTab();
+				Thread.sleep(2000);
+				d.scrolly();
+				d.PlatformSelectionUbuntu1804();
+				Thread.sleep(2000);
+				d.VersionServer2();
+				d.VersionServerSelect2();
+				d.scrolly();
+				d.DbuttonServer651n();
+				d.checkingUrlServer651n();
+				driver.navigate().back();
+				d.ScrollingToCouchbaseServerTab();
+				d.scrolly();
+				d.DbuttonServer70();
+				d.checkingUrlServer700n();
+				driver.navigate().back();
+				driver.manage().deleteAllCookies();
 //				//**************kubernetes tab starts here******************************8
 //			
 //				d.ScrollingToCouchbaseKubernetesTab();			
@@ -2470,49 +2481,49 @@ public class Downloads1 extends WebCapabilities {
 //				driver.manage().deleteAllCookies();
 //				
 				//********************************Sync gateway******************
-				d.ScrollingToCouchbaseSyncGatewayTab();
-				d.clickPlusButtonSyncG();
-				Thread.sleep(2000);
-				d.PlatformSyncG();
-				d.PlatformSyncGselectLinux();
-				d.VersionSyncG1();
-				d.VersionSyncG282();
-                d.scrolly();
-				d.DbuttonSyncG282();
-				d.firstName();
-				d.lastName();
-				d.Email();
-				d.Company();
-				d.jobTitle();
-				d.PhoneNumber();
-				d.scrollinform();
-				d.Checkbox2();
-				d.Checkbox();
-				d.Submit();
-				d.checkingUrlSyncGLinux282();
-				System.out.println("first test case passed");
-				driver.navigate().back();
-				d.ScrollingToCouchbaseSyncGatewayTab();
-				d.clickPlusButtonSyncG();
-				d.scroll();
-				d.PlatformSyncG();
-				d.PlatformSyncGselectRedHat7();
-				d.VersionSyncG3(); 
-				d.VersionSyncG274();
-				d.DbuttonSyncG274();
-				d.checkingUrlSyncGRedHat274new();
-				System.out.println("second test case passed");
-				// d.Dbutton();
-				driver.navigate().back();
-				d.ScrollingToCouchbaseSyncGatewayTab();
-				d.clickPlusButtonSyncG();
-				d.scroll();
-				d.PlatformSyncG();
-			d.PlatformSyncGselectRedHat8();
-			d.DbuttonSyncnew();
-			d.checkingUrlSyncGRedHat8280();
-			System.out.println("first test case passed");
-			driver.navigate().back();
+//				d.ScrollingToCouchbaseSyncGatewayTab();
+//				d.clickPlusButtonSyncG();
+//				Thread.sleep(2000);
+//				d.PlatformSyncG();
+//				d.PlatformSyncGselectLinux();
+//				d.VersionSyncG1();
+//				d.VersionSyncG282();
+//                d.scrolly();
+//				d.DbuttonSyncG282();
+//				d.firstName();
+//				d.lastName();
+//				d.Email();
+//				d.Company();
+//				d.jobTitle();
+//				d.PhoneNumber();
+//				d.scrollinform();
+//				d.Checkbox2();
+//				d.Checkbox();
+//				d.Submit();
+//				d.checkingUrlSyncGLinux282();
+//				System.out.println("first test case passed");
+//				driver.navigate().back();
+//				d.ScrollingToCouchbaseSyncGatewayTab();
+//				d.clickPlusButtonSyncG();
+//				d.scroll();
+//				d.PlatformSyncG();
+//				d.PlatformSyncGselectRedHat7();
+//				d.VersionSyncG3(); 
+//				d.VersionSyncG274();
+//				d.DbuttonSyncG274();
+//				d.checkingUrlSyncGRedHat274new();
+//				System.out.println("second test case passed");
+//				// d.Dbutton();
+//				driver.navigate().back();
+//				d.ScrollingToCouchbaseSyncGatewayTab();
+//				d.clickPlusButtonSyncG();
+//				d.scroll();
+//				d.PlatformSyncG();
+//			d.PlatformSyncGselectRedHat8();
+//			d.DbuttonSyncnew();
+//			d.checkingUrlSyncGRedHat8280();
+//			System.out.println("first test case passed");
+//			driver.navigate().back();
 			
 				
 			} else {// language based scenarios start from here

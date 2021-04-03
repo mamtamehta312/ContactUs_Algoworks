@@ -46,6 +46,10 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(2000);
 		click("dplussbutton_Xpath");
 	}
+	public void clickPlusButtonServer() throws InterruptedException {   
+		Thread.sleep(2000);
+		click("cplusbuttonServer_Xpath");
+	}
 
 	public void clickPlusButtonKubernetes() throws InterruptedException {
 		Thread.sleep(2000);
@@ -2347,7 +2351,7 @@ public class Downloads extends WebCapabilities {
 				d.clickPlusButtonmain();
 				d.scrolly();
 				d.Versionnextt();
-				d.VersionnThrd();
+				d.VersionnThrd();  //2350
 				d.Downloadnewbutton1();
 				Thread.sleep(2000);
 				d.checkingUrlEnglish264n();
@@ -2357,6 +2361,7 @@ public class Downloads extends WebCapabilities {
 
 				driver.manage().deleteAllCookies();
 				d.ScrollingToCouchbaseServerTab();
+				d.clickPlusButtonServer();
 				d.PlatformServer();
 				d.PlatformSelectionUbuntu1604();
 				d.scrolly();
@@ -2376,6 +2381,7 @@ public class Downloads extends WebCapabilities {
 				d.checkingUrlServer70();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseServerTab();
+				d.clickPlusButtonServer();
 				Thread.sleep(2000);
 				d.scrolly();
 				d.PlatformSelectionUbuntu1804();
@@ -2387,6 +2393,7 @@ public class Downloads extends WebCapabilities {
 				d.checkingUrlServer651n();
 				driver.navigate().back();
 				d.ScrollingToCouchbaseServerTab();
+				d.clickPlusButtonServer();
 				d.scrolly();
 				d.DbuttonServer70();
 				d.checkingUrlServer700n();
