@@ -5,12 +5,12 @@
       <![CDATA[===Session End===]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-04-03T00:34:05Z" name="Suite" finished-at="2021-04-03T00:46:52Z" duration-ms="766231">
+  <suite started-at="2021-04-20T18:57:17Z" name="Suite" finished-at="2021-04-20T19:09:58Z" duration-ms="760812">
     <groups>
     </groups>
-    <test started-at="2021-04-03T00:34:05Z" name="Testcases" finished-at="2021-04-03T00:46:52Z" duration-ms="766231">
+    <test started-at="2021-04-20T18:57:17Z" name="Testcases" finished-at="2021-04-20T19:09:58Z" duration-ms="760812">
       <class name="webautomation.Downloads">
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-02T20:33:57Z" name="LaunchBrowser" finished-at="2021-04-02T20:34:05Z" duration-ms="8689" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String)[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-20T14:57:05Z" name="LaunchBrowser" finished-at="2021-04-20T14:57:17Z" duration-ms="12567" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,15 +21,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method is-config="true" signature="createReport()[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-02T20:34:05Z" name="createReport" finished-at="2021-04-02T20:34:06Z" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-20T14:57:17Z" name="createReport" finished-at="2021-04-20T14:57:18Z" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="downloadNext()[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-02T20:34:06Z" name="downloadNext" finished-at="2021-04-02T20:34:10Z" duration-ms="4156" status="PASS">
+        <test-method is-config="true" signature="downloadNext()[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-20T14:57:18Z" name="downloadNext" finished-at="2021-04-20T14:57:23Z" duration-ms="5489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadNext -->
-        <test-method signature="downloads(java.lang.String)[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-02T20:34:10Z" name="downloads" finished-at="2021-04-02T20:46:51Z" duration-ms="761689" status="PASS">
+        <test-method signature="downloads(java.lang.String)[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-20T14:57:23Z" name="downloads" finished-at="2021-04-20T15:09:58Z" duration-ms="754935" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,11 +40,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloads -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-02T20:46:51Z" name="flush" finished-at="2021-04-02T20:46:52Z" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-20T15:09:58Z" name="flush" finished-at="2021-04-20T15:09:58Z" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-02T20:46:52Z" name="closeApplication" finished-at="2021-04-02T20:46:52Z" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:webautomation.Downloads@2925bf5b]" started-at="2021-04-20T15:09:58Z" name="closeApplication" finished-at="2021-04-20T15:09:59Z" duration-ms="323" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[===Session End===]]>

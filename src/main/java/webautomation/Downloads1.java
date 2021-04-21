@@ -46,6 +46,10 @@ public class Downloads1 extends WebCapabilities {
 		Thread.sleep(2000);
 		click("dplussbutton_Xpath");
 	}
+	public void clickPlusButtonServer() throws InterruptedException {   
+		Thread.sleep(2000);
+		click("cplusbuttonServer_Xpath");
+	}
 
 	public void clickPlusButtonKubernetes() throws InterruptedException {
 		Thread.sleep(2000);
@@ -90,6 +94,12 @@ public class Downloads1 extends WebCapabilities {
 		logger1.info("Downloads Button is selected");
 		click("dDownloadssButton_2.8.4_Xpath");
 	}
+	public void clickDownloadsButtonNew_285() throws InterruptedException {
+		Thread.sleep(2000);
+		logger1.info("Downloads Button is selected");
+		click("dDownloadssButton_2.8.5_Xpath");
+	}
+	
 	
 	public void clickDownloadsButtonSwift() throws InterruptedException {
 		Thread.sleep(2000);
@@ -460,10 +470,6 @@ public class Downloads1 extends WebCapabilities {
 		Thread.sleep(5000);
 	}
 	
-	public void clickPlusButtonServer() throws InterruptedException {   
-		Thread.sleep(2000);
-		click("cplusbuttonServer_Xpath");
-	}
 	
 	public void DbuttonSyncnew() throws InterruptedException {
 		Thread.sleep(2000);
@@ -646,7 +652,7 @@ public class Downloads1 extends WebCapabilities {
 	}
 	
 	public void PlatformSyncGselectRedHat8() throws InterruptedException {
-		logger1.info("RedHat7 has been selected");
+		logger1.info("RedHat8 has been selected");
 		Thread.sleep(2000);
 		click("dSelectRedHat8SyncG_Xpath");
 	}
@@ -706,7 +712,8 @@ public class Downloads1 extends WebCapabilities {
 		logger1.info("Ubuntu 16.04 has been selected");
 		Thread.sleep(2000);
 		WebElement et = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[1]/span/ul/li[16]"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[1]/span/ul/li[3]"));
+		
 		Actions ax = new Actions(driver);
 		ax.moveToElement(et).click().build().perform();
 	}
@@ -1417,6 +1424,7 @@ public class Downloads1 extends WebCapabilities {
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
 				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div"));
+		
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1426,7 +1434,7 @@ public class Downloads1 extends WebCapabilities {
 		logger1.info("Version dropdown has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[17]/div[2]/div"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[4]/div[2]/div/span/span/span[2]"));
 		Actions acti = new Actions(driver);
 		acti.moveToElement(element).click().build().perform();
 		Thread.sleep(2000);
@@ -1866,6 +1874,13 @@ public class Downloads1 extends WebCapabilities {
 		String expectedvalue = properties.getProperty("url2.8.4");
 		Assert.assertEquals(urli, expectedvalue);
 	}
+	public void checkingUrlnewnet_285() throws InterruptedException {
+		Thread.sleep(3000);
+		logger1.info("checking the redirection");
+		String urli = driver.getCurrentUrl();
+		String expectedvalue = properties.getProperty("url2.8.5");
+		Assert.assertEquals(urli, expectedvalue);
+	}
 	public void checkingUrlAndroid() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
@@ -1921,7 +1936,7 @@ public class Downloads1 extends WebCapabilities {
 		String expectedlink = properties.getProperty("url_server3n");
 		Assert.assertEquals(link, expectedlink);
 	}
-
+// https://www.couchbase.com/downloads/thankyou/enterprise?product=couchbase-server&version=6.5.2&platform=ubuntu-18.04&addon=false&beta=false
 	public void checkingUrlServer660() throws InterruptedException {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
@@ -1950,12 +1965,13 @@ public class Downloads1 extends WebCapabilities {
 		Thread.sleep(3000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
+		Thread.sleep(3000);
 		String expectedlink = properties.getProperty("url_server7000");
 		Assert.assertEquals(link, expectedlink);
 	}
 	
 	public void checkingUrlKubWindows201() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
 		String expectedlink = properties.getProperty("url_KubWin201");
@@ -2302,7 +2318,7 @@ public class Downloads1 extends WebCapabilities {
 //				d.ScrollingToCouchbaseLiteTab();
 //				d.clickPlusButtonmain();
 //				d.scroll();
-//				d.clickDownloadsButtonNew();
+//				d.clickDownloadsButtonNew_285();
 //			}
 //
 //			else {
@@ -2313,9 +2329,9 @@ public class Downloads1 extends WebCapabilities {
 //				
 //			}
 //			d.TestForm();
-			if (getPropertyValue("language").equalsIgnoreCase("english")
-					&& getPropertyValue("urltype").equalsIgnoreCase("main")) {
-//				d.checkingUrlnewnet1();
+//			if (getPropertyValue("language").equalsIgnoreCase("english")
+//					&& getPropertyValue("urltype").equalsIgnoreCase("main")) {
+//				d.checkingUrlnewnet_285();
 //				driver.navigate().back();	
 //				driver.navigate().refresh();
 //				d.ScrollingToCouchbaseLiteTab();
@@ -2338,29 +2354,23 @@ public class Downloads1 extends WebCapabilities {
 //				d.clickPlusButtonmain();
 //				d.scrolly();
 //				d.Versionnextt();
-//				d.VersionnThrd();
+//				d.VersionnThrd();  //2350
 //				d.Downloadnewbutton1();
 //				Thread.sleep(2000);
 //				d.checkingUrlEnglish264n();
 //				driver.navigate().back();
 //				driver.navigate().refresh();
 ////***************server******************
-
+//
 				driver.manage().deleteAllCookies();
 				d.ScrollingToCouchbaseServerTab();
-				System.out.println("scrolled to couchbase server tab");
 				d.clickPlusButtonServer();
-				System.out.println("clicked to couchbase server tab");
 				d.PlatformServer();
-				System.out.println("platform dropdown clicked");
-				d.PlatformSelectionUbuntu1604();
-				System.out.println("platform ubuntu 1604 selected");
+				d.PlatformSelectionUbuntu1604Lang();
 				d.scrolly();
 				d.scrolly();
 				d.VersionServer1();
-				System.out.println("version dropdown clicked");
 				d.DbuttonServer70();
-				System.out.println("download button clicked");
 				d.firstName();
 				d.lastName();
 				d.Email();
@@ -2372,8 +2382,10 @@ public class Downloads1 extends WebCapabilities {
 				d.Checkbox();
 				d.Submit();
 				d.checkingUrlServer70();
+				System.out.println("sever all test cases executed succesffuly-1 ");
 				driver.navigate().back();
 				d.ScrollingToCouchbaseServerTab();
+				d.clickPlusButtonServer();
 				Thread.sleep(2000);
 				d.scrolly();
 				d.PlatformSelectionUbuntu1804();
@@ -2383,15 +2395,19 @@ public class Downloads1 extends WebCapabilities {
 				d.scrolly();
 				d.DbuttonServer651n();
 				d.checkingUrlServer651n();
+				System.out.println("sever all test cases executed succesffuly-2 ");
 				driver.navigate().back();
 				d.ScrollingToCouchbaseServerTab();
+				d.clickPlusButtonServer();
 				d.scrolly();
 				d.DbuttonServer70();
 				d.checkingUrlServer700n();
 				driver.navigate().back();
 				driver.manage().deleteAllCookies();
-//				//**************kubernetes tab starts here******************************8
-//			
+				
+				System.out.println("sever all test cases executed succesffuly -3");
+				//**************kubernetes tab starts here******************************8
+			
 //				d.ScrollingToCouchbaseKubernetesTab();			
 //				d.clickPlusButtonKubernetes();
 //				d.scroll();			
@@ -2432,7 +2448,7 @@ public class Downloads1 extends WebCapabilities {
 //				d.checkingUrlKubLin122();
 //				driver.navigate().back();
 //				driver.manage().deleteAllCookies();
-//				//****************kubernetes Red hat*************************
+				//****************kubernetes Red hat*************************
 //				d.ScrollingToCouchbaseKubernetesTab();
 //				d.clickPlusButtonKubernetes();
 //				d.scrolling();
@@ -2480,7 +2496,7 @@ public class Downloads1 extends WebCapabilities {
 //				driver.navigate().back();
 //				driver.manage().deleteAllCookies();
 //				
-				//********************************Sync gateway******************
+//				//********************************Sync gateway******************
 //				d.ScrollingToCouchbaseSyncGatewayTab();
 //				d.clickPlusButtonSyncG();
 //				Thread.sleep(2000);
@@ -2501,7 +2517,6 @@ public class Downloads1 extends WebCapabilities {
 //				d.Checkbox();
 //				d.Submit();
 //				d.checkingUrlSyncGLinux282();
-//				System.out.println("first test case passed");
 //				driver.navigate().back();
 //				d.ScrollingToCouchbaseSyncGatewayTab();
 //				d.clickPlusButtonSyncG();
@@ -2512,7 +2527,6 @@ public class Downloads1 extends WebCapabilities {
 //				d.VersionSyncG274();
 //				d.DbuttonSyncG274();
 //				d.checkingUrlSyncGRedHat274new();
-//				System.out.println("second test case passed");
 //				// d.Dbutton();
 //				driver.navigate().back();
 //				d.ScrollingToCouchbaseSyncGatewayTab();
@@ -2522,37 +2536,36 @@ public class Downloads1 extends WebCapabilities {
 //			d.PlatformSyncGselectRedHat8();
 //			d.DbuttonSyncnew();
 //			d.checkingUrlSyncGRedHat8280();
-//			System.out.println("first test case passed");
 //			driver.navigate().back();
 			
 				
-			} else {// language based scenarios start from here
-
-				d.checkingUrlLanguage1();
-				driver.navigate().back();
-				Thread.sleep(2000);
-				d.ScrollingToCouchbaseLiteTabLanguage();
-				d.scrollup();
-				d.clickPlusButton();
-				d.dropdown();
-				d.selectOS();
-				d.scroll();
-				d.Version();
-				d.selectVersion();
-				d.Downloadnewbutton();
-				d.checkingUrlLanguage2();
-				driver.navigate().back();
-				Thread.sleep(2000);
-				d.ScrollingToCouchbaseLiteTabLanguage();
-				d.clickPlusButton();
-				d.dropdown();
-				d.selectSwiftnew();
-				d.scroll();
-				d.VersionNew();
-				d.selectVersionNew();
-				d.DownloadNewVersion();
-				d.checkingUrlLanguage3();
-				driver.navigate().back();
+//			} else {// language based scenarios start from here
+//
+//				d.checkingUrlLanguage1();
+//				driver.navigate().back();
+//				Thread.sleep(2000);
+//				d.ScrollingToCouchbaseLiteTabLanguage();
+//				d.scrollup();
+//				d.clickPlusButton();
+//				d.dropdown();
+//				d.selectOS();
+//				d.scroll();
+//				d.Version();
+//				d.selectVersion();
+//				d.Downloadnewbutton();
+//				d.checkingUrlLanguage2();
+//				driver.navigate().back();
+//				Thread.sleep(2000);
+//				d.ScrollingToCouchbaseLiteTabLanguage();
+//				d.clickPlusButton();
+//				d.dropdown();
+//				d.selectSwiftnew();
+//				d.scroll();
+//				d.VersionNew();
+//				d.selectVersionNew();
+//				d.DownloadNewVersion();
+//				d.checkingUrlLanguage3();
+//				driver.navigate().back();
 				
 				
 				
@@ -2727,7 +2740,13 @@ public class Downloads1 extends WebCapabilities {
 				driver.navigate().back();
 			}	
 			}
-		
+//		 catch (Exception e) {
+//			logger1.fail(e);
+//			throw e;
+//		}
+//		Thread.sleep(5000);
+//
+//		logger1.pass("Testcase Downloads is Passed");
 	
-}
+
 

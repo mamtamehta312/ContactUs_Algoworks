@@ -251,7 +251,7 @@ public class Downloads extends WebCapabilities {
 		Thread.sleep(5000);
 	}
 	
-	public void DbuttonServer70() throws InterruptedException {
+	public void DbuttonServer700() throws InterruptedException {
 		Thread.sleep(2000);
 		logger1.info("Download button has been clicked");
 		click("dButtonServer70_Xpath");
@@ -708,11 +708,12 @@ public class Downloads extends WebCapabilities {
 			Thread.sleep(2000);
 	}
 
-	public void PlatformSelectionUbuntu1604Lang() throws InterruptedException {
-		logger1.info("Ubuntu 16.04 has been selected");
+	public void PlatformSelectionWindow() throws InterruptedException {
+		logger1.info("Window has been selected");
 		Thread.sleep(2000);
 		WebElement et = driver.findElement(By.xpath(
-				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[1]/span/ul/li[16]"));
+				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div/div[2]/div/div/div/div/div/div[1]/span/ul/li[3]"));
+		
 		Actions ax = new Actions(driver);
 		ax.moveToElement(et).click().build().perform();
 	}
@@ -1418,8 +1419,8 @@ public class Downloads extends WebCapabilities {
 			Thread.sleep(2000);
 			}
 
-	public void VersionServer1() throws InterruptedException {
-		logger1.info("Version dropdown has been clicked");
+	public void VersionServer_700() throws InterruptedException {
+		logger1.info("Version 7.0.0(beta) has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
 				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[3]/div[2]/div"));
@@ -1529,7 +1530,7 @@ public class Downloads extends WebCapabilities {
 	}
 
 	public void VersionServerSelect2() throws InterruptedException {
-		logger1.info("Version 6.5.1 has been clicked");
+		logger1.info("Version 6.5.2 has been clicked");
 		Thread.sleep(3000);
 		WebElement element = driver.findElement(By.xpath(
 				"/html/body/main/div/div[2]/section/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/span/ul/li[5]"));
@@ -1968,7 +1969,7 @@ public class Downloads extends WebCapabilities {
 	}
 	
 	public void checkingUrlKubWindows201() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		logger1.info("checking the redirection");
 		String link = driver.getCurrentUrl();
 		String expectedlink = properties.getProperty("url_KubWin201");
@@ -2363,11 +2364,11 @@ public class Downloads extends WebCapabilities {
 				d.ScrollingToCouchbaseServerTab();
 				d.clickPlusButtonServer();
 				d.PlatformServer();
-				d.PlatformSelectionUbuntu1604();
+				d.PlatformSelectionWindow();
 				d.scrolly();
 				d.scrolly();
-				d.VersionServer1();
-				d.DbuttonServer70();
+				d.VersionServer_700();
+				d.DbuttonServer700();
 				d.firstName();
 				d.lastName();
 				d.Email();
@@ -2395,7 +2396,7 @@ public class Downloads extends WebCapabilities {
 				d.ScrollingToCouchbaseServerTab();
 				d.clickPlusButtonServer();
 				d.scrolly();
-				d.DbuttonServer70();
+				d.DbuttonServer700();
 				d.checkingUrlServer700n();
 				driver.navigate().back();
 				driver.manage().deleteAllCookies();
@@ -2588,7 +2589,7 @@ public class Downloads extends WebCapabilities {
 				d.ScrollingToCouchbaseServerTab();
 				Thread.sleep(2000);
 				d.PlatformServer();
-				d.PlatformSelectionUbuntu1604Lang();
+				d.PlatformSelectionWindow();
 				d.scrolly();
 				d.VersionServer1Lang();
 				d.VersionServerSelect1Lang();

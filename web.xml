@@ -15,8 +15,10 @@
 
 <class name="webautomation.Downloads"/>
 <!-- <class name="webautomation.ContactForm"/>
-<class name="webautomation.linkpageflow"/> 
- -->
+<class name="webautomation.linkpageflow"/> -->
+ 
+
+
      </classes>
 	</test>
 
