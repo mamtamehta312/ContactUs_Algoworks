@@ -13,13 +13,13 @@
 <!-- <class name="webautomation.ContactFormNegative"/> -->
 <!-- <class name="webautomation.FormFillingNegativeNew"/> -->
 
-<class name="webautomation.Downloads"/>
-<!-- <class name="webautomation.ContactForm"/>
-<class name="webautomation.linkpageflow"/> -->
+<!-- <class name="webautomation.Downloads"/> -->
+<class name="webautomation.ContactForm"/>
+<class name="webautomation.linkpageflow"/>
  
 
 
      </classes>
 	</test>
-
+	
 </suite> <!-- Suite -->
